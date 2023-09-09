@@ -42,10 +42,10 @@ object Blocks {
                 description = "基础协议，可用于小型武器和工厂的建筑"
                 outputItem = ItemStack(临时协议, 1)
                 itemCapacity = 25
-                craftTime = 4000f
+                craftTime = 4000f/*
                 category = Category.effect
                 consumePower(10f)
-                requirements = ItemStack.with(Items.copper, 250, Items.lead, 350, Items.graphite, 250, Items.surgeAlloy, 200)
+                requirements = ItemStack.with(Items.copper, 250, Items.lead, 350, Items.graphite, 250, Items.surgeAlloy, 200)*/
             }
         }
     }
