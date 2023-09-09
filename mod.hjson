@@ -1,8 +1,8 @@
 #the mod name as displayed in-game
-displayName: "zxs"
+displayName: "mod"
 
 #the internal name of your mod
-name: "my kotlin mod"
+#name: "mod"
 
 #your name
 author: "zxs"

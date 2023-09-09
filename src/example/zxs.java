@@ -5,6 +5,7 @@ public class zxs extends Mod{
     @Override
     public void loadContent(){
         Item.load();
+        Blocks.load();
     }
 }
 
