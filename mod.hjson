@@ -8,7 +8,7 @@ name: "辰"
 author: "zxs"
 
 #the fully qualified main class of the mod
-main: "example.zxs"
+main: "zinxs.zxs"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
