@@ -2,7 +2,7 @@
 displayName: "mod"
 
 #the internal name of your mod
-#name: "mod"
+name: "mod"
 
 #your name
 author: "zxs"
@@ -11,7 +11,7 @@ author: "zxs"
 main: "example.zxs"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template"
+description: "A Mindustry Java mod template."
 
 #the mod version
 version: 1.0
