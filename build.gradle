@@ -117,7 +117,3 @@ compileTestKotlin {
         jvmTarget = "1.8"
     }
 }
-/*
-dependencies {
-    implementation files("C:/Users/Administrator/Desktop/server/baohe/host.jar")
-}*/
