@@ -3,12 +3,7 @@ package zinxs
 import mindustry.content.Items
 import mindustry.type.Category
 import mindustry.type.ItemStack
-import mindustry.type.LiquidStack
 import mindustry.world.blocks.production.GenericCrafter
-import mindustry.world.draw.DrawDefault
-import mindustry.world.draw.DrawLiquidTile
-import mindustry.world.draw.DrawMulti
-import mindustry.world.draw.DrawRegion
 
 
 object Block {
@@ -26,7 +21,7 @@ object Block {
                 rotate = false
                 solid = true
                 consumePower(25f)
-                consumeItem(Item.临时协议)
+                outputItems = arrayOf(ItemStack(Item.临时协议, 1))
             }
         }
     }
