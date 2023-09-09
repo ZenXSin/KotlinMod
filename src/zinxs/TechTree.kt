@@ -1,4 +1,4 @@
-package example
+package zinxs
 
 import arc.struct.Seq
 import mindustry.content.TechTree
