@@ -9,7 +9,7 @@ import mindustry.type.ItemStack
 import mindustry.world.blocks.production.GenericCrafter
 
 private var 临时协议: Item? = null
-private var 星际实验室: GenericCrafter? = null
+private var 临时协议签署所: GenericCrafter? = null
 object Item {
     @JvmStatic
         fun load() {
@@ -23,13 +23,13 @@ object Item {
 object Blocks {
     @JvmStatic
     fun load() {
-        星际实验室 = object : GenericCrafter("星际实验室")  {
+        临时协议签署所 = object : GenericCrafter("临时协议签署所")  {
             init {
                 size = 2
                 hasPower
                 hasItems
                 health = 2000
-                description = "基础协议，可用于小型武器和工厂的建筑"
+                description = "基础签署措施，可用签署于小型武器和工厂的建筑协议"
                 outputItem = ItemStack(临时协议, 1)
                 itemCapacity = 25
                 craftTime = 4000f
@@ -44,7 +44,7 @@ object Blocks {
 object TT {
     @JvmStatic
     fun loadTechTree() {
-        TechTree.addToNode(星际实验室!!, { TechTree.node(Blocks.duo) })
+        TechTree.addToNode(临时协议签署所!!, { TechTree.node(Blocks.duo) })
 
     }
 }
