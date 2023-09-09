@@ -1,8 +1,10 @@
 package content
 
-pubilc static Item <a>
-pubilc static Void load() {
-    <a>=new Item("a"){{
-    }}
-}
+import mindustry.type.Item
 
+object ItemLoader {
+    var a: Item? = null
+    fun load() {
+        a = Item("a")
+    }
+}
