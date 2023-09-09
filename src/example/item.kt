@@ -2,9 +2,10 @@ package example
 
 import mindustry.type.Item
 
+private var a: Item? = null
 object Item {
-        private var a: Item? = null
+    @JvmStatic
         fun load() {
             a = Item("a")
-        }
+    }
 }
