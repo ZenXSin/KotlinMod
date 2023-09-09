@@ -1,9 +1,11 @@
 package example
 
 import arc.graphics.Color
+import mindustry.type.Category
 import mindustry.type.Item
-import mindustry.world.blocks.production.GenericCrafter
 import mindustry.type.ItemStack
+import mindustry.world.blocks.production.GenericCrafter
+import mindustry.world.meta.Env
 
 private var 临时协议: Item? = null
 private var 自塑合金: Item? = null
@@ -38,7 +40,10 @@ object Blocks {
                 health = 2000
                 description = "基础协议，可用于小型武器和工厂的建筑"
                 outputItem = ItemStack(临时协议, 1)
-                
+                itemCapacity = 25
+                craftTime = 4000f
+                category = Category.effect
+                consumePower(10f)
             }
         }
     }
