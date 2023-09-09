@@ -1,4 +1,18 @@
+buildscript {
+    ext.kotlin_version = '1.9.20-Beta'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.20' // 使用Kotlin插件
+}
+
 apply plugin: "java"
+apply plugin: 'kotlin'
 
 version '1.0'
 
@@ -34,6 +48,7 @@ dependencies{
     compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 //force arc version
@@ -93,4 +108,18 @@ task deploy(type: Jar){
             delete "$buildDir/libs/${project.archivesBaseName}Android.jar"
         }
     }
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+/*
+dependencies {
+    implementation files("C:/Users/Administrator/Desktop/server/baohe/host.jar")
 }
