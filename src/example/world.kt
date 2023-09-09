@@ -1,6 +1,7 @@
 package example
 
 import arc.graphics.Color
+import mindustry.content.Items
 import mindustry.type.Category
 import mindustry.type.Item
 import mindustry.type.ItemStack
@@ -44,6 +45,8 @@ object Blocks {
                 craftTime = 4000f
                 category = Category.effect
                 consumePower(10f)
+                envEnabled = envEnabled or Env.space
+                requirements(Category.crafting, ItemStack.with(Items.copper, 250, Items.lead, 350, Items.graphite, 250, Items.surgeAlloy, 200))
             }
         }
     }
