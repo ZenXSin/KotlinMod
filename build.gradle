@@ -77,6 +77,7 @@ task jarAndroid{
 }
 
 jar{
+    duplicatesStrategy = 'exclude' // 或者 'fail'，根据你的需求选择
     archiveFileName = "${base.archivesBaseName}Desktop.jar"
 
     from{
