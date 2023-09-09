@@ -26,8 +26,9 @@ object Blocks {
         临时协议签署所 = object : GenericCrafter("临时协议签署所")  {
             init {
                 size = 2
-                hasPower
-                hasItems
+                hasPower = true
+                hasItems = true
+                update = true
                 health = 2000
                 description = "基础签署措施，可用签署于小型武器和工厂的建筑协议"
                 outputItem = ItemStack(临时协议, 1)
