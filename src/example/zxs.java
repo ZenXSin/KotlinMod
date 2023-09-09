@@ -6,6 +6,7 @@ public class zxs extends Mod{
     public void loadContent(){
         Item.load();
         Blocks.load();
+        TT.loadTechTree();
     }
 }
 
