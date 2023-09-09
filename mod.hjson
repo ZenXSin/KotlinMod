@@ -1,14 +1,14 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "zxs"
 
 #the internal name of your mod
 name: "example-kotlin-mod"
 
 #your name
-author: "You"
+author: "zxs"
 
 #the fully qualified main class of the mod
-main: "example"
+main: "example.zxs"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template"
