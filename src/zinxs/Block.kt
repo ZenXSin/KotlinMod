@@ -53,7 +53,6 @@ object Block {
                 updateEffect = Fx.fuelburn
                 craftEffect = Fx.pulverizeMedium
                 drawer = Draw.GCBuild(2.6f, 3.5342917f, 0f, 4, 0f, 4f)
-
             }
         }
     }
