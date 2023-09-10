@@ -21,6 +21,7 @@ object Block {
                 craftTime = 1200f
                 //60f为一秒
                 size = 2
+                health = 400
                 hasPower = true
                 hasItems = true
                 hasLiquids = false
@@ -35,15 +36,18 @@ object Block {
             init {
                 requirements(Category.crafting, ItemStack.with(Items.graphite, 150, Items.lead, 150, Items.graphite, 150, Items.surgeAlloy, 100, Items.titanium, 50, Items.thorium, 100, Item.临时协议, 2))
                 craftTime = 80f
+                health = 1200
                 size = 3
                 hasPower = true
+                itemCapacity = 40
                 hasItems = true
                 hasLiquids = true
                 rotate = false
                 solid = true
                 consumePower(11f)
                 consumeItems(ItemStack(Items.thorium, 5), ItemStack(Items.sand, 10))
-                consumeLiquid(Liquids.cryofluid, 3f).update(false)
+                consumeLiquid(Liquids.cryofluid, 3f).booster = true
+                liquidCapacity = 10f
                 outputItems = arrayOf(ItemStack(Items.phaseFabric, 5))
                 description = "利用钍在衰变时散发的辐射，快速制造布\n[red]需要使用冷却液来确保不会发生爆炸"
                 updateEffect = Fx.fuelburn
