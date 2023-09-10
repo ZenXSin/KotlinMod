@@ -1,0 +1,11 @@
+{
+   "name":"液态反物质",
+   "type":"CellLiquid",
+   "description":"液态的反物质，非常危险",
+   "color":"000000",
+   "flammability":5000000000000000,
+   "temperature":5000000000000000,
+   "viscosity":1,
+   "explosiveness":5000000000000000000000,
+   "effect":"湮灭"
+}

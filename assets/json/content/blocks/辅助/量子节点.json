@@ -1,0 +1,28 @@
+{
+	"type": "PowerNode",
+	"name": "量子节点",
+	"description": "利用少量电力连接更远，更多的建筑",
+	"size": 3,
+	"armor": 4,
+	"maxNodes": 50,
+	"laserRange": 60,
+	"outputsPower": true,
+	"hasPower": true,
+	"buildVisibility": "shown",
+	"consumesPower": true,
+	"placeableLiquid": true,
+	"laserColor1": "949EDF",
+	"laserColor2": "D1D6F9",
+	"consumes": {
+		"power": 6
+	},
+	"requirements": [
+	{ "item":"titanium","amount":20},
+	{ "item":"surge-alloy","amount":30},
+	{ "item":"饱和火力-莱普合金","amount":80},
+	{ "item":"自塑合金","amount":80},
+	{ "item":"天临协议","amount":1}
+	],
+	"category": "power",
+	"research": "星际实验室"
+}

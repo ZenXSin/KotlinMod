@@ -1,0 +1,52 @@
+{
+	"type": "GenericCrafter",
+	"name": "量子冷却厂",
+	"description": "利用最新的量子约束技术，重新排列水的原子结构，直接将水转化为冷却液。效率为1:1转换",
+	"health": 680,
+	"outputLiquid": {"liquid": "cryofluid", "amount": 10.0},
+	"itemCapacity": 14,
+	"size": 4,
+	"drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"cryofluid"
+	    },
+	    "DrawDefault"
+	]},
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            "DrawFlame"
+            ]
+    },
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 85,
+	"craftTime": 60,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 40,
+	"liquid": 
+	{"liquid": "water", "amount": 10.0 }
+		},
+	"requirements": [
+	{ "item": "lead", "amount": 700 },
+	{ "item": "thorium", "amount": 600 },
+	{ "item": "metaglass", "amount": 400},
+	{ "item": "silicon", "amount": 400 },
+	{"item": "饱和火力-硅钢","amount":105},
+	{ "item": "天临协议", "amount": 1 }
+	],
+	"category": "crafting",
+	"research": "原子重构机"
+}

@@ -1,0 +1,18 @@
+{
+"name":"辐射",
+    "damage":100,
+	"speedMultiplier":0.69,
+	"effectChance":0.69,
+	"effect":{	"type": "ParticleEffect",
+    "particles": 0.7,  
+    "baseLength": 0,
+    "length":65,
+    "lifetime": 10,
+    "spin":12,
+    "region":"星辰-辐射",
+    "sizeFrom": 4,
+    "sizeTo": 0,
+    "colorFrom": "FF5B5BFF",
+    "colorTo": "ffffff",
+    "cone":360 }
+}

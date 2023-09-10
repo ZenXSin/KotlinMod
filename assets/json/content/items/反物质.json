@@ -1,0 +1,10 @@
+{
+	"name": "反物质",
+	"description": "",
+	"color": "000000FF",
+	"alwaysUnlocked":false,
+	"radioactivity": 0,
+	"explosiveness": 9999999999999999999999999999999999999999999999,
+	"flammability": 0,
+	"research": "自塑合金"
+}

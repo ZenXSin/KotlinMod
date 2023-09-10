@@ -1,0 +1,35 @@
+/*{
+	"type":"ForceProjector",
+	"name":"I级探索星舰磁场护盾",
+	"description":"消耗大量电力，生成一个千米级小型兆级护盾",
+	"health":15000,
+	"size":3,
+	"radius":72000,
+	"canOverdrive": false,
+	"shieldHealth": 6000,
+	"phaseUseTime":36000000,
+	"phaseRadiusBoost":200,
+	"cooldownNormal":0.5,
+	"cooldownLiquid":1,
+	"cooldownBrokenBase":5,
+	"consumes":{
+		"power":300,
+		"items":{
+			"items":[
+				{"item":"天临协议","amount":1}
+			],
+			"booster":true,
+			"optional":true
+		}
+	},
+	"requirements":[
+	{ "item":"lead","amount":200},
+	{ "item":"silicon","amount":350},
+	{ "item":"titanium","amount":250},
+	{ "item":"plastanium","amount":150}
+	    ],
+	"itemCapacity":1,
+	"research": "force-projector",
+	"category": "effect"
+}
+*/

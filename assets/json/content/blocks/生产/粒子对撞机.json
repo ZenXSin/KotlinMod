@@ -1,0 +1,54 @@
+{
+	"type": "GenericCrafter",
+	"name": "粒子对撞机",
+	"description": "利用两个基本粒子的相互碰撞，产生反物质",
+	"outputItem":{ "item": "反物质", "amount": 5},
+	"size": 7,
+	"canOverdrive": false,
+	"power": 8000,
+	"health":100000,
+	"itemCapacity": 25,
+	"liquidCapacity": 1000,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"consumes": {
+    "power":1400.0,
+    "liquid":{
+	"liquid":"slag",
+	"amount":60,
+	"booster":false	}
+	},
+	"craftTime": 3000,
+"drawer":{
+	    "type":"DrawMulti",
+        "drawers":[
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"//底板贴图后缀
+			},
+			{
+				"type": "DrawPistons",//贴图格式∶xx-piston，xx-piston1（阴影贴图）
+				"sinMag": -5.6,//运动量
+				"sinScl": 4.53429173,//来回一次时间，1.5π为一秒
+				"lenOffset": 3,//初始内缩多少
+				"sides": 4,//动的边数，4为上下左右，8为上下左右左上左下右上右下，目前不可以单独左上左下右上右下
+				"sideOffset":1.57079633//1.57079633同向螺旋运动，3.14159265为反向螺旋运动，0为内缩
+				},
+				"DrawDefault",
+				{"type":"DrawFade",
+				"scale":5}//闪耀
+				]},
+    "requirements": [
+	{ "item": "graphite", "amount": 8750 },
+        { "item": "titanium", "amount": 6600 },
+	    { "item": "thorium","amount":8000},
+	    { "item": "blast-compound","amount":9000},
+        { "item": "饱和火力-莱普合金", "amount": 8200 },
+	    {"item": "天临协议", "amount": 100},
+	    {"item": "饱和火力-三级协议", "amount": 300},
+	    {"item": "饱和火力-硅钢", "amount": 6000}
+	],
+	"category": "crafting",
+	"research": "星际实验室"
+}

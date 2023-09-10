@@ -1,0 +1,11 @@
+{
+  "name": "星辰",
+  "displayName":"星辰",
+  "author":"zxs",
+  "version":"0.38", 
+  "description":"星辰扩展-此mod为饱和火力扩展，需先装载饱和火力，如果出现bug可能是此mod或饱和火力版本不为最新。此版本适配饱和火力3.0.11.2\n更新日志已移至游戏开机信息板"
+  "minGameVersion":"143"
+  "dependencies": [
+  "饱和火力"
+  ]
+}

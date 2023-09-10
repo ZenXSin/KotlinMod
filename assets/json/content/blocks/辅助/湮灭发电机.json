@@ -1,0 +1,39 @@
+{
+    "type": "NuclearReactor",
+    "name": "湮灭发电机",
+    "description": "测试型建筑，利用正物质与反物质湮灭时释放的巨大能量来发电，内置小型高效磁能线圈，用来发电，可惜我们现在的科技不支持百分百转化湮灭的能量，为了安全每次只能放入一个反物质以保证安全。[red]被击毁会发生剧烈爆炸",
+    "size": 3,
+    "health": 15000,
+    "liquidCapacity": 6000,
+    "itemCapacity": 1,
+    "hasItems": true,
+    "hasLiquids": true,
+    "outputsPower": true,
+    "powerProduction": 90000,
+    "itemDuration": 300,
+    "heating":0.01,
+    "lightColor": "FFFFFF",
+    "explosionShake":9,
+    "explosionShakeDuration":30,
+    "explosionRadius": 400,
+    "explosionDamage":9999999999999999999999,
+    "fuelItem":"反物质",
+    "consumes": {
+    "liquid": {
+    "liquid": "cryofluid",
+    "amount": 100
+        },
+    "items":["反物质/1"]
+    },
+    "requirements": [
+    { "item": "graphite", "amount": 6750 },
+    { "item": "titanium", "amount": 5600 },
+	{ "item": "thorium","amount":6500},
+	{ "item": "blast-compound","amount":6000},
+    { "item": "饱和火力-莱普合金", "amount": 8200 },
+	{"item": "天临协议", "amount": 50},
+	{"item": "饱和火力-三级协议", "amount": 300}
+	],
+    "category": "power",
+    "research": "星际实验室"
+}

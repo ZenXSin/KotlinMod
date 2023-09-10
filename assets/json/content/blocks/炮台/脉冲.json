@@ -1,0 +1,176 @@
+{
+    "type": "PowerTurret",//PowerTurret
+    "Name": "脉冲",
+    "description": "由纯能量包裹着的少量反物质，击中敌人会造成小范围瞬间湮灭",
+    "size":4,
+    "health":6000,
+    "range":1000,
+    "recoilTime": 200,//归位时间
+	"cooldownTime": 1000,//冷却时间
+    "reload":1200,
+    "recoil": 5,
+    "targetGround":true,
+    "shootY": 0,
+    "coolantMultiplier": 1,
+    "velocityRnd": "0.15",
+    "canOverdrive": false,
+    "spread": 10,
+    "reload": 30,
+    "xRand":1.5,
+	"shootEffect":  {     
+    "type": "ParticleEffect",
+    "particles": 9,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 40,
+    "baseLength": 0,
+    "lifetime": 30,
+    "colorFrom": "0C4F55FF",
+    "colorTo": "5ADCE7FF",
+    "cone": 50
+	   },
+	"smokeEffect": "bigShockwave",
+	"shootType":{
+	"height": 20,"width":30,
+	"damage":100,
+	"speed":20,"lifetime":60,
+	"splashDamageRadius":100
+    "splashDamage":1350,
+    "statusDuration":5,
+    "status": "湮灭",
+	"ammoMultiplier":1,
+	"buildingDamageMultiplier":1.14514,
+    "frontColor":"5ADCE7FF",//0C4F55FF
+    "backColor":"5ADCE7FF",
+    "trailLength":10,
+	"trailWidth":5,
+    "trailColor":"4AC9D5FF",//
+	"hitSound":"plasmaboom",
+	"despawnEffect":"none",
+    "hitEffect":{"type": "MultiEffect",
+        "effects": [
+            {"type": "ParticleEffect",
+            "particles": 5,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "length": 0,
+            "baseLength": 48,
+            "lifetime": 35,
+            "colorFrom": "2DECDFFF",//wc，原
+            "colorTo": "000000FF",
+            "cone": 360},
+            {"type": "ParticleEffect",
+                "particles": 12,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "lenFrom": 15,
+                "lenTo": 0,
+                "length": 53,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "3CE8DFFF",//FEEBB3FF
+                "colorTo": "0C4F55FF",
+                "cone": 360},
+            {"type": "WaveEffect",
+            "lifetime": 25,
+            "sizeFrom": 0,
+            "sizeTo": 44,
+            "strokeFrom":3,
+            "strokeTo":0,
+            "colorFrom":"39DBD5FF",
+            "colorTo": "0C4F55FF"}
+             {"type": "ParticleEffect",//yee
+            "particles": 5,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "length": 0,
+            "baseLength": 68,
+            "lifetime": 55,
+            "colorFrom": "2DECDFFF",//wc，原
+            "colorTo": "000000FF",
+            "cone": 360},
+            {"type": "ParticleEffect",
+                "particles": 12,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "lenFrom": 35,
+                "lenTo": 0,
+                "length": 53,
+                "baseLength": 0,
+                "lifetime": 35,
+                "colorFrom": "3CE8DFFF",//FEEBB3FF
+                "colorTo": "0C4F55FF",
+                "cone": 360},
+            {"type": "WaveEffect",
+            "lifetime": 45,
+            "sizeFrom": 0,
+            "sizeTo": 44,
+            "strokeFrom":3,
+            "strokeTo":0,
+            "colorFrom":"39DBD5FF",
+            "colorTo": "0C4F55FF"}
+            {"type": "ParticleEffect",//yee
+            "particles": 5,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "length": 0,
+            "baseLength": 88,
+            "lifetime": 85,
+            "colorFrom": "2DECDFFF",//wc，原
+            "colorTo": "000000FF",
+            "cone": 360},
+            {"type": "ParticleEffect",
+                "particles": 12,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "lenFrom": 65,
+                "lenTo": 0,
+                "length": 53,
+                "baseLength": 0,
+                "lifetime": 65,
+                "colorFrom": "3CE8DFFF",//FEEBB3FF
+                "colorTo": "0C4F55FF",
+                "cone": 360},
+            {"type": "WaveEffect",
+            "lifetime": 85,
+            "sizeFrom": 0,
+            "sizeTo": 44,
+            "strokeFrom":3,
+            "strokeTo":0,
+            "colorFrom":"39DBD5FF",
+            "colorTo": "0C4F55FF"}
+            ]}},
+    "drawer":{"type":"DrawTurret",
+    "parts":[
+       {"type":"RegionPart",
+    "mirror":true,//镜像
+    "x":0,"y":0,//初始位置
+    "suffix": "-动画"//,贴图后缀
+    "layer":50,//层，49-110
+    "moveX":2.5,//改变位置
+    "moveY":-2,
+    "moveRot":-15//旋转，角度制
+}
+]},
+    "consumes": {
+    "power":26.0,
+    "liquid":{
+	"liquid":"液态反物质",
+	"amount":0.3,
+	"booster":true }
+	}
+	"requirements": [
+    { "item": "反物质", "amount": 30 },
+    { "item": "自塑合金", "amount": 6600 },
+	{ "item": "thorium","amount":9500},
+	{ "item": "blast-compound","amount":9000},
+    { "item": "饱和火力-莱普合金", "amount": 11200 },
+	{"item": "天临协议", "amount": 50},
+	{"item": "饱和火力-三级协议", "amount": 300}
+	],
+	"category": "turret",
+	"research": "星耀"
+}

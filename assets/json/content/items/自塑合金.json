@@ -1,0 +1,10 @@
+{
+	"name": "自塑合金",
+	"description": "密度非常高的合金，在通电时可以自动修复",
+	"color": "F77622FF",
+	"alwaysUnlocked":false,
+	"radioactivity": 0,
+	"explosiveness": 0,
+	"flammability": 0,
+	"research": "天临协议"
+}

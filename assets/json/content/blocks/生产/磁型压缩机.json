@@ -1,0 +1,72 @@
+{
+    "name": "磁型压缩机",
+    "description": "利用超强人造磁，压缩材料",
+    "size": 3,
+    "health": 3000,
+    "itemCapacity": 250,
+    "liquidCapacity": 300,
+    "hasLiquids": true,
+    "hasItems": true,
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawPistons",
+                "sinMag": -3.6,
+                "sinScl": 2.53429173,
+                "lenOffset": 0,
+                "sides": 4,
+                "sideOffset": 0
+            },
+            "DrawDefault",
+            {
+                "type": "DrawFade",
+                "scale": 3
+            },
+            {
+                "type": "DrawGlowRegion",
+                "alpha": 1,
+                "glowScale": 6.53429173,
+                "color": "FF4000FF"
+            }
+        ]
+    },
+    "updateEffect": "fuelburn",
+    "craftEffect": "pulverizeMedium",
+    "requirements": [
+        {
+            "item": "graphite",
+            "amount": 6750
+        },
+        {
+            "item": "titanium",
+            "amount": 1600
+        },
+        {
+            "item": "thorium",
+            "amount": 6500
+        },
+        {
+            "item": "blast-compound",
+            "amount": 6000
+        },
+        {
+            "item": "饱和火力-莱普合金",
+            "amount": 8200
+        },
+        {
+            "item": "天临协议",
+            "amount": 5
+        },
+        {
+            "item": "饱和火力-三级协议",
+            "amount": 50
+        }
+    ],
+    "category": "crafting",
+    "research": "核爆裂解硅"
+}

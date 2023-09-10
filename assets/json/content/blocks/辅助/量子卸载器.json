@@ -1,0 +1,20 @@
+{
+      "health": 90,
+      "size":1,
+      "speed": 0.05,
+      "solid": "true",
+      "update": "true",
+      "hasItems": "true",
+      "type":"Unloader",
+      "description": "根据上一代量子科技量子提取器改进得来",
+      "name":"量子卸载器",
+      "consumes": {"power":2},
+      "requirements": [
+          {"item": "lead", "amount":300},
+		{"item": "silicon", "amount": 100},
+		{"item": "饱和火力-硅钢", "amount": 150}
+		{"item": "天临协议", "amount": 1}
+	],
+    "category": "effect",
+    "research":"星际实验室"
+}

@@ -1,0 +1,99 @@
+{
+	"type": "ItemTurret",
+	"name": "天陨",
+	"description": "毁灭工程学的优秀作品，通过核爆炸来获得毁灭性的动能，并且采用了最新的量子瞄准技术，使瞄准距离加远6倍。由于最近量子约束技术的突破，我们可以完美控制发射方向。[red]由于采用了最新的量子约束装置，发射的电磁炮子弹变得无比精准。以至于不能轻易命中敌方较小而轻便的单位",
+	"health": 87650,
+	"size": 5,
+	"reload":900,
+	"range": 3000,
+    "maxAmmo":20,
+    "power": 15,
+	"recoilTime":180,
+	"recoil":8,
+	"canOverdrive": false,
+	"cooldownTime": 200,
+	"shake":35,
+    "liquidCapacity":360,
+	"consumes": {
+	"coolant":{"amount":3.5,"optional":true}  
+		},
+    "coolantMultiplier":0.6,
+    "shootSound":"DBZ1",
+	"ammoUseEffect": "casing3Double",
+	"shootEffect":{     
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 200,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFF",
+        "colorTo": "ffffff"
+    },
+    "shootEffect":{ 
+    "type": "ParticleEffect",
+    "particles": 26,
+    "interp": "fastSlow",
+    "sizeFrom": 40,
+    "sizeTo": 0,
+    "length": 350,
+    "baseLength": 0,
+    "lifetime": 750,
+    "colorFrom": "DEDEDEAA",
+    "colorTo": "ffffff00",
+    "cone": 360
+        },
+	"targetGround":true,
+	"targetAir":true,
+	"inaccuracy": 0,
+	"rotateSpeed": 2,
+	"ammoPerShot":20,
+	"ammoTypes": {	
+	 	    "自塑合金":{
+  "type":"BasicBulletType",
+"ammoMultiplier":1,	  
+"speed": 180,
+"lifetime":10,
+"width": 15,"height": 45,
+"damage":98000,
+"pierce":true,
+"pierceBuilding":true,
+"trailChance":1,
+"trailInterval":24,
+"trailEffect": {"type": "WaveEffect",
+			"lifetime": 20,
+			"sizeFrom": 3,
+			"sizeTo": 80,
+			"strokeFrom": 3,
+			"strokeTo": 0,
+			"colorFrom": "ffffff",
+			"colorTo": "ffffff"
+		},
+"hitSound":"shotgun",
+"shootEffect": {     
+	"type": "WaveEffect",
+	"lifetime": 15,
+	"sizeFrom": 0,
+	"sizeTo": 200,
+	"strokeFrom": 3,
+	"strokeTo": 0,
+	"colorFrom": "FFFFFF",
+	"colorTo": "ffffff"
+   },
+"hitEffect":"instHit",
+"despawnEffect":"none"
+} 
+	    
+	},
+	"requirements": [
+    { "item": "graphite", "amount": 6750 },
+    { "item": "自塑合金", "amount": 5600 },
+	{ "item": "thorium","amount":6500},
+	{ "item": "blast-compound","amount":6000},
+    { "item": "饱和火力-莱普合金", "amount": 8200 },
+	{"item": "天临协议", "amount": 5},
+	{"item": "饱和火力-三级协议", "amount": 30}
+	],
+	"category": "turret",
+	"research": "星际实验室"
+	}

@@ -57,13 +57,18 @@ object Block {
                         init {
                             sinMag = 2.6f
                             sinScl = 3.5342917f
-                            lenOffset = 0f
+                            lenOffset = 3.5342917f
                             sides = 4
                             sideOffset = 0f
                         }
                     },
                     DrawDefault(),
-                    DrawRegion("-top")
+                    object : DrawFade() {
+                        init {
+                            suffix = "-top"
+                            scale = 5f
+                        }
+                    }
                 )
             }
         }

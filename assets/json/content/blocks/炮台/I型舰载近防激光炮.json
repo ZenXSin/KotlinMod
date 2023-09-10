@@ -1,0 +1,94 @@
+{
+    "type": "PowerTurret",
+    "Name": "I型舰载近防激光炮",
+    "description": "快速充能并向靠近星舰的敌人发射",
+    "size":5,
+    "health":26000,
+    "range":1400,
+    "recoilTime": 100,//归位时间
+	"cooldownTime": 400,//冷却时间
+	"minWarmup": 0.90,//展开到百分之多少的时候开始射击
+    "reload":5,
+    "shootSound":"none",
+    "rotateSpeed":4,
+    "liquidCapacity":8000,
+    "shake":1.5,
+    "shoot":{
+    	"type":"ShootAlternate",
+    	"barrels":1,
+		//炮口数量
+		"spread":0,
+		//炮口间距设定
+    }
+    "targetAir":true,
+    //是否攻击空军
+    "targetGround": true,
+    //是否攻击地面单位
+    "recoil": 4,
+    "consumes":{
+		"power":200,//耗电
+		"liquid":{
+	"liquid":"cryofluid",
+	"amount":40,
+	}
+	},
+    "shootType": {
+        "type": "LaserBulletType",
+        "length":1400,//激光长，游戏内除8
+        "width":20,//激光粗，游戏内同上
+        "hitSize":10,
+        "damage":1768,//伤害
+        "hitEffect":"hitLancer",
+        "hitSize":7,
+        "ammoMultiplier":1,
+        "knockback":0.36,
+        "shootEffect":"lancerLaserShoot",
+        "smokeEffect":"lancerLaserCharge",
+        "collidesAir":true,
+        //是否能攻击到空中单位
+        "sideAngle":15,
+        "sideWidth":0,
+        "sideLength":0
+        },
+    "drawer":{"type":"DrawTurret",
+    "parts":[
+       {"type":"RegionPart",
+    "mirror":false,
+    "x":0,"y":0,//初始位置
+    "suffix": "-ol"//,贴图后缀
+    "layer":50,//层，49-110
+    "moveX":0,//改变位置
+    "moveY":8.5,
+    }
+{"type":"RegionPart",
+    "mirror": true,//镜像，开启贴图重命名l左r右
+    "x":0,"y":0,//初始位置
+    "suffix":"-上",//贴图后缀
+    "layer":49.5,//层，49-110
+    "moveX":1,//改变位置
+    "moveY":1
+    }
+{"type":"RegionPart",
+    "mirror": true,
+    "x":-1,"y":-1,//初始位置
+    "suffix":"-下",//贴图后缀
+    "layer":49,//层，49-110
+    "moveX":3,//改变位置
+    "moveY":3,
+//"color":"FF9447FF",(改变颜色)   
+    }
+    ]
+    },
+    "requirements": [
+        "surge-alloy/4000",
+        "thorium/6000",
+        "lead/8000",
+        "silicon/6000",
+        "titanium/9000",
+        "天临协议/5",
+        "饱和火力-硅钢/1000",
+        "饱和火力-莱普合金/3000"
+    ],
+    "category": "turret",
+    "research": "天陨"
+}
