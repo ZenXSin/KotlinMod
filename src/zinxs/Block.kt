@@ -51,18 +51,21 @@ object Block {
                 description = "利用钍在衰变时散发的辐射，快速制造布\n[red]需要使用冷却液来确保不会发生爆炸"
                 updateEffect = Fx.fuelburn
                 craftEffect = Fx.pulverizeMedium
-                drawer = DrawMulti(DrawDefault(), object : DrawCultivator() {
+                drawer = DrawMulti(DrawRegion("-bottom"), object : DrawPistons() {
                     init {
-                        DrawRegion("-bottom")
                         DrawPistons().suffix = "-piston"
                         DrawPistons().sinMag = 2.6f
                         DrawPistons().sinScl = 3.5342917f
                         DrawPistons().lenOffset = 0f
                         DrawPistons().sides = 4
                         DrawPistons().sideOffset = 0f
+                    }
+                }, DrawRegion("-top"), object : DrawFade() {
+                    init {
+                        DrawFade().scale = 4f
                         DrawFade().scale = 4f
                     }
-                }, DrawRegion("-top") )
+                })
             }
         }
     }
