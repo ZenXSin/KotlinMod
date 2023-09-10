@@ -52,7 +52,7 @@ object Block {
                 description = "利用钍在衰变时散发的辐射，快速制造布\n[red]需要使用冷却液来确保不会发生爆炸"
                 updateEffect = Fx.fuelburn
                 craftEffect = Fx.pulverizeMedium
-                drawer = Draw.GCBuild(2.6f, 3.5342917f, 0f, 4, 0f, 4f)
+                drawer = Draw.build(2.6f, 3.5342917f, 0f, 4, 0f, 4f)
             }
         }
     }

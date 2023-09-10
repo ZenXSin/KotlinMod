@@ -5,7 +5,7 @@ import mindustry.world.draw.*
 object Draw {
     @JvmStatic
     var drawer: DrawMulti? = null
-    fun GCBuild(sinMag: Float, sinScl: Float, lenOffset:Float, sides:Int, sideOffset:Float, scale:Float? = null):DrawMulti {
+    fun build(sinMag: Float, sinScl: Float, lenOffset:Float, sides:Int, sideOffset:Float, scale:Float? = null):DrawMulti {
         drawer = object :DrawMulti(){
             init {
                 DrawRegion("-bottom")
