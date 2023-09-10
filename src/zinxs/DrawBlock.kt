@@ -9,6 +9,7 @@ object Draw {
         drawer = object :DrawMulti(){
             init {
                 DrawRegion("-bottom")
+                DrawPistons().suffix = "-piston"
                 DrawPistons().sinMag = sinMag
                 DrawPistons().sinScl = sinScl
                 DrawPistons().lenOffset = lenOffset
