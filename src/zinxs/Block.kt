@@ -45,13 +45,13 @@ object Block {
                 solid = true
                 consumePower(11f)
                 consumeItems(ItemStack(Items.thorium, 5), ItemStack(Items.sand, 10))
-                consumeLiquid(Liquids.cryofluid, 3f).booster = true
-                liquidCapacity = 10f
+                consumeLiquid(Liquids.cryofluid, 0.5f).booster = true
+                liquidCapacity = 2f
                 outputItem = ItemStack(Items.phaseFabric, 5)
                 description = "利用钍在衰变时散发的辐射，快速制造布\n[red]需要使用冷却液来确保不会发生爆炸"
                 updateEffect = Fx.fuelburn
                 craftEffect = Fx.pulverizeMedium
-                drawer = object :DrawMulti(){
+                drawer = DrawMulti(DrawDefault(), object : DrawCultivator() {
                     init {
                         DrawRegion("-bottom")
                         DrawPistons().suffix = "-piston"
@@ -60,11 +60,9 @@ object Block {
                         DrawPistons().lenOffset = 0f
                         DrawPistons().sides = 4
                         DrawPistons().sideOffset = 0f
-                        DrawDefault()
                         DrawFade().scale = 4f
-                        DrawRegion("-top")
                     }
-                }
+                }, DrawRegion("-top") )
             }
         }
     }
