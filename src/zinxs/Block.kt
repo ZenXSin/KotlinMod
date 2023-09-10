@@ -57,7 +57,7 @@ object Block {
                         init {
                             sinMag = 2.6f
                             sinScl = 3.5342917f
-                            lenOffset = 3.5342917f
+                            lenOffset = -3.5342917f
                             sides = 4
                             sideOffset = 0f
                         }
