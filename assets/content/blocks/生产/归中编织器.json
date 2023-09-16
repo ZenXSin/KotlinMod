@@ -1,4 +1,4 @@
-{
+/*{
 	"type": "BonusCrafter",
 	"useitem": "裂位能",
 	"bonus": 10,
@@ -52,4 +52,4 @@
 	"ambientSoundVolume": 0.56,
 	"category": "crafting",
 	"research": "激发器"
-}
+}*/

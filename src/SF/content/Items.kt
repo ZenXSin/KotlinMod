@@ -21,7 +21,7 @@ object Items {
     var 莱普合金: Item? = null
     var 泰勒合金: Item? = null
     @JvmStatic
-    fun load() {
+    fun load() {/*
         一级协议 = object : Item("初级协议"){
             init {
                 hardness = 0
@@ -52,6 +52,6 @@ object Items {
                 frameTime = 3f
              //   research = phase-fabric
             }
-        }
+        }*/
     }
 }

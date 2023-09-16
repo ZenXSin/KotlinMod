@@ -42,14 +42,16 @@ abstract class BonusCrafter(name: String?) : Block(name) {
     var outputItem: ItemStack? = null
 
     /** Overwrites outputItem if not null.  */
-    abstract var outputItems: Array<ItemStack>?
+    @Nullable
+    var outputItems: Array<ItemStack>? = null
 
     /** Written to outputLiquids as a single-element array if outputLiquids is null.  */
     @Nullable
     var outputLiquid: LiquidStack? = null
 
     /** Overwrites outputLiquid if not null.  */
-    abstract var outputLiquids: Array<LiquidStack>?
+    @Nullable
+    var outputLiquids: Array<LiquidStack>? = null
 
     /** Liquid output directions, specified in the same order as outputLiquids. Use -1 to dump in every direction. Rotations are relative to block.  */
     var liquidOutputDirections = intArrayOf(-1)
