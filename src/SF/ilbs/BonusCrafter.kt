@@ -29,9 +29,14 @@ import mindustry.world.meta.StatUnit
 import mindustry.world.meta.StatValues
 
 /**
-*加成倍率计算：useritem/10 * bonus
+ *useritem: 加成物品
+ * bonus: 加成倍率(默认1)
+ *加成倍率计算：useritem/10 * bonus
+ *by - zxs
+ * (继承@Block
+ * 修改GenericCrafter)
 * */
-abstract class BonusCrafter(name: String?, useritem: Item?=null, bonus: Int=1) : Block(name) {
+abstract class BonusCrafter(name: String?) : Block(name) {
     /** Written to outputItems as a single-element array if outputItems is null.  */
     @Nullable
     var outputItem: ItemStack? = null
@@ -53,8 +58,8 @@ abstract class BonusCrafter(name: String?, useritem: Item?=null, bonus: Int=1) :
     var dumpExtraLiquid = true
     var ignoreLiquidFullness = false
     var craftTime = 80f
-    var useitem = useritem
-    var bonus = bonus
+    var useitem: Item? = null
+    var bonus: Int = 1
     var bons = 0
     var craftEffect = Fx.none
     var updateEffect = Fx.none
@@ -77,13 +82,13 @@ abstract class BonusCrafter(name: String?, useritem: Item?=null, bonus: Int=1) :
     }
 
     override fun setStats() {
-        stats.timePeriod = craftTime
+        stats.timePeriod = craftTime - bons
         super.setStats()
         if (hasItems && itemCapacity > 0 || outputItems != null) {
-            stats.add(Stat.productionTime, craftTime / 60f, StatUnit.seconds)
+            stats.add(Stat.productionTime, craftTime - bons / 60f, StatUnit.seconds)
         }
         if (outputItems != null) {
-            stats.add(Stat.output, StatValues.items(craftTime, *outputItems!!))
+            stats.add(Stat.output, StatValues.items(craftTime - bons, *outputItems!!))
         }
         if (outputLiquids != null) {
             stats.add(Stat.output, StatValues.liquids(1f, *outputLiquids!!))
@@ -208,7 +213,7 @@ abstract class BonusCrafter(name: String?, useritem: Item?=null, bonus: Int=1) :
         override fun updateTile() {
             bons = items.get(useitem)/10 * bonus
             if (efficiency > 0) {
-                progress += getProgressIncrease(craftTime)
+                progress += getProgressIncrease(craftTime - bons)
                 warmup = Mathf.approachDelta(warmup, warmupTarget(), warmupSpeed)
 
                 //continuously output based on efficiency

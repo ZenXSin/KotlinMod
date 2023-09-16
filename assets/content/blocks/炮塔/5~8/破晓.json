@@ -1,0 +1,178 @@
+{
+	"type": "PowerTurret",
+	"name": "破晓",
+	"health": 2250,
+	"size": 5,
+	"accurateDelay": false,
+	"moveWhileCharging": false,
+	"shake": 15,
+	"inaccuracy": 0,
+	"recoil": 5,
+	"cooldownTime": 180,
+	"liquidCapacity": 180,
+	"canOverdrive": false,
+	"recoilTime": 120,
+	"shoot": {
+		"type": "ShootPattern",
+		"firstShotDelay": 80
+	},
+	"shootY": 10,
+	"coolantMultiplier": 0.5,
+	"heatColor": "FF4040",
+	"shootSound": "laserblast",
+	"shootEffect": {
+		"type": "WaveEffect",
+		"lifetime": 45,
+		"interp":"circleOut",
+		"sizeFrom": 0,
+		"sizeTo": 200,
+		"strokeFrom": 9,
+		"strokeTo": 0,
+		"colorFrom": "FFFFFF",
+		"colorTo": "25C9AB"
+	},
+	"chargeSound": "lasercharge",
+	"shootType": {
+		"type": "LaserBulletType",
+		"lightningSpacing": 55,
+		"lightningLength": 8,
+		"lightningDelay": 1.25,
+		"lightningLengthRand": 6,
+		"lightningAngleRand": 90,
+		"lightningDamage": 550,
+		"lightningColor": "25C9AB",
+		"length": 40000,
+		"width": 40,
+		"sideAngle": 30,
+		"sideWidth": 2,
+		"sideLength": 400,
+		"damage": 1048,
+		"buildingDamageMultiplier": 0.125,
+		"lifetime": 88,
+		"pierceArmor":true,
+		"collidesAir": true,
+		"splashDamageRadius": 35,
+		"splashDamage": 428,
+		"ammoMultiplier": 1,
+		"colors": [
+			"25C9ABA8",
+			"25C9AB",
+			"FFFFFF"
+		],
+		"smokeEffect": "smokeCloud",
+		"chargeEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WaveEffect",
+					"lifetime": 80,
+					"sizeFrom": 130,
+					"sizeTo": 0,
+					"strokeFrom": 0,
+					"strokeTo": 6,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 35,
+					"strokeFrom": 0,
+					"strokeTo": 2,
+					"line": true,
+					"sizeInterp": "pow5Out",
+					"interp": "pow5In",
+					"lenFrom": 0,
+					"lenTo": 18,
+					"length": 200,
+					"baseLength": -180,
+					"lifetime": 70,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"sizeFrom": 0,
+					"sizeTo": 8,
+					"length": 0,
+					"baseLength": -0,
+					"lifetime": 80,
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 1,
+					"strokeFrom": 10,
+					"strokeTo": 0,
+					"lenFrom": 0,
+					"lenTo": 40000,
+					"sizeInterp": "pow5In",
+					"line": true,
+					"randLength": false,
+					"length": 0,
+					"baseLength": 1,
+					"lifetime": 76,
+					"colorFrom": "25C9AB80",
+					"colorTo": "BFFFDB80",
+					"cone": 0
+				}
+			]
+		},
+		"despawnEffect": "none",
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "ParticleEffect",
+					"particles": 6,
+					"sizeFrom":4,
+					"sizeTo":0,
+					"length": 30,
+					"baseLength": 0,
+					"lifetime":60,
+					"interp":"pow5Out",
+					"sizeInterp":"pow5In",
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 14,
+					"strokeFrom": 1.2,
+					"strokeTo": 0.8,
+					"line": true,
+					"lenFrom": 24,
+					"lenTo": 0,
+					"length": 50,
+					"baseLength": -18,
+					"lifetime": 22,
+					"interp":"pow5Out",
+					"sizeInterp":"pow5Out",
+					"colorFrom": "25C9AB",
+					"colorTo": "BFFFDB",
+					"cone": 36
+				}]}
+	},
+	"consumes": {
+		"power": 220,
+		"coolant": {
+			"amount": 1.5,
+			"optional": true
+		}
+	},
+	"reload": 1000,
+	"rotateSpeed": 3,
+	"fogRadiusMultiplier": 0.3,
+	"range": 1600,
+	"category": "turret",
+	"research": "战研",
+	"requirements": [
+		"metaglass/1500",
+		"硅钢/1600",
+		"泰勒合金/500",
+		"裂位能/1400",
+		"二级协议/50",
+		"三级协议/30"
+	]
+}

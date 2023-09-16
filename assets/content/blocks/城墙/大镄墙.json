@@ -1,0 +1,13 @@
+{
+	"name": "大型镄墙",
+	"type": "Wall",
+	"health": 9600,
+	"armor":15,
+	"size": 2,
+	"requirements": [
+	"镄/96" 
+	],
+	"buildCostMultiplier": 0.85,
+	"category": "defense",
+	"research": "镄墙"
+}

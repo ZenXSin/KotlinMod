@@ -1,23 +1,25 @@
 #the mod name as displayed in-game
-displayName: "饱和火力"
+displayName: "Saturation firepower"
 
 #the internal name of your mod
 name: "饱和火力"
 
 #your name
-author: "zxs"
+author: "RA2"
 
 #the fully qualified main class of the mod
 main: "SF.Sf"
 
-#the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
-
 #the mod version
-version: 1.0
+version: 3.1.2
+
+hideInBrowser: false
 
 #the minimum game build required to run this mod
 minGameVersion: 145
 
 #this is a kotlin mod
 kotlin: true
+
+#the mod description as seen in the mod dialog
+description: ""
