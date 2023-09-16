@@ -31,7 +31,7 @@ class Sf : Mod() {
 fun home() {
     BaseDialog("[yellow]Wellcome to [red][Saturation firepower]").apply{
         cont.apply{
-            image(Core.atlas.find("饱和火力-logo")).pad(20f).row()
+            image(Core.atlas.find("饱和火力-logo")).pad(2f).row()
             button("[blue]更新日志"){ update()
                 hide()}.size(100f, 50f)
             button("[blue]转型日志"){ hide() }.size(100f, 50f)
