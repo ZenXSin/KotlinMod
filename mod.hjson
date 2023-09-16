@@ -1,14 +1,14 @@
 #the mod name as displayed in-game
-displayName: "辰"
+displayName: "饱和火力"
 
 #the internal name of your mod
-name: "辰"
+name: "饱和火力"
 
 #your name
 author: "zxs"
 
 #the fully qualified main class of the mod
-main: "zinxs.zxs"
+main: "SF.Sf"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
