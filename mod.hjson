@@ -1,17 +1,17 @@
 #the mod name as displayed in-game
-displayName: "Saturation firepower"
+displayName: "lib"
 
 #the internal name of your mod
-name: "饱和火力"
+name: "lib"
 
 #your name
-author: "RA2"
+author: "ZinXS"
 
 #the fully qualified main class of the mod
 main: "SF.Sf"
 
 #the mod version
-version: 3.1.2
+version: 0.2
 
 hideInBrowser: false
 
@@ -22,4 +22,4 @@ minGameVersion: 145
 kotlin: true
 
 #the mod description as seen in the mod dialog
-description: ""
+description: "lib"

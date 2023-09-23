@@ -1,54 +1,45 @@
 package SF
 
-import SF.content.*
-import SF.ilbs.*
+import SF.content.test
+import arc.Core
+import arc.Events
+import arc.util.Log
+import arc.util.Time
+import mindustry.core.UI
+import mindustry.game.EventType.ClientLoadEvent
 import mindustry.mod.Mod
-import arc.*
-import arc.files.Fi
-import arc.util.*
-import mindustry.game.EventType.*
-import mindustry.ui.dialogs.*
+import mindustry.ui.dialogs.BaseDialog
 
-class Sf : Mod() {
-    var mod = config
-    override fun loadContent() {
-        Block.load()
-        Items.load()
-        Liquids.load()
-        Status.load()
-        Units.load()
-        Weathers.load()
-        TechTree.load()
-        Log.info("饱和火力,启动！")
+class Ui: UI() {
+    init {
+        super.init()
     }
-    init{
-        Events.on(ClientLoadEvent::class.java){
-            Time.runTask(10f){
+}
+class Sf : Mod() {
+    override fun loadContent() {
+        super.loadContent()
+        test.load()
+        Log.info("Libs By-zxs")
+    }
+
+    init {
+        Events.on(ClientLoadEvent::class.java) {
+            Time.runTask(10f) {
                 home()
             }
         }
     }
 
     fun home() {
-        BaseDialog("[yellow]Wellcome to [red][Saturation firepower]").apply{
-            cont.apply{
-                image(Core.atlas.find("饱和火力-logo")).pad(20f).top()
-                button("[blue]更新日志"){ update()
-                    hide()}.size(100f, 50f)
-                button("[orange]退出"){ hide() }.size(100f, 50f)
-            }
-            show()
-        }
-    }
-
-    fun update() {
-        BaseDialog("[blue]更新日志").apply{
-            cont.apply{
-                add("").row()
-                button("[orange]返回"){ home()
-                    hide()}.size(100f, 50f)
+        BaseDialog("[yellow]欢迎使用本依赖脚本").apply {
+            cont.apply {
+                image(Core.atlas.find("lib-logo")).pad(20f).top()
+                button("[orange]退出") { hide() }.size(100f, 50f)
+                button("[orange]更新日志（开发中）") { hide() }.size(100f, 50f)
+                button("[orange]更新（开发中）") { hide() }.size(100f, 50f)
             }
             show()
         }
     }
 }
+
