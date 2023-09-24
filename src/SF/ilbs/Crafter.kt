@@ -59,6 +59,7 @@ import mindustry.world.meta.StatValues
  * heat += 0.01 * heatItem数量 / heatd
  * heatItem: 反应物品
  * heatd: 热容量
+ * heatLiquid: 散热液体
  * 爆炸特效需自己写
  */
 open class BonusCrafter(name: String?) : Block(name) {
