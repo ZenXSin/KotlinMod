@@ -3,7 +3,7 @@
 * 原作@Anuken
 * 扩展@ZenXS
 * 示例项目：content/block
-* Json自己摸索，本人因为不会json所以来写Kotlin
+* Js,Java,Kotlin可用
 * 功能:
 * 1.完全支持原版@GenericCrafter的所有功能
 * 2.扩展功能如下（所有功能皆为可选）：
