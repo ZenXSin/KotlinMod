@@ -22,4 +22,4 @@ minGameVersion: 145
 kotlin: true
 
 #the mod description as seen in the mod dialog
-description: "lib"
+description: "自己用来实现一些和mod有/无关的东西，里的接口用js写就能用了"
