@@ -1,12 +1,13 @@
 {
-	"type": "GenericCrafter",
+	//"type": "激光放射塔",
 	"name": "激发放射塔",
 	"health": 430,
 	"outputItems": [
-		"thorium/2",
-		"裂位能/6"
+		"thorium/0.5",
+		"裂位能/3"
 	],
-	//"powerProduction": 12,
+	"rotate": false,
+	"solid": true,
 	"size": 4,
 	"hasPower": true,
 	"hasLiquids": true,

@@ -15,11 +15,11 @@ class Ui: UI() {
         super.init()
     }
 }
-class Sf : Mod() {
+class sf : Mod() {
     override fun loadContent() {
         super.loadContent()
         test.load()
-        Log.info("Libs By-zxs")
+        Log.info("Saturation firepower By-RA2.EXE")
     }
 
     init {

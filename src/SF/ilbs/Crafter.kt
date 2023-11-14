@@ -86,7 +86,6 @@ open class BonusCrafter(name: String?) : Block(name) {
     var dumpExtraLiquid = true
     var ignoreLiquidFullness = false
     var craftTime = 80f
-    var carft = 0f
     var craftEffect: Effect = Fx.none
     var updateEffect: Effect = Fx.none
     var updateEffectChance = 0.04f
@@ -100,17 +99,17 @@ open class BonusCrafter(name: String?) : Block(name) {
     /** Only used for legacy cultivator blocks.  */
     var legacyReadWarmup = false
     var drawer: DrawBlock = DrawDefault()
-    override fun toString(): String {
+    /*override fun toString(): String {
         return "bonusItem=" + bonusItem +
                 ", Bonus=" + bonus +
                 ", heatItem=" + heatItem +
                 ", heatLiquid=" + heatLiquids +
                 ", heatd=" + heatd
-    }
+    }*/
 
     init {
-        carft = craftTime
         update = true
+        rotate = false
         solid = true
         hasItems = true
         ambientSound = Sounds.machine
@@ -120,13 +119,13 @@ open class BonusCrafter(name: String?) : Block(name) {
         drawArrow = false
     }
     override fun setStats() {
-        stats.timePeriod = carft
+        stats.timePeriod = BonusCrafterBuild().carft
         super.setStats()
         if (hasItems && itemCapacity > 0 || outputItems != null) {
-            stats.add(Stat.productionTime, carft / 60f, StatUnit.seconds)
+            stats.add(Stat.productionTime, BonusCrafterBuild().carft / 60f, StatUnit.seconds)
         }
         if (outputItems != null) {
-            stats.add(Stat.output, StatValues.items(carft, *outputItems!!))
+            stats.add(Stat.output, StatValues.items(BonusCrafterBuild().carft, *outputItems!!))
         }
         if (outputLiquids != null) {
             stats.add(Stat.output, StatValues.liquids(1f, *outputLiquids!!))
@@ -212,7 +211,8 @@ open class BonusCrafter(name: String?) : Block(name) {
     }
     open inner class BonusCrafterBuild : Building() {
         var heat = 0f
-        var table: Table? = null
+        var carft = craftTime
+        var taboble: Table? = null
         var progress = 0f
         var totalProgress = 0f
         var warmup = 0f
