@@ -16,7 +16,6 @@ import arc.util.io.Reads
 import arc.util.io.Writes
 import mindustry.Vars
 import mindustry.content.Fx
-import mindustry.content.Items
 import mindustry.content.Liquids
 import mindustry.entities.Effect
 import mindustry.entities.units.BuildPlan
@@ -37,6 +36,7 @@ import mindustry.world.meta.BlockFlag
 import mindustry.world.meta.Stat
 import mindustry.world.meta.StatUnit
 import mindustry.world.meta.StatValues
+import java.util.*
 
 
 /**
@@ -96,10 +96,17 @@ open class BonusCrafter(name: String?) : Block(name) {
     var bonusItem: Item? = null
     var heatItem: Item? = null
     var heatd = 5f
-    var heatLiquids: Liquid = Liquids.cryofluid
+    var heatLiquids: Liquid? = null
     /** Only used for legacy cultivator blocks.  */
     var legacyReadWarmup = false
     var drawer: DrawBlock = DrawDefault()
+    override fun toString(): String {
+        return "bonusItem=" + bonusItem +
+                ", Bonus=" + bonus +
+                ", heatItem=" + heatItem +
+                ", heatLiquid=" + heatLiquids +
+                ", heatd=" + heatd
+    }
 
     init {
         carft = craftTime
@@ -405,4 +412,6 @@ open class BonusCrafter(name: String?) : Block(name) {
             if (legacyReadWarmup) read.f()
         }
     }
+
 }
+

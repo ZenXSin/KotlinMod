@@ -21,6 +21,7 @@ object test {
                 bonus = 10
                 bonusItem = Items.thorium
                 heatItem = Items.thorium
+                heatLiquids = Liquids.cryofluid
                 heatd = 10f
                 health = 1200
                 size = 3
