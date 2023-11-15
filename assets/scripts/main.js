@@ -6,5 +6,5 @@ require("方块/前哨基地");
 require("方块/最高指挥中心");
 require("工厂/灌注站");
 require("工厂/倾倒站");
-require("工厂/螺旋压缩机");
+//require("工厂/螺旋压缩机");
 require("星球/泰伯利亚");
