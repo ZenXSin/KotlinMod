@@ -1,36 +1,25 @@
 package SF.content
 
-import SF.ilbs.*
+import SF.ilbs.BonusCrafter
+import arc.graphics.Color
+import arc.graphics.g2d.Draw
+import arc.graphics.g2d.Lines
 import mindustry.Vars
-import mindustry.content.Fx
-import mindustry.content.Items
-import mindustry.content.Liquids
 import mindustry.ctype.ContentType
-import mindustry.type.ItemStack
-import zinxs.Draw
+import mindustry.game.Team
+import mindustry.gen.Building
+import mindustry.graphics.Layer
+import mindustry.world.Block
+import mindustry.world.Tile
+import mindustry.world.blocks.storage.CoreBlock
 
 object test {
     var 激发放射塔 : BonusCrafter? = null
+    var 前哨基地 : Ac? = null
     @JvmStatic
     fun load() {
         激发放射塔 = object : BonusCrafter("激发放射塔") {
             init {
-                /*outputItem = ItemStack(Items.phaseFabric, 5)
-                consumeItems(*ItemStack.with(Items.thorium,5,Items.silicon,10))
-                consumeLiquid(Liquids.cryofluid, 5f)
-                consumePower(5f)
-                configurable = true
-                bonus = 10
-                bonusItem = Items.thorium
-                heatItem = Items.thorium
-                heatLiquids = Liquids.cryofluid
-                heatd = 10f
-                health = 1200
-                size = 3
-                hasPower = true
-                itemCapacity = 40
-                hasItems = true
-                hasLiquids = true*/
                 rotate = false
                 solid = true
                 bonus = 5
@@ -38,11 +27,113 @@ object test {
                 heatItem = Vars.content.getByName(ContentType.item,"饱和火力-镄")
                 heatLiquids = Vars.content.getByName(ContentType.liquid,"饱和火力-纳米流体")
                 heatd = 10f
-                /*liquidCapacity = 2f
-                description = "利用钍在衰变时散发的辐射，快速制造布\n[red]需要使用冷却液来确保不会发生爆炸"
-                updateEffect = Fx.fuelburn
-                craftEffect = Fx.pulverizeMedium
-                drawer = Draw.build(2.6f, 3.5342917f, -3.5342917f, 4, 0f, 5f)*/
+            }
+        }
+        前哨基地 = object : Ac("前哨基地") {}
+            /*
+                    前哨基地 = object : CoreBlock("前哨基地") {
+                        init {
+                            update = true
+                        }
+                        override fun canBreak(tile: Tile?): Boolean {
+                            super.canBreak(tile)
+                                return Vars.state.teams.cores(tile!!.team()).size > 1
+                        }
+
+                        override fun canReplace(other: Block?): Boolean {
+                            super.canReplace(other)
+                            return other!!.alwaysReplace
+                        }
+
+                        override fun canPlaceOn(tile: Tile?, team: Team?, rotation: Int): Boolean {
+                            super.canPlaceOn(tile, team, rotation)
+                            return Vars.state.teams.cores(team).size < 10
+                        }
+                        inner class CoreBuild : Building() {
+                            var time = 60
+                            var kill = false
+                            override fun update() {
+                                super.update()
+                                if (Vars.state.teams.cores(this.team).size >= 6) {
+                                    Vars.ui.showLabel("[red]     数据上行堵塞\n▲中央数据库过载▲\n     强制重启倒计时",
+                                        0.015F, this.x, this.y)
+                                    time--
+                                } else {
+                                    kill = true
+                                }
+                                if (time<=0) {
+                                    this.kill()
+                                }
+                            }
+
+                            override fun draw() {
+                                super.draw()
+                                Draw.z(Layer.effect)
+                                Lines.stroke(2f, Color.valueOf("FF5B5B"))
+                                Draw.alpha(if (kill) 1f else if (Vars.state.teams.cores(this.team).size > 8) 1f else 0f)
+                                Lines.arc(this.x, this.y, 16f, (time * (6 / 360)).toFloat(), 90f)
+                            }
+                            override fun kill() {
+                                super.kill()
+                                this.core().items().each { item, amount ->
+                                    if(amount > 2000) {
+                                        this.items.add(item, 2000-amount)
+                                    }
+                                }
+                            }
+                        }
+                    }*/
+        }
+    }
+
+open class Ac(name: String?) : CoreBlock(name) {
+    init {
+        update = true
+    }
+    override fun canBreak(tile: Tile?): Boolean {
+        super.canBreak(tile)
+        return Vars.state.teams.cores(tile!!.team()).size > 1
+    }
+
+    override fun canReplace(other: Block?): Boolean {
+        super.canReplace(other)
+        return other!!.alwaysReplace
+    }
+
+    override fun canPlaceOn(tile: Tile?, team: Team?, rotation: Int): Boolean {
+        super.canPlaceOn(tile, team, rotation)
+        return Vars.state.teams.cores(team).size < 10
+    }
+    inner class Core : CoreBuild() {
+        var time = 60
+        var kill = false
+        override fun update() {
+            super.update()
+            if (Vars.state.teams.cores(this.team).size >= 6) {
+                Vars.ui.showLabel("[red]     数据上行堵塞\n▲中央数据库过载▲\n     强制重启倒计时",
+                    0.015F, this.x, this.y)
+                time--
+            } else {
+                kill = true
+            }
+            if (time<=0) {
+                this.kill()
+            }
+        }
+
+        override fun draw() {
+            super.draw()
+            Draw.z(Layer.effect)
+            Lines.stroke(2f, Color.valueOf("FF5B5B"))
+            Draw.alpha(if (kill) 1f else if (Vars.state.teams.cores(this.team).size > 8) 1f else 0f)
+            Lines.arc(this.x, this.y, 16f, (time * (6 / 360)).toFloat(), 90f)
+        }
+        override fun kill() {
+            super.kill()
+            this.core().items().each { item, amount ->
+                if(amount > 2000) {
+                    this.items.add(item, 2000-amount)
+                }
             }
         }
     }

@@ -9,7 +9,6 @@ const CoreFrontline = extend(CoreBlock, "前哨基地", {
 		return Vars.state.teams.cores(team).size < 10;
 	}
 });
-
 CoreFrontline.buildType = prov(() => {
 	let kill = false, num = 1, time = 60 * num;
 	return extend(CoreBlock.CoreBuild, CoreFrontline, {
