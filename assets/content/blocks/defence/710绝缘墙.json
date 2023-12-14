@@ -1,0 +1,22 @@
+{
+"type":"wall",
+"name":"绝缘墙",
+"category":"defense",
+"size":1,
+"description":"不能算太坚硬，但是对付一般的敌人已经足够了。",
+"health":700,
+"requirements":[
+"silicon/8" "铝/5"
+]
+"insulated":true,//是否吸收电弧
+"absorbLasers":true,//是否吸收激光 
+	"research": {
+        "parent": "khcore",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+}

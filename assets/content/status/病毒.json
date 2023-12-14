@@ -1,0 +1,23 @@
+{
+"name": "病毒"
+"description": "喀莱什病毒的侵蚀。"
+"damage": 0.5
+"speedMultiplier": 0.75
+"healthMultiplier": 0.75
+"effect": {
+"type": "particleEffect"
+"sizeFrom": 3.0
+"sizeTo": 0.0
+"particles": 2
+"length": 7
+"lifetime": 120
+"colorFrom": "235733"
+"colorTo": "23573300"
+}
+"affinities": [
+"corroded"
+"spore-slowed"
+]
+"transitionDamage": 45
+
+}

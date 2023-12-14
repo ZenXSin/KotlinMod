@@ -1,0 +1,188 @@
+{
+    "type": "legs",
+    "health": 45000,
+    "hitSize": 32,
+    "drag": 0.3,
+    "speed": 0.32,
+    "rotateSpeed": 3.00
+    
+            "legCount": 6,
+            "legLength": 35
+            "legBaseOffset": 4.00,
+            "legTrns": 0.78,
+            "legPairOffset": 3
+            "legMoveSpace": 1.00
+            "legExtension": -15
+            "hovering": true,
+            "visualElevation": 0.8,
+    "research": "a1-3",
+    "armor": 35,
+    "name": "a1-4",
+    "commandLimit": 9,
+    "itemCapacity": 200,
+    "weapons": [
+        {
+            "name": "a1-4-1",
+            "layerOffset": 1
+            "reload": 50,
+            "shots": 1,
+            "recoil": 3.45,
+            "rotateSpeed": 4.55
+            "rotate": true,
+            "targetAir":false
+            "mirror": true
+            "shootCone": 10
+            "innacuracy": 10
+            "shootSound": "artillery",
+            "x": 6,
+            "y": -7,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "严重放射侵蚀"
+                "width": 15,
+                "height": 15,
+                "shrinkY": 0
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "statusDuration": 600
+                "splashDamage": 340
+                "splashDamageRadius": 80
+                "collidesTile": true
+                "damage": 660
+                "knockback":0.6
+                "lifetime":110
+                "speed":5
+                "fragBullets": 4
+                "fragBullet": {
+                "type": "ArtilleryBulletType",
+                "status": "严重放射侵蚀"
+                "statusDuration": 120
+                "width": 15,
+                "height": 15,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage": 60
+                "splashDamageRadius": 40
+                "damage": 120
+                "knockback": 0
+                "lifetime": 90
+                "speed": 1
+                "fragBullets": 2
+                "fragBullet": {
+                "type": "MissileBulletType"
+                "width": 6
+                "height": 10
+                "trailWidth": 3
+                "trailLength": 8
+                "frontColor": "33ce33"
+                "backColor": "33ce33"
+                "trailColor": "33ce33"
+                "sprite": "pnk-mod-arhit"
+                "speed": 8
+                "lifetime": 20
+                "damage": 100
+                "splashDamageRadius": 40
+                "splashDamage": 150
+                }
+                }
+            }
+        }
+  {
+            "name": "a1-4-2",
+            "reload": 80,
+            "shots": 1
+            "recoil": 1.00,
+            "rotate": true,
+            "targetGround": false
+            "rotateSpeed": 5
+            "spin": 2
+            "shootSound":"shootSnap"
+            "x": 12,
+            "y": 5,
+            "rotateShooting": false,
+            "mirror":true
+            "bullet": {
+                "type": "BasicBulletType",
+                "width": 5,
+                "height": 5,
+                "damage":800,
+                "lifetime":12,
+                "collidesGround": false
+                "speed":30
+            }
+        }
+        
+  {
+            "name": "a1-4-3",
+            "reload": 15,
+            "shots": 2
+            "speread": 2,
+            "recoil": 1.00,
+            "rotate": true,
+            "shotDelay": 3
+            "collidesGround": true
+            "collidesAir": true
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"sap"
+            "x": 6,
+            "y": 5,
+            "rotateShooting": false,
+            "mirror":true
+            "bullet": {
+                "type": "SapBulletType",
+                "damage":500
+                "length": 120
+                "sapStrength": 0.1
+                "shootEffect": "shootLiquid"
+                "healPercent": 50
+                "hitEffect": "hitLiquid"
+                "color": "99ef88"
+                "lightColor": "daffcc"
+            }
+        }
+/*	   {
+    "type": "RepairBeamWeapon",  
+    "mirror": false,
+    "alternate": false,
+    "rotateSpeed": 3,
+    "name": "ask-o",
+    "x": 0,
+    "y": 4,
+    "shootY": 1,
+    "reload": 1,
+    "recoil": 0,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "laser",
+    "laserColor": "73FFAEFF",
+    "controllable": false,
+    "autoTarget": true,
+    "beamWidth": 0.7,
+    "pulseRadius": 6,
+    "pulseStroke": 2,
+    "repairSpeed": 6.25,
+	"bullet": {
+	"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 20,
+    "offset": 35,
+    "lifetime": 22,
+    "length": 35,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "73FFAEFF",
+    "colorTo": "57D993FF"   
+    },
+	"speed": 5,
+	"maxRange": 160
+}
+}
+*/
+    ]
+}

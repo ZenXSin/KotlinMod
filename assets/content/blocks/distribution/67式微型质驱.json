@@ -1,0 +1,36 @@
+{
+    "type": "MassDriver",
+    "name": "67式微型质驱",
+    "description": "[marron]更快的驱动器。[red]短小精悍 doge",
+    "requirements": [
+        { "item": "titanium", "amount": 10 },
+        { "item": "thorium", "amount": 10 },
+        { "item": "plastanium", "amount": 10 },
+        { "item": "silicon", "amount": 10 }
+    ],
+    "size": 1,
+    "itemCapacity": 50,
+    "raloadTime": 20,
+    "range": 240,
+    "minDistribute": 20,
+    "speed": 3,
+    "consumes": {
+        "power": 4
+    },
+    "research": "67式传送带"
+}
+
+
+
+
+/*
+
+        massDriver = new MassDriver("mass-driver"){{
+            requirements(Category.distribution, with(Items.titanium, 125, Items.silicon, 75, Items.lead, 125, Items.thorium, 50));
+            size = 3;
+            itemCapacity = 120;
+            reloadTime = 200f;
+            range = 440f;
+            consumes.power(1.75f);
+        }};
+*/

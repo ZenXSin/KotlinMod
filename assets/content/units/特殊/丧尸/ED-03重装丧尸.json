@@ -1,0 +1,156 @@
+{
+"type":"mech"
+"name":"重装丧尸"
+"description": "装备了AS-T型火焰喷射器及VRC-T多管重机枪以及O129-T型火箭发射器的丧尸，可以在近距离对敌军实施有效的削弱打击。"
+"speed": 0.6
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 4
+"health": 1350
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 8
+"mechStride": 4
+"mechStepShake":0.0
+"research": "ED-02轻装丧尸"
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "重装丧尸-l"
+    "layerOffset": -0.001
+    "top": false
+    "x": -4
+    "y": 0
+    "shootY": 6
+    "mirror": false
+    "rotate": true
+    "recoil": 2
+    "reload": 3
+    "targetAir":false
+    "shootSound": "flame"
+    "shotCone": 15
+    "inaccuracy": 15
+    "rotationLimit": 15
+    "baseRotation": 5
+    "shoot": {
+    "shots": 3
+    }
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 15
+      "collidesGround": true
+      "collidesAir": false
+      "absorbable": false
+      "hittable": false
+      "width": 6
+      "height": 6
+      "sprite": "pnk-mod-air1"
+      "lifetime": 15
+      "speed": 8
+      "status": "病毒"
+      "statusDuration": 180
+      "pierce": true
+      "pierceBuilding": true
+      "hitEffect": "none"
+      "despawnEffect": "none"
+      "shootEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 100,
+    "lifetime": 20,
+    "colorFrom": "FF9E40EB",
+    "colorTo": "66cc6699",
+    "cone": 5
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    },
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 120,
+    "lifetime": 40,
+    "colorFrom": "F46D54FF",
+    "colorTo": "66aa6699",
+    "cone": 10
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    }
+    ]
+      }
+             }
+      } 
+           {
+    "name": "重装丧尸-r"
+    "layerOffset": -0.001
+    "top": false
+    "x": 4
+    "y": 0
+    "shootY": 5
+    "mirror": false
+    "rotate": true
+    "recoil": 0.5
+    "reload": 121
+    "rotationLimit": 15
+    "baseRotation": -5
+    "inaccuracy": 2
+    "targetAir": false
+    "shootSound": "machineGunShoot1"
+    "shoot": {
+    "type": "shootBarrel"
+    "shots": 24
+    "shotDelay": 10
+    "barrels": [
+    0,0,0
+    1,0,0
+    -1,0,0
+    ]
+    }
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 15
+      "width": 1
+      "height": 2
+      "lifetime": 40
+      "speed": 8
+             }
+      } 
+      {
+      "name": "重装丧尸-m"
+      "x": -2
+      "y": -2
+      "reload": 150
+      "rotate": false
+      "mirror": false
+      "shootSound": "missile"
+      "recoil": 1
+      "shootY": 4
+      "bullet": {
+      "type": "MissileBulletType"
+      "frontColor": "aaddff"
+      "backColor": "aaddff"
+      "trailColor": "55555555"
+      "damage": 50
+      "splashDamage": 150
+      "splashDamageRadius": 24
+      "homingPower": 0
+      "width": 3
+      "height": 3
+      "speed": 4
+      "drag": -0.02
+      "lifetime": 45
+      }
+      }
+     ]
+}

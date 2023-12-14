@@ -1,0 +1,146 @@
+{
+    "type": "naval",
+    "name": "c1-4",
+    "health": 53000,
+    "armor": 55,
+    "hitSize": 36,
+    "speed": 0.7,
+    "accel": 0.3,
+    "rotateSpeed": 1.2,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+        {
+            "name": "c1-4-1",
+            "layerOffset": 1,
+            "recoils": 2
+            "parts": [
+                {
+                "type": "RegionPart"
+                "under": true
+                "recoilIndex": 0
+                "progress": "recoil"
+                "moveY": -4
+                "suffix": "-L1"
+                }
+                {
+                "type": "RegionPart"
+                "under": true
+                "recoilIndex": 1
+                "progress": "recoil"
+                "moveY": -4
+                "suffix": "-R1"
+                }
+            ],
+            "reload": 70,
+            "rotateSpeed": 3.5
+            "shootY": 16,
+            "shootSound": "mediumCannon",
+            "mirror": false
+            "velocityRnd": -0.2,
+            "recoil": 1,
+            "rotate": true,
+            "shootCone": 30,
+            "shoot": {
+                "type": "ShootBarrel",
+                "barrels": [
+                    -3,16,0,
+                    3,16,0,
+                ],
+                "shots": 1,
+            },
+            "x": 0,
+            "y": -4,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "严重放射侵蚀"
+                "statusDuartion": 640
+                "width": 12,
+                "height": 12,
+                "color": "33ce33FF",
+                "backColor": "33ce33FF"
+                "trailColor": "33ce33"
+                "splashDamage": 1000
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "damage": 400
+                "knockback": 2
+                "lifetime": 90
+                "speed": 8
+                "spawnBullets": [
+                    {
+                        "type": "MissileBulletType"
+                        "weaveScale": 5
+                        "weaveMag": 2
+                        "damage": 120
+                        "width": 4
+                        "height": 8
+                        "splashDamage": 230
+                        "splashDamageRadius": 32
+                        "homingPower": 0.1
+                        "color": "bafdba"
+                        "backColor": "bafdba"
+                        "trailColor": "bafdba"
+                        "trailLength": 4
+                        "trailWidth": 1
+                        "homingRange": 120
+                        "weaveScale": 4
+                        "hitSound": "explosion"
+                        "weaveMag": 0.7
+                        "lifetime": 75
+                        "speed": 6
+                    }
+                ]
+            }
+        }
+        {
+            "name": "c1-4-2"
+            "x": 16
+            "y": -20
+            "shootY": 4
+            "mirror": true
+            "rotate": true
+            "autoTarget": true
+            "rotateSpeed": 5
+            "shoot": {
+                "shotDelay": 3
+                "shots": 6
+            }
+            "recoil": 2
+            "reload": 55
+            "shootSound": "missile"
+            "ammoType": "silicon"
+            "shake": -1
+            "restitution":1.42
+            "bullet": {
+                "type": "MissileBulletType"
+                "damage": 120
+                "width": 4
+                "height": 8
+                "splashDamage": 230
+                "splashDamageRadius": 32
+                "homingPower": 0.1
+                "color": "bafdba"
+                "backColor": "bafdba"
+                "trailColor": "bafdba"
+                "trailLength": 4
+                "trailWidth": 1
+                "homingRange": 120
+                "weaveScale": 4
+                "hitSound": "explosion"
+                "weaveMag": 0.7
+                "lifetime": 60
+                "drag": -0.025
+                "speed": 4
+            }
+        }
+    ],
+    "research": "c1-3"
+}

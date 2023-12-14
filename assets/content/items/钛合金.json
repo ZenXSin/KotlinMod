@@ -1,0 +1,11 @@
+{
+"name":"钛合金"
+"description":"使用多种材料合成的金属，非常坚硬，在高等建筑材料，复合装甲板等领域上都有一席之地。"
+"cost":"2"
+"color":"7575c8"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"锰"
+}

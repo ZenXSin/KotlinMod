@@ -1,0 +1,36 @@
+
+{
+    "type": "GenericCrafter",
+    "name": "镍钢熔炉",
+   "description":"生产镍钢。",
+    "category": "crafting",
+    "health":600
+    "itemCapacity": 20
+    "requirements": [
+        "titanium/300","lead/250","thorium/200","surge-alloy/25"
+    ],
+    "outputItem": "镍钢/1",
+    "craftTime": 20.00,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": false,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			"type": "DrawFlame"
+			"flameColor": "f2cd8d"
+			}
+            ]
+            }
+    "consumes": {
+        "items": {
+            "items": [
+                "镍/2" "lead/1" "silicon/1"
+            ]
+        },
+        "power": 1
+    }
+    "research":"铝提炼机"
+}

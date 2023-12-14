@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"name": "液氮混合器",
+	"description": "将冷冻液，钛混合再压缩，形成液氮。",
+	"health": 660,
+	"size": 2
+	"drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"液氮"
+	    },
+	    "DrawDefault"
+	]
+	},
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 360,
+	"craftTime": 30,
+	"category": "crafting"
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"requirements": [
+        "lead/325","silicon/200","锰/300"
+    ],
+    "outputLiquid": "液氮/3",
+    "craftTime": 60.00,
+    "itemCapacity": 20
+    "solid": true,
+    "outputsLiquid": true,
+    "consumes": {
+        "power": 1.00,
+        "items": [
+        "titanium/3"
+        ]
+        "liquid": {
+        "liquid": "cryofluid"
+        "amount": 2
+        }
+    }
+   "research":"镍钢熔炉"
+}

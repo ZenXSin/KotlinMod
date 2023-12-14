@@ -1,0 +1,94 @@
+{
+    "type": "naval",
+    "name": "c1-1",
+    "health": 5200,
+    "armor": 35
+    "hitSize": 12,
+    "speed": 1.7,
+    //speed": 1
+    "accel": 0.3,
+    "rotateSpeed": 1.55,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+        {
+            "name": "c1-1-1",
+            "reload": 30,
+            "ejectEffect": "none",
+            "mirror": false
+            "shoot": {
+            "shots": 2,
+            }
+            "recoil": 2.45,
+            "rotate": true,
+            "shootSound": "bang",
+            "shootCone": 30
+            "inaccuracy": 15
+            "velocityRnd": -0.1
+            "x": 0,
+            "y": -2,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 8,
+                "height": 8,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage":40
+                "splashDamageRadius":10
+                "collidesTile":false
+                "damage":120
+                "knockback":0.4
+                "lifetime":90
+                "speed":4
+            }
+        },
+               {
+    "name": "c1-1-2"
+    "x": 4
+    "y": 6
+    "shootY": 10
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shots": 1
+    "recoil": 2
+    "reload": 20
+    "shootSound": "missile"
+    "ammoType": "silicon"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 15
+      "width":10
+      "height": 17
+      "splashDamage": 20
+      "splashRadius": 30
+      "homingPower": 0.4
+      "color": "bafdba"
+      "backColor": "bafdba"
+      "trailColor": "bafdba"
+      "trailLength": 6
+      "trailWidth": 3
+      "homingRange": 120
+      "weaveScale": 9
+      "hitSound": "explosion"
+      "weaveMag": 3
+      "lifetime":60
+      "speed": 4
+      }
+      }
+       ],
+    "research": "0721构造器"
+}

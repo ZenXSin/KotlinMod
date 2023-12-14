@@ -1,0 +1,50 @@
+{
+	"type": "ItemTurret",
+	"name": "斥退",
+	"description": "对中距离敌人产生巨大击退。",
+	"health": 1000,
+	"size": 2
+	"reload": 300,
+	"range": 400,
+	"maxAmmo": 200
+	"recoil": 0,
+    "shootY":0,
+    "shootCone": 360
+    "shoot": {
+    "type": "ShootSpread"
+    "spread": 2
+    "shots": 180
+    }
+    "hasShadow": false,
+"ammoPerShot": 20
+"shootSound": "shootAltLong"
+"ammoTypes": {
+   "磷": {
+   "shootEffect": "none"
+   "type": "FlakBulletType"
+   "collidesGround": true
+   "frontColor": "9999bb"
+   "backColor": "9999bb"
+   "splashDamage": 100
+   "damage": 50
+   "shrinkY": 1
+   "despawnEffect": "none"
+   "hitEffect": "none"
+   "splashDamageRadius": 400
+   "knockback": 120
+   "width": 120
+   "height": 24
+   "lifetime": 80
+   "speed": 6
+   "hittable": false
+   "pierce": true
+   "pierceBuilding": true
+   "absorbable": false
+   }
+    },
+	"requirements": [
+	"titanium/300" "silicon/150" "surge-alloy/50" "铝/300" "硬铝/500"
+	],
+	"category": "turret",
+	"research": "1-机枪炮"
+	}

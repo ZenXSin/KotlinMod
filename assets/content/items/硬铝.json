@@ -1,0 +1,12 @@
+{
+"name":"硬铝"
+"description":"使用多种材料合成的金属，非常坚硬。"
+"hardness":"5"
+"cost":"3.3"
+"color":"c6c5c5"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"铝"
+}

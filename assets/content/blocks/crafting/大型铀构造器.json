@@ -1,0 +1,39 @@
+{
+    "type": "GenericCrafter",
+    "name": "大型铀构造器",
+   "description":"比铀构造器有着更高的效率。",
+    "category": "crafting",
+    "health":600,
+    "itemCapacity":50,
+    "requirements": [
+        "锰钢/300",
+        "titanium/250",
+        "surge-alloy/30",
+        "铝/125",
+    ],
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+    			"type": "DrawFlame",
+    			"flameColor": "ffffff",
+			},
+        ],
+    },
+    "outputItem": "U/4",
+    "craftTime": 50,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquid": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "thorium/9",
+                "lead/7",
+            ],
+        },
+        "power": 1.50,
+    },
+    "research":"铀构造器",
+}

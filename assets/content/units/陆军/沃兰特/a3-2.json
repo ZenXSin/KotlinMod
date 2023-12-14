@@ -1,0 +1,81 @@
+{
+"type":"mech"
+"name":"a3-2"
+"speed":0.68
+"rotateSpeed":2.4
+"hitSize": 18
+"health": 5000
+"reload": 7200
+"armor": 18
+"range": 2
+"mineSpeed":1.32
+"legMoveSpace": 6
+"mechStride": 4
+"legExtebsion": 5
+"mechStepShake":0.5
+"duration": 5
+"legCount":2    
+"abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 120,
+              "amount": 120,
+              "reload": 240
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 120
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+  "type": "UnitSpawnAbility"
+  "unit": "b3-1"
+  "spawnX": 0
+  "spawnY": -3
+  "spawnTime": 1800
+  }
+]
+"weapons": [
+     {
+    	"shootSound": "laser",
+        "layerOffset": -0.001,
+    	"chargeSound": "lasercharge",
+    	"reload": 60,
+    	"soundPitchMin": 1,
+    	"mirror": true,
+    	"recoil": 2,
+    	"shake": 1.42,
+    	"shootY": 2,
+    	"x": 10,
+    	"y": 0,
+    	"cooldownTime": 100,
+    	"shootStatusDuration": 60,
+    	"lifetime": 10,
+    	"name": "a3-2-1",
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 50,
+        	"width": 20,
+        	"healPercent": 5
+        	"status": "shocked"
+    "colors": ["B166FF70", "B166FFAA", "AD89FFFF", "FFFFFF"],
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+        	"healColor": "bb66dd"
+            }
+    	}
+     ]
+    "research": "a3-1"
+}

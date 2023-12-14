@@ -1,0 +1,106 @@
+{
+    "type": "LiquidTurret",
+    "name": "溅射",
+    "requirements": [
+        "metaglass/55" "lead/95" "锰钢/20"
+    ],
+    "ammoTypes": {
+"water": {
+    "type": "LiquidBulletType",
+    "damage": 4,
+    "drag": 0,
+    "liquid": "water",
+    "status": "wet",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 300.00,
+    "knockback": 0.55,
+    "displayAmmoMultiplier": false
+}
+
+"slag": {
+    "type": "LiquidBulletType",
+    "damage": 16,
+    "drag": 0,
+    "liquid": "slag",
+    "status": "burning",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 300.00,
+    "knockback": 0.75,
+    "displayAmmoMultiplier": false
+}
+
+"cryofluid": {
+    "type": "LiquidBulletType",
+    "damage": 6,
+    "drag": 0,
+    "liquid": "cryofluid",
+    "status": "freezing",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 300.00,
+    "knockback": 0.95,
+    "displayAmmoMultiplier": false
+}
+
+"oil": {
+    "type": "LiquidBulletType",
+    "damage": 3,
+    "drag": 0,
+    "liquid": "oil",
+    "status": "tarred",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 300.00,
+    "knockback": 0.85,
+    "displayAmmoMultiplier": false
+}
+
+"酸蚀液": {
+    "type": "LiquidBulletType",
+    "damage": 32,
+    "drag": 0,
+    "liquid": "酸蚀液",
+    "status": "酸蚀",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 600.00,
+    "knockback": 0.95,
+    "displayAmmoMultiplier": false
+}
+"重油": {
+    "type": "LiquidBulletType",
+    "damage": 16,
+    "drag": 0,
+    "liquid": "重油",
+    "status": "tarred",
+    "ammoMultiplier": 1,
+    "lifetime": 140.00,
+    "statusDuration": 300.00,
+    "knockback": 0.75,
+    "displayAmmoMultiplier": false
+    "fragBullets": 2
+    "fragBullet": {
+				"type": "FireBulletType",
+				"speed": 4,
+				"lifetime": 8,
+				"damage": 10,
+				"status": "burning",
+				"statusDuration": 360,
+				"makeFire": true
+			}
+    }
+
+    },
+    "size": 3,
+    "recoliAmount": 0.00,
+    "category": "turret",
+    "reload": 2.00,
+    "inaccuracy": 5.00,
+    "shootCone": 50.00,
+    "liquidCapacity": 100.00,
+    "range": 400.00,
+    "health": 1000
+    "research": "1-迸裂"
+}

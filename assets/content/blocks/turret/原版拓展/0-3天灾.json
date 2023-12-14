@@ -1,0 +1,111 @@
+{
+    "type": "ItemTurret",
+    "name": "天灾",
+    "description": "狂云的升级版本，炮弹伤害增加。"
+    "size": 6,
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "alternate": true
+ "shoot": {
+ "type": "ShootAlternate"
+    "spread": 6.00,
+    "barrels": 3,
+    }
+    "requirements": [
+        "lead/2000" "titanium/2000" "silicon/550" "plastanium/1200" "surge-alloy/700" "phase-fabric/500" "U/600"
+    ],
+    "ammoTypes": {
+     "plastanium": {
+     "type": "FlakBulletType"
+     "knockBack": 6
+     "width": 8
+     "height": 8
+     "damage": 50
+     "splashDamage": 200
+      "frontColor": "ddffaa"
+      "backColor": "ccdd99"
+     "splashDamageRadius": 64
+     "collidesGround": true
+     "lifetime": 112
+     "speed": 6
+     }
+     "surge-alloy": {
+     "type": "FlakBulletType"
+     "knockBack": 5
+     "width": 8
+     "height": 8
+     "damage": 50
+     "splashDamage": 180
+      "frontColor": "ffff99"
+      "backColor": "aaaa55"
+     "splashDamageRadius": 40
+     "collidesGround": true
+     "lifetime": 112
+     "speed": 6
+     "fragBullets": 5
+     "fragBullet": {
+     "type": "LightningBulletType"
+     "lightningLength": 16
+     "xRand": 0.1
+     "damage": 120
+     "lightningColor": "ffffaa"
+     }
+     }
+     "blast-compound": {
+     "type": "FlakBulletType"
+     "knockBack": 3
+     "width": 8
+     "height": 8
+     "damage": 40
+     "reloadMultiplier": 1.7
+     "splashDamage": 125
+      "frontColor": "ffdddd"
+      "backColor": "aa8888"
+     "splashDamageRadius": 24
+     "collidesGround": true
+     "lifetime": 112
+     "status": "blasted"
+     "statusDuration": 120
+     "speed": 6
+     }
+     "u-钦瓦捏": {
+     "type": "FlakBulletType"
+     "knockBack": 8
+     "width": 8
+     "height": 8
+     "damage": 120
+     "reloadMultiplier": 2
+     "splashDamage": 350
+      "frontColor": "586f3f"
+      "backColor": "475e2e"
+     "splashDamageRadius": 40
+     "collidesGround": true
+     "lifetime": 96
+     "speed": 6
+     "fragBullets": 2
+     "explodeDelay": 15
+     "status": "钦瓦捏扰动"
+     "statusDuration": 360
+     "fragBullet": {
+     "type": "LightningBulletType"
+     "status": "钦瓦捏扰动"
+     "statusDuration": 360
+     "lightningLength": 40
+     "xRand": 0.1
+     "damage": 90
+     "lightningColor": "475e2e"
+     }
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "shoot"
+    "reload": 5,
+    "restitution": 0.1,
+    "range": 640,
+    "shootCone":2.00,
+    "health": 13500,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 5.00,
+    "research":"0-2狂云"
+}

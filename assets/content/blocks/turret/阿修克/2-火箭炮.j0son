@@ -1,0 +1,342 @@
+{
+	"type": "ItemTurret",
+	"name": "火箭炮",
+	"description": "发射火箭推进榴弹。",
+	"health": 6000,
+	"size": 4
+	"reload": 30,
+	"range": 560,
+    "maxAmmo": 40,
+	"recoil": 0,
+	"shootY": 0
+    "hasShadow": false,
+    "shootSound": "missileSmall"
+"minWarmup": 0.8,
+"ammoPerShot": 1
+"shootWarmupSpeed": 0.055,
+"ammoTypes": {
+        "r1-常规火箭弹":{
+        "type": "MissileBulletType"
+        "sprite": "pnk-mod-火箭弹"
+        "homingPower": 0
+        "width": 16
+        "height": 24
+        "splashDamage": 130
+        "splashDamageRadius": 32
+        "speed": 8
+        "lifetime": 70
+        "ammoMultiplier": 1
+        "reloadMultiplier": 1
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+        "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        
+        }
+        "r2-高爆火箭弹":{
+        "type": "MissileBulletType"
+        "homingPower": 0
+        "width": 16
+        "height": 24
+        "splashDamage": 500
+        "splashDamageRadius": 80
+        "speed": 8
+        "lifetime": 75
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.75
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        
+        }
+        "r3-分裂火箭弹":{
+        "type": "MissileBulletType"
+        "homingPower": 0
+        "width": 16
+        "height": 24
+        "splashDamage": 150
+        "splashDamageRadius": 40
+        "speed": 8
+        "lifetime": 70
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.5
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        "fragBullets": 25
+        "fragBullet": {
+        "type": "BasicBulletType"
+        "speed": 4
+        "lifetime": 20
+        "pierce": true
+        "pierceBuilding": true
+        "damage": 20
+        }
+        }
+        "r4-核子火箭弹":{
+        "type": "MissileBulletType"
+        "homingPower": 0
+        "width": 16
+        "height": 24
+        "splashDamage": 1500
+        "splashDamageRadius": 160
+        "speed": 4
+        "lifetime": 140
+        "sprite": "pnk-mod-火箭弹"
+        "status": "严重放射侵蚀"
+        "statusDuration": 600
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.05
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        "hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "line": true
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "33ce33"
+    "colorTo": "33ce33"
+    "length": 96
+    "lifetime": 120
+    "particles": 30
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "66df66"
+    "colorTo": "66df66"
+    "length": 120
+    "lifetime": 90
+    "particles": 20
+}
+{
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 160
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "33ce33"
+    "colorTo": "33ce33"
+    "lifetime": 90
+    "particles": 10
+}
+]
+}
+        "fragBullets": 1
+        "fragBullet": {
+        "speed": 0
+        "lifetime": 1
+        "width": 0
+        "height": 0
+        "sprite": "pnk-mod-air1"
+        "intervalBullets": 1
+        "bulletInterval": 1
+        "hittable": false
+        "intervalBullet": {
+        "type": "BasicBulletType"
+        "sprite": "pnk-mod-air1"
+        "width": 0
+        "height": 0
+        "speed": 0
+        "lifetime": 300
+        "bulletInterval": 5
+        "intervalBullets": 1
+        "hittable": false
+        "intervalBullet": {
+        "type": "BasicBulletType"
+        "sprite": "pnk-mod-air1"
+        "width": 0
+        "height": 0
+        "speed": 0
+        "lifetime": 0
+        "splashDamage": 15
+        "splashDamageRadius": 160
+        "status": "放射侵蚀"
+        "hittable": false
+        }
+        }
+        "fragBullets": 1
+        "fragBullet": {
+        "type": "BasicBulletType"
+        "sprite": "pnk-mod-air1"
+        "width": 0
+        "height": 0
+        "speed": 0
+        "lifetime": 300
+        "bulletInterval": 5
+        "intervalBullets": 1
+        "intervalBullet": {
+        "type": "BasicBulletType"
+        "sprite": "pnk-mod-air1"
+        "hittable": false
+        "width": 0
+        "height": 0
+        "speed": 0
+        "lifetime": 0
+        "lifetime": 300
+        "splashDamage": 45
+        "splashDamageRadius": 80
+        "status": "严重放射侵蚀"
+        }
+        }
+        }
+        }
+        "m1-常规追踪弹":{
+        "type": "MissileBulletType"
+        "width": 16
+        "height": 24
+        "splashDamage": 130
+        "splashDamageRadius": 32
+        "speed": 8
+        "lifetime": 70
+        "homingPower": 0.015
+        "homingRange":  320
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 1
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        
+        }
+        "m2-放电追踪弹":{
+        "type": "MissileBulletType"
+        "width": 16
+        "height": 24
+        "splashDamage": 200
+        "splashDamageRadius": 40
+        "speed": 8
+        "lifetime": 70
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.75
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        "fragBullets": 3
+        "fragBullet": {
+        "type": "LightningBulletType"
+        "lightningLength": 4
+        "xRand": 0.1
+        "damage": 15
+        "lightningColor": "ffffaa"
+        }
+        }
+        "m3-贫铀追踪弹":{
+        "type": "MissileBulletType"
+        "width": 16
+        "height": 24
+        "splashDamage": 150
+        "splashDamageRadius": 40
+        "status": "放射侵蚀"
+        "statusDuration": 300
+        "speed": 8
+        "lifetime": 70
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.75
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        
+        }
+        "m4-弱化追踪弹":{
+        "type": "MissileBulletType"
+        "width": 16
+        "height": 24
+        "status": "钦瓦捏扰动"
+        "statusDuration": 300
+        "splashDamage": 175
+        "splashDamageRadius": 80
+        "speed": 8
+        "lifetime": 70
+        "sprite": "pnk-mod-火箭弹"
+        "ammoMultiplier": 1
+        "reloadMultiplier": 0.5
+        "trailChance": 15
+        "trailEffect": {
+        "type": "ParticleEffect"
+        "particles": 1
+        "length": 0
+         "sizeFrom": 2
+        "sizeTo": 2
+        "colorFrom": "77777755"
+        "colorTo": "000000"
+        "lifetime": 45
+        }
+        }
+    },
+	"requirements": [
+	"copper/600" "lead/600" "graphite/300" "plastanium/150" "硬铝/400"
+	],
+	"category": "turret",
+//	"research": "2-终代远射炮"
+	}

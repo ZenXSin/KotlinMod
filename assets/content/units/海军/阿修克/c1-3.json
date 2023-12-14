@@ -1,0 +1,100 @@
+{
+    "type": "naval",
+    "name": "c1-3",
+    "health": 13500,
+    "armor": 35,
+    "hitSize": 28,
+    "speed": 0.95,
+    "accel": 0.3,
+    "rotateSpeed": 1.85,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+        {
+            "name": "c1-3-1",
+            "reload": 90,
+            "rotateSpeed": 3
+            "shootY": 16
+            "ejectEffect": "none",
+            "mirror": false
+            "shoot": {
+            "shots": 6,
+            "inaccuracy": 15
+            }
+            "velocityRnd": -0.35
+            "recoil": 2.45,
+            "inaccuracy": 15
+            "rotate": true,
+            "shootSound": "artillery",
+            "shootCone": 30
+            "inaccurate": 2
+            "x": 0,
+            "y": -4,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 12,
+                "height": 12,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage":120
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "damage": 50
+                "knockback": 2
+                "lifetime": 80
+                "speed": 6
+            }
+        },
+               {
+    "name": "c1-3-2"
+    "x": 6
+    "y": 8
+    "shootY": 4
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "shotDelay": 3
+    "shots": 5
+    }
+    "recoil": 2
+    "reload": 55
+    "shootSound": "missile"
+    "ammoType": "silicon"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 10
+      "width": 4
+      "height": 8
+      "splashDamage": 45
+      "splashDamageRadius": 32
+      "homingPower": 0.1
+      "color": "bafdba"
+      "backColor": "bafdba"
+      "trailColor": "bafdba"
+      "trailLength": 6
+      "trailWidth": 2
+      "homingRange": 120
+      "weaveScale": 4
+      "hitSound": "explosion"
+      "weaveMag": 0.7
+      "lifetime": 80
+      "speed": 4
+      }
+      }
+       ],
+    "research": "c1-2"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "Separator",
+    "name": "铀矿分离机",
+    "description":"将铀熔化，分解为同位素的铀235，铀238，铀234。"
+    "category": "crafting",
+    "requirements": [
+       "titanium/100","lead/70","thorium/50","surge-alloy/60"
+    ],
+    "results": [
+        "U-235/1" "U-238/7" "U-234/2"
+    ],
+    "hasPower": true,
+    "craftTime": 35.00,
+    "size": 2,
+    "consumes": {
+        "power": 1.10,
+        "item": "U"
+        "liquid":"slag/0.35"
+    }
+    "research":"铀构造器"
+}

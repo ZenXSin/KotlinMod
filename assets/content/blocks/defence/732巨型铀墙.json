@@ -1,0 +1,14 @@
+{
+"type":"wall",
+"name":"巨型铀墙",
+"category":"defense",
+"size":3,
+"description":"使用铀制作的巨型墙壁，可能反弹炮弹。",
+"health": 9700,
+"requirements":[
+"U/75"
+]
+"deflect":true
+"chanceDeflect": 36
+"research":"731大型铀墙"
+}

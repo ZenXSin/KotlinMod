@@ -1,0 +1,11 @@
+{
+"name": "孢子破坏"
+"description": "“孢子损坏了你的一些部件”"
+"speedMultiplier": 0.6
+"damageMultiplier": 0.75
+"affinities": [
+"sapped"
+"spore-slowed"
+]
+"transitionDamage": 90
+}

@@ -1,0 +1,11 @@
+{"type": "Router"
+"name": "67型路由器"
+"capacity": 12
+"health": 400
+"requirements": [
+  "metaglass/4"
+  "plastanium/3"
+]
+"category": "distribution"
+"research": "67式传送带"
+}

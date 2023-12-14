@@ -1,0 +1,24 @@
+{
+	"type": "Conveyor",
+	"name": "67型传送带",
+	"health": 650,
+	"requirements": [
+		{"item": "plastanium", "amount": 1}
+		{"item": "titanium", "amount": 2},
+	],
+	"category": "distribution",
+	"speed": 0.5,
+	"displayedSpeed": 0.5
+ 
+	"research": {
+        "parent": "khcore",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+"junctionReplacement": "pnk-mod-67式连接器"
+"bridgeReplacement": "pnk-mod-67式传送带桥"
+}

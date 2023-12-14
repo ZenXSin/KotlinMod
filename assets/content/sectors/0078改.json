@@ -1,0 +1,12 @@
+{
+"type":"SectorPreset"
+"localizedName":"更难的0078"
+"sector": 133
+"difficulty": 5
+"captureWave": 1000
+"planet": "kurh"
+"research":{
+"parent": "峡谷07"
+}
+"description": "非战役主线的低难度娱乐地图，玩得开心（）。"
+}

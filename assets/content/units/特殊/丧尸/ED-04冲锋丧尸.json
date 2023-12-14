@@ -1,0 +1,83 @@
+{
+"type":"mech"
+"name":"冲锋丧尸"
+"description": "善于近身搏斗的丧尸，适合近距离砍杀。"
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"speed": 3
+"deathEffect": "none"
+"range": 40
+"rotateSpeed": 9
+"health": 6500
+"deathSound": "explosion"
+"hitSize": 12
+"mechStride": 0
+"mechStepShake":0.0
+"armor": 10
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "冲锋丧尸-1"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 14
+    "shootX": 2
+    "mirror": false
+    "reload": 90
+    "targetAir": false
+    "shootSound": "none"
+    "maxRange": 80
+    "shootWarmupSpeed": 0.03
+    "minWarmup": 0.9
+    "recoilTime": 60
+    "parts": [
+    {
+    "suffix": "-1"
+    "x": -3
+    "y": 4
+    "moveX": 1
+    "MoveY": -2
+    "moveRot": -30
+    "mirror": false
+    "moves": [
+    {
+    "rot": 60
+    "x": -2
+    "progress": "recoil"
+    }
+    ]
+    }
+    ]
+    "bullet": {
+      "type": "BasicBulletType"
+      "shootEffect": "none"
+      "despawnEffect": "none"
+      "smokeEffect": "none"
+      "maxRange": 40
+      "damage": 350
+      "pierce": true
+      "pierceBuilding": true
+      "absorbable": false
+      "hittable": false
+      "reflectable": false
+      "sprite": "pnk-mod-bladewave-bullet"
+      "frontColor": "ffffff"
+      "backColor": "ffffff"
+      "shootY": 4
+      "width": 16
+      "height": 16
+      "lifetime": 15
+      "speed": 8
+      "hitEffect": "none"
+      "despawnEffect": "none"
+      "shootEffect": "none"
+             }
+      }
+     ]
+    "research": "ED-02疾跑丧尸"
+}

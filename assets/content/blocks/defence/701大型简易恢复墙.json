@@ -1,0 +1,30 @@
+{
+"type": "MendProjector"
+"name": "大型简易恢复墙"
+"description": "不需要电力来工作，但是效率较低,可以吸收电弧和激光。"
+"size": 2
+"requirements": [
+"silicon/80" "lead/120" "graphite/40"
+]
+"health": 1800
+"consumes": {
+        "items":{
+			"items":[
+			  "silicon/3"
+			],
+			"booster":true,
+			"optional":true
+		}
+	},
+"insulated":true,//是否吸收电弧
+"absorbLasers":true,//是否吸收激光 
+"hasPower": false
+"reload": 65
+"healPercent": 8
+"range": 24
+"phaseBoost": 8
+"phaseRangeBoost": 16
+"phaseColor": "aa22aa"
+"category": "defense"
+"research": "700简易恢复墙"
+}

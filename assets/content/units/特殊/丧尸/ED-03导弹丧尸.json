@@ -1,0 +1,93 @@
+{
+"type":"mech"
+"name":"导弹丧尸"
+"description": "装备了KZ-3型火箭发射器以及KZ-R0型导弹发射器的丧尸，可以对中近距离的单位进行轰炸。"
+"speed": 0.6
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 4
+"health": 1200
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 8
+"mechStride": 4
+"mechStepShake":0.0
+"research": "ED-02轻装丧尸"
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "导弹丧尸-l"
+    "layerOffset": -0.001
+    "top": false
+    "x": -4
+    "y": -2
+    "shootY": 4
+    "shoot": {
+    "shots": 10
+    "shotDelay": 2
+    }
+    "mirror": false
+    "rotate": true
+    "recoil": 2
+    "reload": 90
+    "targetAir":false
+    "shootSound": "missileLarge"
+    "shotCone": 15
+    "inaccuracy": 15
+    "velocityRnd": -0.35
+    "rotationLimit": 20
+    "baseRotation": 10
+      "bullet": {
+      "type": "MissileBulletType"
+      "damage": 25
+      "splashDamage": 125
+      "splashDamageRadius": 24
+      "homingPower": 0
+      "width": 4
+      "height": 4
+      "speed": 6
+      "drag": 0.025
+      "lifetime": 90
+      "collidesAir": false
+      "maxRange": 280
+      }
+      }
+           {
+    "name": "导弹丧尸-r"
+    "layerOffset": -0.001
+    "top": false
+    "x": 4
+    "y": 0
+    "shootY": 5
+    "mirror": false
+    "rotate": true
+    "recoil": 0.5
+    "reload": 135
+    "rotationLimit": 20
+    "baseRotation": -10
+    "inaccuracy": 2
+    "targetAir": false  
+    "shootSound": "missile1"
+    "bullet": {
+      "type": "MissileBulletType"
+      "frontColor": "aaddff"
+      "backColor": "aaddff"
+      "trailColor": "55555555"
+      "damage": 100
+      "splashDamage": 200
+      "splashDamageRadius": 24
+      "homingPower": 0.035
+      "width": 4
+      "height": 4
+      "speed": 4
+      "lifetime": 120
+      "maxRange": 480
+             }
+      } 
+     ]
+}

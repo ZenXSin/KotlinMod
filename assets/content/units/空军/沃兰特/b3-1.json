@@ -1,0 +1,98 @@
+{
+"type": "flying"
+"name": "b3-1"
+"flying": true
+"hitSize": 8
+"health": 1000
+"armor": 4
+"hovering": true
+"rotateSpeed": 6
+"speed": 3
+"range": 100
+"aimDst": 180,
+"buildSpeed": 1.5
+    "research": "0721构造器"
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 160,
+              "amount": 30,
+              "reload": 120
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 160
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+]
+"rotateSpeed": 5
+"faceTarget": true
+"rotateShooting": true
+"faceTarget": true,
+"circleTarget": true,
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 4
+"engineSize": 2.4
+"lightColor": "e65555"
+"weapons": [
+            {
+            "name": "b3-1-1"
+            "x": 0
+            "y": 3
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 60
+            "recoil": 2
+            "shootSound": "bolt"
+            "shoot": {
+            "shots": 2
+            "shotDelay": 5
+            }
+            "inaccuracy": 15
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "healColor": "bb66dd"
+            "type": "MissileBulletType"
+            "homingPower": 0.3
+            "lifetime": 60
+            "speed": 4
+            "damage": 10
+            "splashDamage": 40
+            "splashDamageRadius": 32
+            "healPercent": 5
+            "homingDelay": 20
+            "hitEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 4
+            "sizeTo": 8
+            "strokeFrom": 4
+            "strokeTo": 0
+            "colorFrom": "dd88ff"
+            "colorTo": "ffffff"
+            "lifetime": 20
+            }
+            "width": 8
+            "height": 8
+            "frontColor": "dd88ff"
+            "backColor": "dd88ff"
+            "trailColor": "dd88ff"
+            "trailLength": 8
+            "trailWidth": 4
+            "weaveScale": 5
+            "weaveMag": 3
+            "sprite": "circle-bullet"
+            "collidesTeam": true
+            }
+            }
+]
+}

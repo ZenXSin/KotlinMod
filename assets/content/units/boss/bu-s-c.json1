@@ -1,0 +1,17 @@
+{
+"type": "flying"
+"name": "Sigma-Cengkami"
+"flying": true
+"hitSize": 256
+"health": 250000
+"armor": 500
+"speed": 1
+"rotateSpeed": 0.6
+"rotateShooting": true
+"accel": 0.02
+"drag": 0.02
+"lowAltitude": true
+"engineOffset": 20
+"engineSize": 10
+"lightColor": "e65555"
+}

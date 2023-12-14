@@ -1,0 +1,95 @@
+{
+"type": "flying"
+"name": "Axs"
+"fogRadius": 30
+"template": "ErekirUnitType",
+"flying": true
+"hitSize": 40
+"health": 7700
+"armor": 13
+"hovering": true
+"speed": 2
+"range": 120
+"aimDst": 180,
+"rotateSpeed": 6
+"faceTarget": true
+"accel": 0.07
+"drag": 0.01
+"engineOffset": 16
+"engineSize": 8
+"weapons": [
+            {
+            "name": "erk-0-axs-1"
+            "x": 0
+            "y": 0
+            "mirror": false
+            "rotate": false,
+            "reload": 240,
+            "top": false
+            "recoil": 0,
+            "shootSound": "mediumCannon",
+            "inaccuracy": 0,
+            "shootCone": 1,
+            "shootY": 8,
+            "rotateShooting": false,
+            "parts": [
+                {
+                "type": "RegionPart",
+                "suffix": "-M1",
+                "moveY": -4,
+                "x": 0,
+                "y": 0,
+                "progress": "recoil",
+                "under": true,
+                },
+            ],
+            "bullet": {
+            "MaxRange": 160
+            "type": "BasicBulletType"
+            "recoil": 2
+            "speed": 8
+            "lifetime": 20
+            "frontColor": "ffd37f"
+            "backColor": "ffd37f"
+            "trailColor": "ffd37f"
+            "width": 20
+            "heigth": 32
+            "trailWidth": 8
+            "trailLength": 16
+            "damage": 800
+            "fragRandomSpread": 0
+            "fragSpread": 15
+            "fragBullets": 8
+            "fragVelocityMin": 1
+            "hitEffect": {
+            "type": "ParticleEffect"
+            "line": true
+            "lenFrom": 6
+            "lenTo": 0
+            "particles": 10
+            "sizeFrom": 6
+            "sizeTo": 0
+            "colorFrom": "ffd37f"
+            "colorTo": "ffd37f"
+            "length": 32
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "lifetime": 60
+            }
+            "fragBullet": {
+            "type": "BasicBulletType"
+            "speed": 8
+            "width": 8
+            "height": 8
+            "trailWidth": 4
+            "trailLength": 8
+            "frontColor": "ffd37f"
+            "backColor": "ffd37f"
+            "trailColor": "ffd37f"
+            "damage": 120
+            "lifetime": 25
+            }
+            }
+            }
+]
+}

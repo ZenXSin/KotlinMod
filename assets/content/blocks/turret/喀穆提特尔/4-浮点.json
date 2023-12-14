@@ -1,0 +1,155 @@
+{
+"type": "ItemTurret"
+"name": "浮点"
+"xRand": 120
+"shootWarmupSpeed": 0.02
+"minWarmup": 0.9
+"reload": 5
+"recoil": 0
+"range": 480
+"size": 5
+"shootSound": "malignShoot"
+"category": "turret"
+"shotCone": 60
+"rotateSpeed": 1
+"health": 4000
+"research": "4-能量炮"
+"shoot": {
+"type": "ShootBarrel"
+"barrels": [
+0,-72,0
+0,88,0
+0,56,0
+0,0,0
+0,-8,0
+0,-88,0
+0,-32,0
+0,104,0
+0,32,0
+0,120,0
+0,-56,0
+0,72,0
+0,-120,0
+0,-104,0
+0,8,0
+]
+}
+"requirements": [
+"silicon/200" "plastanium/120" "surge-alloy/400" "U/300"
+]
+"drawer":{	   
+"type":"DrawTurret",
+"parts":[
+{
+"type":"ShapePart",
+"color":"dddd99",
+"circle":true,
+"hollow":true,
+"stroke":0,
+"strokeTo": 8,
+"radius": 0,
+"layer":110,
+"y": 12
+}, 	
+{
+"type":"HaloPart",
+"color":"dddd99",
+"sides":3,
+"tri":true,
+"shapes": 4
+"triLength": 0
+"triLengthTo": 20
+"radius": 2
+"haloRadius": 0
+"haloRotateSpeed": -0.5
+"layer": 110
+"y": 12
+},
+{
+"type":"ShapePart",
+"color":"dddd99",
+"circle":true,
+"hollow":true,
+"stroke":0,
+"strokeTo":4,
+"radius":80,
+"layer":110,
+"y":0,
+}, 	
+]
+}
+"consumes": {
+"liquid": {
+"liquid": "cryofluid"
+"amount": 0.01
+}
+"power": 1
+}
+"ammoTypes": {
+"surge-alloy": {
+"type": "FlakBulletType"
+"collidesGround": true
+"ammoMultiplier": 12
+"homingPower": 0.075
+"homingRange": 320
+"speed": 8
+"lifetime": 90
+"trailDelay": 15
+"trailLength": 8
+"trailWidth": 2
+"width": 8
+"height": 16
+"frontColor": "dddd99"
+"backColor": "dddd99"
+"trailColor": "dddd99"
+"damage": 300
+"splashDamage": 150
+"splashDamageRadius": 40
+"status": "磁能渗透"
+"statusDuration": 120
+"shootEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+"type": "WaveEffect"
+"lifetime": 15
+"sizeFrom": 0
+"sizeTo": 16
+"strokeFrom": 4
+"strokeTo": 0
+"colorFrom": "dddd99"
+"colorTo": "dddd99"
+}
+{
+"type": "ParticleEffect"
+"particles": 1
+"interp": "swingIn"
+"lifetime": 15
+"sizeFrom": 4
+"sizeTo": 0
+"colorFrom": "dddd99"
+"colorTo": "dddd99"
+"length": 0
+}
+]
+}
+"fragBullets": 3
+"fragBullet": {
+"type": "lightningBulletType"
+"lightningColor": "dddd99"
+"lightningLength": 8
+"lightningLengthRand": 2
+"lightingDamage": 50
+}
+"intervalBullets": 2
+"bulletInterval": 15
+"intervalBullet": {
+"type": "lightningBulletType"
+"lightningColor": "dddd99"
+"lightningLength": 8
+"lightningLengthRand": 2
+"lightingDamage": 50
+}
+}
+}
+}

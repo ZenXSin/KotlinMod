@@ -1,0 +1,12 @@
+{
+"name":"石油气"
+"description":"气态石油。"
+"color":"4a4b53"
+"flammability":1,
+"temperature":0,
+"heatCapacity":0.0,
+"viscosity":0.5,
+"explosiveness": 1
+"research":"镍钢"
+"gas": true
+}

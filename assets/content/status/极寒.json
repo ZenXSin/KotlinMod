@@ -1,0 +1,25 @@
+{
+"name": "极寒"
+"description": "极端的寒冷让你的表层形成了厚厚的冰层，而且你行动缓慢甚至无法给攻击"
+"healthMultiplier": 5
+"speedMultiplier": 0.2
+"disarm": true
+"effectChance": 0.5
+"affinities": [
+"freezing"
+]
+"opposites": [
+"burning"
+"melting"
+]
+"effect": {
+"type": "particleEffect"
+"sizeFrom": 3.0
+"sizeTo": 0.0
+"particles": 5
+"length": 7
+"lifetime": 60
+"colorFrom": "99ddff"
+"colorTo": "5599aa"
+}
+}

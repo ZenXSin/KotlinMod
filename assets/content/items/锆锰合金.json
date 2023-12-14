@@ -1,0 +1,11 @@
+{
+"name":"锆锰合金"
+"description":"具有优秀的弹性以及坚硬程度，一般被用作墙壁的建筑材料。"
+"cost": 4
+"color":"cacee4"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"锆"
+}

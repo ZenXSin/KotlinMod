@@ -1,0 +1,21 @@
+{
+    "type": "Separator",
+    "name": "溶石筛矿机",
+    "category": "crafting",
+    "description":"将拥有复杂成分的结晶溶石在高温下分解成各种资源。"
+    "requirements": [
+       "titanium/100","lead/70","thorium/50","surge-alloy/60"
+    ],
+    "results": [
+        "copper/6" "lead/6" "coal/4" "sand/2" "titanium/5" "thorium/3" "pyratite/2" "silicon/3" "U/1" "u-钦瓦捏/1"
+    ],
+    "hasPower": true,
+    "craftTime": 15.00,
+    "size": 3
+    "consumes": {
+        "power": 4.50,
+        "item": "结晶溶石"
+        "liquid":"slag/1.5"
+    }
+    "research":"铝提炼机"
+}

@@ -1,0 +1,12 @@
+{
+"type": "LiquidJunction",
+"name": "67型交流器",
+"health": 550,
+"liquidCapacity": 30
+"requirements": [
+  "metaglass/3",
+  "plastanium/2"
+]
+"category": "liquid",
+"research": "67型导管"
+}

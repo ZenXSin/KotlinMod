@@ -18,17 +18,17 @@ class Ui: UI() {
 class sf : Mod() {
     override fun loadContent() {
         super.loadContent()
-        test.load()
-        Log.info("Saturation firepower By-RA2.EXE")
+        //test.load()
+        Log.info("")
     }
 
-    init {
+    init {/*
         Events.on(ClientLoadEvent::class.java) {
             Time.runTask(10f) {
                 home()
             }
         }
-    }
+    }*/
 
     fun home() {
         BaseDialog("[yellow]欢迎使用本依赖脚本").apply {

@@ -1,0 +1,15 @@
+{
+"type":"SectorPreset"
+"localizedName": "地下据点"
+"sector": 47
+"difficulty": 3
+"planet": "kurh"
+"captureWave": 10000
+"research":{
+"parent": "荒地"
+"objectives": [
+"镍钢熔炉"
+]
+}
+"description": "地下洞穴，有敌人部署，占领这里以进一步研究[orange]Kurh[white]的科技。"
+}

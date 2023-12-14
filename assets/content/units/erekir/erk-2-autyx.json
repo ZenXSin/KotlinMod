@@ -1,0 +1,67 @@
+{
+"type":"mech"
+"name":"AUtyx Pax"
+"speed": 0.5
+"fogRadius": 15
+"template": "ErekirUnitType",
+"canBoost": false
+"rotateSpeed": 1.7
+"health": 5000
+"range": 100
+"hitSize": 20
+"mechStride": 6
+"mechStepShake": 0
+	"requirements": {
+		"block": "prime-refabricator", 
+		"previous": "erk-2-alora"
+	},
+"armor": 8
+"weapons": [
+     {
+     "name": "erk-2-autyx-1"
+     "layerOffset": -0.001
+     "x": -6
+     "y": 2
+     "reload": 120
+     "shootCone": 20
+     "shootSound": "missile"
+     "shoot": {
+     "type": "shootBarrel"
+     "shots": 4
+     "shotDelay": 4
+     "barrels": [
+     1,6,0
+     -3,6,0
+     ]
+     }
+     "bullet": {   
+    "type": "missileBulletType"
+    "speed": 8
+    "lifetime": 27
+    "damage": 30
+    "splashDamage": 20
+    "splashDamageRadius": 40
+    "width": 12
+    "height": 8
+    "buildingDamageMultiplier": 0.5
+    "frontColor": "6dffff"
+    "backColor": "6dffff"
+    "trailColor": "6dffff"
+    "hitEffect": {
+    "type": "particleEffect"
+    "particles": 5
+    "line": true
+    "colorFrom": "6dffff"
+    "colorTo": "6dffff"
+    "sizeFrom": 2
+    "sizeTo": 0
+    "lenFrom": 2
+    "lenTo": 0
+    "lifetime": 40
+    "interp": "circleOut"
+    "sizeInterp": "pow5Out"
+    }
+     }
+      } 
+     ]
+}

@@ -1,0 +1,23 @@
+{
+"name": "解冻"
+"description": "虽然摆脱了极寒的骚扰但是你的结构因为失去了极寒的保护而十分脆弱"
+"healthMultiplier": 0.4
+"effectChance": 0.5
+"affinities": [
+"freezing"
+]
+"opposites": [
+"burning"
+"melting"
+]
+"effect": {
+"type": "particleEffect"
+"sizeFrom": 3.0
+"sizeTo": 0.0
+"particles": 5
+"length": 7
+"lifetime": 60
+"colorFrom": "5567aa"
+"colorTo": "223477"
+}
+}

@@ -1,0 +1,47 @@
+{
+	"type": "Reconstructor",
+	"name": "1742型重构工厂",
+    "health":2400,
+	"size":5
+	"consumes":{
+	"power":6,
+	"liquid": {
+	"liquid": "water"
+	"amount": 0.2
+	}
+	"items": {
+			"items": [
+			{ "item": "silicon", "amount": 550 }
+			{ "item": "镍钢", "amount": 600 }
+			{ "item": "plastanium", "amount": 850 }
+		]
+		},
+        }
+	"upgrades":[
+		["a0-1","a0-2"],
+		["a1-1","a1-2"],
+		["a2-1","a2-2"],
+		["a3-1","a3-2"],
+		["a4-1","a4-2"],
+		["b0-1","b0-2"],
+		["b1-1","b1-2"],
+		["b2-1","b2-2"],
+		["b3-1","b3-2"],
+		["b4-1","b4-2"],
+		["c0-1","c0-2"],
+		["c1-1","c1-2"],
+		["c2-1","c2-2"],
+		["c3-1","c3-2"],
+		["c4-1","c4-2"]
+    ],
+	"constructTime":2800,
+	"requirements": ["copper/400","titanium/225","lead/230","锰/500","plastanium/130"],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research": {
+	"parent": "0721构造器"
+	"objectives": [
+	"地下据点"
+	]
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "type": "Separator",
+    "name": "铀矿分离机-进阶",
+    "description":"将铀熔化，分解为同位素的铀235，铀238，铀234，但效率更高。"
+    "category": "crafting",
+    "requirements": [
+       "copper/300" "titanium/300","lead/160","thorium/200","surge-alloy/75"
+    ],
+    "results": [
+        "U-234/2" "U-235/6" "U-238/2"
+    ],
+    "hasPower": true,
+    "craftTime": 35.00,
+    "size": 2,
+    "consumes": {
+        "power": 1.10,
+        "item": "U"
+        "liquid":"slag/0.35"
+    }
+    "research":"铀矿分离机"
+}

@@ -1,0 +1,242 @@
+{
+"type":"legs"
+"name":"a2-5"
+"legBaseOffset": 0
+"speed": 0.85
+"rotateSpeed":2.4
+"hitSize": 36
+"health": 63500
+"reload": 7200
+"range": 4
+"armor": 25
+"mineSpeed":1.32
+"maxStretch": 1.5
+    "research": "a2-4"
+    	    "legLengthScl": 1.00,
+            "legPairOffset": 6
+            "legMoveSpace": 0.8
+            "legExtension": -15
+  "legTrns": 0.75
+"legLength": 75
+"legCount": 6
+"weapons":[
+               {
+    "name": "a2-5-1"
+"alwaysCreateOutline": true
+    "x": 0
+    "y": 0
+    "shootY": 16
+    "mirror": false
+    "rotate": false
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 10
+    "spread": 5
+    }
+    "shootCone": 60
+    "recoil": 0
+    "reload": 210
+     "recoil": 4
+    "shootSound": "red"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+                "type": "FlakBulletType",
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 2
+            "sizeTo": 30
+            "colorFrom": "ee7777"
+            "colorTo": "aa333300"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 45
+            }
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "frontColor": "ffffff77"
+                "width": 15,
+                "height": 15
+                "status": "热射线辐射"
+                "statusDuration": 300
+                "sprite": "pnk-mod-bullet-1"
+                "homingDelay": 15
+                "drag": -0.025
+                "homingRange": 120
+                "homingPower": 0.05
+                "splashDamage": 500
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 250
+                "maxSpeed": 6
+                "knockback":0.4
+                "lifetime": 80
+                "speed": 3
+            }
+      }
+  {
+  "name": "a2-5-2"
+  "x": 16
+  "y": 0
+  "shoot": {
+  "shots": 8
+  "shotDelay": 3
+  "alternate": false
+  }
+  "reload": 120
+  "shootCone": 24
+  "rotate": false
+  "mirror": true
+  "recoil": 3
+  "shootY": 6
+  "inaccuracy": 4
+  "targetGround": false
+  "shootSound": "missile"
+  "color": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+    "bullet": {
+      "type": "MissileBulletType"                
+      "status": "热射线辐射"
+                "statusDuration": 300
+  "color": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+      "damage": 500
+      "width":14
+      "height": 10
+      "splashDamage": 1000
+      "splashRadius": 80
+      "homingPower": 0.2
+      "sprite": "missile-large"
+      "trailLength": 12
+      "trailWidth": 6
+      "homingRange": 240
+      "collidesGround": false
+      "lifetime": 60
+      "speed": 16
+                "weaveScale": 1.2
+                "weaveMag": 0.4
+                "hitEffect": {
+                "type": "waveEffect"
+                "colorFrom": "ee777700"
+                "colorTo": "ee7777"
+                "sizeFrom": 32
+                "sizeTo": 0
+                "strokeFrom": 0
+                "strokeTo": 4
+                "lifetime": 15
+                }
+      }
+   }
+        {
+    "name": "a2-5-3"
+"alwaysCreateOutline": true
+    "x": 0
+    "y": -6
+    "shootY": 8
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 6
+    "autoTarget": true
+    "shiit": {
+    "type": "ShootBarrel"
+    "shots": 3
+    "barrels": [
+    0,0,0
+    0,0,10
+    0,0,-10
+    ]
+    }
+    "shootSound": "red"
+    "recoil": 3
+    "reload": 75
+    "shake": 2
+    "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 3
+            "sizeTo": 30
+            "colorFrom": "ee7777"
+            "colorTo": "aa333300"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 30
+            }
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "frontColor": "ffffff77"
+                "width": 15,
+                "height": 15,
+                "sprite": "pnk-mod-bullet-1"
+                "homingDelay": 15
+                "drag": -0.025
+                "homingRange": 160
+                "homingPower": 0.05
+                "splashDamage": 250
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 100
+                "maxSpeed": 4
+                "knockback":0.4
+                "lifetime": 80
+                "speed": 2.5
+                "weaveScale": 1.2
+                "weaveMag": 0.4
+            }
+      }
+/*  {
+    "name": "a2-5-4"
+    "x": 8
+    "y": -12
+    "mirror": true
+    "rotate": false
+    "rotateSpeed": 4.2
+    "shootY": 15
+    "recoil": 4
+    "reload": 25
+    "shoot": {
+    "type": "ShootBarrel"
+    "shots": 3
+    "barrels": [
+    0,0,0
+    0,0,20
+    0,0,-20
+    ]
+    }
+    "shotCone": 45
+    "shootSound": "shotgun"
+    "shake": 1.5
+    "bullet": {
+    "shootEffect": {
+    "type": "particleEffect"
+    "sizeFrom": 0
+    "sizeTo": 4
+    "drag": 0.2
+    "length": 30
+    "baseLength": -10
+    "lifetime": 45
+    "colorFrom": "ee7777"
+    "colorTo": "ffffff"
+    "line": true
+    "cone": 20
+    }
+    "type": "ShrapnelBulletType"
+    "length": 200.00
+    "damage": 1500
+    "width": 17.00
+    "toColor": "ee7777"
+      }
+      }
+      */
+  ]
+}

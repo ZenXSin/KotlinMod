@@ -1,0 +1,100 @@
+{
+"type": "flying"
+"lowAltitude": true
+"hitSize": 56
+"flying": true
+"name": "b2-5"
+"health": 40000
+"armor": 6
+"speed": 3.85
+"engineOffset": -4
+"engineSize": 16
+"omniMovement": true
+"faceTarget": true
+"range": 320
+"rotateSpeed": 4.65
+    "research": "b2-4"
+"aimDst": 240
+"weapons": [
+{
+"name": "b2-5-1"
+"reload": 120
+"x": 16
+"y": 20
+"layerOffset": -0.001
+"rotate": true
+"rotationLimit": 30
+"shoot": {
+"shots": 3
+"shotDelay": 10
+}
+"shootSound": "missileLarge"
+"bullet": {
+"maxRange": 480
+"spawnUnit": "b2-missile"
+"speed": 100
+}
+}
+{
+"name": "b2-5-2"
+"targetGround": false
+"reload": 120
+"x": 32
+"y": 12
+"layerOffset": -0.001
+"rotate": true
+"rotationLimit": 30
+"shoot": {
+"shots": 3
+"shotDelay": 10
+}
+"shootSound": "missileLarge"
+"bullet": {
+"maxRange": 480
+"spawnUnit": "b2-missile"
+"speed": 100
+}
+}
+{
+"name": "b2-5-3"
+"alternate": false
+"rotate": true
+"rotateSpeed": 3
+"targetGround": false
+"shootSound": "machineGunShoot1"
+"x": 20
+"y": 0
+"shoot": {
+"type": "ShootBarrel"
+"barrels": [
+4,4,0
+-4,4,0
+]
+}
+"reload": 1
+"bullet": {
+     "type": "FlakBulletType"
+     "width": 5
+     "height": 5
+     "damage": 30
+     "splashDamage": 120
+     "splashDamageRadius": 16
+     "lifetime": 80
+     "speed": 8
+     "fragBullets": 15
+     "fragBullet": {
+     "type": "BasicBulletType"
+     "damage": 15
+     "speed": 8
+     "lifetime": 10
+     "despawnEffect": "none"
+     "collidesGround": false
+     "pierce": true
+     "width": 0
+     "height": 0
+       }
+}
+}
+]
+"research": "b2-4"
+}

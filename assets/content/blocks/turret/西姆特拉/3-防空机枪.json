@@ -1,0 +1,379 @@
+{
+    "type": "ItemTurret",
+    "name": "防空机枪",
+    "description": "对地对空，但是对地效果不佳。"
+    "size": 4,
+    "category": "turret",
+    "shootSound":"shootAlt"
+    "shootEffect": "shootBig"
+    "requirements": [
+        "lead/200"
+        "graphite/220",
+        "metaglass/200",
+        "硒/115",
+        "锰钢/150",
+    ],
+    "ammoTypes": {
+        "lead": {
+        "type": "FlakBulletType"
+        "width": 8
+        "height": 16
+        "damage": 80
+        "splashDamage": 130
+        "collidesGround": true
+        "splashDamageRadius": 16
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 3
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "damage": 220
+            "splashDamage": 100
+            "splashDamageRaidus": 16
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "metaglass": {
+        "type": "FlakBulletType"
+        "width": 8
+        "height": 16
+        "damage": 170
+        "splashDamage": 220
+        "collidesGround": true
+        "splashDamageRadius": 32
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 4
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "damage": 100
+            "splashDamage": 280
+            "splashDamageRaidus": 32
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "metaglass": {
+        "type": "FlakBulletType"
+        "width": 8
+        "height": 16
+        "damage": 170
+        "splashDamage": 220
+        "collidesGround": true
+        "splashDamageRadius": 40
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 12
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "damage": 70
+            "splashDamage": 50
+            "splashDamageRaidus": 40
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "pyratite": {
+        "type": "FlakBulletType"
+        "status": "burning",
+        "statusDuration": 300,
+        "width": 8
+        "height": 16
+        "damage": 60
+        "splashDamage": 120
+        "collidesGround": true
+        "splashDamageRadius": 56
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 3
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "damage": 220
+            "splashDamage": 100
+            "splashDamageRaidus": 56
+            "status": "burning",
+            "statusDuration": 300,
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "blast-compound": {
+        "type": "FlakBulletType"
+        "status": "blasted",
+        "statusDuration": 60,
+        "width": 8
+        "height": 16
+        "damage": 80
+        "splashDamage": 130
+        "collidesGround": true
+        "splashDamageRadius": 80
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 5
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "status": "blasted",
+            "statusDuration": 60,
+            "damage": 110
+            "splashDamage": 70
+            "splashDamageRaidus": 80
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "铝": {
+        "type": "FlakBulletType"
+        "status": "爆裂",
+        "statusDuration": 180,
+        "width": 8
+        "height": 16
+        "damage": 340
+        "splashDamage": 130
+        "collidesGround": true
+        "splashDamageRadius": 16
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 1
+        "hitEffect": {
+            "type": "particleEffect"
+            "length": 8
+            "particles": 6
+            "sizeFrom": 12
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow2In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "despawnEffect": {
+            "type": "particleEffect"
+            "length": 40
+            "particles": 6
+            "sizeFrom": 8
+            "sizeTo": 0
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "colorFrom": "555555ff"
+            "colorTo": "55555500"
+            "lifetime": 45
+        }
+        "fragBullet": {
+            "type": "FlakBulletType"
+            "status": "爆裂",
+            "statusDuration": 180,
+            "damage": 220
+            "splashDamage": 100
+            "splashDamageRaidus": 16
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "width": 0
+            "height": 0
+            }
+        }
+        "锆": {
+        "type": "BasicBulletType"
+        "width": 8
+        "height": 16
+        "damage": 660
+        "pierceArmor": true
+        "frontColor": "777777ff"
+        "backColor": "777777ff"
+        "lifetime": 10
+        "speed": 64
+        "fragBullets": 1
+        "fragBullet": {
+            "type": "BasicBulletType"
+            "frontColor": "00000000"
+            "backColor": "00000000"
+            "damage": 880
+            "speed": 0
+            "lifetime": 0
+            "despawnEffect": "none"
+            "hitEffect": "none"
+            "pierce": true
+            "collidesGround": false,
+            "width": 16
+            "height": 16
+            }
+        }
+    },
+    "recoil": 0.5
+    "shootY": 10
+    "shoot": {
+    "type": "ShootBarrel"
+        "barrels": [
+            10,0,0,
+            4,6,0,
+            -4,6,0,
+            -10,0,0,
+        ]
+    }
+    "reload": 10,
+    "range": 560,
+    "shootCone":15.,
+    "health": 3300,
+    "rotateSpeed": 4,
+    "research":"3-防空炮"
+}

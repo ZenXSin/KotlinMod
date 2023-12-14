@@ -1,0 +1,20 @@
+{
+	"type": "CoreBlock",
+	"name": "Kurh基础核心",
+	"health": 3000,
+	"size": 2,
+	"itemCapacity": 1000,
+	"unitCapModifier": 32,
+    "unitType": "M-2",
+    "researchCostMultiplier": 0,
+	"requirements": [
+        "copper/300",
+        "lead/500",
+	],
+    "category": "effect",
+    "research": {
+        "name": "[orange]Kurh",
+        "root": true,
+        "requiresUnlock": false,
+    }
+}

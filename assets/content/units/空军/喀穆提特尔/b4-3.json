@@ -1,0 +1,85 @@
+{
+"type": "flying"
+"name": "b4-3"
+"flying": true
+"hitSize": 28
+"health": 7800
+"armor": 16
+"hovering": true
+"speed": 3.4
+"range": 400
+"rotateSpeed": 2
+//"aimDst": 180
+"rotateSpeed": 5
+"faceTarget": true
+"rotateShooting": true
+//"circleTarget": true,
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 12
+"engineSize": 6
+"lightColor": "e65555"
+    "research": "b4-2"
+"weapons": [
+            {
+            "name": "b4-3-1"
+            "x": 6
+            "y": 4
+            "mirror": true
+            "rotate": true
+            "under": true
+            "top": false
+            "rotateSpeed": 3
+            "rotationLimit": 0
+//            "baseRotation": 270,
+            "layerOffset": -0.001
+            "shoot": {
+            "shots": 3
+            "shotDelay": 5
+            }
+            "reload": 90
+            "recoil": 2
+            "shootSound": "missileLarge"
+            "inaccuracy": 10
+//            "shotCone": 45
+            "rotateShooting": true
+            "bullet": {
+            "speed": 100
+            "spawnUnit": "b4-3-missile"
+            }
+            }
+            {
+            "name": "b4-3-2"
+            "mirror": false
+            "rotate": false
+            "reload": 150
+            "shootCone": 360
+            "shoot": {
+            "shots": 2
+            "shotDelay": 4
+            }
+            "x": 2
+            "y": 8
+        "shootSound": "laser"
+                "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 600,
+        	"width": 16,
+        	"status": "shocked"
+        	"colors": [
+        	"c8c846dd",
+        	"d9d957ee",
+        	"eaea68ff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+            }
+]
+}

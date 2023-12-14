@@ -1,0 +1,76 @@
+{
+	"name": "炼油厂",
+	"type": "GenericCrafter",
+	"category": "crafting",
+	"description": "输入硒，石油生产重油和石油气。",
+	"consumes": {
+	    "power": 4,
+	    "items": [
+	        "硒/1"
+	    ]
+	    "liquid": {
+	        "liquid": "oil",
+	        "amount": 2,
+	    },
+	},
+	"liquidOutputDirections": [1, 3],
+	"outputLiquids": [
+	    "重油/1.5",
+        "石油气/4",
+    ],
+	"drawer": {
+	    "type": "DrawMulti",
+	    "drawers": [
+		    {
+		        "type": "DrawRegion",
+		        "suffix": "-bottom"
+		    },/*
+		    {
+		        "type": "DrawLiquidTile",
+		        "drawLiquid": "重油"
+		        "suffix": "-liquid1"
+		    },
+		    {
+		        "type": "DrawLiquidTile",
+		        "drawLiquid": "石油气"
+		        "suffix": "-liquid2"
+		    },
+		    {
+		        "type": "DrawLiquidTile",
+		    "drawLiquid": "oil"
+		    "suffix": "-liquid3"
+		    },*/
+		    "DrawRegion",
+		    "DrawLiquidOutputs",
+		],
+    },
+	"requirements": [
+	    "titanium/80",
+	    "thorium/120",
+	    "镍钢/200",
+	    "锆/30",
+	],
+
+	"updateEffect": {
+	"type": "PartiileEffect",
+	"particles": 4,
+	"length": 8,
+	"colorFrom": "997755ff",
+	"colorTo": "55555500",
+	"sizeFrom": 2,
+	"sizeTo": 0,
+	"lifetime": 45,
+	},
+	"research": "镍钢熔炉",
+	"itemCapacity": 30,
+	"health": 900,
+	"rotate":true,
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 30,
+	"liquidCapacity": 30,
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5,
+}

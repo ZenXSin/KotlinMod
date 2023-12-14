@@ -1,0 +1,62 @@
+{
+	"type": "PowerTurret",
+	"name": "寒冰墙",
+	"description": "为自身队伍提供保护并对周围敌人造成极寒效果",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 5000,
+	"size": 1,
+	"shootY": 0
+	"shootSound":"none",
+	"shake":0.0,
+	"restitution":0.1,
+	"shootType": {	
+	"shootEffect": "none"
+	"type": "FlakBulletType"
+	"damage": 15
+	"splashDamage": 15
+	"splashDamageRadius": 128
+	"collidesGround": true
+	"lifetime": 0
+	"frontColor": "00000000"
+	"backColor": "00000000"
+	"status": "极寒"
+	"statusDuration": 300
+	"hitEffect": {
+	"type": "waveEffect"
+	"strokeFrom": 4
+	"strokeTo": 4
+	"sizeFrom": 0
+	"sizeTo": 8
+	"colorFrom": "ffffff"
+	"colorTo": "ffffff00"
+	"lifetime": 90
+	}
+	"fragBullets": 1
+	"fragBullet": {
+	"type": "FlakBulletType"
+	"damage": 15
+	"splashDamage": 18
+	"splashDamageRadius": 128
+	"collidesGround": true
+	"lifetime": 0
+	"status": "解冻"
+	"statusDuration": 600
+	"frontColor": 000000
+	"backColor": 000000
+	}
+	}
+"consumes": {
+"power": 0.5
+}
+"outputsPower": true,
+	"consumesPower": true,
+	"hasPower": true,
+	"reload": 45,
+	"range": 96,
+"category": "defense"
+"research": "701大型简易恢复墙"
+	"requirements": [
+	"硬铝/2","U/20","8-寒冰合金/15"
+	]
+}

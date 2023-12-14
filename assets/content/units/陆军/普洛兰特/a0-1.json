@@ -1,0 +1,99 @@
+{
+    "type":"mech"
+    "name":"a0-1"
+    "speed": 0.72
+    "canBoost": true
+    "rotateSpeed":2.4
+    "health":2500
+    "kinematicScl": 14
+    "range": 40
+    "hitSize": 16
+    "mechStride": 6
+    "mechStepShake":0.5
+    "armor": 7
+    "boostMultiplier": 3,
+    "weapons": [
+        {
+            "name": "a1"
+            "top": false
+            "x": 9
+            "y": 0
+            "shootY": 8
+            "mirror": true
+            "rotate": false
+            "shoot": {
+                 "spread": 15
+                 "shots": 5
+            }
+            "recoil": 1.8
+            "reload": 50
+            "targetAir":false
+            "shootSound": "missile"
+            "shake": 0.5
+            "inaccuracy": 10
+            "bullet": {
+                "type": "MissileBulletType"
+                "sprite": "circle-bullet"
+                "homingPower": 0.35
+                "homingRange": 80
+                "homingDelay": 15
+                "hitEffect": {
+                    "type": "ParticleEffect"
+                    "lifetime": 30
+                    "particles": 5
+                    "length": 16
+                    "sizeFrom": 4
+                    "sizeTo": 0
+                    "interp": "circleOut",
+                    "sizeInterp": "pow5In",
+                    "colorFrom": "8899ff"
+                    "colorTo": "8899ff"
+                }
+                "damage": 5
+                "splashDamageRadius": 16
+                "splashDamage": 25
+                "frontColor": "8899ff"
+                "backColor": "6677dd"
+                "trailColor": "8899ff"
+                "trailWidth": 5
+                "trailLength": 8
+                "width":10
+                "height":10
+                "weaveScale": 5
+                "weaveMag": 2
+                "lifetime":60
+                "speed":4
+                "status": "freezing"
+                "statusDuration": 120
+            }
+        } 
+        {
+            "name": "a0-1-2"
+            "x": 3
+            "y": 0
+            "shootY": 8
+            "rotate": true
+            "rotateSpeed": 8
+            "recoil": 2
+            "reload": 10
+            "targrtGround":false
+            "shootSound": "pew"
+            "shake": 0
+            "restitution":0
+            "bullet": {
+                  "type": "BasicBulletType"
+                  "damage":20
+                  "width":4
+                  "height":6
+                  "lifetime": 20,
+                  "speed": 8,
+            },
+        },
+     ],
+    "research": {
+        "parent": "0721构造器",
+        "objectives": [
+            "格兰特南部群岛"
+        ],
+    },
+}

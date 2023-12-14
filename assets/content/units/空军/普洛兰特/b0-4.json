@@ -1,0 +1,106 @@
+{
+"type": "flying"
+"name": "b0-4"
+"flying": true
+"hitSize": 44
+"health": 35500
+"armor": 18
+"speed": 3
+"rotateSpeed": 2.45
+"rotateShooting": true
+"accel": 0.02
+"drag": 0.02
+"lowAltitude": true
+"engineOffset": 20
+"engineSize": 10
+"lightColor": "e65555"
+"engines": [
+{
+"x": 20
+"y": -8
+"radius": 8
+"rotate": 30
+}
+{
+"x": -20
+"y": -8
+"radius": 8
+"rotate": -30
+}
+]
+"weapons": [
+  {
+    "name": "b0-4-1"
+    "x": 18
+    "y": -10
+    "shootY": 8
+    "mirror": true
+    "rotate": true
+    "rotateSpeed": 4.2
+    "recoil": 4
+    "reload": 25
+    "shootCone": 30
+    "shoot": {
+    "shots": 3
+    "spread": 3
+    }
+    "shootSound": "shotgun"
+    "shake": 1.2
+    "bullet": {
+    "type": "ShrapnelBulletType"
+    "length": 256.00
+    "damage": 300
+    "width": 20.00
+      }
+  }
+{
+"name": "b0-4-2"
+"x": 12
+"y": 8
+"alternate": false
+"reload": 10
+"mirror": true
+"rotate": true
+"recoil": 2
+"shootCone": 0
+"shootSound": "sap"
+"bullet": {
+                "type": "SapBulletType",
+                "damage": 60
+                "length": 160
+                "sapStrength": 0.55
+                "shootEffect": "shootLiquid"
+                "hitEffect": "hitLiquid"
+                "color": "8899ef"
+                "lightColor": "daccff"
+                "konckback": -1
+}
+}
+{
+"name": "b0-4-3"
+"x": 4
+"y": 12
+"alternate": false
+"shootSound": "sap"
+"reload": 10
+"mirror": true
+"rotate": true
+"recoil": 2
+"shootCone": 0
+"shootWarmupSpeed": 0.01
+"minWarmup": 0.36
+"bullet": {
+                "type": "SapBulletType",
+                "damage": 60
+                "length": 160
+                "sapStrength": 0.55
+                "shootEffect": "shootLiquid"
+                "hitEffect": "hitLiquid"
+                "color": "8899ef"
+                "lightColor": "daccff"
+                "knockBack": -1
+}
+}
+]
+    "research": "b0-3"
+}

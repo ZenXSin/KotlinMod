@@ -1,0 +1,68 @@
+{
+    "type": "naval",
+    "name": "c3-1",
+    "health": 3800,
+    "armor": 25,
+    "hitSize": 12,
+    "speed": 1.5,
+    "accel": 0.4,
+    "rotateSpeed": 6,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 60,
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 160,
+              "amount": 60,
+              "reload": 240
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 160
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  ]
+    "weapons": [
+    {
+            "name": "c3-1-1",
+            "reload": 30,
+            "shots": 1
+            "recoil": 1.00,
+            "rotate": true,
+            "collidesGround": true
+            "collidesAir": true
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"sap"
+            "x": 4,
+            "y": -4,
+            "rotateShooting": false,
+            "mirror":true
+            "bullet": {
+                "type": "SapBulletType",
+                "damage": 50
+            "collidesGround": true
+            "collidesAir": true
+                "length": 120
+                "sapStrength": 0.1
+                "shootEffect": "shootLiquid"
+                "hitEffect": "hitLiquid"
+                "color": "cc88ff"
+                "lightColor": "ccaaff"
+            }
+        }
+        ]
+    "research": "0721构造器"
+    }

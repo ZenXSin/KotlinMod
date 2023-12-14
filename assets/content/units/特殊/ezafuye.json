@@ -1,0 +1,232 @@
+{
+    "type": "legs",
+    "name": "Ezafuye",
+    "description": "T8...?",
+    "speed": 0.55,
+    "rotateSpeed": 0.6,
+    "hitSize": 64,
+    "health": 470000,
+    "legMoveSpace": 0.5,
+    "maxStretch": 1.5,
+    "armor": 105,
+    "legLength": 96,
+    "legExtension": 30,
+    "legCount": 8,
+    "legSpeed": 0.8,
+//    "legContinuousMove": true,
+    "legPairOffset": 2,
+    "legSplashDamage": 650,
+//        "legStraightness": 0,
+    "legSplashRange": 40,
+    "allowLegStep": true,
+    "hovering": true,
+    "abilities": [
+	    {
+    "type": "EnergyFieldAbility",
+    "healEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 7,
+    "lifetime": 20,
+    "offset": 50,
+    "length": 55,
+    "cone": -360,
+    "lenFrom": 6,
+    "lenTo": 0,
+    "colorFrom": "ee9966",
+    "colorTo": "ee9966"  
+    },
+    "color": "ee9966",
+    "maxTargets": 10,
+    "damage": 500,
+    "healPercent": 9,
+    "range": 120,
+    "y": -12,
+    "sectors": 3,
+    "rotateSpeed": 1,
+    "hitBuildings": true,
+    "sectorRad": 1,
+    "effectRadius": 12,
+    "reload": 120
+   }
+   ]
+    "weapons": [
+        {
+        "name": "ezafuye-1"
+        "recoil": 4
+        "recoilTime": 240
+        "reload": 125
+        "layerOffset": -0.001
+        "shootY": 36
+        "x": 36
+        "y": 8
+        "rotate": true
+        "rotationLimit": 10
+        "rotateSpeed": 0.6
+        "shootSound": "largeCannon"
+        "shoot": {
+        "shots": 5
+        "shotDelay": 3
+        }
+        "inaccuracy": 5
+        "bullet": {
+        "type": "BulletType"
+        "lifetime": 0
+        "maxRange": 360
+        "fragRandomSpread": 2
+        "fragVelocityMin": 0.7
+        "fragVelocityMax": 1.3
+        "fragBullets": 3
+        "fragBullet": {
+        "type": "MissileBulletType"
+        "hitSound": "largeExplosion"
+        "speed": 10
+        "lifetime": 50
+        "splashDamage": 900
+        "splashDamageRadius": 72
+        "damage": 300
+        "width": 12
+        "height": 12
+        "homingRange": 240
+        "homingPower": 0.2
+        "homingDelay": 20
+        "weaveScale": 2
+        "weaveMag": 5
+        "sprite": "circle-bullet"
+        "trailWidth": 6
+        "trailLength": 10
+        "hitEffect": {
+        "type": "ParticleEffect"
+        "particles": 14
+        "length": 80
+        "colorFrom": "ee996699"
+        "colorTo": "ee996699"
+        "sizeFrom": 6
+        "sizeTo": 0
+        "interp": "circleOut"
+        "sizeInterp": "pow5In"
+        "lifetime": 30
+        }
+        "frontColor": "ee9966"
+        "backColor": "ee9966"
+        "trailColor": "ee9966"
+        }
+        }
+      }
+      {
+      "name": "ezafuye-2"
+      "x": 24
+      "y": -12
+      "shootY": 16
+      "rotationLimit": 30
+      "rotate": true
+      "rotateSpeed": 2
+      "reload": 70
+      "shootSound": "laser"
+      "bullet": {
+      "shootEffect": {
+      "type": "ParticleEffect"
+      "cone": 15
+      "particles": 5
+      "lifetime": 30
+      "sizeFrom": 3
+      "sizeTo": 0
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966"
+      "interp": "circleOut"
+      "sizeInterp": "pow10In"
+      }
+      "type": "MissileBulletType"
+      "sprite": "circle-bullet"
+      "width": 20
+      "height": 20
+      "trailWidth": 4
+      "trailLength": 12
+      "speed": 8
+      "lifetime": 45
+      "damage": 1730
+      "splashDamage": 280
+      "splashDamageRadius": 120
+      "hitSound": "plasmaboom"
+  "trailRotation": true,
+    "pierceArmor": true,
+    "shrinkY": 0,
+    "shrinkX": 0,
+    "radius": 60,
+    "hitPowerEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 6,
+    "lifetime": 22,
+    "length": 80,
+    "cone": -360,
+    "lenFrom": 6,
+    "lenTo": 6,
+    "colorFrom": "ee9966",
+    "colorTo": "ee9966"
+    },
+    "hitColor": "ee9966",
+    "timeIncrease": 0.5,
+    "powerDamageScl": 0.6,
+    "powerSclDecrease": 0.1,
+      "hitEffect": {
+      "type": "MultiEffect"
+      "effects": [
+      {
+      "type": "ParticleEffect",
+      "line": true,
+      "particles": 12,
+      "lifetime": 30,
+      "length": 72,
+      "lenFrom": 6,
+      "lenTo": 0,
+      "colorFrom": "ee9966",
+      "colorTo": "ee9966"
+      }
+      {
+      "type": "ParticleEffect"
+      "partilces": 1
+      "length": 0
+      "region": "pnk-mod-plasmastar-2"
+      "sizeFrom": 32
+      "sizeTo": 0
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966"
+      "lifetime": 90
+      }
+      {
+      "type": "WaveEffect"
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966"
+      "sizeFrom": 120
+      "sizeTo": 120
+      "strokeFrom": 6
+      "strokeTo": 0
+      "lifetime": 30
+      }
+      ]
+      }
+      "frontColor": "ee9966"
+      "backColor": "ee9966"
+      "homingPower": 0.3
+      "homingRange": 240
+      "trailChance": 2
+      "trailEffect": {
+      "type": "ParticleEffect",
+      "line": true,
+      "particles": 3,
+      "lifetime": 20,
+      "offset": 50,
+      "length": -85,
+      "cone": -30,
+      "lenFrom": 8,
+      "lenTo": 0,
+      "sizeFrom": 8
+      "sizeTo": 4
+      "colorFrom": "ee9966",
+      "colorTo": "ee9966"
+      }
+      }
+      }
+    ]
+}

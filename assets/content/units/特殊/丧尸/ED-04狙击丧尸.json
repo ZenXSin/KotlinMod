@@ -1,0 +1,98 @@
+{
+"type":"mech"
+"name":"狙击丧尸"
+"description": "装备了SSu-67型大口径反器材狙击步枪的丧尸，可在中远距离对敌人产生有效的打击。"
+"speed": 0.3
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 3
+"armor": 7
+"health": 1700
+"deathSound": "explosion"
+"research": "ED-03导弹丧尸"
+"hitSize": 12
+"mechStride": 6
+"mechStepShake":0.0
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "SSu-67"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 16
+    "shootX": 4.5
+    "mirror": false
+    "rotate": false
+    "recoil": 0.5
+    "reload": 180
+    "shootStatus": "狙击"
+    "shootWarmupSpeed": 0.01
+    "minWarmup": 0.9
+    "shootStatusDuration": 30
+    "parts": [
+    {
+    "suffix": "-B1"
+    "x": 0
+    "y": 3
+    "rotation": 60
+    "moves": [
+    {
+    "y": 1
+    "rot": -60
+          "progress": "warmup"
+          }
+          {
+          "y": -1
+          "progress": "recoil"
+          }
+          ]
+    "children": [
+    {
+    "suffix": "-f"
+    "x": 0
+    "y": -2
+    "mirror": false
+    "layerOffset": -0.001
+    "moves": [
+    {
+    "y": 2
+    "progress": "warmup"
+          }
+          {
+          "y": -4
+          "progress": "recoil"
+          }
+          ]
+    }
+    ]
+    }
+    ]
+    "shootSound": "largeExplosion"
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 600
+      "pierce": true
+      "pierceBuilding": true
+      "pierceCap": 1
+      "reflectable": false
+      "buildDamageMultiplier": 0.15
+      "width": 4
+      "height": 8
+      "sprite": "pnk-mod-air1"
+      "lifetime": 10
+      "speed": 48
+      "status": "病毒"
+      "statusDuration": 180
+      "hitEffect": "none"
+      "despawnEffect": "none"
+             }
+      } 
+     ]
+}

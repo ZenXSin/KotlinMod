@@ -1,8 +1,0 @@
-{	"speed": 10,
-	"range": 6,
-	"bufferCapacity":21,
-	"requirements": [
-	"copper/12",
-	"lead/12"
-	]
-}

@@ -1,0 +1,12 @@
+{
+"name":"硒"
+"description":"一种可燃的物质。"
+"hardness":"2"
+"cost":"1"
+"color":"2c2d2e"
+"radioactivity":0,
+"explosiveness":0.25
+"flammability":0.6
+"charge":0
+"research": "冰晶石"
+}

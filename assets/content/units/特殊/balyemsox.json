@@ -1,0 +1,179 @@
+{
+"type":"mech"
+"name":"Balyemsox"
+"description": "T6?"
+"speed":0.35
+"rotateSpeed": 1
+"canBoost": false
+"armor": 55
+"health": 114514
+"range": 320
+"hitSize": 48
+"mechStride": 12
+"mechFrontSway":0
+//    "abilities": []
+"mechStepShake": 1
+"weapons": [
+     {
+     "name": "balyemsox-1"
+     "parts": [
+     {
+     "suffix": "-R1"
+//    "layerOffset": -0.001
+     "under": true
+     "mirror": false
+     "x": 0
+     "y": 0
+     "moveX": 2
+     "moveY": 0
+     "moveRot": 0
+     "moves": [
+     {
+     "progress": "recoil"
+     "x": 0
+     "y": -4
+//     "rot": -10
+     "recoilTime": 120
+     }
+     ]
+     }
+     {
+     "suffix": "-L1"
+//     "layerOffset": -0.001
+     "under": true
+     "mirror": false
+     "x": 0
+     "y": 0
+     "moveX": -2
+     "moveY": 0
+     "moveRot": 0
+     "moves": [
+     {
+     "progress": "recoil"
+     "x": 0
+     "y": -4
+//     "rot": 10
+     "recoilTime": 120
+     }
+     ]
+     }
+     ]
+     "reload": 120
+     "layerOffset": -0.001
+     "rotateSpeed": 0.5
+     "mirror": true
+     "rotate": true
+     "rotationLimit": 20
+     "x": 22
+     "y": 0
+     "shootY": 12
+     "shootSound": "laser"
+     "shootWarmupSpeed": 0.05
+     "minWarmup": 0.95
+     "bullet": {
+     "shootEffect": {
+     "type": "ParticleEffect"
+     "particles": 3
+     "sizeFrom": 8
+     "sizeTo": 0
+     "length": 80
+     "colorFrom": "dddd99"
+     "colorTo": "dddd99"
+     "lifetime": 60
+     "interp": "circleOut"
+     "cone": 15
+     }
+    "type": "FlakBulletType"
+    "collidesGround": true
+    "damage": 500
+    "splashDamage": 1500
+    "splashDamageRadius": 40
+    "reoladMultiplier": 1.2
+    "width": 20
+    "height": 20
+    "shrinkY": 0
+    "pierce": true
+    "pierceBuilding": true
+    "pierceCap": 10
+    "speed": 16
+    "lifetime": 35
+    "frontColor": "ccccaa"
+    "backColor": "999977"
+    "sprite": "pnk-mod-MKG"
+            "bulletInterval": 5
+            "intervalBullets": 2
+            "intervalBullet": {
+        "type": "LightningBulletType"
+        "lightColor": "dddd77"
+        "lightning": 1
+        "lightningLength": 16
+        "lightningLengthRand": 2
+        "lightningCone": 5
+        "lightningColor": "dddd77"
+        "lightningDamage": 100
+            }
+    "hitEffect": {
+            "type": "MultiEffect"
+    "effects": [
+    {
+    "type": "ParticleEffect"
+    "particles": 1
+    "sizeFrom": 12
+    "sizeTo": 0
+    "colorFrom": "dddd99"
+    "colorTo": "dddd9900"
+    "length": 0
+    "lifetime": 30
+    }
+        {
+    "type": "WaveEffect"
+    "sizeFrom": 0
+    "sizeTo": 24
+    "colorFrom": "dddd99"
+    "colorTo": "dddd99"
+    "strokeFrom": 2
+    "strokeTo": 0
+    "lifetime": 15
+     }
+     ]
+     }
+     }
+     }
+     {
+     "name": "balyemsox-2"
+     "x": 0
+     "y": -8
+     "mirror": false
+     "rotate": true
+     "rotateSpeed": 4
+     "reload": 900
+     "inaccuracy": 2
+     "shoot": {
+     "type": "ShootBarrel"
+     "shots": 100
+     "shotDelay": 3
+     "barrels": [
+     0,0,0
+     4,0,0
+     -4,0,0
+     ]
+     }
+     "shootSound": "missile"
+     "bullet": {
+     "type": "ArtilleryBulletType"
+     "damage": 100
+     "splashDamage": 150
+     "splashDamageRadius": 40
+     "speed": 6
+     "lifetime": 80
+     "width": 8
+     "height": 8
+     "trailInterval": 10
+     "frontColor": "dddd99"
+     "backColor": "dddd99"
+     "trailColor": "dddd99"
+     }
+     }
+     ]
+//    "research": "a3-3"
+}

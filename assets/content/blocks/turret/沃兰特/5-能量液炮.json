@@ -1,0 +1,33 @@
+{
+    "type": "LiquidTurret",
+    "name": "能量液炮",
+    "requirements": [
+        "metaglass/55" "phase-fabric/95" "plastanium/25"
+    ],
+    "ammoTypes": {
+"能量液": {
+    "type": "LiquidBulletType",
+    "damage": 25,
+    "drag": 0,
+    "liquid": "能量液",
+    "ammoMultiplier": 1,
+    "lifetime": 90.00,
+    "displayAmmoMultiplier": false
+    "homingPower": 0.15
+    "healPercent": 1.25
+    "collidesTeam": true
+    "homingDelay": 30
+}
+    },
+    "targetHealing": true
+    "size": 2,
+    "recoliAmount": 0.00,
+    "category": "turret",
+    "reload": 2.00,
+    "inaccuracy": 5.00,
+    "shootCone": 50.00,
+    "liquidCapacity": 100.00,
+    "range": 240.00,
+    "health": 1000
+    "research": "5-星流"
+}

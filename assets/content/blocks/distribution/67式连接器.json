@@ -1,0 +1,14 @@
+{
+"type": "Junction",
+"name": "67型连接器",
+"health": 400,
+"speed": 0.25,
+"capacity": 12,
+"requirements": [
+  "lead/3",
+  "plastanium/2"
+]
+"size": 1
+"category": "distribution",
+"research": "67式传送带"
+}

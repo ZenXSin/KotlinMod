@@ -1,0 +1,74 @@
+{
+    "type": "naval",
+    "name": "c0-1",
+    "health": 3800,
+    "armor": 8,
+    "hitSize": 12,
+    "speed": 1.6,
+    "accel": 0.3,
+    "rotateSpeed": 3,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "weapons": [
+     {
+    "name": "c0-1-1"
+    "x": 5
+    "y": -3
+    "shootY": 6
+    "shootCone": 30
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 3
+    "spread": 5
+    }
+    "recoil": 2
+    "reload": 20
+    "shootSound": "shoot"
+    "shake": -1
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 30
+      "width":8
+      "height": 12
+      "lifetime":45
+      "speed":5
+         }
+        },
+        {
+    "name": "c0-1-2"
+    "x": 0
+    "y": 5
+    "shootY": 4
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "shoot": {
+    "shots": 2
+    }
+    "shootCone": 30
+    "recoil": 2
+    "reload": 30
+    "shootSound": "spark"
+    "status": "shocked"
+    "shake": -1
+    "inaccuracy": 30
+    "bullet": {
+        "type": "LightningBulletType"
+        "lightning": 2
+        "lightningLength": 36
+        "lightningLengthRand": 5
+        "lightningCone": 1
+        "lightningDamage": 30
+            }
+          }
+       ],
+    "research": "0721构造器"
+}

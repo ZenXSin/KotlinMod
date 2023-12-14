@@ -1,0 +1,37 @@
+{
+    "type": "GenericCrafter",
+    "name": "塑钢密压机",
+   "description":"比塑钢压缩机效率更高。",
+    "category": "crafting",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			"type": "DrawFrames"
+			"frames": 4
+			}
+            ]
+            }
+    "updateShake": 2
+    "health":600
+    "itemCapacity":50
+    "requirements": [
+        "titanium/300" "lead/250" "thorium/200" "surge-alloy/25" "铝/120",
+    ],
+    "outputItem": "plastanium/3",
+    "craftTime": 50.00,
+    "size": 3
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items":[
+               "titanium/5"
+               "coal/1"
+            ]
+        },
+        "power": 2.50
+    }
+    "research":"镍钢熔炉"
+}

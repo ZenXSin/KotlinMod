@@ -1,0 +1,24 @@
+{
+"type": "TractorBeamTurret"
+"damage": 20
+"size": 3
+"category": "turret"
+"name": "离子"
+"health": 1350
+"targetAir": true
+"targetGround": true
+"description": "Irr bax pus ye ahvur!"
+"force": 0.0
+"scaledForce": 0.0
+"rotateSpeed": 8
+"status": "freezing"
+"research": "parallax"
+	"buildVisibility":"shown",
+"range": 640
+"requirements": [
+"titanium/300","silicon/150","锆/370"
+]
+"consumes": {
+"power": 3
+}
+}

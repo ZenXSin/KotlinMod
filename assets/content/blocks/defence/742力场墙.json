@@ -1,0 +1,32 @@
+{
+	"name": "力场墙",
+	"description": "创建一个保护己方的力场。",
+	"type": "forceProjector",
+	"health": 6500,
+	"size": 2,
+//	"armor": 24,
+//	"buildCostMultiplier": 6.25,
+	"hasItems": false,
+"outputsPower": true,
+	"consumesPower": true,
+	"hasPower": true,
+	"hasLiquids": true,
+	"consumes": {
+	"power": 3
+	}
+	"radius": 40,
+	"shieldHealth": 1200,
+	"phaseRadiusBoost": 0,
+	"phaseShieldBoost": 0,
+	"cooldownNormal": 1.5,
+	"cooldownLiquid": 1,
+	"cooldownBrokenBase": 40,//护盾总量除冷却时间除60，例：1200/5/60=40
+	"requirements": [
+	"silicon/50"
+		"phase-fabric/15",
+		"surge-alloy/35",
+	],
+	"category": "defense",
+	"research": "731大型简易恢复墙",
+//	"researchCostMultiplier": 40
+}

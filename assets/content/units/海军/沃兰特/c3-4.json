@@ -1,0 +1,119 @@
+{
+    "type": "naval",
+    "name": "c3-4",
+    "health": 40000,
+    "armor": 26
+    "hitSize": 40,
+    "speed": 1,
+    "accel": 0.3,
+    "rotateSpeed": 2,
+    "rotateShooting": false,
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 280,
+              "amount": 500,
+              "reload": 300
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 280
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+    "type": "ForceFieldAbility"
+    "radius": 64
+    "regen": 5
+    "max": 4800
+    "cooldown": 600
+  }
+  ]
+    "itemCapacity": 40,
+    "trailX": 12,
+    "trailY": -9,
+    "trailScl": 4,
+    "trailLength": 40,
+    "maxRange": 640
+    "weapons": [
+    {
+    "name": "c3-4-1"
+    "reload": 120
+    "shootSound": "laser"
+    "x": -12
+    "y": -12
+    "recoil": 3
+    "inaccuracy": 5
+    "shootY": 12
+    "rotate": true
+    "rotateSpeed": 1
+    "shoot": {
+    "shots": 15
+    "shotDelay": 5
+    }
+    "bullet": {
+    "type": "MissileBulletType"
+    "damage": 80
+    "collidesTeam": true
+    "rotate": true
+    "healPercent": 5
+    "width": 12
+    "height": 8
+    "trailLength": 6
+    "trailWidth": 2
+    "frontColor": "bb66dd"
+    "backColor": "bb66dd"
+    "trailColor": "bb66dd"
+    "healColor": "bb66dd"
+    "speed": 6
+    "lifetime": 80
+    }
+        },
+	   {
+    "type": "RepairBeamWeapon",  
+    "mirror": false,
+    "alternate": false,
+    "rotateSpeed": 6,
+    "name": "c3-4-2",
+    "x": 0,
+    "y": 6,
+    "shootY": 1,
+    "reload": 1,
+    "recoil": 0,
+    "shake": 1,
+    "rotate": true,
+    "laserColor": "B166FFFF",
+    "controllable": false,
+    "autoTarget": true,
+    "beamWidth": 0.7,
+    "pulseRadius": 6,
+    "pulseStroke": 2,
+    "repairSpeed": 6.25,
+	"bullet": {
+	"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 20,
+    "offset": 35,
+    "lifetime": 22,
+    "length": 35,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "B166FFFF",
+    "colorTo": "7D33CCFF"   
+    "healColor": "bb66dd"
+    },
+	"speed": 10,
+	"maxRange": 160
+}
+}
+       ],
+    "research": "c3-3"
+}

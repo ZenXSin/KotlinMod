@@ -1,0 +1,49 @@
+{
+    "type": "GenericCrafter",
+    "name": "寒冰合金浇铸炉",
+    "description": "寒冷环境内凝结结晶冲压，加入液氮使其硬化，成型后可投入使用。",
+    "category": "crafting",
+    "health":5000,
+    "itemCapacity":50,
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "titanium/350",
+        "thorium/400",
+        "surge-alloy/350",
+        "U/150",
+        "锆锰合金/300",
+        "钛合金/4000",
+    ],
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			    "type": "DrawFlame",
+		    	"flameColor": "ddddff",
+			},
+            {
+		    	"type": "DrawFrames",
+	    		"frames": 12,
+	    		"sine": false,
+		   	},
+        ]
+    }
+    "outputItem": "8-寒冰合金/2",
+    "craftTime": 150.00,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquid": true,
+    "consumes": {
+        "liquid": "液氮/0.7",
+        "items": {
+            "items": [
+                "titanium/8",
+                "锰钢/2",
+            ],
+        },
+        "power": 1.50,
+    },
+    "research":"液氮混合器",
+}

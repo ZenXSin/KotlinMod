@@ -1,0 +1,50 @@
+{
+	"type": "AttributeCrafter",
+	"name": "再生孢子培养机",
+	"health":5000,
+	"outputItem": "8-再生孢子/8",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawCultivator",
+			{
+				"type": "DrawRegion",
+				"suffix": "-top",
+			},
+		],
+	},
+	"attribute":"spores",
+	"itemCapacity": 20,
+	"size": 4,
+	"hasPower": true,
+	"hasliquid": true,
+	"hasItems": true,
+	"craftTime": 150,
+	"consumes": {
+    	"items":{
+        	"items": [
+            	"放射孢子/4",
+            	"phase-fabric/1",
+        	],
+    	},
+		"power": 2,
+		"liquid": {
+			"liquid": "water", 
+			"amount": 2,
+		},
+		
+	},
+	"requirements": [
+        "copper/500",
+        "lead/500",
+        "titanium/350",
+        "thorium/400",
+        "surge-alloy/350",
+        "锆锰合金/150",
+        "硬铝/400",
+        "钛合金/120",
+	],
+	"category": "crafting",
+	"research": "放射孢子培养机",
+} 

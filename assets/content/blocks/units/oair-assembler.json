@@ -1,0 +1,48 @@
+{
+   "type": "UnitAssembler"
+   "name": "oair-assambler"
+   "health": 1200
+   "size":5
+            "regionSuffix": "-dark"
+
+   "consumes":{
+       "power": 8
+	"liquid": {
+	"liquid": "cyanogen"
+	"amount": 0.6
+	}
+       "items": [
+       "beryllium/300"
+       "surge-alloy/280"
+       ]
+   },
+   "areaSize": 13
+   "plans": [
+       {
+           "unit":"erk-0-axs"
+           "time": 600
+           "requirements":[
+           "pnk-mod-erk-0-acrhiter/2"
+           "tungsten-wall-large/5"
+           ]
+       }
+       {
+           "unit":"erk-0-kuxmanye"
+           "time": 2400
+           "requirements":[
+           "pnk-mod-erk-0-acrhiter/3"
+           "carbide-wall-large/5"
+           ]
+       }
+   ],
+   "droneType":"assembly-drone",
+   "requirements": [
+   "tungsten/400"
+   "silicon/600"
+   "thorium/300"
+   "phase-fabric/120"
+   "carbide/300"
+	    ],
+	"category":"units",
+	"itemCapacity": 600
+}

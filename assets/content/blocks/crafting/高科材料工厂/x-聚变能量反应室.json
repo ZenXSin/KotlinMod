@@ -1,0 +1,45 @@
+{	
+    "name": "聚变能量反应室",
+    "type": "GenericCrafter",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom",
+            },
+            "DrawWeave",
+            "DrawDefault",
+        ],
+    },
+    "size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 40,
+	"craftTime": 120,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": "none",
+    "ambientSound": "techloop",
+    "ambientSoundVolume": 0.02,
+	"consumes": {
+		"power": 20,
+		"items": {
+			"items": [
+               "thorium/12",
+               "surge-alloy/8",
+			],
+		},
+	},
+	"requirements": [
+        "copper/500",
+        "lead/500",
+        "titanium/350",
+        "镍/400",
+        "surge-alloy/350",
+        "锆锰合金/150",
+        "硬铝/400",
+	],
+	"category": "crafting",
+	"research": "impact-reactor",
+	"outputItem": "8-聚变能量/3",
+}

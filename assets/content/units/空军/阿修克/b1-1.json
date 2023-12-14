@@ -1,0 +1,122 @@
+{
+"type": "flying"
+"lowAltitude": true
+"hitSize": 8
+"flying": true
+"name": "b1-1"
+"health": 2000
+"armor": 6
+"speed": 1.75
+"rotateSpeed": 3.05
+"engineOffset": 8
+"engineSize": 3.5
+"faceTarget": true
+    "research": "0721构造器"
+"targetFlags": [
+"turret"
+"generator"
+]
+"playerTargetFlags": [
+"turret"
+"generator"
+]
+"weapons": [
+        {
+            "name": "b1-1-1",
+            "reload": 30,
+            "ejectEffect": "none",
+            "mirror": false
+            "shots": 2,
+            "recoil": 2.45,
+            "rotate": true,
+            "shootSound": "bang",
+            "shootCone": 30
+            "innacuricy": 15
+            "x": 0,
+            "y": -2,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 8,
+                "height": 8,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage":40
+                "splashDamageRadius":10
+                "collidesTile":false
+                "damage": 65
+                "knockback":0.4
+                "lifetime": 65
+                "speed":4
+            }
+        }
+     {
+    "name": "b1-1-2"
+    "x": 4
+    "y": 5
+    "shootY": 3
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 6.5
+    "shots": 1
+    "recoil": 0.5
+    "reload": 20
+    "shootSound": "pew"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+    "bullet": {
+      "type": "FlakBulletType"
+      "damage":20
+      "collidesGround": true
+      "ammoMultiplier":5
+      "width":5
+      "height":10
+      "lifetime":45
+      "splashDamage": 10
+      "splashDamageRadius": 30.5
+      "speed":5
+                }
+          }
+{
+"name": "b1-1-3"
+    "x": 0
+    "y": 0
+    "shootY": 7
+    "mirror": true
+    "rotate": false
+    "autoTarget": true
+    "shots": 1
+    "recoil": 0.5
+    "reload": 90
+    "firstShotDelay": 30
+    "shootSound": "laser"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 160,
+        	"damage": 55,
+        	"width": 20,
+        	"status": "shocked"
+        	"colors": [
+        	"99ff99dd",
+        	"dbffdbee",
+        	"ffffffff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+}
+]
+}

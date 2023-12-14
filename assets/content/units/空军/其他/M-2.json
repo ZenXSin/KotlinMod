@@ -1,0 +1,51 @@
+{
+    "type": "flying"
+	"name": "M-2"
+	"speed": 1.55, 
+	"drag": 0.25,
+	"accel": 0.25
+	"rotateSpeed": 12
+	"hitSize": 12
+	"buildBeamOffset":6,
+	"buildSpeed": 1,
+	"flying": true,
+	"faceTarget": true,
+    "useUnitCap": false,
+	"health": 600,
+	"engineOffset": 6
+	"engineSize": 2
+    "isEnemy":false,
+    "createWreck":false,
+    "mineTier": 2
+    "mineSpeed": 2
+    "weapons": [
+    {
+    "x": 0
+    "y": 0
+    "shootY": 2
+    "shootSound": "missile"
+    "mirror": false
+    "rotate": false
+    "targetHealing": true
+    "reload": 60
+    "bullet": {
+    "type": "missileBulletType"
+    "frontColor": "eeeeee"
+    "backColor": "aaaaaa"
+    "trailColor": "cccccc"
+    "damage": 35
+    "splashDamage": 15
+    "splashDamageRadius": 32
+    "collidesTeam": true
+    "healPercent": 2
+    "speed": 4
+    "lifetime": 60
+    "width": 4
+    "height": 4
+    "sprite": "circle-bullet"
+    "weaveScale": 3
+    "weaveMag": 2
+    }
+    }
+    ]
+}

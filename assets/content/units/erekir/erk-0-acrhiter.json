@@ -1,0 +1,134 @@
+{
+"type": "flying"
+"name": "Acrhiter"
+"fogRadius": 10
+"template": "ErekirUnitType",
+"flying": true
+"hitSize": 24
+"health": 1900
+"armor": 8
+"hovering": false
+"speed": 3
+"range": 240
+"rotateSpeed": 5
+"rotateShooting": true
+"faceTarget": true,
+"lowAltitude": true
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 10
+"engineSize": 8
+"lightColor": "e65555"
+	"requirements": {
+		"block": "prime-refabricator", 
+		"previous": "erk-0-acfya"
+	},
+"weapons": [
+            {
+            "x": 0
+            "y": 5
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 90
+            "recoil": 2
+            "shootSound": "respawn"
+            "inaccuracy": 0
+            "shootCone": 1
+            "rotateShooting": false
+            "bullet": {
+            "type": "MissileBulletType"
+            "maxRange": 480
+            "speed": 6
+            "drag": 0.1
+            "lifetime": 30
+            "frontColor": "ffd37f"
+            "backColor": "ffd37f"
+            "trailColor": "ffd37f"
+            "trailInterval": 15
+            "damage": 75
+            "width": 8
+            "height": 12
+            "fragBullets": 1
+            "fragRandomSpread": 0.001
+            "fragVelocityMin": 1
+            "fragBulletMax": 1
+            "fragLifeMin": 1
+            "despawnEffect": {
+            "type": "ParticleEffect"
+            "cone": 30
+            "particles": 4
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "line": true
+            "length": -16
+            "sizeFrom": 2
+            "sizeTo": 0
+            "lenFrom": 4
+            "lenTo": 0
+            "colorFrom": "ffd37f"
+            "colorTo": "ffd37f"
+            "lifetime": 45
+            }
+            "fragBullet": {
+            "type": "MissileBulletType"
+            "speed": 8
+            "lifetime": 75
+            "frontColor": "ffd37f"
+            "backColor": "ffd37f"
+            "trailColor": "ffd37f"
+            "trailInterval": 15
+            "damage": 0
+            "splashDamage": 200
+            "splashDamageRadius": 40
+            "width": 8
+            "height": 12
+            "trailLength": 8
+            "trailWidth": 2
+            "hitEffect": {
+            "type": "MultiEffect"
+            "effects": [
+            {
+            "type": "ParticleEffect"
+            "particles": 6
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "line": true
+            "length": 20
+            "sizeFrom": 2
+            "sizeTo": 0
+            "lenFrom": 4
+            "lenTo": 0
+            "colorFrom": "ffd37f"
+            "colorTo": "ffd37f"
+            "lifetime": 45
+            }
+            {
+            "type": "ParticleEffect"
+            "particles": 6
+            "interp": "circleOut"
+            "sizeInterp": "pow5In"
+            "length": 20
+            "sizeFrom": 4
+            "sizeTo": 0
+            "colorFrom": "ffd37f"
+            "colorTo": "ffd37f"
+            "lifetime": 60
+            }
+            {
+            "type": "WaveEffect"
+            "sizeFrom": 0
+            "sizeTo": 32
+            "colorFrom": "ffd37f"
+            "colorTo": "ffd37f"
+            "lifetime": 15
+            }
+            ]
+            }
+            "homingPower": 0.2
+            "homingRange": 400
+            }
+            }
+            }
+]
+}

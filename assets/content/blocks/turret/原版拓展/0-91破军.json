@@ -1,0 +1,94 @@
+{
+    "type": "ItemTurret",
+    "name": "破军",
+    "controllable": false
+    "playerControllable": false
+    "size": 4,
+    "description": "解裂光束的伤害炮台版本。"
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "heatColor": "ffffff"
+    "shootY": 4
+    "requirements": [
+     "lead/500","phase-fabric/800","surge-alloy/450"
+    ],
+    "ammoTypes": {
+     "phase-fabric": {
+     "shootEffect": "none"
+     "type": "FlakBulletType"
+     "trailLehgth": 24
+     "trailLength": 12
+     "shrinkY": 0
+     "width": 24
+     "height":24
+     "damage": 45
+     "splashDamage": 3000
+      "frontColor": "ffffee"
+      "backColor": "ccccaa"
+     "splashDamageRadius": 40
+     "collidesGround": true
+     "lifetime": 1200
+     "speed": 8
+     "buildingDamageMultiplier": 0
+     "homingRange": 800
+     "homingPower": 0.2
+     "pierce": true
+     "pierceCap": 25
+     "chargeEffect": {
+     "type": "MultiEffect"
+     "effects": [
+     {
+     "type": "particleEffect"
+     "sizeFrom": 0
+     "sizeTo": 16
+     "colorFrom": "ffffff"
+     "colorTo": "ffffff"
+     "lifeTime": 60
+     "length": 0
+     "particles": 1
+     }
+     {
+     "type": "particleEffect"
+     "sizeFrom": 8
+     "sizeTo": 24
+     "colorFrom": "ffffff"
+     "colorTo": "ffffff"
+     "lifeTime": 60
+     "spin": 2
+     "region": "pnk-mod-thin1"
+     "length": 0
+     "particles": 1
+     }
+     {
+     "type": "particleEffect"
+     "sizeFrom": 8
+     "sizeTo": 24
+     "colorFrom": "ffffff"
+     "colorTo": "ffffff"
+     "lifeTime": 60
+     "spin": -2
+     "region": "pnk-mod-thin2"
+     "length": 0
+     "particles": 1
+     }
+     ]
+     }
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "laserblast"
+    "chargeSound": "lasercharge"
+    "shoot": {
+    "shots": 1
+    "firstShotDelay": 60
+    }
+    "reload": 300,
+    "restitution": 0.1,
+    "range": 400,
+    "shootCone": 60.00,
+    "health": 4500,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 5.00,
+    "research":"segment"
+}

@@ -1,0 +1,22 @@
+{
+"type":"SectorPreset"
+"localizedName":"峡谷07"
+"planet": "kurh"
+"sector": 7
+"difficulty": 2
+"captureWave": 11
+"allowLaunchLoadout": true,
+"allowLaunchSchematics": false,
+"addStartingItems": false
+"overrideLaunchDefaults": true
+"research":{
+"parent": "khcore"
+"objectives": [
+{
+"type": "SectorComplete"
+"preset": "saltFlats"
+}
+]
+}
+"description": "这里是[orange]Kurh[white]的科技关隘，存在少量敌人，建议做好准备以防守这里。"
+}

@@ -1,0 +1,13 @@
+{
+"name":"寒冰合金"
+"description":"寒冷的合金，物质触碰上去会在表层形成一层霜。"
+"details": "普洛兰特的高科物品，这个物品让沃伦特的冷冻技术推进了一大步。"
+"hardness":"4"
+"cost": 6
+"color":"7c66cc"
+"radioactivity": 0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"锰钢"
+}

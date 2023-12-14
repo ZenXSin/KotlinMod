@@ -1,0 +1,27 @@
+{
+    "type": "GenericCrafter",
+    "name": "分子重塑器-铝",
+    "category": "crafting",
+    "health":300,
+    "itemCapacity":30,
+    "requirements": [
+        "titanium/100",
+        "lead/70",
+        "plastanium/50",
+        "surge-alloy/25",
+    ],
+    "outputItem": "铝/12",
+    "craftTime": 300.00,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "copper/5",
+            ],
+        },
+        "power": 2.00,
+    },
+    "research":"铝提炼机",
+}

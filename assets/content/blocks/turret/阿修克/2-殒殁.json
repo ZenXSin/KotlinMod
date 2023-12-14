@@ -1,0 +1,287 @@
+{
+    "type": "ItemTurret",
+    "ammoPerShot": 16,
+    "outlineColor": "0e0725",
+    "category": "turret",
+    "name": "殒殁",
+    "size": 6,
+    "reload": 360,
+    "shootY": 4,
+    "range": 800,
+    "maxAmmo": 400,
+    "health": 33000,
+    "armor": 200,
+    "canOverdrive": false
+    "requirements": [
+        "U/2000",
+        "phase-fabric/750",
+        "锰钢/800",
+        "锆锰合金/1100",
+        "8-放射能源/500",
+        ],
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-R2",
+                "moveRot": 0,
+                "moveX": 4,
+                "moveY": -4,
+                },
+            {
+                "type": "RegionPart",
+                "suffix": "-L2",
+                "moveRot": 0,
+                "moveX": -4,
+                "moveY": -4,
+                },
+            {
+                "type": "RegionPart"
+                "suffix": "-M2"
+                "moveY": -10
+                }
+            {
+                "type": "RegionPart",
+                "suffix": "-R1",
+                "moveRot": -20,
+                "moveX": 6,
+                "moveY": 0,
+                "progress": "warmup",
+                },
+            {
+                "type": "RegionPart",
+                "suffix": "-L1",
+                "moveRot": 20,
+                "moveX": -6,
+                "moveY": 0,
+                "progress": "warmup",
+                },
+            {
+                "type": "RegionPart",
+                "mirror": false,
+                "suffix": "-M1",
+                "moveY": -8,
+                "progress": "warmup",
+                "moves": [
+                    {
+                        "progress": "recoil",
+                        "y": -4,
+                        },
+                    ],
+                },
+            ],
+        },
+    "shootWarmupSpeed": 0.01,
+    "minWarmup": 0.9,
+    "shootCone": 5,
+    "shootSound": "shootSmite",
+    "shoot": {
+        "type": "ShootBarrel",
+        "barrels": [
+            -6,0,30,
+            -2,0,15,
+            2,0,-15,
+            6,0,-30,
+            ],
+        "shots": 4,
+        },
+    "ammoTypes": {
+        "8-放射能源": {
+            "shootEffect": {
+                "type": "ParticleEffect",
+                "line": true,
+                "baseLength": 24,
+                "length": 0,
+                "cone": 15,
+                "particles": 10,
+                "sizeInterp": "pow5In",
+                "colorFrom": "77cc77",
+                "colorT": "77cc77" ,
+                "lenFrom": 8,
+                "lenTo": 8,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "lifetime": 30,
+                },
+    	    "hitEffect": {
+            	"type": "MultiEffect",
+            	"effects": [
+                	{
+                    	"type": "WaveEffect",
+                    	"strokeFrom": 4,
+                    	"strokeTo": 0,
+                    	"sizeFrom": 120,
+                    	"sizeTo": 120,
+                    	"colorFrom": "77cc77",
+                    	"colorTo": "77cc77",
+                    	"interp": "circleOut",
+                    	"sizeInterp": "pow5In",
+                    	"lifetime": 180,
+            	        },
+                	{
+                    	"type": "ParticleEffect",
+                    	"length": 96,
+                    	"sizeFrom": 12,
+                    	"sizeTo": 0,
+                    	"colorFrom": "77cc77",
+                    	"colorTo": "77cc77",
+                    	"interp": "circleOut",
+                    	"sizeInterp": "pow10In",
+                    	"lifetime": 120,
+                    	"particles": 24,
+                    	}
+                	{
+                    	"type": "ParticleEffect",
+                    	"interp": "circleOut",
+                    	"sizeIntwrp": "pow5In",
+                    	"length": 0,
+                    	"sizeFrom": 160,
+                    	"sizeTo": 0,
+                    	"colorFrom": "77cc77",
+                       	"colorTo": "77cc77",
+                    	"lifetime": 120,
+                    	"rotation": 90,
+                    	"particles": 1,
+                    	"region": "pnk-mod-plasmastar-2",
+                    	},
+                	],
+            	},
+            "intervalBullets": 2,
+            "bulletInterval": 230,
+            "intervalRandomSpread": 0,
+            "intervalSpread": 45,
+            "intervalBullet": {
+                "type": "MissileBulletType",
+                "status": "解离",
+                "statusDuration": 60,
+                "homingPower": 0.04,
+                "homingRange": 800,
+                "homingDelay": 30,
+                "speed": 8,
+                "lifetime": 100,
+                "width": 16,
+                "height": 24,
+                "trailWidth": 6,
+                "trailLength": 16,
+                "sprite": "missile-large",
+                "frontColor": "77cc77",
+                "backColor": "77cc77",
+                "trailColor": "77cc77",
+                "trailDelay": 4,
+                "damage": 500,
+                "splashDamageRadius": 80
+                "splashDamage": 4000,
+                "buildingDamageMultiplier": 3,
+        	    "hitEffect": {
+                	"type": "MultiEffect"
+                	"effects": [
+                    	{
+                        	"type": "WaveEffect"
+                        	"strokeFrom": 4
+                        	"strokeTo": 0
+                        	"sizeFrom": 96
+                        	"sizeTo": 96
+                        	"colorFrom": "77cc77"
+                        	"colorTo": "77cc77"
+                        	"interp": "circleOut"
+                        	"sizeInterp": "pow5In"
+                        	"lifetime": 150
+                	        }
+                    	{
+                        	"type": "ParticleEffect"
+                        	"length": 64
+                        	"sizeFrom": 4
+                        	"sizeTo": 0
+                        	"colorFrom": "77cc77"
+                        	"colorTo": "77cc77"
+                        	"interp": "circleOut"
+                        	"sizeInterp": "pow10In"
+                        	"lifetime": 90
+                        	"particles": 16
+                        	}
+                    	],
+                	},
+                },
+            "ammoMultiplier": 3,
+            "parts": [
+                {
+                    "type": "FlarePart",
+                    "progress": "life",
+                    "rotation": 90,
+                    "color1": "77cc77",
+                    "stroke": 8,
+                    "radius": 64,
+                    "rasiusTo": 0,
+                    },
+                ],
+            "type": "ArtilleryBulletType",
+            "shrinkY": 0,
+            "status": "解离",
+            "statusDuration": 300,
+            "collides": true,
+            "homingPower": 0.02,
+            "homingRange": 800,
+            "homingDelay": 60,
+            "speed": 4,
+            "lifetime": 200,
+            "width": 32,
+            "height": 32,
+            "sprite": "circle-bullet",
+            "frontColor": "77cc77",
+            "backColor": "77cc77",
+            "trailColor": "77cc77",
+            "trailDelay": 4,
+            "damage": 500,
+            "splashDamageRadius": 120
+            "splashDamage": 4000,
+            "buildingDamageMultiplier": 3,
+            "fragBullets": 1,
+            "fragRandomSpread": 0,
+            "fragVelocityMin": 1
+            "fragVelocityMax": 1
+            "fragBullet": {
+                "type": "MissileBulletType",
+                "hitEffect": {
+                    "type": "Particlefect",
+                    "particles": 3,
+                    "lifetime": 30,
+                    "line": true,
+                    "lenFrom": 8,
+                    "lenTo": 8,
+                    "sizeFrom": 8,
+                    "sizeTo": 8,
+                    "colorFrom": "77cc77",
+                    "colorTo": "77cc77",
+                    },
+                "despawnEffect": {
+                    "type": "ParticleEffect",
+                    "cone": 0,
+                    "length": 320,
+                    "lifetime": 10,
+                    "particles": 1,
+                    "region": "pnk-mod-missile-large-effect",
+                    "colorFrom": "77cc77",
+                    "colorTo": "77cc7700",
+                    "sizeFrom": 16,
+                    "sizeTo": 16,
+                    },
+                "width": 24,
+                "height": 24,
+                "speed": 16,
+                "sprite": "missile-large",
+                "lifetime": 15,
+                "pierce": true,
+                "pierceBuilding": true,
+                "pierceCap": 8,
+                "frontColor": "77cc77",
+                "backColor": "77cc77",
+                "trailColor": "77cc77",
+                "fragOnHit": false,
+                "damage": 2000
+                "status": "严重放射侵蚀"
+                "statusDuration": 300
+                },
+            },
+        },
+    }

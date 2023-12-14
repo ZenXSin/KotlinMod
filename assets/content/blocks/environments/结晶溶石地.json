@@ -1,0 +1,7 @@
+{
+"type": "Floor"
+"name": "结晶溶石地"
+"variants": 3
+"itemDrop": "结晶溶石"
+"playerUnmineable": true
+}

@@ -1,0 +1,52 @@
+{
+"type": "flying"
+"name": "Acfya"
+"fogRadius": 5
+"template": "ErekirUnitType",
+"flying": true
+"hitSize": 16
+"health": 600
+"armor": 3
+"hovering": false
+"speed": 3.5
+"range": 200
+"rotateSpeed": 6
+"rotateShooting": true
+"faceTarget": true,
+"lowAltitude": false
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 8
+"engineSize": 4
+"lightColor": "e65555"
+"weapons": [
+            {
+            "x": 0
+            "y": 4
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 30
+            "recoil": 2
+            "shootSound": "missile"
+            "inaccuracy": 0
+            "shootCone": 1
+            "rotateShooting": false
+            "bullet": {
+            "type": "MissileBulletType"
+            "speed": 6
+            "lifetime": 40
+            "frontColor": "ffd37f"
+            "backColor": "ffd37f"
+            "trailColor": "ffd37f"
+            "trailWidth":2
+            "trailLength": 4
+            "damage": 35
+            "width": 8
+            "height": 8
+            "homingPower": 0.2
+            "homingRange": 320
+            }
+            }
+]
+}

@@ -1,0 +1,47 @@
+{
+    "type": "GenericCrafter",
+    "name": "放射能源封装器",
+    "description":"将萃取出的放射结晶封装到容器中。",
+    "category": "crafting",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			    "type": "DrawFrames",
+		    	"frames": 27,
+		    	"sine": false,
+			},
+        ],
+    },
+    "updateShake": 2,
+    "health":5000,
+    "itemCapacity":50,
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "titanium/350",
+        "锰钢/400",
+        "surge-alloy/350",
+        "U/150",
+        "硬铝/400",
+        "钛合金/120",
+    ],
+    "outputItem": "8-放射能源/3",
+    "craftTime": 150.00,
+    "size": 3
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items":[
+               "copper/5",
+               "lead/5",
+               "metaglass/6",
+               "U-235/1",
+            ],
+        },
+        "power": 3,
+    },
+    "research":"大型铀构造器",
+}

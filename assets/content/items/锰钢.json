@@ -1,0 +1,12 @@
+{
+"name":"锰钢"
+"description":"可以看做是精炼锰，质地坚硬，一般用于基建设施。"
+"hardness":"5"
+"cost":"3.3"
+"color":"c0d7eb"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"锰"
+}

@@ -1,0 +1,120 @@
+{
+    "type": "legs",
+    "health": 5000,
+    "hitSize": 16,
+    "drag": 0.4,
+    "speed": 0.45,
+    "rotateSpeed":4.5
+    
+            "legCount": 4,
+            "legLength": 12,
+            "legBaseOffset": 4.0,
+            "legMoveSpace": 1.0,
+            "legTrns": 0.68,
+            "legExtension": 4
+            "hovering": true,
+            "visualElevation": 0.8,
+            "allowLegStep": true,
+
+    "research": "a1-1",
+    "armor": 16,
+    "name": "a1-2",
+    "commandLimit": 10,
+    "itemCapacity": 100,
+    "weapons": [
+        {
+            "name": "a1-2-1",
+            "reload": 30,
+            "shots": 1,
+            "recoil": 2.45,
+            "rotate": true,
+            "targetAir":false
+            "mirror": false
+            "shootSound": "bang",
+            "x": 0,
+            "y": -2,
+            "rotateShooting": false,
+            "mirrorn":false
+            "targetAir": false
+            "targetGround": true
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 8,
+                "height": 8,
+             "frontColor": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage":80
+                "splashDamageRadius": 24
+                "fragBullets": 2
+            "fragBullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 6,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "height": 6,
+                "splashDamage": 50
+                "splashDamageRadius": 8
+                "collidesTile":false
+                "damage": 30
+                "knockback":0.4
+                "lifetime": 40
+                "speed": 2
+                }
+             "hitEffect": {
+             "type": "WaveEffect",
+             "lifetime": 8,
+             "sizeFrom": 0,
+             "sizeTo": 15,
+             "strokeFrom": 4,
+             "strokeTo": 0,
+             "colorFrom": "77ce77FF",
+             "colorTo": "77ce7700"
+             },
+             "despawnEffect": {
+             "type": "WaveEffect",
+             "lifetime": 8,
+             "sizeFrom": 0,
+             "sizeTo": 15,
+             "strokeFrom": 4,
+             "strokeTo": 0,
+             "colorFrom": "77ce77FF",
+             "colorTo": "77ce7700"
+             },
+                "collidesTile":true
+                "damage":240
+                "knockback":0.4
+                "lifetime":90
+                "speed":4
+            }
+        }
+  {
+            "name": "a1-2-2",
+            "reload": 10,
+            "shots": 1,
+            "recoil": 0.6,
+            "innacuracy": 8
+            "rotate": true,
+            "shootSound":"shoot"
+            "x": 3,
+            "y": 6,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "FlakBulletType",
+                "width": 5,
+                "height": 5,
+                "damage":18,
+                "splashDamage": 6
+                "splashDamageRadius": 10
+                "lifetime":36,
+                "speed":4
+            }
+        }
+    ]
+    
+}

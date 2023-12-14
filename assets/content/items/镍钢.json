@@ -1,0 +1,11 @@
+{
+"name":"镍钢"
+"description":"由镍为主的金属熔铸而成，中等坚硬，适合作为基建设施材料。"
+"cost":"2"
+"color":"d0ab6b"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"镍"
+}

@@ -1,0 +1,11 @@
+{
+"name":"液氮"
+"description":"比冷冻液更寒冷，更适合降温。"
+"color":"6dffff"
+"flammability":0,
+"temperature":0.005,
+"heatCapacity":3.0,
+"viscosity":0.5,
+"explosiveness":0
+"research":"锰"
+}

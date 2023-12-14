@@ -1,0 +1,16 @@
+{
+	"type": "LiquidBridge",
+	"name": "67型导管桥",
+	"description": "更先进的液体传输建筑，能更远的传输液体",
+	"health": 150,
+	"range": 50,
+	"liquidCapacity": 60,
+	"hasPower":false,
+	"requirements": [
+		{ "item": "metaglass", "amount": 15 },
+		{"item": "plastanium", "amount": 10}
+		{"item": "silicon", "amount": 20 }
+	],
+	"category": "liquid",	
+	"research": "67型导管"
+}

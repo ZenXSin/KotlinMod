@@ -1,0 +1,186 @@
+{
+"type": "flying"
+"lowAltitude": true
+"hitSize": 48
+"flying": true
+"name": "b2-4"
+"health": 32000
+"armor": 6
+"speed": 4.25
+"engineOffset": 0
+"engineSize": 12
+"omniMovement": true
+"faceTarget": true
+"range": 200
+"rotateSpeed": 4.65
+"aimDst": 240
+"maxRange": 720
+    "research": "b2-3"
+"weapons": [
+{
+"name": "b2-4-1"
+"x": 12
+"y": 0
+"reload": 300
+"recoil": 4
+"shootSound": "cannon"
+"shoot": {
+"shots": 1
+}
+"bullet": {
+"type": "FlakBulletType"
+"sprite": "pnk-mod-bullet-1"
+"collidesGround": true
+"frontColor": "ee7777"
+"backColor": "ee7777"
+"trailColor": "ee7777"
+"width": 20
+"height": 20
+"trailWidth": 4
+"trailLength": 12
+"damage": 1500
+"splashDamage": 1500
+"splashDamageRadius": 80
+"speed": 6
+"lifetime": 80
+"shootEffect": {
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 32
+    "lifetime": 60
+    "cone": 10
+    "particles": 10
+}
+"hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 80
+    "lifetime": 30
+    "particles": 20
+}
+{
+"type": "WaveEffect"
+"sizeFrom": 0
+"sizeTo": 80
+"colorFrom": "ee7777"
+"colorTo": "ee7777"
+"strokeFrom": 4
+"strokeTo": 0
+"lifetime": 30
+}
+]
+}
+}
+}
+{
+"name": "b2-4-2"
+"x": 16
+"y": 12
+"layerOffset": -0.001
+"rotate": true
+"mirror": true
+"alternate": false
+"reload": 5
+"shootSound": "pew"
+"targetGround": false
+"targetAir": true
+"shotCone":15
+"rotationLimit": 45
+"recoil": 2
+"bullet": {
+"type": "BasicBulletType"
+"collidesGround": false
+"width": 6
+"height": 6
+"damage": 120
+"lifetime": 75
+"speed": 8
+"pierce": true
+"pierceCap": 2
+}
+}
+{
+"name": "b2-3-3"
+"x": 8
+"y": 16
+"layerOffset": -0.001
+"rotate": true
+"mirror": true
+"alternate": false
+"reload": 5
+"shootSound": "pew"
+"targetGround": false
+"targetAir": true
+"shotCone":15
+"rotationLimit": 45
+"recoil": 2
+"bullet": {
+"type": "BasicBulletType"
+"collidesGround": false
+"width": 6
+"height": 6
+"damage": 120
+"lifetime": 75
+"speed": 8
+"pierce": true
+"pierceCap": 2
+}
+}
+{
+"name": "b2-4-4"
+"shootSound": "missileLarge"
+"reload": 600
+"x": 0
+"y": 24
+"shoot": {
+"shots": 1
+}
+"mirror": false
+"rotate": false
+"targetGround": false
+"bullet": {
+"spawnUnit": "b2-plane"
+"maxRange": 400
+}
+}
+{
+"name": "b2-4-5"
+"reload": 240
+"x": 0
+"y": 0
+"shoot": {
+"type": "shootBarrel"
+"shots": 5
+"shotDelay": 3
+"barrels": [
+0,0,0
+2,0,0
+-2,0,0
+4,0,0
+-4,0,0
+]
+}
+"mirror": false
+"rotate": false
+"shootSound": "missileLarge"
+"bullet": {
+"spawnUnit": "b2-missile"
+"speed": 100
+}
+}
+]
+"research": "b2-3"
+}

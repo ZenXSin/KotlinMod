@@ -1,0 +1,36 @@
+{
+"type": "missile"
+"controller": "MissileAI"
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+        "omniMovement": false
+"lifetime": 900
+"health": 50,
+"speed": 0,
+"maxRange": 40
+"rotateSpeed": 3,
+"engineSize": 0,
+"lowAltitude": true,
+"fogRadius": 6,
+"targetAir": false
+"targetGround": true
+"shadow": 0
+"shadowElevation": 0
+"drawShadow": false
+"abilities": [
+  {
+    "type": "ForceFieldAbility"
+    "radius": 40
+    "regen": 5
+    "max": 600
+    "cooldown": 30
+  }
+]
+}

@@ -1,0 +1,441 @@
+{
+    "type": "legs",
+    "name": "Gasrhem Soyofins",
+    "description": "Sar gyrhnas puinnah ziasrhix.",
+    "speed": 0.5,
+    "rotateSpeed": 0.45,
+    "hitSize": 96,
+    "health": 785000,
+    "legMoveSpace": 0.55,
+    "maxStretch": 1.3,
+    "armor": 355,
+    "legLength": 128,
+    "legExtension": 32,
+    "legCount": 8,
+    "legSplashDamage": 3300,
+    "legSplashRange": 48,
+    "immunities": [
+    "放射侵蚀"
+    "严重放射侵蚀"
+    "热射线辐射"
+    "极寒"
+    "解冻"
+    "孢子破坏"
+    "孢子寄生"
+    ]
+    "abilities": [
+        {
+            "type": "ForceFieldAbility",
+            "radius": 160,
+            "regen": 250,
+            "max": 375000,
+            "cooldown": 1200
+        }
+            {
+              "type": "UnitSpawnAbility"
+               "unit": "g-s-u"
+               "spawnX": 0
+               "spawnY": -3
+               "spawnTime": 1200
+            }
+    ],
+    "weapons": [
+        {
+            "name": "d-bu-g-s-1",
+            "shoot": {
+                "shots": 45,
+                "firstShotDelay": 300
+            },
+            "reload": 1800,
+            "shotCone": 360,
+            "inaccuracy": -720
+            "mirror": false,
+            "rotate": false,
+            "x": 0,
+            "y": 24,
+            "shake": 24
+            "shootStatus": "unmoving",
+            "shootStatusDuration": 360,
+            "chargeSound": "pnk-mod-charge1",
+            "shootSound": "laserblast",
+            "bullet": {
+                "chargeEffect": {
+                    "type": "multiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "strokeFrom": 0,
+                            "strokeTo": 8,
+                            "sizeFrom": 96,
+                            "sizeTo": 24,
+                            "lifetime": 300
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "line": false,
+                            "length": 0,
+                            "baseLength": 0,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "sizeFrom": 0,
+                            "sizeTo": 24,
+                            "lifetime": 300
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 30,
+                            "line": true,
+                            "length": 128,
+                            "baseLength": -128,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "sizeFrom": 16,
+                            "sizeTo": 0,
+                            "lenFrom": 12
+                            "lenTo": 0
+                            "lifetime": 330,
+                        }
+                    ]
+                },
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "line": false,
+                            "length": 0,
+                            "baseLength": 0,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "sizeFrom": 24,
+                            "sizeTo": 0,
+                            "lifetime": 45,
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "strokeFrom": 12,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 256,
+                            "lifetime": 30,
+                            "interp": "circleOut",
+                            "sizeInterp": "pow10In"
+                        }
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 2,
+                            "length": 128,
+                            "sizeFrom": 4,
+                            "sizeTo": 0,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In"
+                        }
+                    ]
+                },
+                "type": "MissileBulletType",
+                "sprite": "pnk-mod-plasmastar-1",
+                "backSprite": "pnk-mod-plasmastar-1",
+                "width": 24,
+                "height": 24,
+                "trailWidth": 2,
+                "trailLength": 24,
+                "homingPower": 0
+                "weaveScale": 6
+                "weaveMag": 4
+                "splashDamage": 10000,
+                "splashDamageRadius": 80,
+                "frontColor": "ee9966",
+                "backColor": "ee9966",
+                "trailColor": "ee9966",
+                "speed": 6,
+                "lifetime": 90,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "strokeFrom": 12,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 15,
+                            "interp": "circleOut",
+                            "sizrInterp": "pow10In"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 15,
+                            "length": 64,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In"
+                        }
+                    ]
+                },
+                "despawnEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "strokeFrom": 12,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 15,
+                            "interp": "circleOut",
+                            "sizeInterp": "pow10In"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 15,
+                            "length": 64,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "colorFrom": "ee9966",
+                            "colorTo": "ee9966",
+                            "interp": "circleOut",
+                            "sizeInterp": "pow5In"
+                        }
+                    ]
+                }
+            }
+        }
+        {
+        "name": "d-bu-g-s-2"
+    "x": 0
+    "y": -16
+    "shootY": 16
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 1
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 5
+    "spread": 5
+    }
+    "shootCone": 60
+    "recoil": 0
+    "reload": 60
+     "recoil": 4
+    "shootSound": "red"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+            "type": "FlakBulletType",
+            "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 3
+            "sizeTo": 64
+            "colorFrom": "ee9966cc"
+            "colorTo": "ee996600"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 2
+            "StrokeTo": 0
+            "lifetime": 69
+            }
+                "shrinkY": 0
+                "backColor": "ee9966"
+                "frontColor": "ee996677"
+                "width": 15,
+                "height": 15
+
+                "sprite": "pnk-mod-bullet-1"
+                "homingDelay": 15
+                "drag": -0.025
+                "homingRange": 120
+                "homingPower": 0.05
+                "splashDamage": 2500
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 2500
+                "maxSpeed": 6
+                "knockback":0.4
+                "lifetime": 80
+                "speed": 3
+            }
+      }
+      {
+      
+            "name": "d-bu-g-s-3",
+            "reload": 90,
+            "shoot": {
+            "shots": 5
+            "shotDelay": 5
+            }
+            "shootY": 12
+            "recoil": 4.00,
+            "rotateSpeed": 6
+            "rotate": true,
+            "rotateSpeed": 6
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"laser"
+            "x": 32,
+            "y": -12,
+            "rotateShooting": false,
+            "mirror": true
+            "shotCone": 45
+            "inaccuracy": 15
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 1750
+                "sprite": "circle-bullet"
+                "splashDamage": 1250
+                "splashDamageRadius": 40
+                "homingPower": 0.05
+                "homingRange": 320
+                "homingDelay": 20
+                "width": 12
+                "height": 12
+                "weaveScale": 6
+                "weaveMag": 5
+                "trailColor": "ee9966"
+                "trailLength": 12
+                "trailWidth": 4
+                "sapStrength": 0.1
+                "frontColor": "ee9966"
+                "backColor": "ee9966"
+                "speed": 4
+                "lifetime": 55
+                "drag": -0.025
+                "hitEffect": {
+                "type": "MultiEffect"
+                "effects": [
+                {
+                "type": "ParticleEffect"
+                "line": true
+                "lenFrom": 8
+                "lenTo": 8
+                "particles": 8
+                "lifetime": 10
+                "sizeFrom": 4
+                "sizeTo": 4
+                "colorFrom": "ee9966"
+                "colorTo": "ee9966"
+                "length": 12
+                "baseLength": 20
+                }
+                {
+                "type": "ParticleEffect"
+                "particles": 15
+                "lifetime": 35
+                "sizeFrom": 4
+                "sizeTo": 0
+                "lenFrom": 6
+                "lenTo": 0
+                "colorFrom": "ee9966"
+                "colorTo": "ee996600"
+                "interp": "circleOut"
+                "sizeInterp": "pow10In"
+                "length": 24
+                "line": true
+                }
+                {
+                "type": "WaveEffect"
+                "strokeFrom": 2
+                "strokeTo": 0
+                "sizeFrom": 40
+                "sizeTo": 40
+                "colorFrom": "ee9966"
+                "colorTo": "ee9966"
+                "lifetime": 30
+                }
+                ]
+                }
+      }
+      }
+      {
+      "name": "d-bu-g-s-4"
+      "shootSound": "machineGunShoot1"
+      "reload": 5
+      "alternale": false
+      "rotate": true
+      "mirror": true
+      "x": 20
+      "y": 36
+      "shootY": 8
+      "bullet": {
+      "shootEffect": {
+      "type": "ParticleEffect"
+      "line": true
+      "length": 12
+      "cone": 30
+      "particles": 5
+      "interp": "circleOut"
+      "sizeInterp": "pow5In"
+      "lenFrom": 6
+      "lenTo": 0
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966
+      "sizeFrom": 2
+      "sizeTo": 0
+      "lifetime": 20
+      }
+      "type": "BasicBulletType"
+      "damage": 1500
+      "width": 4
+      "height": 12
+      "frontColor": "ee9966"
+      "backColor": "ee9966"
+      "speed": 6
+      "lifetime": 75
+      }
+      }
+      {
+      "name": "d-bu-g-s-4"
+      "shootSound": "machineGunShoot1"
+      "reload": 5
+      "alternale": false
+      "rotate": true
+      "mirror": true
+      "x": 32
+      "y": 20
+      "shootY": 8
+      "bullet": {
+      "shootEffect": {
+      "type": "ParticleEffect"
+      "line": true
+      "length": 12
+      "cone": 30
+      "particles": 5
+      "interp": "circleOut"
+      "sizeInterp": "pow5In"
+      "lenFrom": 6
+      "lenTo": 0
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966
+      "sizeFrom": 2
+      "sizeTo": 0
+      "lifetime": 20
+      }
+      "type": "BasicBulletType"
+      "damage": 1500
+      "width": 4
+      "height": 12
+      "frontColor": "ee9966"
+      "backColor": "ee9966"
+      "speed": 6
+      "lifetime": 75
+      }
+      }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+"type": "missile"
+"controller": "MissileAI"
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+"lifetime": 160
+"health": 700,
+"speed": 8,
+"maxRange": 120
+"rotateSpeed": 0.02,
+"engineColor": "ee7777",
+"trailColor": "ee7777",
+"engineLayer": 100,
+"engineSize": 2,
+"engineOffset": 6,
+"trailLength": 6,
+"missileAccelTime": 120,
+"lowAltitude": true,
+"fogRadius": 6,
+"targetAir": false
+"targetGround": true
+"weapons": [
+{
+"shootCone": 360,
+"mirror": false,
+"reload": 1145,
+"shake": 10,
+"shootOnDeath": true,
+"targetAir": false
+"targetGround": true
+"shootSound": "blastbig",
+"bullet": {
+      "smokeEffect": {
+      "type": "ParticleEffect"
+      "lifetime": 30
+      "particles": 6
+      "length": 56
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+      "sizeFrom": 8
+      "sizeTo": 0
+      "colorFrom": "ee7777"
+      "colorTo": "ee7777"
+      }
+      "shootEffect": "none"
+"type": "FlakBulletType",
+"speed": 0
+"lifetime": 0
+"collidesGround": true
+"collidesAir": false
+"splashDamage": 800,
+"splashDamageRadius": 120
+    "maxRange": 40
+"buildDamageMultiplier": 0.1
+"killShooter": true
+}
+}
+]
+}

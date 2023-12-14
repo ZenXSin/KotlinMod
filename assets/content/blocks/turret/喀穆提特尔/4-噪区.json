@@ -1,0 +1,418 @@
+{
+"type": "ItemTurret"
+"name": "噪区"
+"description": "喀穆提特尔的超级武器，拥有巨大杀伤范围。"
+"reload": 600
+"recoil": 4
+"range": 800
+"size": 6
+"shootY": 0
+"research": "4-能量炮"
+"shootCone": 20
+"inaccuracy": 20
+"shootSound": "release"
+"category": "turret"
+"rotateSpeed": 1
+"health": 15500
+"ammoPerShot": 15
+"maxAmmo": 15
+"shootWarmupSpeed": 0.02
+"minWarmup": 0.9
+"warmupMaintainTime": 300,
+"requirements": [
+"plastanium/1200" "surge-alloy/500" "phase-fabric/300" "锆锰合金/1200" "8-记忆金属/500"
+]
+
+        "drawer":{
+    "type": "drawTurret"
+    "parts": [
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-R1",
+    "layerOffset": -0.001
+    "moveX": 6
+    "moveY": -2
+        "moveRot": -15
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 0
+						"y": -4
+						"rot": -15
+						"recoilTime": 120
+					}
+				],
+        },
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-R2",
+    "layerOffset": -0.001,
+    "moveX": 10
+    "moveY": 2
+        "moveRot": -90
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 4
+						"y": -4
+						"rot": -45
+						"recoilTime": 180
+					}
+				],
+        },
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-R3",
+    "layerOffset": -0.001,
+    "moveX": 6
+    "moveY": 0
+        "moveRot": -45
+        },
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-L1",
+    "layerOffset": -0.001
+    "moveX": -6
+    "moveY": -2
+        "moveRot": 15
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 0
+						"y": -4
+						"rot": 15
+						"recoilTime": 120
+					}
+				],
+        },
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-L2",
+    "layerOffset": -0.001,
+    "moveX": -10
+    "moveY": 2
+        "moveRot": 90
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": -4
+						"y": -4
+						"rot": 45
+						"recoilTime": 180
+					}
+				],
+        },
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": false
+    "x": 0,
+    "y": 0,
+    "suffix":"-L3",
+    "layerOffset": -0.001,
+    "moveX": -6
+    "moveY": 0
+        "moveRot": 45
+        },
+]
+}
+"consumes": {
+"liquid": {
+"liquid": "液氮"
+"amount": 3
+"booster": false
+}
+"power": 30
+}
+"ammoTypes": {
+"8-记忆金属": {
+"shootEffect": {
+"type": "ParticleEffect"
+"particles": 3
+"sizeFrom": 4
+"sizeTo": 0
+"length": 80
+"colorFrom": "dddd99"
+"colorTo": "dddd99"
+"lifetime": 60
+"interp": "circleOut"
+"cone": 15
+}
+"intervalBullets": 1
+"bulletInterval": 10
+"intervalBullet": {
+    "type": "MissileBulletType"
+    "damage": 150
+    "splashDamage": 150
+    "splashDamageRadius": 80
+    "frontColor": "dddd99"
+    "backColor": "dddd99"
+    "trailColor": "dddd9988"
+    "sprite": "pnk-mod-arhit"
+    "trailChance": 2
+    "trailWidth": 1
+    "trailLength": 6
+    "width": 16
+    "height": 8
+    "speed": 2
+    "drag": -0.01
+    "lifetime": 90
+    "homingPower": 0.1
+    "homingRange": 560
+    "homingDelay": 20
+"status": "磁能渗透"
+"statusDuration": 60
+}
+"type": "MissileBulletType"
+"status": "磁能渗透"
+"statusDuration": 1200
+"homingPower": 0.02
+"homingRange": 1200
+"weaveScale": 4
+"weaveMag": 2
+"speed": 6
+"lifetime": 120
+"drag": -0.005
+"width": 16
+"height": 24
+"damage": 750
+"splashDamage": 250
+"splashDamageRadius": 320
+"keepVelocity": false
+"pierce": true
+"pierceBuilding": true
+"buildingDamageMultiplier": 0.15
+"hittable": false
+"absorbable":false
+"frontColor": "dddd99"
+"backColor": "dddd99"
+"trailColor": "dddd99"
+"ammoMultiplier": 1
+"trailLength": 16
+"trailWidth": 8
+"fragOnHit": false
+"despawnEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "line": true
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "dddd99"
+    "colorTo": "dddd99"
+    "length": 56
+    "lifetime": 120
+    "particles": 30
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "dddd99"
+    "colorTo": "dddd99"
+    "length": 40
+    "lifetime": 90
+    "particles": 20
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 120
+    "colorFrom": "dddd99"
+    "colorTo": "dddd9900"
+    "length": 0
+    "lifetime": 120
+    "particles": 1
+}
+{
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 64
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "dddd99"
+    "colorTo": "dddd99"
+    "lifetime": 90
+}
+]
+}
+"hitEffect": "none"
+"fragBullets": 1
+"fragBullet": {
+"type": "basicBulletType"
+"width": 0
+"height": 0
+"sprite": "air"
+"damage": 0
+"lifetime": 0
+"collidesAir": false
+"collidesGround": false
+"collides": false
+"absorbable": false
+"hittable": false
+"hitEffect": "none"
+"despawnEffect": {
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 240
+    "sizeTo": 240
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "dddd99"
+    "colorTo": "dddd99"
+    "lifetime": 300
+}
+"fragBullets": 1
+"fragBullet": {
+"type": "basicBulletType"
+"width": 0
+"height": 0
+"sprite": "air"
+"damage": 0
+"lifetime": 300
+"collidesAir": false
+"collidesGround": false
+"collides": false
+"absorbable": false
+"hittable": false
+"fragBullets": 1
+"hitEffect": "none"
+"bulletInterval": 15
+"intervalBullets": 1
+"intervalBullet": {
+        	"type":"PointBulletType",
+        	"splashDamage": 800
+        	"splashDamageRadius": 80
+            "backColor":"FFFFFF",
+            "frontColor":"FFFFFF",
+		    "heatColor":"FFFFFF",
+		    "trailColor":"FFFFFF"
+        	"trailSpacing":20,
+         	"damage":1500,
+        	"tileDamageMultiplier": 2
+        	"buildingDamageMultiplier": 0.15
+        	"hitShake":18,
+        	"ammoMultiplier": 1
+        	"length": 240
+	    "hitEffect": {
+        	"type": "MultiEffect"
+        	"effects": [
+        	{
+        	"type": "WaveEffect"
+        	"strokeFrom": 2
+        	"strokeTo": 0
+        	"sizeFrom": 80
+        	"sizeTo": 80
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"interp": "circleOut"
+        	"sizeInterp": "pow5In"
+        	"lifetime": 60
+        	}
+        	{
+        	"type": "ParticleEffect"
+        	"length": 60
+        	"sizeFrom": 4
+        	"sizeTo": 0
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"interp": "circleOut"
+        	"sizeInterp": "pow5In"
+        	"lifetime": 60
+        	"particles": 20
+        	}
+        	{
+        	"type": "ParticleEffect"
+        	"length": 0
+        	"sizeFrom": 80
+        	"sizeTo": 0
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"lifetime": 60
+        	"cone": 45
+        	"particles": 1
+        	"region": "pnk-mod-plasmastar-2"
+        	}
+        	]
+        	}
+	    "despawnEffect": {
+        	"type": "MultiEffect"
+        	"effects": [
+        	{
+        	"type": "WaveEffect"
+        	"strokeFrom": 2
+        	"strokeTo": 0
+        	"sizeFrom": 80
+        	"sizeTo": 80
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"interp": "circleOut"
+        	"sizeInterp": "pow5In"
+        	"lifetime": 60
+        	}
+        	{
+        	"type": "ParticleEffect"
+        	"length": 60
+        	"sizeFrom": 4
+        	"sizeTo": 0
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"interp": "circleOut"
+        	"sizeInterp": "pow5In"
+        	"lifetime": 60
+        	"particles": 20
+        	}
+        	{
+        	"type": "ParticleEffect"
+        	"length": 0
+        	"sizeFrom": 80
+        	"sizeTo": 0
+        	"colorFrom": "dddd99"
+        	"colorTo": "dddd99"
+        	"lifetime": 60
+        	"cone": 45
+        	"particles": 1
+        	"region": "pnk-mod-plasmastar-2"
+        	}
+        	]
+        	}
+        	"trailEffect": "none"
+        	"status": "shocked"
+        	"statusDuration": 300
+        	"hitSound": "plasmaboom"
+        	}
+}
+}
+}
+}
+}

@@ -1,0 +1,166 @@
+{
+    "type": "legs",
+    "name": "Gasrhem Iyla",
+    "description": "Oux amnasyorhem gdam yem.",
+    "speed": 0.65,
+    "rotateSpeed": 0.65,
+    "hitSize": 80,
+    "health": 455000,
+    "legMoveSpace": 0.55,
+    "maxStretch": 1.3,
+    "armor": 550,
+    "legLength": 128,
+    "legExtension": 32,
+    "legCount": 8,
+    "legSplashDamage": 1500,
+    "legSplashRange": 32,
+    "immunities": [
+    "放射侵蚀"
+    "严重放射侵蚀"
+    "热射线辐射"
+    "极寒"
+    "解冻"
+    "孢子破坏"
+    "孢子寄生"
+    ]
+    "abilities": [
+            {
+            "type": "SpawnDeathAbility"
+            "unit": "g-s-u"
+            "amount": 10
+            }
+/*        {
+            "type": "ForceFieldAbility",
+            "radius": 96,
+            "regen": 100,
+            "max": 155000,
+            "cooldown": 1200
+            "rotation": 361
+            "sides": 8
+        }*/
+            {
+    "type": "ShieldArcAbility",
+    "region": "pnk-mod-d-bu-g-i-shield"
+    "radius": 80,
+    "regen": 50,
+    "drawArc": true,
+    "angle": 361
+    "width": 32,
+    "y": 0,
+    "max": 400000,
+    "cooldown": 2400
+    "whenShooting": false
+    },
+    ],
+    "weapons": [
+    {
+    "name": "bu-g-i-1"
+    "reload": 180
+    "shootCone": 0
+    "inaccuracy": 0
+    "rotateSpeed": 1
+    "layerOffset": -0.001
+    "x": 36
+    "y": 4
+    "recoil": 8
+    "rotate": true
+    "rotationLimit": 32
+    "shootSound": "railgun"
+    "shootY": 20
+    "bullet": {
+    "pierce": true
+    "pierceBuilding": true
+    "type": "MissileBulletType"
+    "speed": 12
+    "lifetime": 80
+    "frontColor": "ee9966"
+    "backColor": "ee9966"
+    "trailColor": "ee9966"
+    "sprite": "circle-bullet"
+    "damage": 500
+    "splashDamage": 1500
+    "splashDamageRadius": 160
+    "width": 24
+    "height": 24
+    "shootEffect": {
+"type": "ParticleEffect"
+"particles": 12
+"line": true
+"sizeFrom": 6
+"sizeTo": 6
+"lenFrom": 12
+"lenTo": 0
+"length": 160
+"lifetime": 60
+"colorFrom": "ee9966"
+"colorTo": "ee9966"
+"cone": 10
+}
+    "trailEffect": {
+    "type": "ParticleEffect"
+    "particles": 5
+    "line": true
+    "lenFrom": 4
+    "lenTo": 4
+    "sizeFrom": 4
+    "colorFrom": "ee9966"
+    "colorTo": "ee9966"
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "sizeTo": 0
+    }
+    "homingPower": 0
+    "fragOnHit": false
+    "trailInterval": 5
+    "trailParam": 3
+    "bulletInterval": 2
+    "intervalRandomSpread": 20
+    "intervalBullets": 4
+    "intervalAngle": 180
+    "intervalSpread": 300
+    "fragBullets": 30
+    "fragVelocityMin": 1
+    "fragVelocityMax": 1
+    "fragLifeMin": 1
+    "intervalBullet": {
+    "type": "MissileBulletType"
+    "frontColor": "ee9966"
+    "backColor": "ee9966"
+    "trailColor": "ee9966"
+    "trailChance": 0
+    "homingPower": 0.15
+    "homingRange": 560
+    "homingDelay": 5
+    "width": 4
+    "height": 4
+    "trailLength": 6
+    "trailWidth": 2
+    "sprite": "circle-bullet"
+    "speed": 8
+    "lifetime": 45
+    "damage": 145
+    "weaveScale": 3
+    "weaveMag": 4
+    }
+    "fragBullet": {
+    "type": "MissileBulletType"
+    "frontColor": "ee9966"
+    "backColor": "ee9966"
+    "trailColor": "ee9966"
+    "trailChance": 0
+    "homingPower": 0.15
+    "homingRange": 560
+    "homingDelay": 5
+    "width": 4
+    "height": 4
+    "trailLength": 6
+    "trailWidth": 2
+    "sprite": "circle-bullet"
+    "speed": 6
+    "lifetime": 30
+    "damage": 145
+    }
+	}
+    }
+    ]
+}

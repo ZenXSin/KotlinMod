@@ -1,0 +1,73 @@
+{
+        "type": "missile",
+         "controller": "MissileAI",
+        "lowAltitude": false,
+        "speed": 4,
+        "rotateSpeed": 1.6,
+        "lifetime": 480,
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+        "health": 200,
+        "hitSize": 4,
+        "engineColor": "ffffdd",
+        "outlineRadius": 0,
+        "engineSize": 0,
+        "engineLayer": 110,
+        "drawCell": false,
+        "maxRange": 32,
+          "trailColor": "ffffdd",
+        "trailLength": 8,
+       "parts": [
+       {
+        "type": "FlarePart",
+        "progress": {
+        "type": "life",
+        "op": "curve",
+        "interp": "pow3Out"
+       },
+       "rotation": 86,
+       "color1": "ffffddFF",
+       "color2": "ffffff"
+       "stroke": 4.5,
+       "radius": 0,
+       "radiusTo": 30
+  }
+],
+	    "weapons": [
+	   {
+    "shootCone": 360,
+    "shootOnDeath": true,
+    "controllable": true,
+    "shootSound": "none",
+    "bullet": {
+    "killShooter": true,
+    "type": "BombBulletType"
+    "damage": 80
+    "splashDamage": 120
+    "splashDamageRadius": 120
+    "maxRange": 24
+    "lifetime": 0
+    "despawnHit": true
+    "collidesAir": true
+    "hitEffect": {
+    "type": "particleEffect"
+    "line": true
+    "lenFrom": 6
+    "lenTo": 0
+    "sizeFrom": 4
+    "sizeTo": 4
+    "colorFrom": "ffffdd"
+    "colorTo": "ffffdd"
+    "lifetime": 15
+    }
+}
+}
+]
+}

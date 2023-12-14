@@ -1,0 +1,102 @@
+{
+"type":"mech"
+"name":"a3-1"
+"speed":0.8
+"hitSize": 12
+"rotateSpeed":2.4
+"health": 3000
+"reload": 7200
+"armor": 8
+"range": 2
+"mineSpeed":1.32
+"legMoveSpace": 6
+"mechStride": 4
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 80,
+              "amount": 100,
+              "reload": 240
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 80
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+]
+"mechStepShake":0.5
+"duration": 5
+"legCount":2
+"weapons": [
+               {
+    "name": "a3-1-1"
+    "x": 9
+    "y": 0
+    "shootY": 4
+    "mirror": true
+    "rotate": false
+    "autoTarget": true
+    "shoot": {
+    "shots": 2
+    "type": "ShootBarrel"
+    "barrels": [
+    0,0,5
+    0,0,-5
+    ]
+    }
+    "inaccuracy": 15
+    "shootCone": 40
+    "recoil": 1
+    "reload": 120
+     "range":200
+    "shootSound": "red"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 3
+            "sizeTo": 10
+            "colorFrom": "ddddddcc"
+            "colorTo": "55555500"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 120
+            }
+            "drag": -0.025
+                "shrinkY": 0
+                "backColor": "b166ff77"
+                "color": "ffffffbb"
+                "width": 10,
+                "height": 10,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 120
+                "homingPower": 0.05
+                "homingDelay": 10
+                "splashDamage": 80
+                "splashDamageRadius": 40
+                "collidesTeam": true
+                "collidesGround": true
+                "damage": 20
+                "healPresent": 50
+                "maxSpeed": 5
+                "knockback":3
+                "lifetime": 30
+                "speed": 4
+                "healPercent": 3
+                "healColor": "bb66dd"
+            }
+      }
+     ]
+    "research": "0721构造器"
+}

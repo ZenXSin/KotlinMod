@@ -1,0 +1,18 @@
+{
+"type":"SectorPreset"
+"localizedName":"格兰特南部群岛"
+"planet": "kurh"
+"sector": 208
+"difficulty": 3
+"captureWave": 25
+"research":{
+"parent": "荒地"
+"objectives": [
+{
+"type": "SectorComplete"
+"preset": "荒地"
+}
+]
+}
+"description": "这里是[orange]Kurh[white]的偏僻之地，[red]兰帕姆[white]的势力得以不在此地蔓延，占领这里研究 0721构造器 及 a0-1 。"
+}

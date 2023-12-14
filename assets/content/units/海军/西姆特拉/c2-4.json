@@ -1,0 +1,169 @@
+{
+    "type": "naval",
+    "name": "c2-4",
+    "health": 32000,
+    "armor": 16
+    "hitSize": 40,
+    "speed": 0.85,
+    "accel": 0.3,
+    "rotateSpeed": 2,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "maxRange": 640
+    "weapons": [
+    {
+    "name": "c2-4-1"
+    "targetAir": true
+    "collidesGround": false
+    "rotate": true
+    "mirror": false
+    "shootSound": "shootAlt"
+    "reload": 15
+    "rotateSpeed": 1.5
+    "recoil": 2
+    "recoilTime": 45
+    "x": 0
+    "y": -20
+    "shoot": {
+    "type": "ShootBarrel"
+    "shootSound": "shootAlt"
+    "barrels": [
+    4,6,0
+    -4,6,0
+    ]
+    }
+    "bullet": {
+    "type": "FlakBulletType"
+    "speed": 32
+    "lifetime": 20
+    "width": 8
+    "height": 16
+    "splashDamage": 200
+    "splashDamageRadius": 64
+    "damage": 200
+    "frontColor": "777777ff"
+    "backColor": "777777ff"
+    "hitEffect": {
+    "type": "particleEffect"
+    "length": 8
+    "particles": 6
+    "sizeFrom": 12
+    "sizeTo": 0
+    "interp": "circleOut"
+    "sizeInterp": "pow2In"
+    "colorFrom": "555555ff"
+    "colorTo": "55555500"
+    "lifetime": 45
+    }
+    "despawnEffect": {
+    "type": "particleEffect"
+    "length": 40
+    "particles": 6
+    "sizeFrom": 8
+    "sizeTo": 0
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "colorFrom": "555555ff"
+    "colorTo": "55555500"
+    "lifetime": 45
+    }
+    }
+    }
+    {
+    "name": "c2-4-2"
+    "targetAir": true
+    "collidesGround": false
+    "rotate": true
+    "mirror": false
+    "shootSound": "shootAlt"
+    "reload": 15
+    "rotateSpeed": 1.5
+    "recoil": 2
+    "recoilTime": 45
+    "x": 0
+    "y": 12
+    "shoot": {
+    "type": "ShootBarrel"
+    "shootSound": "shootAlt"
+    "barrels": [
+    4,6,0
+    -4,6,0
+    ]
+    }
+    "bullet": {
+    "type": "FlakBulletType"
+    "speed": 32
+    "lifetime": 20
+    "width": 8
+    "height": 16
+    "splashDamage": 200
+    "splashDamageRadius": 64
+    "damage": 200
+    "frontColor": "777777ff"
+    "backColor": "777777ff"
+    "hitEffect": {
+    "type": "particleEffect"
+    "length": 8
+    "particles": 6
+    "sizeFrom": 12
+    "sizeTo": 0
+    "interp": "circleOut"
+    "sizeInterp": "pow2In"
+    "colorFrom": "555555ff"
+    "colorTo": "55555500"
+    "lifetime": 45
+    }
+    "despawnEffect": {
+    "type": "particleEffect"
+    "length": 40
+    "particles": 6
+    "sizeFrom": 8
+    "sizeTo": 0
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "colorFrom": "555555ff"
+    "colorTo": "55555500"
+    "lifetime": 45
+    }
+    }
+    }
+        {
+            "name": "c2-4-3",
+            "reload": 6,
+            "ejectEffect": "none",
+            "mirror": true
+            "shoot": {
+            "type": "ShootBarrel"
+            "barrels": [
+            1,4,0
+            -1,4,0
+            ]
+            }
+            "recoil": 1,
+            "rotate": true,
+            "shootSound": "shoot",
+            "shootCone": 30
+            "x": 12,
+            "y": 2,
+            "rotateShooting": false,
+            "alternate": false
+            "bullet": {
+                "type": "FlakBulletType",
+                "width": 4,
+                "height": 6,
+                "splashDamage": 30
+                "splashDamageRadius": 24
+                "collidesGround": true
+                "damage": 10
+                "lifetime": 40
+                "speed": 8
+            }
+        },
+       ],
+    "research": "c2-3"
+}

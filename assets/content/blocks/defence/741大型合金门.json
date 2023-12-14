@@ -1,0 +1,15 @@
+{
+"type":"door",
+"name":"大型合金门",
+"category":"defense",
+"size":3
+"description":"坚硬且可以让单位通过的墙。",
+"health":13500,
+"requirements":[
+"silicon/25"
+"硬铝/50"
+"plastanium/35"
+"surge-alloy/75"
+]
+"research":"740合金门"
+}

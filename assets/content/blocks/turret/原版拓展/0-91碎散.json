@@ -1,0 +1,25 @@
+{
+    "type": "PointDefenseTurret",
+    "name": "碎散",
+    "size": 3,
+    "description": "解裂光束的防御炮台版本。"
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "requirements": [
+     "lead/500","phase-fabric/800","surge-alloy/450"
+    ],
+    "hasPower": true
+    "hasItems": true
+    "consumes": {
+    "power": 3
+    }
+    "bulletDamage": 1500
+    "shootSound": "sap"
+    "reload": 3
+    "restitution": 0.1,
+    "range": 400,
+    "health": 4500,
+    "rotateSpeed": 15.00,
+    "research":"segment"
+    	"shootLength":10,
+}

@@ -1,0 +1,13 @@
+{
+"name": "解离"
+"description": "分解？分解！"
+"speedMultiplier": 1.4
+"healthMultiplier": 0.27
+"reloadMultiplier": 0.5
+"damage": 0.75
+"affinities": [
+"严重放射侵蚀"
+]
+"transitionDamage": 400
+"effectChance": 1
+}

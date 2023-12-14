@@ -1,0 +1,14 @@
+{
+"type": "StorageBlock"
+"name": "微型仓库"
+"hasItems": true
+"outputItems": true
+"itemCapacity": 200
+"health": 600
+"requirements": [
+  "metaglass/20"
+  "silicon/30"
+]
+"category": "distribution"
+"research": "67式传送带"
+}

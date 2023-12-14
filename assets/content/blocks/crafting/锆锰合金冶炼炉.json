@@ -1,0 +1,46 @@
+{
+    "type": "GenericCrafter",
+    "name": "锆锰合金冶炼炉",
+   "description":"生产锆锰合金。",
+    "category": "crafting",
+    "health": 500,
+    "itemCapacity": 30,
+    "requirements": [
+    "copper/200",
+    "silicon/400",
+    "镍钢/220",
+    "thorium/90",
+    "plastanium/120",
+    ],
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			    "type": "DrawFlame",
+		    	"flameColor": "eeeeffcc",
+			},
+        ],
+    },
+    "outputItem": "锆锰合金/4",
+    "craftTime": 120.00,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquid": false,
+    "consumes": {
+        "liquid": {
+            "liquid": "石油气",
+            "amount": 0.5,
+        },
+        "items": {
+            "items": [
+                "pyratite/1",
+                "锰/5",
+                "锆/6",
+                "lead/3",
+            ],
+        },
+        "power": 3,
+    },
+    "research": "锰钢锻压机",
+}

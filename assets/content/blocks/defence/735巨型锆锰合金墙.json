@@ -1,0 +1,13 @@
+{
+"type":"wall",
+"name":"巨型锆锰合金墙",
+"category":"defense",
+"size":3,
+"description":"使用锆锰合金制作的巨型墙壁，异常坚硬，可能反弹炮弹。",
+"health": 35000,
+"requirements":[
+"锆锰合金/75"
+]
+"chanceDeflect": 80
+"research":"734大型锆锰合金墙"
+}

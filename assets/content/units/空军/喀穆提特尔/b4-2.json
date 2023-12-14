@@ -1,0 +1,46 @@
+{
+"type": "flying"
+"name": "b4-2"
+"flying": true
+"hitSize": 16
+"health": 4500
+"armor": 6
+"rotateSpeed": 5
+"hovering": true
+"speed": 3.65
+"range": 400
+"rotateSpeed": 5
+"faceTarget": true
+"rotateShooting": true
+//"circleTarget": true,
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 4
+"engineSize": 4
+"lightColor": "e65555"
+    "research": "b4-1"
+"weapons": [
+            {
+            "name": "b4-2-1"
+            "x": 0
+            "y": 3
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 90
+            "shoot": {
+            "shots": 3
+            "shotDelay": 5
+            }
+            "recoil": 2
+            "shootSound": "missile"
+            "inaccuracy": 15
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "speed": 100
+            "spawnUnit": "b4-2-missile"
+            }
+            }
+]
+}

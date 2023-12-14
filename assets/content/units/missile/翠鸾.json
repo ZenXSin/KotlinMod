@@ -1,0 +1,119 @@
+{
+"type": "missile"
+"controller": "MissileAI"
+"name": "翠鸾",
+"description": "装甲不高，容易拦截，伤害不大。"
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+"armor": 40,
+"health": 3000,
+"speed": 8,
+"lifetime": 260,
+"range":24
+"maxRange": 6,
+"rotateSpeed": 1.8,
+"engineColor": "85f290",
+"trailColor": "85f290",
+"engineLayer": 100,
+"engineSize": 3.1,
+"engineOffset": 10,
+"trailLength": 18,
+"missileAccelTime": 60,
+"lowAltitude": true,
+"fogRadius": 6,
+"weapons": [
+{
+"shootCone": 360,
+"mirror": false,
+"reload": 1,
+"shake": 10,
+"shootOnDeath": true,
+"shootSound": "blastbig",
+"bullet": {
+"type": "ExplosionBulletType",
+"hitColor": "FF8257D7",
+"shootEffect": {
+"type": "MultiEffect",
+"effects": [
+{
+"type": "WaveEffect",
+"lifetime":10,
+"strokeFrom":4,
+"sizeTo":68
+"colorTo": "ffffff00"
+}
+{
+"type": "ParticleEffect",
+"particles": 8,
+"sizeFrom":6,
+"sizeTo": 2,
+"length": 68,
+"lifetime": 80,
+"colorFrom": "777777D7",
+"colorTo": "77777700",
+"cone": 360
+}
+{
+"type": "ParticleEffect",
+"particles": 15,
+"sizeFrom":3,
+"sizeTo": 1.2,
+"length": 76,
+"lifetime": 80,
+"colorFrom": "777777D5",
+"colorTo": "77777700",
+"cone": 360
+}
+]
+},
+"splashDamage":1000,
+"splashDamageRadius": 80
+    "maxRange": 24
+"buildDamageMultiplier": 0.02
+}
+}
+]
+"abilities": [
+{
+"type": "MoveEffectAbility",
+"effect":{
+"type": "MultiEffect",
+"effects": [
+{
+"type": "ParticleEffect",
+"particles": 8,
+"sizeFrom":3.6,
+"sizeTo": 1.6,
+"length": 28,
+"lifetime": 22,
+"colorFrom": "777777A5",
+"colorTo": "77777700",
+"cone": 20
+}
+{
+"type": "ParticleEffect",
+"particles": 5,
+"sizeFrom":5.8,
+"sizeTo": 3,
+"length": 32,
+"lifetime": 26,
+"colorFrom": "777777DD",
+"colorTo": "77777700",
+"cone": 22
+}
+]
+}
+"rotation": 180,
+"y": -9,
+"color": "777777B7",
+"interval": 5
+}
+],
+}

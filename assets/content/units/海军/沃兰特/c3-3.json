@@ -1,0 +1,149 @@
+{
+    "type": "naval",
+    "name": "c3-3",
+    "health": 10000,
+    "armor": 40,
+    "hitSize": 32,
+    "speed": 1.3,
+    "accel": 0.4,
+    "rotateSpeed": 4.35,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 60,
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 160,
+              "amount": 240,
+              "reload": 240
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 160
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+    "type": "ForceFieldAbility"
+    "radius": 64
+    "regen": 5
+    "max": 4800
+    "cooldown": 600
+  }
+  ]
+    "weapons": [
+            {
+            "name": "c3-3-1"
+            "x": 12
+            "y": -8
+            "mirror": true
+            "rotate": true
+            "rotateSpeed": 12
+            "reload": 60
+            "recoil": 2
+            "shootSound": "laser"
+            "shoot": {
+            "shots": 1
+            }
+            "inaccuracy": 0
+            "shotCone": 0
+            "rotateShooting": false
+            "bullet": {
+"type": "MissileBulletType"
+            "frontColor": "bb66dd"
+            "backColor": "8833aa"
+            "trailColor": "bb66dd"
+            "homingPower": 0
+            "homingRange": 0
+"width": 8
+"height": 8
+"trailWidth": 3
+"trailLength": 8
+"speed": 8
+"lifetime": 60
+"damage": 50
+"splashDamage": 450
+"splashDamageRadius": 80
+"hitEffect": {
+"type": "WaveEffect"
+"colorFrom": "bb66dd"
+"colorTo": "bb66dd"
+"strokeFrom": 4
+"strokeTo": 0
+"lenFrom": 0
+"lenTo": 0
+"sizeFrom": 40
+"sizeTo": 40
+"lifetime": 60
+}
+      }
+            }
+    {
+            "name": "c3-3-2",
+            "reload": 120,
+            "recoil": 1.00,
+            "rotate": true,
+            "shootSound":"plasmaboom"
+            "x": 0,
+            "y": 6,
+            "rotateShooting": false,
+            "bullet": {
+            "type": "MissileBulletType"
+            "healPercent": 20
+            "healColor": "bb66dd"
+            "lifetime": 96
+            "speed": 3
+            "damage": 40
+            "splashDamage": 160
+            "splashDamageRadius": 40
+            "healPercent": 5
+            "hitEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 0
+            "sizeTo": 32
+            "strokeFrom": 2
+            "strokeTo": 0
+            "colorFrom": "dd88ff"
+            "colorTo": "ffffff"
+            "lifetime": 60
+            }
+            "width": 24
+            "height": 24
+            "frontColor": "bb66dd"
+            "backColor": "8833aa"
+            "trailColor": "bb66dd"
+            "sprite": "pnk-mod-bullet-2"
+            "bulletInterval": 15
+            "intervalBullets": 1
+            "homingPower": 0.15
+            "homingRange": 180
+            "collidesTeam": true
+            "healColor": "bb66dd"
+            "healPercent": 15
+            "intervalBullet": {
+        "type": "LightningBulletType"
+        "lightColor": "aa55cc"
+        "lightning": 1
+        "lightningLength": 32
+        "lightningLengthRand": 5
+        "lightningCone": 5
+        "lightningColor": "aa55cc"
+        "lightningDamage": 200
+        "healPercent": 5
+        "healColor": "aa55cc"
+            }
+               }
+            }
+        ]
+    "research": "c3-2"
+    }

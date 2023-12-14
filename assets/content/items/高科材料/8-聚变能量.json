@@ -1,0 +1,13 @@
+{
+"name":"聚变能量"
+"description":"内置微型粒子对撞机，但是外壳可以承受住重摔，猛摇等干扰；一旦破坏必将引起一场恐怖的爆炸。"
+"details": "西姆特拉的高科物品，这是核聚变科技的巨大进步。"
+"hardness":"4"
+"cost":6
+"color":"cf7474"
+"radioactivity": 0,
+"explosiveness": 8
+"flammability":0
+"charge":0
+"research":"锆锰合金"
+}

@@ -1,0 +1,14 @@
+{
+"name": "爆裂"
+"description": "中度爆炸危害"
+"affinities": [
+"freezing"
+"极寒"
+]
+"opposites": [
+"burning"
+"melting"
+"sapped"
+]
+"transitionDamage": 150
+}

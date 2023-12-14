@@ -1,0 +1,178 @@
+{
+"type": "flying"
+"flying": true
+"name": "b1-3"
+"hitSize": 28
+"health": 12500
+"armor": 6
+"speed": 1.5
+"rotateSpeed": 2.35
+"engineOffset": 10
+"engineSize": 3.5
+"targetFlags": [
+"turret"
+"generator"
+]
+"playerTargetFlags": [
+"turret"
+]
+"faceTarget": true
+"lowAltitude": true
+    "research": "b1-2"
+"weapons": [
+        {
+            "name": "b1-3-1",
+            "reload": 30,
+            "ejectEffect": "none",
+            "mirror": false
+            "shots": 2,
+            "recoil": 2.45,
+            "rotate": true,
+            "shootSound": "bang",
+            "shootCone": 30
+            "innacuricy": 15
+            "x": 0,
+            "y": 0,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 360
+                "width": 8,
+                "height": 8,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage": 85
+                "splashDamageRadius":10
+                "collidesTile":false
+                "damage": 10
+                "knockback":0.8
+                "lifetime": 65
+                "speed":4
+            }
+        }
+  {
+            "name": "b1-3-2",
+            "reload": 20,
+            "shots": 1
+            "recoil": 1.00,
+            "rotate": true,
+            "collidesGround": true
+            "collidesAir": true
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"sap"
+            "x": 8,
+            "y": 1,
+            "rotateShooting": false,
+            "mirror":true
+            "bullet": {
+                "type": "SapBulletType",
+                "damage": 40
+                "length": 120
+                "sapStrength": 0.55
+                "shootEffect": "shootLiquid"
+                "healPercent": 10
+                "hitEffect": "hitLiquid"
+                "color": "99ef88"
+                "lightColor": "daffcc"
+            }
+        }
+               {
+    "name": "b1-3-3"
+    "x": 4
+    "y": -8
+    "shootY": 3
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 6.5
+    "shots": 1
+    "recoil": 0.5
+    "reload": 20
+    "shootSound": "shootSnap"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+    "bullet": {
+      "type": "FlakBulletType"
+      "damage": 35
+      "collidesGround": true
+      "ammoMultiplier":5
+      "width":5
+      "height":10
+      "lifetime":45
+      "splashDamage": 12
+      "splashDamageRadius": 30.5
+      "speed":5
+                }
+          }
+     {
+    "name": "b1-3-4"
+    "x": 10
+    "y": 8
+    "shootY": 3
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 6.5
+    "shots": 1
+    "recoil": 0.5
+    "reload": 20
+    "shootSound": "shootSnap"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+    "bullet": {
+      "type": "FlakBulletType"
+      "damage": 35
+      "collidesGround": true
+      "ammoMultiplier":5
+      "width":5
+      "height":10
+      "lifetime":45
+      "splashDamage": 12
+      "splashDamageRadius": 30.5
+      "speed":5
+                }
+          }
+{
+"name": "b1-3-5"
+    "x": 0
+    "y": 0
+    "shootY": 9
+    "mirror": true
+    "rotate": false
+    "autoTarget": true
+    "shots": 1
+    "recoil": 0.5
+    "reload": 90
+    "firstShotDelay": 30
+    "shootSound": "laser"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 160,
+        	"damage": 75,
+        	"width": 20,
+        	"status": "严重放射侵蚀"
+        	"statusDuartion": 120
+        	"colors": [
+        	"99ff99dd",
+        	"dbffdbee",
+        	"ffffffff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+}
+]
+}

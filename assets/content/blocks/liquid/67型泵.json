@@ -1,0 +1,19 @@
+{
+	"type": "Pump",
+	"name": "67型泵",
+	"description": "效率很高的泵",
+	"size": 2,
+	"health": 1000,
+	"liquidCapacity": 200,
+	"hasLiquids": true,
+	"pumpAmount": 1.5,
+	"useTime": 300,
+	"consumes": {
+	"power": 3
+	},
+	"requirements": [
+	"lead/100","graphite/35","titanium/50","silicon/30","plastanium/30"
+]
+	"category": "liquid",
+	"research": "67型导管"
+}

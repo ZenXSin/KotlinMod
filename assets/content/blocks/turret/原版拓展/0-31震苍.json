@@ -1,0 +1,63 @@
+{
+    "type": "ItemTurret",
+    "name": "震空",
+    "description": "雷暴的升级版本，相比之前拥有更快的攻击速度，更大的打击范围。"
+    "size": 6,
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "heatColor": "ffffff"
+    "requirements": [
+        "lead/2000" "titanium/2000" "silicon/550" "plastanium/1200" "surge-alloy/700" "phase-fabric/500" "U/600"
+    ],
+    "ammoTypes": {
+     "surge-alloy": {
+     "type": "FlakBulletType"
+     "width": 8
+     "height": 8
+     "damage": 90
+     "splashDamage": 210
+      "frontColor": "ffff99"
+      "backColor": "aaaa55"
+     "splashDamageRadius": 64
+     "collidesGround": true
+     "lifetime": 75
+     "speed": 8
+     "fragBullets": 2
+     "fragBullet": {
+     "type": "LightningBulletType"
+     "lightningLength": 60
+     "xRand": 0.1
+     "damage": 300
+     "lightningColor": "ffffaa"
+     }
+     "intervalBullets": 1
+     "bulletInterval": 15
+     "intervalBullet": {
+     "type": "LightningBulletType"
+     "lightningLength": 30
+     "xRand": 0.2
+     "damage": 80
+     "lightningColor": "ffffaa"
+     }
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "shotgun"
+    "shoot": {
+    "type": "shootBarrel"
+    "shots": 12
+    "barrels": [
+    4,0,0
+    -4,0,0
+    ]
+    }
+    "reload": 40,
+    "restitution": 0.1,
+    "range": 520,
+    "shootCone": 60.00,
+    "health": 9500,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 5.00,
+    "research":"0-21雷暴"
+}

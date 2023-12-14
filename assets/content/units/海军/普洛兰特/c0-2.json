@@ -1,0 +1,99 @@
+{
+    "type": "naval",
+    "name": "c0-2",
+    "health": 6500,
+    "armor": 8,
+    "hitSize": 16,
+    "speed": 1.4,
+    "accel": 0.3,
+    "rotateSpeed": 2.65,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+               {
+    "name": "c0-2-1"
+    "x": 0
+    "y": -3
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 3
+    "shootY": 4
+    "recoil": 1
+    "reload": 60
+    "shootCone": 30
+    "shootSound": "sap"
+    "ammoType": "pyratite"
+    "shake": -1
+    "bullet": {
+                "type": "SapBulletType",
+                "damage": 60
+                "length": 160
+                "sapStrength": 0.55
+                "shootEffect": "shootLiquid"
+                "healPercent": 4
+                "hitEffect": "hitLiquid"
+                "color": "8899ef"
+                "lightColor": "daccff"
+            },
+          }
+     {
+    "name": "c0-2-2"
+    "x": 6
+    "y": -6
+    "shootY": 6
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotationLimit": 60
+    "recoil": 2
+    "reload": 60
+    "shoot": {
+    "shots": 4
+    "shotDelay": 4
+    }
+    "shootCone": 30
+    "shootSound": "shoot"
+    "status": "shocked"
+    "shake": -1
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 120
+      "width":6
+      "height": 12
+      "lifetime": 30
+      "speed": 8
+         }
+        },
+               {
+    "name": "c0-2-3"
+    "x": 7
+    "y": 3
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 4
+    "recoil": 2
+    "reload": 5
+    "shotDelay":10
+    "spread": 3
+    "shootY": 4
+    "shootSound": "spark"
+    "bullet": {
+        "type": "LightningBulletType"
+        "lightning": 2
+        "lightningLength": 16
+        "lightningLengthRand": 5
+        "lightningCone": 5
+        "lightningDamage": 24
+          }
+        }
+       ],
+    "research": "c0-1"
+}

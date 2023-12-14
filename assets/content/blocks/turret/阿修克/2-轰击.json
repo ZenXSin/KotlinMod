@@ -1,0 +1,222 @@
+{
+	"type": "ItemTurret",
+	"name": "轰击",
+	"description": "简易但是弹药种类较多的中距离火炮系统。",
+	"health": 1350,
+	"size": 2
+	"reload": 75,
+	"range": 400,
+    "maxAmmo": 40,
+	"recoil": 0,
+	"shootY": -2
+    "hasShadow": false,
+"minWarmup": 0.8,
+"ammoPerShot": 4
+"shootWarmupSpeed": 0.06,
+"drawer":{
+"type":"DrawMulti",
+"drawers":[
+{
+"type":"DrawTurret",
+"parts":[
+    {
+    "type":"RegionPart",
+    "under": true
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-l",
+    "layer":51,
+    "moveX":0,
+    "moveY": -2
+    "moveRot": 20
+    },
+    {
+    "type":"RegionPart",
+    "under": true
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-r",
+    "layer":51,
+    "moveX": 0,
+    "moveY": -2
+    "moveRot": -20
+    },
+    {
+    "type":"RegionPart",
+    "under": true
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-m",
+    "layer":49,
+    "moveX": 0,
+    "moveY": -2
+    "moves": [
+    {
+    "progress": "recoil"
+    "x": 0
+    "y": -4
+    }
+    ]
+    },
+    ]
+    }
+    ]
+    },
+	"ammoUseEffect": "none",
+	"canOverdrive": false,
+	"shootSound":"artillery",
+	"targetGround":true,
+	"targetAir":true,
+    "hasliquids": false,
+    "inaccuracy": 0,
+	"shootCone":360,
+	"shake":1,
+	"rotateSpeed": 6,
+	"targetAir": false
+    "ammoPerShot": 3,
+	"ammoTypes": {
+   "copper": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 50
+   "splashDamageRadius": 50
+   }
+   "graphite": {
+      "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 150
+   "splashDamageRadius": 60
+   }
+   "silicon": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 90
+   "splashDamageRadius": 75
+   "homingPower": 0.03
+   "homingDelay": 15
+   }
+   "pyratite": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 85
+   "splashDamageRadius": 48
+   "status": "burning"
+   "statusDuration": 300
+   }
+   "硒": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 130
+   "splashDamageRadius": 140
+   "status": "burning"
+   "statusDuration": 120
+   }
+   "thorium": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 75
+   "splashDamage": 250
+   "splashDamageRadius": 140
+   "status": "sapped"
+   "statusDuration": 520
+   }
+   "U": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 90,
+   "rangeChange": 80,
+   "splashDamage": 360,
+   "splashDamageRadius": 440,
+   "status": "放射侵蚀"
+   "statusDuration": 540
+   }
+   "U-235": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 100,
+   "rangeChange": 120,
+   "splashDamage": 120
+   "splashDamageRadius": 48
+   "status": "严重放射侵蚀"
+   "statusDuration": 600
+   "fragBullets": 4
+   "fragBullet": {
+   "type": "FlakBulletType"
+   "collidesGround": true
+   "collidesAir": false
+   "width": 4
+   "height": 4
+   "pierce": true
+   "pierceCap": 4
+   "status": "严重放射侵蚀"
+   "suatusDuration": 180
+   "damage": 35
+   "splashDamage": 120
+   "splashDamageRadius": 48
+   "speed": 8
+   "lifetime": 15
+   }
+   }
+   "U-238": {
+   "type": "ArtilleryBulletType"
+   "width": 8
+   "height": 8
+   "speed": 6
+   "lifetime": 100,
+   "rangeChange": 120,
+   "splashDamage": 230
+   "splashDamageRadius": 24
+   "status": "放射侵蚀"
+   "statusDuration": 240
+   "fragBullets": 5
+   "fragBullet": {
+   "type": "FlakBulletType"
+   "width": 4
+   "height": 4
+   "pierce": true
+   "pierceCap": 8
+   "status": "放射侵蚀"
+   "suatusDuration": 200
+   "damage": 125
+   "splashDamage": 85
+   "splashDamageRadius": 32
+   "speed": 8
+   "lifetime": 10
+   }
+   }
+    },
+	"requirements": [
+	"copper/85" "硒/15" "graphite/75"
+	],
+	"category": "turret",
+	"research": {
+        "parent": "0-0突进",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+	}

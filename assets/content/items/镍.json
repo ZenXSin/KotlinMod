@@ -1,0 +1,12 @@
+{
+"name":"镍"
+"description":"一种金属元素，用于生产镍钢；在爆炸物的配合下可制成破片弹，也可以直接作为低级的钝头弹。"
+"hardness": 3
+"cost": 1
+"color":"ebc98e"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"硒"
+}

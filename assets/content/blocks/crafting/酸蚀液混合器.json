@@ -1,0 +1,53 @@
+{
+	"type": "GenericCrafter",
+	"name": "酸蚀液混合器",
+	"description": "将氮，硫，煤，磷混合形成酸蚀液。",
+	"health": 660,
+	"size": 3,
+	"drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"酸蚀液"
+	    },
+	    "DrawDefault"
+	]
+	},
+    "hasItems": true,
+	"hasLiquids": true,
+	"solid": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 360,
+	"craftTime": 30,
+	"category": "crafting"
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"requirements": [
+        "lead/325","silicon/200","titanium/300"
+    ],
+    "outputLiquid": "酸蚀液/3",
+    "craftTime": 30.00,
+    "size": 3 
+    "liquidCapacity": 20
+    "hasPower": true,
+    "hasItems": true,
+    "rotate": false,
+    "solid": true,
+    "outputsLiquid": true,
+    "consumes": {
+        "power": 1.00,
+        "items": {
+        "items": [
+        "pyratite/1" "coal/2" "磷/1"
+        ]
+      }
+      "liquid": "nitrogen/1"
+    }
+   "research":"液氮混合器"
+}

@@ -1,0 +1,13 @@
+{
+"name":"钴"
+"description":"一种具有放射性的物质，应该能做成不错的蓝色染料"
+"details":"塞普罗上未发现这种矿物。"
+"hardness": 7
+"cost": 2
+"color":"ffddee"
+"radioactivity": 0.48
+"explosiveness": 0.1
+"flammability": 0
+"charge": 0
+"research":"U"
+}

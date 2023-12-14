@@ -1,0 +1,187 @@
+{
+"type":"mech"
+"name":"a0-5"
+"speed":0.5
+"canBoost": true
+"rotateSpeed":0.8
+"armor": 30
+"health":65000
+"reload": 12000
+"range": 20
+"hitSize": 40
+    "boostMultiplier": 3,
+    "research": "a0-4"
+"legBaseOffset": 20
+"mechStride": 20
+"mechFrontSway":1.5
+"legExtension": 5
+"engineOffset": 12
+"engineSize": 8
+    "kinematicScl": 14
+"mechStepShake":1.9
+"duration": 5
+"legCount":2
+"abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 120,
+              "amount": 240,
+              "reload": 120
+        },
+]
+"weapons": [
+  {
+    "name": "a0-5-1"
+    "x": 20
+    "y": 4
+    "layerOffset": -0.001
+    "rotationLimit": 30
+    "rotateSpeed": 1
+    "mirror": true
+    "rotate": true
+    "rotateSpeed": 4.2
+    "shootY": 15
+    "recoil": 4
+    "reload": 25
+    "shoot": {
+    "type": "ShootBarrel"
+    "shots": 3
+    "barrels": [
+    0,0,-2.5
+    0,0,0
+    0,0,2.5
+    ]
+    }
+    "shootCone": 45
+    "shootSound": "shotgun"
+    "shake": 1.5
+    "bullet": {
+    "type": "ShrapnelBulletType"
+    "length": 400.00
+    "damage": 500
+    "width": 17.00
+      }
+      } 
+{
+"name": "a0-5-2"
+    "x": 24
+    "y": -8
+    "mirror": true
+    "alternate": false
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "shots": 8
+    "spread": 4
+    }
+    "inaccuracy": 15
+    "shootCone": 90
+    "recoil": 2
+    "reload": 120
+    "shootSound": "red"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 0
+            "sizeTo": 30
+            "colorFrom": "ddddddcc"
+            "colorTo": "dddddd00"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 2
+            "StrokeTo": 0
+            "lifetime": 120
+            }
+                "shrinkY": 0
+                "backColor": "3333ffff"
+                "frontColor": "ffffff77"
+                "width": 10,
+                "height": 10,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 120
+                "homingPower": 0.07
+                "splashDamage": 750
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 250
+                "maxSpeed": 6
+                "knockback": 3
+                "homingDelay": 30
+                "drag": -0.015
+                "lifetime": 60
+                "speed": 4
+                "status": "极寒"
+                "statusDuration": 300
+                "fragBullets": 1
+                "FragBullets": {
+                "type": "FlakBulletType"
+                "damage": 0
+                "lifetime": 0
+                "splashDamage": 200
+                "splashDamageRaidus": 40
+                "status": "解冻"
+                "statusDuration": 600
+                }
+            }
+       }
+       /*
+         {
+  "name": "a0-5-3"
+  "x": 12
+  "y": 8
+  "reload": 4
+  "shootCone": 5
+  "alternate": false
+  "rotate": true
+  "mirror": true
+  "recoil": 0.3
+  "shootSound":"machineGunShoot1"
+  "bullet":{
+    "type": "FlakBulletType"
+    "damage": 30
+    "splashDamage": 250
+    "splashDamageRadius": 40
+    "collidesGround": true
+    "lifetime": 60
+    "width": 8
+    "height": 10
+    "speed": 8
+    }
+   }
+   {
+"name": "a0-5-4"
+    "x": 0
+    "y": 10
+    "shootY": 9
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "recoil": 3
+    "reload": 120
+    "firstShotDelay": 15
+    "shootSound": "laser"
+    "shake": 0.7
+    "restitution":0
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 320,
+        	"damage": 1200,
+        	"width": 40,
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+}
+*/
+     ]
+    "research": "a0-4"
+}

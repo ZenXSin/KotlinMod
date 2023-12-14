@@ -1,0 +1,123 @@
+{
+"type":"mech"
+"name":"a3-3"
+"speed":0.63
+"rotateSpeed":2
+"hitSize": 25
+"health":8900
+"reload": 7200
+"armor": 25
+"range": 10
+"mineSpeed": 1.5
+"mechStride": 7
+"maxRange": 280
+"mechStepShake":0.5
+"duration": 5
+"legCount":2    
+"abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 200,
+              "amount": 120,
+              "reload": 240
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 200
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+    "type": "ForceFieldAbility"
+    "radius": 70
+    "regen": 15
+    "max": 8000
+    "cooldown": 420
+  }
+    {
+  "type": "UnitSpawnAbility"
+  "unit": "b3-1"
+  "spawnX": 0
+  "spawnY": -3
+  "spawnTime": 1200
+  }
+]
+"weapons": [
+     {
+    "name": "a3-3-1"
+    "x": 0
+    "y": 0
+    "top": false
+    "mirror": true
+    "rotate": false
+    "shootX": 18
+    "shootY": 12
+    "shoot": {
+    "shots": 4
+    "shotDelay": 3
+    }
+    "recoil": 4
+    "reload": 30
+    "shootSound": "bang"
+    "shake": 1.5
+    "inaccuracy": 45
+    "shotCone": 60
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 25
+      "spashDamage": 75
+      "splashDamageRadius": 32
+      "ammoMultiplier": 3
+      "collidesGround": true
+      "collidesTeam": true
+      "sprite": "pnk-mod-arhit"
+      "trailWidth": 2
+      "trailLength": 12
+      "frontColor": "aeaedd"
+      "backColor": "babadd"
+      "trailColor": "ababdd"
+      "healColor": "ababdd"
+      "healPercent": 5,
+      "width": 18
+      "height": 48
+      "lifetime": 25
+      "speed":16
+      "fragBullets": 2
+      "homingPower": 0.25
+      "homingRange": 200
+      "homingDelay": 7.5
+      "hitEffect": {
+      "type": "ParticleEffect"
+      "lifetime": 30
+      "particles": 6
+      "length": 24
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+      "sizeFrom": 4
+      "sizeTo": 0
+      "colorFrom": "babadd"
+      "colorTo": "babadd"
+      }
+      "fragBullet": {
+        "type": "LightningBulletType"
+        "lightColor": "babadd"
+        "lightning": 2
+        "lightningLength": 8
+        "lightningLengthRand": 5
+        "lightningCone": 20
+        "lightningColor": "aaaade"
+        "lightningDamage": 35
+        "healPercent": 2
+        "healColor": "aaaade"
+        }
+       }
+      } 
+     ]
+    "research": "a3-2"
+}

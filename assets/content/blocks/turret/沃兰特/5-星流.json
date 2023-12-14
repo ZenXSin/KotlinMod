@@ -1,0 +1,63 @@
+{
+    "type": "PowerTurret",
+    "name": "星流",
+    "description":"发射可以恢复己方建筑物的追踪弹。",
+    "size":3,
+    "category": "turret",
+    "requirements": [
+    "lead/85" "titanium/50" "graphite/25" "silicon/50"
+    ],
+    "consumes": {
+    "power": 2
+    }
+    "shootType": {
+    "type": "MissileBulletType"
+    "collidesTeam": true
+    "healAmount": 250,
+    "damage": 130
+    "splashDamage": 50
+    "splashDamageRadius": 40
+    "frontColor": "ddddff"
+    "backColor": "ddddff"
+    "trailColor": "ddddff99"
+    "sprite": "pnk-mod-arhit"
+    "trailChance": 2
+    "trailWidth": 1
+    "trailLength": 6
+    "width": 16
+    "height": 8
+    "speed": 8
+    "lifetime": 50
+    "homingPower": 0.1
+    "homingRange": 560
+    "homingDelay": 20
+    "fragBullets": 1
+    "fragBullet": {
+    "spawnUnit": "xl-shield"
+    "lifetime": 0
+    }
+    }
+"shoot": {
+"type": "ShootAlternate"
+"barrels": 2
+"spread": 6
+"shots": 2
+"shotDelay": 3
+    }
+    "shootY": 8
+    "reload": 120
+    "shootSound": "laser"
+    "targetHealing": true
+    "range": 280,
+    "health": 600,
+    "rotateSpeed": 9.00,
+	"research": {
+        "parent": "0-0突进",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+}

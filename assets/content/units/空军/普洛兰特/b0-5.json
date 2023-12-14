@@ -1,0 +1,148 @@
+{
+"type": "flying"
+"name": "b0-5"
+"flying": true
+"hitSize": 48
+"health": 68000
+"armor": 30
+"speed": 2.7
+"rotateSpeed": 2
+"rotateShooting": true
+"accel": 0.02
+"drag": 0.02
+"lowAltitude": true
+"engineOffset": 20
+"engineSize": 10
+"lightColor": "e65555"
+"weapons": [
+     {
+    "name": "b0-5-1"
+    "x": 0
+    "y": 2
+    "shootY": 10
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 1
+    "autoTarget": true
+    "shoot": {
+    "shots": 1
+    "chargeTime": 38
+    "firstShotDelay": 38
+    }
+    "shootSound": "railgun"
+    "recoil": 6
+    "reload": 90
+    "status": "shocked"
+    "ammoType": "surge-alloy"
+    "shake": -1
+    "restitution":1.42
+			"bullet": {
+				"type": "RailBulletType",
+				"damage": 4000,
+				"length": 880,
+				"status": "freezing",
+				"statusDuration": 600,
+				"pierceDamageFactor": 0.5,
+				"pointEffectSpace": 24,
+				"pointEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"lifetime": 34,
+					"length": 0,
+					"cone": -360,
+					"region": "pnk-mod-thin1",
+					"sizeFrom": 16,
+					"sizeTo": 16,
+					"colorFrom": "8899ff",
+					"colorTo": "8899ff00"
+					"layer": 110
+				},
+				"pierceEffect": {
+					"type": "ParticleEffect",
+					"line": true,
+					"particles": 120,
+					"offset": 0,
+					"lifetime": 15,
+					"length": 40,
+					"cone": -7.5,
+					"lenFrom": 6,
+					"lenTo": 0,
+					"colorFrom": "8899ff",
+					"colorTo": "FFFFFF"
+				},
+				"hitEffect": "railHit",
+				"hitColor": "D86E56"
+                "shootEffect": {
+                "type": "WaveEffect"
+                "sizeFrom": 0
+                "sizeTo": 48
+                "strokeFrom": 5
+                "strokeTo": 0
+                "colorFrom": "6677cd"
+                "colorTo": "8899ef"
+                "lifetime": 90
+			}
+		}
+          }
+  {
+  "name": "b0-5-2"
+  "x": 24
+  "y": -12
+  "reload": 60
+  "recoil": 3
+  "mirror": true
+  "rotate": true
+  "shoot": {
+  "shots": 3
+  "shotDelay": 5
+  "type": "shootBarrel"
+  "barrels": [
+  0,0,5
+  0,0,0
+  0,0,-5
+  ]
+  }
+  "shootSound": "laser"
+  "bullet": {
+  "type": "MissileBulletType"
+  "speed": 3
+  "lifetime": 150
+  "damage": 150
+  "splashDamage": 500
+  "splashDamageRadius": 40
+  "width": 8
+  "height": 8
+  "homingPower": 0.15
+  "homingRange": 320
+  "homingDelay": 20
+  "trailWidth": 4
+  "trailLength": 24
+  "trailColor": "aa99ff"
+  "frontColor": "aa99ff"
+  "backColor": "7766ff"
+  "sprite": "pnk-mod-bullet-2"
+                "shootEffect": {
+                "type": "WaveEffect"
+                "sizeFrom": 0
+                "sizeTo": 32
+                "strokeFrom": 5
+                "strokeTo": 0
+                "colorFrom": "6677cd"
+                "colorTo": "8899ef"
+                "lifetime": 45
+			}
+                "hitEffect": {
+                "type": "WaveEffect"
+                "sizeFrom": 0
+                "sizeTo": 32
+                "strokeFrom": 5
+                "strokeTo": 0
+                "colorFrom": "6677cd"
+                "colorTo": "8899ef"
+                "lifetime": 45
+  }
+  }
+  }
+]
+    "research": "b0-4"
+}

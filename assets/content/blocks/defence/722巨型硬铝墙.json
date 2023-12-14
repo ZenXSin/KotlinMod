@@ -1,0 +1,12 @@
+{
+"type":"wall",
+"name":"巨型硬铝墙",
+"category":"defense",
+"size":3,
+"description":"还是很坚硬的墙。",
+"health":13200,
+"requirements":[
+"硬铝/48"
+]
+"research":"721大型硬铝墙"
+}

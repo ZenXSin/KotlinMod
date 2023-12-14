@@ -1,0 +1,18 @@
+{
+	"type": "ItemBridge",
+	"name": "67型传送带桥",
+	"description": "更快更远",
+	"hasPower": false,
+	"requirements": [
+		{"item": "plastanium", "amount": 4},
+		{"item": "silicon", "amount": 8},
+		{"item": "titanium","amount": 10},
+	],
+	"category": "distribution",
+	"itemCapacity": 50,
+	"range": 25
+	"transportTime": 1,
+	"insulated":true,
+     "absorbLasers":true,
+"research": "67式传送带"
+}

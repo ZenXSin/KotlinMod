@@ -1,0 +1,13 @@
+{
+"name":"U"
+"description":"一种具有放射性的物质"
+"details":"似乎是别的星球上的产物，不知道为什么塞普罗上面没出现这种矿物。"
+"hardness": 4
+"cost": 2
+"color":"0f2f00"
+"radioactivity":1.2,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"冰晶石"
+}

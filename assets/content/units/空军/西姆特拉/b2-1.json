@@ -1,0 +1,136 @@
+{
+"type": "flying"
+"lowAltitude": true
+"hitSize": 16
+"flying": true
+"name": "b2-1"
+"health": 1500
+"armor": 6
+//"speed": 4
+"speed": 5.25
+"rotateSpeed": 4
+"engineOffset": 8
+"engineSize": 4
+"aimDst": 240
+"faceTarget": true
+"omniMovement": true
+    "research": "0721构造器"
+"weapons": [
+{
+"name": "b2-1-1"
+        "parts": [
+                 {"type":"RegionPart",
+    "mirror":false,
+    	"under": true
+    "x": 0,
+    "y": 0,
+    "suffix":"-b",
+    "layer": 49,
+    "moveX": 0
+    "moveY": 0
+        "moveRot": 0
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 0
+						"y": -2
+					}
+				],
+        },
+        ]
+"x": -8
+"y": 0
+"top": false
+"under": true
+"layerOffset": 0.001
+"rotate": true
+"rotationLimit": 30
+"rotateSpeed": 2
+"mirror": true
+"alternate": false
+"reload": 120
+"shootSound": "laser"
+"shotCone": 15
+"bullet": {
+"type": "FlakBulletType"
+"sprite": "pnk-mod-MKG"
+"collidesGround": true
+"width": 12
+"height": 12
+"trailWidth": 2
+"trailLength": 12
+"damage": 50
+"splashDamage": 200
+"frontColor": "ee7777"
+"backColor": "aa4444"
+"trailColor": "ee7777"
+"lifetime": 60
+"speed": 4
+"shootEffect": {
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 32
+    "lifetime": 60
+    "cone": 10
+    "particles": 10
+}
+"hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 32
+    "lifetime": 30
+    "particles": 20
+}
+{
+"type": "WaveEffect"
+"sizeFrom": 0
+"sizeTo": 32
+"colorFrom": "ee7777"
+"colorTo": "ee7777"
+"strokeFrom": 4
+"strokeTo": 0
+"lifetime": 30
+}
+]
+}
+}
+}
+{
+"name": "b2-1-2"
+"x": 4
+"y": 4
+"layer": 49
+"rotate": true
+"mirror": true
+"alternate": true
+"reload": 5
+"shootSound": "pew"
+"targetGround": false
+"targetAir": true
+"shotCone":15
+"recoil": 0.5
+"bullet": {
+"type": "BasicBulletType"
+"collidesGround": false
+"width": 6
+"height": 6
+"damage": 25
+"lifetime": 60
+"speed": 8
+}
+}
+]
+}

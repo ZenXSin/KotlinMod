@@ -1,0 +1,38 @@
+{
+	"name": "大型力场墙",
+	"description": "创建一个保护己方的力场。",
+	"type": "forceProjector",
+	"health": 13300,
+	"size": 3,
+	"armor": 14,
+	"outputsPower": true,
+	"consumesPower": true,
+	"hasPower": true,
+	"hasLiquids": true,
+	"consumes": {
+	"power": 4
+	"items": {
+	"items": [
+	"phase-fabric/3"
+	]
+	"booster": true
+	"optional": true
+	}
+	}
+	"radius": 80,
+	"shieldHealth": 5000,
+	"phaseRadiusBoost": 0.75,
+	"phaseShieldBoost": 3,
+	"cooldownNormal": 1.5,
+	"cooldownLiquid": 4,
+	"cooldownBrokenBase": 4,
+	"requirements": [
+	    "silicon/300",
+	    "metaglass/300",
+	    "钴/140",
+		"钛合金/200",
+		"锆锰合金/85",
+	],
+	"category": "defense",
+//	"researchCostMultiplier": 40
+}

@@ -1,0 +1,121 @@
+{
+"type":"legs"
+"name":"a4-1"
+"speed": 1.45
+"rotateSpeed":2.4
+"hitSize": 15
+"health": 3000
+"reload": 7200
+"range": 4
+"legMoveSpace": 1.3
+"maxStretch": 1.3
+"armor": 3
+"legLength": 15
+"mechStepShake":0.5
+"duration": 5
+"legCount":6
+    "research": "0721构造器"
+"weapons":[
+{
+"name": "a4-1-1",
+"x": 0,
+"y": 0,
+"shootX": 9
+"shootY": 6
+"reload": 6,
+"mirror": true,
+"alternate": false
+"top": false,
+"rotate": false
+"rotateSpeed": 4,
+"inaccuracy": 20,
+"shootSound": "flame",
+"shoot":{
+"type":"ShootSpread"
+"shots":2,
+}
+"bullet": {
+"type":"BasicBulletType"
+"backColor":"FFDC40EB"
+"frontColor":"FFDC40EB"
+"speed":8
+"status": "burning"
+"statusDuration": 300
+"hittable": false
+"absorbable": false
+"lifetime":10
+"damage":30
+"width": 1
+"height": 1
+"hitEffect":"none"
+"status":"burning"
+"statusDuration":420
+"pierce": true,
+"hitEffect": "none"
+"despawnEffect": "none"
+"pierceBuilding": true,
+"shootEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 5,
+    "sizeTo": 0,
+    "length": 100,
+    "lifetime": 30,
+    "colorFrom": "FF9E40EB",
+    "colorTo": "66666699",
+    "cone": 18
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    },
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 4,
+    "sizeTo": 0,
+    "length": 120,
+    "lifetime": 45,
+    "colorFrom": "F46D54FF",
+    "colorTo": "99999999",
+    "cone": 18
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    }
+    ]
+    }
+    }
+    }
+         {
+    "name": "a4-1-2"
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 8
+    "mirror": false
+    "rotate": false
+    "shoot": {
+    "shots": 3
+    "shotDelay": 3
+    }
+    "recoil": 1.8
+    "reload": 60
+    "targetAir":false
+    "shootSound": "bang"
+    "shake": 1.5
+    "restitution":1.42
+    "bullet": {
+      "type": "FlakBulletType"
+      "damage": 25
+      "collidesGround": true
+      "splashDamage": 50
+      "splashDamageRadius": 32
+      "width": 3
+      "height": 5
+      "lifetime":60
+      "speed": 4
+             }
+      }
+  ]
+}

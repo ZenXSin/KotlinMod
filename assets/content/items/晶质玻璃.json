@@ -1,0 +1,11 @@
+{
+    "name":"晶质玻璃"
+    "description":"一种性质类似晶体的硬质玻璃，经过简单加工处理能得到优秀的反射性和折射性。"
+    "cost": 8
+    "color":"A086AD"
+    "radioactivity": 0,
+    "explosiveness": 0
+    "flammability": 0
+    "charge": 0
+    "research":"硒"
+}

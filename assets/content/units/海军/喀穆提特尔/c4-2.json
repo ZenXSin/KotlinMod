@@ -1,0 +1,121 @@
+{
+    "type": "naval",
+    "name": "c4-2",
+    "health": 8500,
+    "armor": 18,
+    "hitSize": 16,
+    "speed": 1.65,
+    "accel": 0.4,
+    "rotateSpeed": 2,
+    "rotateShooting": false,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 60,
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 160,
+              "amount": 200,
+              "reload": 300
+        },
+  ]
+    "weapons": [
+    {
+            "name": "c4-2-1",
+            "reload": 150,
+            "shoot": {
+            "shots": 3
+            "shotDelay": 5
+            }
+            "recoil": 1.00,
+            "rotate": true,
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"missile"
+            "x": 8,
+            "y": -8,
+            "rotateShooting": false,
+            "mirror": true
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 100
+                "splashDamage": 50
+                "splashDamageRadius": 80
+                "sprite": "circle-bullet"
+            "collidesGround": true
+                "width": 8
+                "height": 8
+                "weaveScale": 5
+                "weaveMag": 2
+                "trailColor": "b7b735"
+                "trailLength": 16
+                "trailWidth": 4
+                "sapStrength": 0.1
+                "healPercent": 10
+                "frontColor": "d9d957"
+                "backColor": "c8c846"
+                "speed": 6
+                "lifetime": 60
+                "hitEffect": {
+                "type": "ParticleEffect"
+                "particles": 1
+                "lifetime": 10
+                "sizeFrom": 24
+                "sizeTo": 16
+                "colorFrom": "d9d957"
+                "colorTo": "d9d95700"
+                "length": 0
+                }
+                "despawnEffect": {
+                "type": "ParticleEffect"
+                "particles": 1
+                "lifetime": 10
+                "sizeFrom": 32
+                "sizeTo": 32
+                "colorFrom": "d9d957"
+                "colorTo": "d9d95700"
+                "length": 0
+                }
+                "fragBullets": 2
+                "fragBullet": {
+    "type": "ShrapnelBulletType"
+    "length": 64.00
+    "damage": 100
+    "width": 20.00
+    "toColor": "d9d957"
+      }
+            }
+        }
+        {
+        "name": "c4-2-2"
+        "x": 0
+        "y": 0
+        "shootY": 8
+        "reload": 60
+        "mirror": false
+        "rotate": false
+        "shootSound": "laser"
+                "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 120,
+        	"width": 16,
+        	"status": "shocked"
+        	"colors": [
+        	"c8c846dd",
+        	"d9d957ee",
+        	"eaea68ff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+            }
+        ]
+    "research": "c4-1"
+    }

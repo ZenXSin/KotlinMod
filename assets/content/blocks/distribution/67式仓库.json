@@ -1,0 +1,16 @@
+{
+"type": "StorageBlock"
+"name": "67型仓库"
+"size": 4
+"itemCapacity": 5500
+"health": 4000
+"requirements": [
+  "titanium/80"
+  "plastanium/60"
+  "silicon/45"
+]
+"research": "67式传送带"
+"category": "distribution"
+"research": "67式传送带"
+"hasItems": true
+}

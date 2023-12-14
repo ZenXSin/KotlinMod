@@ -1,0 +1,77 @@
+{
+"type":"mech"
+"name":"轻装丧尸"
+"description": "装备了UX-3型榴弹发射器以及G-T05轻机枪的丧尸，可以进行中近距离突击作战。"
+"speed": 0.85
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 6
+"health": 500
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 6
+"mechStride": 2
+"mechStepShake":0.0
+
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "轻装丧尸-c"
+    "layerOffset": -0.001
+    "top": false
+    "x": -4
+    "y": 0
+    "shootY": 8
+    "mirror": false
+    "rotate": false
+    "shots": 1
+    "recoil": 2
+    "reload": 50
+    "targetAir":false
+    "shootSound": "bang"
+    "restitution":1.42
+    "bullet": {
+      "type": "FlakBulletType"
+      "damage": 120
+      "recoil": 0.3
+      "collidesGround": true
+      "collidesAir": false
+      "width": 3
+      "height": 6
+      "lifetime": 40
+      "speed": 4
+             }
+      } 
+           {
+    "name": "轻装丧尸-m"
+    "top": false
+    "x": 4
+    "y": 0
+    "shootY": 5
+    "mirror": false
+    "rotate": false
+    "shots": 2
+    "recoil": 0.5
+    "reload": 4
+    "targetAir": true
+    "shootSound": "machineGunShoot1"
+    "restitution":1.42
+    "bullet": {
+      "type": "BasicBulletType"
+    "layerOffset": -0.001
+      "damage": 5
+      "recoil": 0.1
+      "width": 1
+      "height": 2
+      "lifetime": 40
+      "speed": 6
+             }
+      } 
+     ]
+    "research": "ED-01普通丧尸"
+}

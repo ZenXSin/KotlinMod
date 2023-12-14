@@ -1,0 +1,93 @@
+{
+"type":"legs"
+"name":"a4-3"
+"speed": 1.25
+"rotateSpeed":2.4
+"hitSize": 28
+"health": 10500
+"reload": 7200
+"range": 4
+"legMoveSpace": 1.3
+"maxStretch": 1.3
+"armor": 8
+"legLength": 36
+"mechStepShake":0.5
+"legExtension": 5
+"duration": 5
+"legCount": 6
+"research": "a4-2"
+"weapons":[
+{
+"name": "a4-3-1",
+"x": 0
+"y": 0,
+"shootX": 12
+"shootY": 20
+"reload": 4,
+"mirror": true,
+"top": false,
+"rotate": false
+"alternate": false
+"rotateSpeed": 4,
+"inaccuracy": 15,
+"shotCone": 4
+"shootSound": "flame",
+"shoot":{
+"type":"ShootSpread"
+"shots": 6
+}
+"bullet": {
+"type":"BasicBulletType"
+"backColor":"FFDC40EB"
+"frontColor":"FFDC40EB"
+"status": "burning"
+"statusDuration": 300
+"speed":8
+"lifetime":30
+"damage":80
+"width": 1
+"height": 1
+"hitEffect":"none"
+"status":"burning"
+"statusDuration":420
+"pierce": true,
+"hittable": false
+"absorbable": false
+"hitEffect": "none"
+"despawnEffect": "none"
+"pierceBuilding": true,
+"shootEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 5,
+    "sizeTo": 0,
+    "length": 300,
+    "lifetime": 30,
+    "colorFrom": "FF9E40EB",
+    "colorTo": "66666699",
+    "cone": 4
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    },
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 4,
+    "sizeTo": 0,
+    "length": 360,
+    "lifetime": 45,
+    "colorFrom": "F46D54FF",
+    "colorTo": "99999999",
+    "cone": 4
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    }
+    ]
+    }
+    }
+    }
+  ]
+}

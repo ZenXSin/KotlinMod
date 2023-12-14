@@ -1,0 +1,86 @@
+{
+    "type": "ItemTurret",
+    "name": "突进"
+    "size": 2,
+    "category": "turret",
+    "description": "雷光的简化版本，造价低廉。"
+    "requirements": [
+        "lead/45","silicon/20","graphite/30"
+    ],
+    "ammoTypes": {    
+     "lead": {
+    "type": "ShrapnelBulletType"
+    "shootEffect": "none",
+    "ammoMultiplier": 5
+    "reloadMultiplier": 0.75
+    "length": 80.00
+    "damage": 25
+    "width": 17.00
+    "toColor": "ee77ee"
+            }
+     "titanium": {
+    "type": "ShrapnelBulletType"
+    "shootEffect": "none",
+    "ammoMultiplier": 2
+    "reloadMultiplier": 1.35
+    "length": 80.00
+    "damage": 45
+    "width": 17.00
+    "reloadMultiplier": 1.3
+            }
+     "thorium": {
+    "type": "ShrapnelBulletType"
+    "shootEffect": "none",
+    "length": 80.00
+    "damage": 80
+    "width": 8.00
+    "reloadMultiplier": 0.85
+    "toColor": "ee99aa"
+            }
+    "U": {
+    "type": "ShrapnelBulletType"
+    "shootEffect": "none",
+    "length": 80.00
+    "damage": 140
+    "width": 8.00
+    "reloadMultiplier": 0.9
+    "toColor": "78ff78"
+            }
+    "钴": {
+    "type": "ShrapnelBulletType"
+    "shootEffect": "none",
+    "length": 100
+    "damage": 200
+    "width": 4
+    "toColor": "ffeedd"
+        }
+    }
+    "recoil": 3
+    "shootSound": "shotgun"
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 3
+    "spread": 15
+    }
+    "consumes": {  
+            "coolant": {
+            "amount": 0.1,
+            "optional": true,
+            }
+    }
+    "reload": 60,
+    "restitution": 0.1,
+    "range": 120,
+    "shootCone":45.00,
+    "health": 550,
+    "rotateSpeed": 4.00,
+	"research": {
+        "parent": "0-0多管",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+}

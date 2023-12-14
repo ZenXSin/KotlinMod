@@ -1,0 +1,116 @@
+{
+    "type": "naval",
+    "name": "c2-2",
+    "health": 4500,
+    "armor": 8
+    "hitSize": 16,
+    "speed": 1.9,
+    "accel": 0.3,
+    "rotateSpeed": 5.75,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+        {
+            "name": "c2-2-1",
+            "y": -2
+            "reload": 90,
+            "ejectEffect": "none",
+            "targetGround": false
+            "targetAir": true
+            "mirror": false
+            "shoot": {
+            "shots": 6,
+            "inaccuracy": 15
+            }
+            "recoil": 0,
+            "rotate": true,
+            "rotateSpeed": 3
+            "shootSound": "red",
+            "inaccuracy": 15
+            "shotCone": 60
+            "shootCone": 60.00
+            "x": 0,
+            "y": -2.5,
+            "rotateShooting": true,
+            "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 3
+            "sizeTo": 30
+            "colorFrom": "ddddddcc"
+            "colorTo": "dddddd00"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 120
+            }
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "color": "ffffff77"
+                "width": 10,
+                "height": 10,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 800
+                "homingPower": 0.05
+                "splashDamage": 200
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 50
+                "maxSpeed": 5
+                "knockback":0.4
+                "drag": -0.015
+                "lifetime": 75
+                "speed":3
+            }
+        },
+               {
+    "name": "c2-2-2"
+    "x": 0
+    "y": 8
+    "shootY": 10
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "targetGround": false
+    "rotateSpeed": 5
+    "shoot": {
+    "barrels": 2
+    "spread": 3
+    "shots": 4
+    "shotDelay": 3
+    }
+    "recoil": 1.3
+    "reload": 20
+    "shootSound": "missile"
+    "ammoType": "silicon"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 15
+      "width":6
+      "height": 10
+      "splashDamage": 20
+      "splashDamageRadius": 64
+      "homingPower": 0.25
+      "trailLength": 10
+      "collidesGround": false
+      "trailWidth": 3
+      "homingRange": 400
+      "hitSound": "explosion"
+      "lifetime":60
+      "speed": 8
+      }
+      }
+       ],
+    "research": "c2-1"
+}

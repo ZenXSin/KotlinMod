@@ -1,0 +1,42 @@
+{
+	"type": "Reconstructor",
+	"name": "2733型重构工厂",
+    "health":5000,
+	"size":7
+	"consumes":{
+	"power":6,
+	"liquid": {
+	"liquid": "cryofluid"
+	"amount": 0.3
+	}
+	"items": {
+			"items": [
+			{ "item": "silicon", "amount": 800 }
+			{ "item": "phase-fabric", "amount": 730 }
+			{ "item": "plastanium", "amount": 600 }
+		]
+		},
+        }
+	"upgrades":[
+		["a0-2","a0-3"],
+        ["a1-2","a1-3"],
+        ["a2-2","a2-3"],
+        ["a3-2","a3-3"],
+        ["a4-2","a4-3"],
+        ["b0-2","b0-3"],
+        ["b1-2","b1-3"],
+        ["b2-2","b2-3"],
+        ["b3-2","b3-3"],
+        ["b4-2","b4-3"],
+		["c0-2","c0-3"],
+		["c1-2","c1-3"],
+		["c2-2","c2-3"],
+		["c3-2","c3-3"],
+		["c4-2","c4-3"],
+    ],
+	"constructTime":3000,
+	"requirements": ["硬铝/300","silicon/400","titanium/335","lead/400","thorium/650","plastanium/200"],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"1742号重构工厂"
+}

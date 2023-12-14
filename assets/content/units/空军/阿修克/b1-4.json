@@ -1,0 +1,249 @@
+{
+"type": "flying"
+"flying": true
+"name": "b1-4"
+"hitSize": 32
+"health": 42500
+"armor": 6
+"speed": 1.3
+"rotateSpeed": 2.15
+"engineOffset": 24
+"engineSize": 3.5
+    "research": "b1-3"
+"targetFlags": [
+"turret"
+"generator"
+]
+"playerTargetFlags": [
+"turret"
+]
+"faceTarget": true
+"lowAltitude": true
+"weapons": [
+        {
+            "name": "b1-4-1"
+            "rotateSpeed": 3
+            "reload": 120,
+            "ejectEffect": "none",
+            "mirror": false
+            "shots": 2,
+            "recoil": 5,
+            "rotate": true,
+            "shootSound": "railgun",
+            "shootCone": 30
+            "innacuricy": 15
+            "x": 0,
+            "y": -5,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "MissileBulletType",
+                "trailChance": 15
+                "status": "严重放射侵蚀"
+                "statusDuartion": 360
+                "width": 16,
+                "height": 16,
+                    "trailParam": 6,
+                    "homingPower": 0
+                    "himingRange": 0
+    "trailLength": 16,
+    "trailWidth": 3.5
+    "collidesGround": true
+                "sprite": "circle-bullet"
+                "trailEffect": {
+                "type": "WaveEffect"
+                "color": "33ce33"
+                "sizeFrom": 0
+                "sizeTo": 16
+                "strokeFrom": 4
+                "strokeTo": 0
+                "lifetime": 30
+                }
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "splashDamage": 500
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "damage": 100
+                "knockback":0.8
+                "lifetime": 130
+                "shrinkY": 0
+                "speed":6
+                "hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "line": true
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "33ce33"
+    "colorTo": "33ce33"
+    "length": 56
+    "lifetime": 120
+    "particles": 30
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "66df66"
+    "colorTo": "66df66"
+    "length": 40
+    "lifetime": 90
+    "particles": 20
+}
+{
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 64
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "33ce33"
+    "colorTo": "33ce33"
+    "lifetime": 90
+    "particles": 10
+}
+]
+}
+                "fragBullets": 30
+                "fragBullet": {
+                "type": "MissileBulletType"
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                    "trailParam": 6,
+    "trailLength": 16,
+    "trailWidth": 3.5
+                "lifetime": 300
+                "sprite": "circle-bullet"
+                "damage": 30
+                "splashDamage": 60
+                "splashDamageRadius": 40
+                "hitEffect": {
+                "type": "WaveEffect"
+                "color": "33ce33"
+                "sizeFrom": 0
+                "sizeTo": 8
+                "strokeFrom": 4
+                "strokeTo": 0
+                "lifetime": 60
+                }
+                }
+            }
+        }
+               {
+    "name": "b1-4-2"
+    "x": 12
+    "y": 8
+    "shootY": 3
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 6.5
+    "range": 320
+    "shoot": {
+    "type": "shootBarrel"
+    "shots": 6
+    "barrels": [
+    0,4,0
+    4,0,0
+    -4,0,0
+    ]
+    }
+    "inaccuracy": 30
+    "shootCone": 60
+    "recoil": 0.5
+    "reload": 45
+    "shootSound": "missileLarge"
+    "shake": 0.7
+    "restitution":0
+    "bullet": {
+      "type": "MissileBulletType"
+  "color": "77ee77"
+  "backColor": "77ee77"
+  "trailColor": "77ee77"
+      "damage": 50
+      "ammoMultiplier":5
+      "width": 6
+      "height":10
+      "lifetime": 60
+      "splashDamage": 200
+      "splashDamageRadius": 32
+      "speed": 8
+    "maxRange": 320
+      "homingPower": 0
+      "weaveScale": 5
+      "weaveMag": 2
+      "drag": 0.03
+      "fragBullets": 1
+      "fragRandomSpread": 0.001
+      "fragVelocityMin":  1
+      "fragVelocityMax": 1
+      "fragBullet": {
+            "type": "MissileBulletType"
+  "color": "77ee77"
+  "backColor": "77ee77"
+  "trailColor": "77ee77"
+      "damage": 50
+      "collidesGround": true
+      "ammoMultiplier":5
+      "width": 6
+      "height":10
+      "lifetime": 90
+      "splashDamage": 350
+      "splashDamageRadius": 32
+      "trailWidth": 3
+      "trailLength": 6
+      "speed": 4
+      "homingPower": 0.25
+      "homingRange": 400
+      "homingDelay": 10
+      }
+                }
+          }
+{
+"name": "b1-4-3"
+    "x": 0
+    "y": 15
+    "shootY": 9
+    "mirror": true
+    "rotate": false
+    "autoTarget": true
+    "shots": 1
+    "recoil": 0.5
+    "reload": 90
+    "firstShotDelay": 30
+    "shootSound": "laser"
+    "shake": 0.7
+    "innacuracy": 8.5
+    "restitution":0
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 224,
+        	"damage": 400,
+        	"width": 40,
+        	"status": "严重放射侵蚀"
+        	"statusDuration": 3600
+        	"colors": [
+        	"99ff99dd",
+        	"dbffdbee",
+        	"ffffffff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+}
+]
+}

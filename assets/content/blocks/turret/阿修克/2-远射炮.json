@@ -1,0 +1,217 @@
+{
+    "type": "ItemTurret",
+    "name": "远射炮",
+    "description": "阿修克的远距离火炮，威力相对较大。"
+    "size":4,
+    "inaccuracy": 5
+    "shootWarmupSpeed": 0.005
+    "minWarmup": 0.6
+    "shoot": {
+    "shots": 5
+    }
+    "drawer": {
+    "type": "drawMulti"
+    "drawers": [
+    {
+    "type": "drawTurret"
+    "parts": [
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "under": false
+    "x":0,"y":0,
+    "suffix":"-m2",
+    "layerOffset": -0.001,
+    "moveX": 0,
+    "moveY": -6
+    },
+        {
+    "type":"RegionPart",
+    "under": false
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-l1",
+    "layerOffset": -0.001,
+    "moveX": 0
+    "moveY":-4
+    "moveRot": 10
+    },
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-r1",
+    "layerOffset": -0.001,
+    "moveX": 0
+    "moveY": -4
+    "moveRot": -10
+    },
+    {
+    "type":"RegionPart",
+    "under": false
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-m1",
+    "layerOffset": -0.001,
+    "moveX": 0,
+    "moveY": -4
+    "moves": [
+    {
+    "progress": "recoil"
+    "x": 0
+    "y": -4
+    "recoilTime": 180
+    }
+    ]
+           "children": [
+          {
+         "type": "RegionPart",
+         "mirror": true,
+          "colorTo": "ffaa33ff",
+          "color": "ffaa3300",
+         "progress": "recoil",
+         "blending": "additive",
+         "outline": false,
+         "layerOffset": 0
+         "suffix": "-m1-heat"
+          }
+          ]
+    },
+    ]
+    }
+    ]
+    }
+    "category": "turret",
+    "shootSound": "artillery"
+    "velocityRnd": -0.15
+    "requirements": [
+        "plastanium/300" "镍钢/500" "锰钢/100" "U/235"
+    ],
+    "alternate": false
+    "reload": 45
+    "range": 560
+    "shootCone": 12.00
+    "health": 1700
+    "rotateSpeed": 5
+    "research":"2-轰击"
+    "targetAir": false
+    "ammoTypes": {
+    
+     "copper":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 60
+     "splashDamageRadius": 20.00
+     "splashDamage":30
+     "collidesAir": true
+     "explodeRange": 20.00
+     "lifetime": 80
+      "ammoMultiplier": 3
+    }
+
+      
+     "lead":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 200
+     "splashDamageRadius": 20.00
+     "splashDamage":100
+     "collidesAir": true
+     "explodeRange": 20.00
+     "lifetime": 80
+      "ammoMultiplier": 3
+    }
+    
+     "pyratite":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 120
+     "splashDamageRadius": 20.00
+     "splashDamage":120
+     "status": "burning"
+     "statusDuartion": 300.00
+     "collidesAir": true
+     "explodeRange": 20.00
+     "lifetime": 80
+      "ammoMultiplier": 3
+    }
+      
+     "thorium":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 680
+     "splashDamageRadius": 20.00
+     "splashDamage": 340
+     "collidesAir": true
+     "explodeRange": 20.00
+     "reloadMultiplier": 0.7
+     "lifetime": 80
+      "ammoMultiplier": 3
+    }
+    
+     "graphite":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 280
+     "splashDamageRadius": 20.00
+     "splashDamage": 140
+     "collidesAir": true
+     "explodeRange": 20.00
+     "lifetime": 80
+      "ammoMultiplier": 3
+    }
+    
+     "U":{
+          "type": "ArtilleryBulletType"
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 960
+     "splashDamageRadius": 40
+     "reloadMultiplier": 0.6
+     "splashDamage":480
+     "collidesAir": true
+     "explodeRange": 40
+     "lifetime": 80
+      "ammoMultiplier": 3
+      "status": "放射侵蚀"
+      "statusDuration": 300
+        }
+    
+     "烈性炸药":{
+          "type": "ArtilleryBulletType"
+          "status": "blasted"
+          "statusDuration": 120
+     "collidesGround": true
+     "speed": 8.00
+     "width": 8
+     "height": 15
+     "damage": 100
+     "status": "爆裂",
+     "statusDuration": 600,
+     "splashDamageRadius": 160
+     "splashDamage": 1200
+     "reloadMultiplier": 0.3
+     "collidesAir": false
+     "explodeRange": 160
+     "lifetime": 80
+      "ammoMultiplier": 1
+    }
+      }
+    }

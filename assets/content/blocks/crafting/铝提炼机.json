@@ -1,0 +1,54 @@
+{
+    "type": "GenericCrafter",
+    "name": "铝提炼机",
+    "description":"从冰晶石中提炼铝。",
+    "category": "crafting",
+    "health": 600,
+    "itemCapacity": 50,
+    "requirements": [
+        "copper/70",
+        "lead/40",
+        "silicon/20",
+    ],
+    "outputItem": "铝/5",
+    "craftTime": 50.00,
+    "size": 2,
+    "updateeffect": {
+        "type": "ParticleEffect",
+        "region": "pnk-mod-diamond",
+        "lenFrom": 0,
+        "lenTo": 6,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "color": "dddddd",
+    },
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			    "type": "DrawFlame",
+			    "flameColor": "ffffff",
+			},
+        ],
+    },
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "冰晶石/3",
+            ],
+        },
+        "power": 0.30,
+    },
+	"research": {
+        "parent": "khcore",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07",
+            },
+        ],
+    },
+}

@@ -1,0 +1,31 @@
+{
+	"name": "小型钻头",
+	"description": "小型钻头，较快",
+	"type": "Drill",
+	"size": 1,
+	"tier": 3,
+	"drillTime": 40,
+	"drillEffect":"formsmoke",
+	"drawMineItem":true,
+	"liquidBoostIntensity": 1,
+	"drawRim":false,
+	"itemCapacity":5,
+	"rotateSpeed":2,
+	"warmupSpeed":0.005,
+	"comsums":{
+		"liquid": "water"
+		"amount": 0.3
+		"optional":true
+		"booster": true
+		}
+	"requirements": [
+	"copper/10" "镍/16"
+	],
+	"category": "production"
+   "research": {
+   "parent": "khcore"
+   "objectives": [
+   "地下据点"
+   ]
+   }
+}

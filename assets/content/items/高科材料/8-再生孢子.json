@@ -1,0 +1,11 @@
+{
+"name":"再生孢子"
+"description":"这是一种自我增殖能力很强的半人为生命，即使富含有机物但是不会因此而燃烧。"
+"cost": 6
+"color":"8c5eab"
+"radioactivity":0,
+"explosiveness":0
+"flammability": 0
+"charge":0
+"research":"放射孢子"
+}

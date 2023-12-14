@@ -1,0 +1,206 @@
+{
+    "type": "ItemTurret",
+    "name": "迸裂",
+    "description":"发射高击退性的弹药，威力较低。",
+    "shootWarmupSpeed": 0.015,
+    "size":2,
+     "accurateDelay": false,//预判
+// "moveWhileCharging": false,//蓄力时不旋转
+    "category": "turret",
+    "requirements": [
+    "silicon/10","copper/120","lead/120"
+    ],
+    "drawer":{
+    "type": "drawTurret"
+    "parts": [
+                {"type":"RegionPart",
+    "mirror":false,
+    	"under": true
+    "x": 0,
+    "y": 0,
+    "suffix":"-r",
+    "layer": 50,
+    "moveX": 0
+    "moveY": 0
+        "moveRot": 0
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 2
+						"y": -3
+						"rot": -10
+						"recoilTime": 15
+					}
+				],
+        },
+                        {"type":"RegionPart",
+    "mirror": false,
+    	"under": true
+    "x": 0,
+    "y": 0,
+    "suffix":"-l",
+    "layer": 50,
+    "moveX": 0
+    "moveY": 0
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": -2
+						"y": -3
+						"rot": 10
+						"recoilTime": 15
+					}
+				],
+            }
+]
+}
+    "ammoTypes": {
+    "graphite": {
+    "ammoMultiplier": 5
+    "type": "FlakBulletType"
+    "width": 6
+    "height": 6
+    "trailWidth": 3
+    "trailLength": 6
+    "frontColor": "aaaaaa"
+    "backColor": "bbbbbb"
+    "trailColor": "a8a8a8"
+    "knockback": 8
+    "damage": 30
+    "splashDamage": 15
+    "splashDamageRadius": 16
+    "speed": 16
+    "lifetime": 15
+     "status": "爆裂",
+     "statusDuration": 600,
+    "collidesGround": true
+    "shootEffect": {
+    "type": "particleEffect"
+    "particles": 1
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "length": 24
+    "sizrFrom": 1
+    "sizeTo": 0
+    "colorFrom": "a8a8a8"
+    "colorTo": "a8a8a8"
+    "lifetime": 60
+    "cone": 30
+    }
+    "hitEffect": {
+    "type": "MiultiEffect"
+    "effects": [
+    {
+    "type": "WaveEffect"
+    "sizeFrom": 0
+    "sizeTo": 16
+    "colorFrom": "a8a8a8"
+    "colorTo": "a8a8a8"
+    "strokeFrom": 2
+    "strokeTo": 0
+    "lifetime": 30
+    }
+    {
+    "type": "particleEffect"
+    "particles": 5
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "length": 16
+    "sizrFrom": 2
+    "sizeTo": 0
+    "colorFrom": "a8a8a8"
+    "colorTo": "a8a8a8"
+    "lifetime": 15
+    }
+    ]
+    }
+    }
+    "硒": {
+    "ammoMultiplier": 3
+    "type": "FlakBulletType"
+    "width": 6
+    "height": 6
+    "trailWidth": 3
+    "trailLength": 6
+    "frontColor": "444444ff"
+    "backColor": "555555ff"
+    "trailColor": "444444ff"
+    "knockback": 12
+    "damage": 70
+    "splashDamage": 90
+    "splashDamageRadius": 80
+    "speed": 16
+    "lifetime": 20
+"rangeChange": 80
+    "collidesGround": true
+    "reloadMultiplier": 0.8
+     "status": "爆裂",
+     "statusDuration": 600,
+    "shootEffect": {
+    "type": "particleEffect"
+    "particles": 1
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "length": 24
+    "sizrFrom": 1
+    "sizeTo": 0
+    "colorFrom": "555555ff"
+    "colorTo": "555555ff"
+    "lifetime": 60
+    "cone": 30
+    }
+    "hitEffect": {
+    "type": "MiultiEffect"
+    "effects": [
+    {
+    "type": "WaveEffect"
+    "sizeFrom": 0
+    "sizeTo": 16
+    "colorFrom": "333333ff"
+    "colorTo": "333333ff"
+    "strokeFrom": 2
+    "strokeTo": 0
+    "lifetime": 30
+    }
+    {
+    "type": "particleEffect"
+    "particles": 5
+    "interp": "circleOut"
+    "sizeInterp": "pow5In"
+    "length": 16
+    "sizrFrom": 2
+    "sizeTo": 0
+    "colorFrom": "333333ff"
+    "colorTo": "333333ff"
+    "lifetime": 15
+    }
+    ]
+    }
+    }
+    }
+    "velocityRnd": 0.35
+    "reload": 30.0,
+    "restitution": 0.1,
+    "range": 160,
+    "shoot": {
+    "shots": 20
+    }
+    "shootY": 4
+    "shotCone": 60
+    "inaccuracy": 15
+    "ammoPerShot": 15
+    "maxAmmo": 60
+    "shootSound": "shotgun"
+    "shootCone": 20.00,
+    "health": 550,
+    "rotateSpeed": 3.00,
+	"research": {
+        "parent": "0-0突进",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+}

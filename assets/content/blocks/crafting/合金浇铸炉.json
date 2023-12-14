@@ -1,0 +1,73 @@
+{
+    "type": "GenericCrafter",
+    "name": "合金浇铸炉",
+    "description":"比普通的合金冶炼厂更强。",
+    "category": "crafting",
+    "health":600,
+    "itemCapacity":50,
+    "updateEffect": {
+        "type": "MultiEffect",
+        "lifetime": 15,
+        "effects": [
+            {
+                "type": "waveEffect",
+                "sizeFrom": 0,
+                "sizeTo": 4,
+                "lenFrom": 0,
+                "lenTo": 0,
+                "lifetime": 15,
+                "strokeFrom": 0.4,
+                "strokeTo": 0,
+                "colorFrom": "ffffaa",
+                "colorTo": "ffffaa",
+            },
+            {
+                "type": "particleEffect",
+                "cone": 0,
+                "length": 0,
+                "lenFrom": 0,
+                "lenTo": 0,
+                "particles": 1,
+                "lifetime": 15,
+                "line": false,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "colorFrom": "ffffaa",
+                "colorTo": "ffffaa",
+            },
+        ],
+    },
+    "requirements": [
+        "titanium/300",
+        "surge-alloy/25",
+        "钛合金/100",
+        "锆锰合金/85",
+    ],
+    "outputItem": "surge-alloy/3",
+    "craftTime": 40.00,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+    			"type": "DrawFlame",
+    			"flameColor": "ffffcc",
+			},
+        ],
+    },
+    "consumes": {
+        "items": {
+            "items": [
+                "copper/6",
+                "lead/6",
+                "silicon/4",
+                "titanium/5",
+            ],
+        },
+        "power": 2.50,
+    },
+    "research":"锆锰合金冶炼厂",
+}

@@ -1,0 +1,10 @@
+{
+"name":"酸蚀液"
+"description":"一种具有强烈燃烧性，爆炸性和腐蚀性的液体。"
+"color":"e89836"
+"flammability":1.2,
+"temperature":1.2,
+"viscosity":0.5,
+"explosiveness":1.2
+"research":"磷"
+}

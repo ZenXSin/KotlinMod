@@ -1,0 +1,90 @@
+{
+"type":"mech"
+"name":"a0-2"
+"speed":0.68
+"armor": 12
+"canBoost": true
+    "kinematicScl": 14
+"rotateSpeed":2.4
+"health":3600
+"reload": 7200
+"range": 8
+"hitSize": 20
+"legMoveSpace": 6
+"mechStride": 6
+"legExtebsion":2
+"mechStepShake":0.2
+    "boostMultiplier": 3,
+    "research": "a0-1"
+"duration": 5
+"legTrns":6
+"legCount":2
+"itemCapacity":25
+"weapons": [
+     {
+    	"shootSound": "laser"
+    "top": false
+    	"chargeSound": "lasercharge",
+    	"reload": 45,
+    	"soundPitchMin": 1,
+    	"mirror": true,
+    	"recoil": 2,
+    	"shake": 1.42,
+    	"shootY": 2,
+    	"x": 10,
+    	"y": 0,
+    	"cooldownTime": 100,
+    	"shootStatusDuration": 60,
+    	"lifetime": 10,
+    	"name": "a0-2-1",
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 135,
+        	"width": 20,
+        	"lightningSpacing": 35,
+        	"lightningLength": 1.2,
+        	"lightningDelay": 1.1,
+        	"lightningLengthRand": 6,
+        	"lightningDamage": 15,
+        	"largeHit": true,
+        	"status": "shocked"
+        	"lightColor": "DBDBDB",
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+    	}
+    	     {
+    	"shootSound": "spark",
+    	"chargeSound": "lasercharge",
+    	"reload": 45,
+    	"rotate": true
+    	"rotateSpeed": 6
+    	"soundPitchMin": 1,
+    	"mirror": true,
+    	"top": true
+    	"recoil": 2,
+    	"shake": 1.42,
+    	"shootY": 2,
+    	"x": 5,
+    	"y": 0,
+    	"cooldownTime": 100,
+    	"shootStatusDuration": 60,
+    	"name": "a0-2-2",
+        "bullet": {
+        "type": "LightningBulletType"
+        "lightColor": "aaaade"
+        "lightning": 1
+        "lightningLength": 12
+        "lightningLengthRand": 12
+        "lightningCone": 25
+        "lightningColor": "aaaade"
+        "lightningDamage": 15
+          }
+        }
+   	]
+}

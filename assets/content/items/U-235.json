@@ -1,0 +1,12 @@
+{
+"name":"U-235"
+"description":"？"
+"hardness":"4"
+"cost":"5"
+"color":"002f00"
+"radioactivity":5.5,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"U"
+}

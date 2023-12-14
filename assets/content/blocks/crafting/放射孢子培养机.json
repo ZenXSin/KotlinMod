@@ -1,0 +1,45 @@
+{
+	"type": "AttributeCrafter",
+	"name": "放射孢子培养机",
+	"health":450,
+	"outputItem": "放射孢子/2",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawCultivator",
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+    	]
+	}
+	"attribute":"spores",
+	"itemCapacity": 20,
+	"size": 4,
+	"hasPower": true,
+	"hasliquid": true,
+	"hasItems": true,
+	"craftTime": 24,
+	"consumes": {
+    	"items":{
+        	"items": [
+            	"spore-pod/1",
+            	"U/1",
+        	],
+    	},
+		"power": 1.5,
+		"liquid": {
+			"liquid": "water", 
+			"amount": 0.4,
+		},
+		
+	},
+	"requirements": [
+	"silicon/80",
+    "titanium/100",
+    "metaglass/60",
+	],
+	"category": "crafting",
+	"research": "铀构造器",
+} 

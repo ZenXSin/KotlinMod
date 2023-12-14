@@ -1,0 +1,18 @@
+{
+"type":"SectorPreset"
+"localizedName":"荒地"
+"sector": 15
+"planet": "kurh"
+"difficulty": 3
+"captureWave": 30
+"research":{
+"parent": "峡谷07"
+"objectives": [
+{
+"type": "SectorComplete"
+"preset": "峡谷07"
+}
+]
+}
+"description": "这里是[orange]Kurh[white]的良好落地点，敌人较少且资源丰富，适合作为起点。"
+}

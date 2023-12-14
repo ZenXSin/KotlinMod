@@ -1,0 +1,34 @@
+{
+"type":"mech"
+"name":"Alora Pax"
+"speed": 0.55
+"fogRadius": 15
+"template": "ErekirUnitType",
+"canBoost": false
+"rotateSpeed": 1.95
+"health": 2600
+"range": 40
+"hitSize": 12
+"mechStride": 4
+"mechStepShake": 0
+"armor": 8
+"weapons": [
+     {
+     "name": "erk-2-alora-1"
+     "layerOffset": -0.001
+     "x": -6
+     "y": 2
+     "reload": 60
+     "shootCone": 20
+     "shootSound": "shootBig"
+     "bullet": {   
+    "type": "ShrapnelBulletType"
+    "length": 110.00
+    "damage": 70
+    "width": 2.00
+    "toColor": "6dffff"
+    "color": "6dffff"
+     }
+      } 
+     ]
+}

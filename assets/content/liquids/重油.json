@@ -1,0 +1,11 @@
+{
+"name":"重油"
+"description":"在这里用于工业生产。"
+"color":"eb7c64"
+"flammability":2,
+"temperature":0,
+"heatCapacity":0.0,
+"viscosity":0.5,
+"explosiveness": 4
+"research":"镍钢"
+}

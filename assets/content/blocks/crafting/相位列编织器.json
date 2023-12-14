@@ -1,0 +1,44 @@
+{	
+    "name": "相位列编织器",
+    "type": "GenericCrafter"
+   "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            "DrawWeave",
+            "DrawDefault"
+        ]
+    },
+    "size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 40,
+	"craftTime": 45,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": "none",
+    "ambientSound": "techloop",
+    "ambientSoundVolume": 0.02,
+	"consumes": {
+		"power": 6,
+		"items": {
+			"items": [
+               "sand/12",
+               "thorium/8",
+			]
+		}
+	},
+	"requirements": [
+    "silicon/450",
+    "titanium/400",
+    "surge-alloy/70",
+    "thorium/300",
+    "phase-fabric/200"
+    "硬铝/200"
+	],
+	"category": "crafting",
+	"research": "锰钢锻压机",
+	"outputItem": "phase-fabric/4"
+}

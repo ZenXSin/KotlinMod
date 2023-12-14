@@ -1,0 +1,12 @@
+{
+"type":"wall",
+"name":"硬铝墙",
+"category":"defense",
+"size":1,
+"description":"很坚硬的墙。",
+"health":1300,
+"requirements":[
+"硬铝/8"
+]
+"research":"710绝缘墙"
+}

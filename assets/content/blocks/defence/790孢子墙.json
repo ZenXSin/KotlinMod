@@ -1,0 +1,28 @@
+{
+"type": "MendProjector"
+"name": "孢子墙"
+"description": "不需要电力，可以吸收电弧和激光。"
+"size": 1
+"requirements": [
+"硬铝/2","U/5","8-再生孢子/20"
+]
+"health": 4500
+"insulated":true,//是否吸收电弧
+"absorbLasers":true,//是否吸收激光 
+"hasPower": false
+"reload": 90
+"healPercent": 8
+"range": 80
+"category": "defense"
+"research": "701大型简易恢复墙"
+"destroyBullet": {
+"type": "FlakBulletType"
+"collidesGround": true
+"damage": 0
+"lifetime": 0
+"splashDamage": 0
+"splashDamageRadius": 80
+"status": "孢子破坏"
+"statusDuration": 300
+}
+}

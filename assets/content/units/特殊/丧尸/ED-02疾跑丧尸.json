@@ -1,0 +1,53 @@
+{
+"type":"mech"
+"name":"疾跑丧尸"
+"description": "拥有较高的移动速度的丧尸，可以快速接近并撕咬敌人。
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"speed": 2
+"deathEffect": "none"
+"range": 32
+"rotateSpeed": 6
+"health": 700
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 4
+"mechStride": 2
+"mechStepShake":0.0
+
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "疾跑丧尸-w"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 0
+    "mirror": false
+    "rotate": false
+    "shots": 2
+    "recoil": -2
+    "reload": 50
+    "targetAir":false
+    "shootEffect": "none"
+    "shootSound": "none"
+    "restitution":1.42
+    "bullet": {
+      "type": "BasicBulletType"
+      "shootEffect": "none"
+      "despawnEffect": "none"
+      "damage":50
+      "recoil": -3.5
+      "width":0
+      "height":0
+      "lifetime": 5
+      "speed": 8
+             }
+      } 
+     ]
+    "research": "ED-01普通丧尸"
+}

@@ -1,0 +1,29 @@
+{
+"type": "ShockwaveTower"
+"name": "大型震爆塔"
+"category": "defense"
+"requirements": [
+"plastanium/500"
+"锰钢/1000"
+"钴/300"
+"钛合金/400"
+]
+"health": 21000
+"armor": 30
+"shapeRotateSpeed": 4
+"shapeSides": 8
+"shapeColor": "bb66dd"
+"shapeRadius": 8
+"waveColor": "bb66dd99"
+"range": 400
+"reload": 45
+"damage": 500
+"size": 5
+"consumes": {
+"power": 4
+"liquid": {
+"liquid": "能量液"
+"amount": 2
+}
+}
+}

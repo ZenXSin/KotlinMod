@@ -1,0 +1,147 @@
+{
+"type": "ItemTurret"
+"size": 2
+"name": "多管"
+"description": "精巧的结构让它拥有比双管更远的射程，更快的射击速度，更高的伤害。"
+"reload": 15
+"recoilTime": 30
+"shootSound": "shoot"
+//"buildVisibility": "shown"
+"researchCostMultiplier": 0
+"research": {
+"objectives": [
+{
+"type": "SectorComplete"
+"preset": "pnk-mod-峡谷07"
+}
+]
+"parent": "khcore"
+}
+"requirements": [
+"copper/70" "graphite/10"
+]
+"consumes": {
+"coolant": {
+"amount": 0.2
+"optional": true
+}
+}
+"health": 300
+"category": "turret"
+"range": 280
+"shootY": 6
+"shoot": {
+"type": "ShootBarrel"
+"barrels": [
+3,2,0
+0,-4,0
+-3,2,0
+]
+}
+"ammoPerShot": 1
+"ammoTypes": {
+"copper": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 15
+"ammoMultiplier": 3
+}
+"lead": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 20
+"ammoMultiplier": 2
+"reloadMultiplier": 0.9
+}
+"graphite": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 60
+"damage": 10
+"splashDamage": 20
+"splashDamageRadius": 18
+"ammoMultiplier": 2
+"reloadMultiplier": 0.65
+}
+"silicon": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 20
+"ammoMultiplier": 4
+"reloadMultiplier": 1.65
+"homingPower": 0.05
+"homingRange": 80
+}
+"metaglass": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 10
+"splashDamage": 15
+"splashDamageRadius": 48
+"reloadMultiplier": 0.75
+"ammoMultiplier": 4
+"fragBullets": 3
+"fragBullet": {
+"type": "BasicBulletType"
+"width": 1
+"height": 2
+"hitEffect": "none"
+"despawnEffect": "none"
+"speed": 8
+"lifetime": 5
+"damage": 5
+}
+}
+"pyratite": {
+"type": "BasicBulletType"
+"status": "burning"
+"statusDuration": 180
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 15
+"ammoMultiplier": 3
+"frontColor": "ffbb00"
+"backColor": "ffbb00"
+}
+"thorium": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 45
+"ammoMultiplier": 1
+"reloadMultiplier": 0.75
+"pierce": true
+"pierceCap": 4
+}
+"plastanium": {
+"type": "BasicBulletType"
+"width": 6
+"height": 10
+"speed": 6
+"lifetime": 50
+"damage": 30
+"splashDamage": 40
+"splashDamageRadius": 80
+"ammoMultiplier": 2
+"reloadMultiplier": 1.1
+}
+}
+}

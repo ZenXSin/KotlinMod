@@ -1,0 +1,41 @@
+{
+    "type": "GenericCrafter",
+    "name": "钛合金熔炉",
+   "description":"生产钛合金。",
+    "category": "crafting",
+    "health": 700
+    "itemCapacity": 35
+    "research": "锰钢锻压机"
+    "requirements": [
+    "graphite/100" "titanium/50" "锰/80" "锆/200"
+    ],
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			"type": "DrawFlame"
+			"flameColor": "ddddffcc"
+			}
+            ]
+            }
+    "outputItem": "钛合金/2",
+    "craftTime": 30.00,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquid": false,
+    "consumes": {
+    "liquid": {
+    "liquid": "重油"
+    "amount": 0.1
+    }
+        "items": {
+            "items": [
+                "镍/3"
+                "铝/2"
+                "titanium/5"
+            ]
+        },
+        "power": 1.50
+    }
+}

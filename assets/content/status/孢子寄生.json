@@ -1,0 +1,11 @@
+{
+"name": "孢子寄生"
+"description": "“孢子正在破坏你的身体”"
+"damage": 1
+"permanent": true
+"affinities": [
+"sapped"
+"spore-slowed"
+]
+"transitionDamage": 120
+}

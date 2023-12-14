@@ -99,14 +99,6 @@ open class BonusCrafter(name: String?) : Block(name) {
     /** Only used for legacy cultivator blocks.  */
     var legacyReadWarmup = false
     var drawer: DrawBlock = DrawDefault()
-    /*override fun toString(): String {
-        return "bonusItem=" + bonusItem +
-                ", Bonus=" + bonus +
-                ", heatItem=" + heatItem +
-                ", heatLiquid=" + heatLiquids +
-                ", heatd=" + heatd
-    }*/
-
     init {
         update = true
         rotate = false

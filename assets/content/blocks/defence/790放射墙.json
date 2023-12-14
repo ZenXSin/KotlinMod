@@ -1,0 +1,48 @@
+{
+	"type": "PowerTurret",
+	"name": "放射墙",
+	"description": "为自身队伍提供保护并对周围敌人造成放射侵蚀效果",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 2200,
+	"size": 1,
+	"shootY": 0
+	"shootSound":"none",
+	"shake":0.0,
+	"restitution":0.1,
+	"shootType": {	
+	"shootEffect": "none"
+	"type": "FlakBulletType"
+	"damage": 15
+	"splashDamage": 15
+	"splashDamageRadius": 64
+	"lifetime": 0
+	"frontColor": "00000000"
+	"backColor": "00000000"
+	"status": "严重放射侵蚀"
+	"statusDuration": 300
+	"hitEffect": {
+	"type": "waveEffect"
+	"strokeFrom": 4
+	"strokeTo": 4
+	"sizeFrom": 0
+	"sizeTo": 8
+	"colorFrom": "ffffff"
+	"colorTo": "ffffff00"
+	"lifetime": 90
+	}
+}
+"consumes": {
+"power": 0.5
+}
+"outputsPower": true,
+	"consumesPower": true,
+	"hasPower": true,
+	"reload": 30,
+	"range": 40,
+"category": "defense"
+"research": "701大型简易恢复墙"
+	"requirements": [
+	"硬铝/2","U/5","8-放射能源/10"
+	]
+}

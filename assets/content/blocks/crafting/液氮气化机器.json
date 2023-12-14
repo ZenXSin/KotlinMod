@@ -1,0 +1,42 @@
+{
+	"type": "GenericCrafter",
+	"name": "液氮气化机器",
+	"description": "将液氮气化形成氮气。",
+	"health": 660,
+	"size": 2,
+	"drawer":{
+	    "type":"DrawMulti",
+	    "drawers":[
+	    {
+	    "type":"DrawRegion",
+	    "suffix":"-bottom"
+	    },
+	    {
+	       "type":"DrawLiquidTile",
+	    "drawLiquid":"nitrogen"
+	    },
+	    "DrawDefault"
+	]
+	},
+	"solid": true,
+	"hasPower": true,
+	"liquidCapacity": 360,
+	"craftTime": 30,
+	"category": "crafting"
+	"idleSound": "respawning",
+	"idleSoundVolume": 0.5
+	"requirements": [
+        "lead/325","silicon/200","titanium/300"
+    ],
+    "outputLiquid": "nitrogen/2",
+    "craftTime": 60.00,
+    "hasPower": true,
+    "hasItems": false,
+    "rotate": false,
+    "solid": true,
+    "outputsLiquid": true,
+    "consumes": {
+        "liquid": "液氮/2"
+    }
+//   "research":"cryofluid-mixer"
+}

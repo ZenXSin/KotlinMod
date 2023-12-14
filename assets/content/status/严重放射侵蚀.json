@@ -1,0 +1,18 @@
+{
+"name": "严重放射侵蚀"
+"description": "强穿透性的电离辐射正在侵蚀你的身体。"
+"damage": 5
+"speedMultiplier": 0.5
+"healthMultiplier": 0.5
+"transitionDamage": 1024
+"effect": {
+"type": "particleEffect"
+"sizeFrom": 3.0
+"sizeTo": 0.0
+"particles": 10
+"length": 7
+"lifetime": 15
+"colorFrom": "77ee99"
+"colorTo": "44bb66"
+}
+}

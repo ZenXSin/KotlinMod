@@ -1,0 +1,189 @@
+{
+    "type": "naval",
+    "name": "c0-5",
+    "health": 85000,
+    "armor": 35,
+    "hitSize": 52,
+    "speed": 1.05,
+    "accel": 0.3,
+    "rotateSpeed": 1.4,
+    "rotateShooting": true,
+    "commandLimit": 8,
+    "abilities": [
+      {
+    "type": "ForceFieldAbility"
+    "radius": 70
+    "regen": 15
+    "max": 80000
+    "cooldown": 7200
+  }
+]
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+     {
+    "name": "c0-5-1"
+    "x": 0
+    "y": 2
+    "shootY": 10
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 1
+    "autoTarget": true
+    "shoot": {
+    "shots": 1
+    "chargeTime": 38
+    "firstShotDelay": 38
+    }
+    "shootSound": "railgun"
+    "recoil": 6
+    "reload": 180
+            "chargeTime": 38
+    "status": "shocked"
+    "ammoType": "surge-alloy"
+    "shake": -1
+    "restitution":1.42
+			"bullet": {
+				"type": "RailBulletType",
+				"damage": 3000,
+				"length": 880,
+				"status": "freezing",
+				"statusDuration": 600,
+				"pierceDamageFactor": 0.5,
+				"pointEffectSpace": 32,
+				"pointEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"lifetime": 34,
+					"length": 0,
+					"cone": -360,
+					"region": "pnk-mod-thin1",
+					"sizeFrom": 16,
+					"sizeTo": 16,
+					"colorFrom": "8899ff",
+					"colorTo": "8899ff00"
+					"layer": 110
+				},
+				"pierceEffect": {
+					"type": "ParticleEffect",
+					"line": true,
+					"particles": 120,
+					"offset": 0,
+					"lifetime": 15,
+					"length": 40,
+					"cone": -7.5,
+					"lenFrom": 6,
+					"lenTo": 0,
+					"colorFrom": "8899ff",
+					"colorTo": "FFFFFF"
+				},
+				"hitEffect": "railHit",
+				"hitColor": "D86E56"
+                "shootEffect": {
+                "type": "WaveEffect"
+                "sizeFrom": 0
+                "sizeTo": 48
+                "strokeFrom": 5
+                "strokeTo": 0
+                "colorFrom": "6677cd"
+                "colorTo": "8899ef"
+                "lifetime": 90
+			}
+		}
+          }
+               {
+    "name": "c0-5-2"
+    "x": 15
+    "y": -13
+    "shootY": 10
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 3.5
+    "shoot": {
+    "shots": 10
+    "shotDelay": 2
+    }
+    "recoil": 2
+    "reload": 60
+    "shootCone": 30
+    "shootSound": "plasmaboom"
+    "shake": -1
+        "innacuracy": 50
+    "restitution":1.42
+    "bullet": {
+                "type": "MissileBulletType",
+                "damage": 200
+                "frontColor": "8899ef"
+                "backColor": "daccff"
+                "trailColor": "8899ef"
+                "trailRegion": "pnk-mod-thin1"
+                "weaveScale": 3
+                "weaveMag": 1
+                "width": 8
+                "height": 12
+                "lifetime": 64
+                "speed": 6
+                "splashDamage": 300
+                "splashDamageRadius": 32
+                "homingpower": 0.25
+                "status": "极寒"
+                "statusDuration": 300
+                "fragBullets": 1
+                "fragBullet": {
+                "type": "BombBulletType"
+                "lifetime": 0
+                "region": "air"
+                "damage": 0
+                "splashDamage": 0
+                "collidesAir": true
+                "collidesGround": true
+                "splashaDamageRadius": 24
+                "status": "解冻"
+                "statusDuration": 600
+                }
+            },
+          }
+               {
+    "name": "c0-5-3"
+    "x": 16
+    "y": 10
+    "shootY": 10
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 8
+    "shoot": {
+    "shots": 3
+    "shotDelay": 3
+    }
+    "recoil": 2
+    "reload": 25
+    "shootCone": 45
+    "shootSound": "missile"
+    "shake": -1
+        "innacuracy": 60
+    "restitution":1.42
+    "bullet": {
+                "type": "MissileBulletType",
+                "damage": 500
+                "frontColor": "8899ef"
+                "backColor": "daccff"
+                "trailColor": "8899ef"
+                "trailRegion": "pnk-mod-thin1"
+                "weaveScale": 3
+                "weaveMag": 2
+                "width": 4
+                "height": 6
+                "lifetime": 75
+                "speed": 8
+                "homingPower": 0.4
+            },
+          }
+      ],
+    "research": "c0-4"
+}

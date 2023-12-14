@@ -1,0 +1,138 @@
+{
+    "type": "legs",
+    "health": 9200,
+    "hitSize": 24,
+    "drag": 0.3,
+    "speed": 0.38,
+    "rotateSpeed": 3.00
+    
+            "legCount": 6,
+            "legLength": 25,
+            "legBaseOffset": 2.00,
+            "legMoveSpace": 1.00
+            "legExtension": -10
+            "legTrns": 0.68,
+
+            "hovering": true,
+            "visualElevation": 0.8,
+            "allowLegStep": true,
+
+    "research": "a1-2",
+    "armor": 28,
+    "name": "a1-3",
+    "commandLimit": 9,
+    "itemCapacity": 150,
+    "weapons": [
+        {
+            "name": "a1-3-1",
+            "reload": 50,
+            "shots": 3,
+            "recoil": 2.45,
+            "rotateSpeed": 4.55
+            "rotate": true,
+            "targetAir":false
+            "collidesAir": false
+            "mirror": false
+            "shootCone": 45
+            "innacuracy": 20,
+            "shootSound": "artillery",
+            "x": 0,
+            "y": -4,
+            "rotateShooting": true,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 10,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "height": 10,
+                "splashDamage": 200
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "damage":200
+                "knockback":0.4
+                "lifetime":110
+                "speed":5
+                "fragBullets": 3
+            "fragBullet": {
+                "type": "ArtilleryBulletType",
+                "status": "放射侵蚀"
+                "statusDuartion": 640
+                "width": 6,
+             "color": "33ce33FF",
+             "backColor": "33ce33FF"
+             "trailColor": "33ce33"
+                "height": 6,
+                "splashDamage": 50
+                "splashDamageRadius": 40
+                "collidesTile":false
+                "damage": 30
+                "knockback":0.4
+                "lifetime": 40
+                "speed": 2
+                }
+             "hitEffect": {
+             "type": "WaveEffect",
+             "lifetime": 8,
+             "sizeFrom": 0,
+             "sizeTo": 15,
+             "strokeFrom": 4,
+             "strokeTo": 0,
+             "colorFrom": "77ce77FF",
+             "colorTo": "77ce7700"
+             },
+            }
+        }
+  {
+            "name": "a1-3-2",
+            "reload": 10,
+            "shots": 1,
+            "recoil": 1.00,
+            "rotate": true,
+            "shootSound":"shootSnap"
+            "x": 10,
+            "y": 0,
+            "rotateShooting": false,
+            "mirror":true
+            "bullet": {
+                "type": "BasicBulletType",
+                "width": 5,
+                "height": 5,
+                "damage":18,
+                "lifetime":36,
+                "speed":5
+            }
+        }
+
+  {
+            "name": "a1-3-3",
+            "reload": 25,
+            "shots": 2,
+            "recoil": 0.6,
+            "rotate": true,
+            "shootSound":"missile"
+            "x": 6,
+            "y": -4,
+            "rotateShooting": false,
+            "bullet": {
+      "type": "MissileBulletType"
+      "damage": 12
+      "width":7
+      "height": 10
+      "splashDamage": 6
+      "splashRadius": 25
+      "homingPower": 0.4
+      "trailLength": 4
+      "trailWidth": 2
+      "homingRange": 120
+      "weaveScale": 6
+      "hitSound": "explosion"
+      "weaveMag": 2
+      "lifetime":45
+      "speed": 4
+            }
+        }
+    ]
+}

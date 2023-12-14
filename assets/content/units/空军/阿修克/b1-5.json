@@ -1,0 +1,350 @@
+{
+    "type": "flying"
+    "flying": true
+    "name": "b1-5"
+    "hitSize": 52
+    "health": 85000
+    "armor": 30
+    "rotateSpeed": 2
+    "speed": 1.25
+    "engineOffset": 30
+    "engineSize": 8
+    "research": "b1-4"
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 480,
+              "amount": 550,
+              "reload": 300
+        },
+    ]
+    "targetFlags": [
+        "turret"
+        "generator"
+    ]
+"playerTargetFlags": [
+        "turret"
+    ]
+    "faceTarget": true
+    "lowAltitude": true
+    "weapons": [
+        {
+            "name": "b1-5-1"
+            "rotateSpeed": 3,
+            "reload": 900,
+            "ejectEffect": "none",
+            "mirror": false
+            "rotate": false
+            "shoot": {
+                "shots": 120,
+                "shotDelay": 4
+            }
+            "shootSound": "missileLarge",
+            "shootCone": 45
+            "inaccuracy": 30
+            "x": 0,
+            "y": 32,
+            "shootWarmupSpeed": 0.05
+            "rotateShooting": false,
+            "bullet": {
+                "shootEffect": {
+                    "type": "particleEffect"
+                    "particles": 5
+                    "length": 24
+                    "interp": "circleOut"
+                    "sizeInterp": "pow5In"
+                    "sizeFrom": 4
+                    "sizeTo": 0
+                    "colorFrom": "ffffff"
+                    "colorTo": "ffffff"
+                    "cone": 5
+                }
+                "type": "MissileBulletType",
+                "width": 8,
+                "height": 8,
+                "trailParam": 6,
+                "homingPower": 0.05
+                "homingRange": 400
+                "homingDelay": 30
+                "trailLength": 8,
+                "trailWidth": 1
+                "sprite": "pnk-mod-zierh-ax"
+                 "frontColor": "ddddddff",
+                 "backColor": "ddddddff"
+                 "trailColor": "777777ff"
+                 "trailEffect": "none"
+                 "splashDamage": 550
+                 "splashDamageRadius": 40
+                 "collidesTile":false
+                 "damage": 50
+                 "knockback":0.8
+                 "lifetime": 180
+                 "shrinkY": 0
+                 "speed": 4
+            }
+        }
+        {
+            "name": "b1-5-2",
+            "reload": 90,
+            "shots": 1,
+            "recoil": 3.45,
+            "rotateSpeed": 5
+            "rotate": true,
+            "targetAir":false
+            "mirror": true
+            "shootCone": 10,
+            "shootSound": "artillery",
+            "x": 12,
+            "y": -8,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "严重放射侵蚀"
+                "width": 15,
+                "height": 15,
+                "shrinkY": 0
+                "color": "33ce33FF",
+                "backColor": "33ce33FF"
+                "trailColor": "33ce33"
+                "statusDuration": 600
+                "splashDamage": 850
+                "splashDamageRadius": 80
+                "collidesTile": true
+                "damage": 150
+                "knockback":0.6
+                "lifetime": 120
+                "speed": 6
+                "hitEffect": {
+                    "type": "MultiEffect"
+                    "effects": [
+                        {
+                        "type": "ParticleEffect"
+                        "line": true
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 4
+                        "sizeTo": 0
+                        "colorFrom": "33ce33"
+                        "colorTo": "33ce33"
+                        "length": 32
+                        "lifetime": 120
+                        "particles": 30
+                        }
+                        {
+                        "type": "ParticleEffect"
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 4
+                        "sizeTo": 0
+                        "colorFrom": "66df66"
+                        "colorTo": "66df66"
+                        "length": 40
+                        "lifetime": 90
+                        "particles": 20
+                        }
+                        {
+                        "type": "WaveEffect"
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 0
+                        "sizeTo": 64
+                        "strokeFrom": 4
+                        "strokeTo": 0
+                        "colorFrom": "33ce33"
+                        "colorTo": "33ce33"
+                        "lifetime": 90
+                        "particles": 10
+                        }
+                    ]
+                }
+            }
+        }
+        {
+            "name": "b1-5-3",
+            "reload": 60,
+            "shots": 1,
+            "recoil": 3.45,
+            "rotateSpeed": 5
+            "rotate": true,
+            "targetAir":false
+            "mirror": true
+            "shootSound": "artillery",
+            "x": 16,
+            "y": 24,
+            "rotateShooting": false,
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "status": "严重放射侵蚀"
+                "width": 15,
+                "height": 15,
+                "shrinkY": 0
+                "color": "33ce33FF",
+                "backColor": "33ce33FF"
+                "trailColor": "33ce33"
+                "statusDuration": 600
+                "splashDamage": 850
+                "splashDamageRadius": 80
+                "collidesTile": true
+                "damage": 150
+                "knockback":0.6
+                "lifetime": 120
+                "speed": 6
+                "hitEffect": {
+                    "type": "MultiEffect"
+                    "effects": [
+                        {
+                        "type": "ParticleEffect"
+                        "line": true
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 4
+                        "sizeTo": 0
+                        "colorFrom": "33ce33"
+                        "colorTo": "33ce33"
+                        "length": 32
+                        "lifetime": 120
+                        "particles": 30
+                        }
+                        {
+                        "type": "ParticleEffect"
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 4
+                        "sizeTo": 0
+                        "colorFrom": "66df66"
+                        "colorTo": "66df66"
+                        "length": 40
+                        "lifetime": 90
+                        "particles": 20,
+                        },
+                        {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "sizeInterp": "pow5In",
+                        "sizeFrom": 0,
+                        "sizeTo": 64,
+                        "strokeFrom": 4,
+                        "strokeTo": 0,
+                        "colorFrom": "33ce33",
+                        "colorTo": "33ce33",
+                        "lifetime": 90,
+                        "particles": 10,
+                        },
+                    ],
+                },
+            },
+        },
+        {
+            "name": "b1-5-4",
+            "x": 20,
+            "y": -24,
+            "shootY": 9,
+            "mirror": true,
+            "rotate": true,
+            "autoTarget": true,
+            "rotateSpeed": 4,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 3,
+            },
+            "recoil": 0.5,
+            "reload": 90,
+            "shootSound": "laser",
+            "shake": 0.7,
+            "inaccuracy": 8.5,
+            "bullet": {
+            	"type": "LaserBulletType",
+            	"length": 240,
+            	"damage": 450,
+            	"width": 8,
+            	"status": "严重放射侵蚀",
+            	"statusDuration": 3600,
+            	"colors": [
+                	"99ff99dd",
+                	"dbffdbee",
+                	"ffffffff",
+            	],
+            	"shootEffect": "none",
+            	"healPercent": 15,
+            	"collidesTeam": true,
+            	"lightColor": "eaffea",
+            	"sideAngle": 25,
+            	"sideWidth": 12,
+            	"sideLength": 8,
+            },
+        },
+        {//起码在146以及之前的版本[recoils>1]和[shots>1]不兼容（恼
+            "name": "b1-5-5",
+            "shootWarmupSpeed": 0.01,
+            "minWarmup": 0.9,
+            "x": 0,
+            "y": -4,
+            "rotate": false,
+            "layerOffset": -0.001,
+            "mirror": false,
+            "shootY": 24,
+            "shootSound": "artillery",
+            "recoils": 3,
+            "recoil": 0,
+            "recoilTime": 45,
+            "reload": 40,
+            "shoot": {
+                "type": "ShootBarrel",
+                "barrels": [
+                    -6,0,0,
+                    0,0,0,
+                    6,0,0,
+                ],
+                "shots": 1,
+            },
+            "parts": [
+                {
+                "type": "RegionPart",
+                "under": true,
+                "progress": "recoil",
+                "recoilIndex": 1,
+                "x": 0,
+                "y": 0,
+                "moveY": -8,
+                "suffix": "-M1",
+                },
+                {
+                "type": "RegionPart",
+                "under": true,
+                "progress": "recoil",
+                "recoilIndex": 0,
+                "x": 0,
+                "y": 0,
+                "moveY": -8,
+                "suffix": "-L1",
+                },
+                {
+                "type": "RegionPart",
+                "under": true,
+                "progress": "recoil",
+                "recoilIndex": 2,
+                "x": 0,
+                "y": 0,
+                "moveY": -8,
+                "suffix": "-R1",
+                },
+            ],
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "damage": 170,
+                "splashDamage": 250,
+                "splashDamageRadius": 40,
+                "speed": 12,
+                "lifetime": 50,
+                "trailColor": "eaffea00",
+                "frontColor": "eaffea",
+                "backColor": "eaffea",
+                "width": 6,
+                "height": 18,
+//                "trailEffect": {
+//                "type": 
+//                },
+            },
+        },
+    ],
+}

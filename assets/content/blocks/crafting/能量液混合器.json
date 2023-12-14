@@ -1,0 +1,62 @@
+{	
+    "name": "能量液混合器",
+    "type": "GenericCrafter"
+   "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },	    
+            {
+	       "type":"DrawLiquidTile",
+	        "drawLiquid":"能量液",
+	        },
+            "DrawWeave",
+            "DrawDefault",
+        ],
+    },
+    "size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true
+	"itemCapacity": 40,
+	"liquidCapacity": 5
+	"craftTime": 60,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": {
+	"type": "ParticleEffect"
+	"particles": 3
+	"sizeFrom": 2
+	"sizeTo": 2
+	"colorFrom": "ffd59e99"
+	"colorTo": "ffd59e00"
+	"length": 24
+	"baseLength": -24
+	"offset": 0
+	"lifetime": 90
+	},
+    "ambientSound": "techloop",
+    "ambientSoundVolume": 0.02,
+	"consumes": {
+		"power": 6,
+		"items": {
+			"items": [
+               "phase-fabric/4",
+			]
+		}
+		"liquid": {
+		"liquid": "cryofluid"
+		"amount": 2
+		}
+	},
+	"requirements": [
+	"silicon/50"
+	"titanium/200"
+	"surge-alloy/150"
+	"phase-fabric/100"
+	],
+	"category": "crafting",
+	"research": "相位列编织器",
+	"outputLiquid": "能量液/4"
+}

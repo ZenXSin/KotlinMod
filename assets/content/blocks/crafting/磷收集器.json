@@ -1,0 +1,31 @@
+{
+    "type": "GenericCrafter",
+    "name": "磷收集器",
+   "description":"将地下的磷元素收集并产出。",
+    "category": "crafting",
+    "health": 800,
+    "outputsItem": true,
+    "itemCapacity": 30,
+    "requirements": [
+        "titanium/300",
+        "镍钢/250",
+        "thorium/200",
+        "surge-alloy/125",
+    ],
+    "outputItem": "磷/2",
+    "craftTime": 240.00,
+    "size": 2,
+    "hasPower": true,
+    "phaseBoost": 2.5,
+    "consumes": {
+        "power": 1.0,
+        "items":{
+			"items":[
+			  "pyratite/2"
+			],
+		"booster":true,
+		"optional":true,
+		},
+	},
+    "research":"镍钢熔炉",
+}

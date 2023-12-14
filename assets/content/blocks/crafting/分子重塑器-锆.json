@@ -1,0 +1,28 @@
+{
+    "type": "GenericCrafter",
+    "name": "分子重塑器-锆",
+    "description": "让分子重新排列以改变输入的东西。",
+    "category": "crafting",
+    "health":300,
+    "itemCapacity":30,
+    "requirements": [
+        "titanium/100",
+        "lead/50",
+        "surge-alloy/10",
+        "锰/40",
+    ],
+    "outputItem": "锆/4",
+    "craftTime": 360.00,
+    "size": 2,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "copper/6",
+            ],
+        },
+        "power": 2.00,
+    },
+    "research":"分子重塑器-锰",
+}

@@ -1,0 +1,198 @@
+{
+"type":"mech"
+"name":"a3-5"
+"speed":0.48
+"rotateSpeed":1.23
+"canBoost": false
+"armor": 28
+"health": 95000
+"reload": 7200
+"range": 17.5
+"hitSize": 40
+"mechStride": 12.4
+"mechFrontSway":0.3
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 480,
+              "amount": 550,
+              "reload": 300
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 320
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+    "type": "ForceFieldAbility"
+    "radius": 80
+    "regen": 40
+    "max": 30000
+    "cooldown": 600
+  }
+            {
+    "type": "ShieldArcAbility",
+    "region": "pnk-mod-a3-5-shield"
+    "radius": 60,
+    "regen": 50,
+    "drawArc": false,
+    "width": 11,
+    "y": -25,
+    "max": 60000,
+    "cooldown": 210
+    "whenShooting": false
+    },
+  {
+  "type": "UnitSpawnAbility"
+  "unit": "b3-3"
+  "spawnX": 0
+  "spawnY": -5
+  "spawnTime": 600
+  }
+  ]
+"mechStepShake": 0.5
+"duration": 5
+"weapons": [
+     {
+    "name": "a3-5-1"
+    "top": false
+    "x": 17
+    "y": 0
+    "shootY": 12
+    "mirror": true
+    "rotate": false
+    "autoTarget": true
+    "recoil": 7
+    "reload": 60
+    "shootSound": "laser"
+    "shoot": {
+    "shots": 3
+    "type": "ShootBarrel"
+    "barrels": [
+    0,0,5
+    0,0,0
+    0,0,-5
+    ]
+    }
+    "shootCone": 90
+    "status": "shocked"
+    "ammoType": "surge-alloy"
+    "shake": 1.5
+    "restitution":1.42
+    "bullet": {
+      "type": "MissileBulletType"
+      "collidesTeam": true
+      "healPercent": 35
+      "width": 24
+      "height": 16
+      "trailWidth": 1
+      "trailLength": 12
+      "frontColor": "b166ff"
+      "backColor": "b166ff"
+      "trailColor": "b166ff"
+      "drag": -0.025
+      "speed": 3.5
+      "maxSpeed": 8
+      "homingPower": 0.125
+      "homingRange": 120
+      "homingDelay": 30
+      "lifetime": 60
+      "damage": 150
+      "splashDamage": 350
+      "splashDamageRadius": 40
+      "sprite": "pnk-mod-arhit"
+      "trailParam": 6,
+      "trailInterval": 5,
+      "healColor": "bb66dd"
+      "trailEffect": {
+      "type": "WaveEffect"
+      "sizeFrom": 0
+      "sizeTo": 24
+      "strokeFrom": 6
+      "strokeTo": 0
+      "colorFrom": "b166ff"
+      "colorTo": "b166ff"
+      "lifetime": 30
+      "length": 0
+      "particles": 1
+      }
+      "hitEffect": {
+      "type": "MultiEffect"
+      "effects": [
+      {
+      "type": "ParticleEffect"
+      "particles": 12
+      "line": true
+      "lifetime": 10
+      "sizeFrom": 6
+      "sizeTo": 6
+      "lenFrom": 5
+      "lenTo": 0
+      "length": 40
+      "layer": 120
+      "colorFrom": "b166ff"
+      "colorTo": "b166ff"
+      }
+      {
+      "type": "WaveEffect"
+      "lifetime": 10
+      "sizeFrom": 0
+      "sizeTo": 32
+      "colorFrom": "B166FFAA"
+      "colorTo": "b166ffaa"
+      "strokeFrom": 4
+      "strokeTo": 0
+      }
+      ]
+      }
+          }
+         }
+	   {
+    "type": "RepairBeamWeapon",  
+    "mirror": true,
+    "alternate": false,
+    "rotateSpeed": 6,
+    "name": "a3-5-2",
+    "x": 6,
+    "y": 0,
+    "shootY": 1,
+    "reload": 1,
+    "recoil": 0,
+    "shake": 1,
+    "rotate": true,
+    "laserColor": "B166FFFF",
+    "controllable": false,
+    "autoTarget": true,
+    "beamWidth": 0.7,
+    "pulseRadius": 6,
+    "pulseStroke": 2,
+    "repairSpeed": 6.25,
+    "healColor": "bb66dd"
+	"bullet": {
+	"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 20,
+    "offset": 35,
+    "lifetime": 22,
+    "length": 35,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "B166FFFF",
+    "colorTo": "7D33CCFF"   
+    },
+	"speed": 10,
+	"maxRange": 160
+}
+}
+     ]
+    "research": "a3-4"
+}

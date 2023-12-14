@@ -1,0 +1,15 @@
+{
+    "type":"Duct",
+    "name":"67型导轨",
+    "health":90,
+	"size":1,
+	"targetable":true,
+	"hasLiquids":false,
+	"hasItems":true
+    "speed":0.05,
+    "requirements": [
+  "铝/2","metaglass/3","U/1"
+	],
+	"category": "distribution",
+    "research":"67式传送带"
+}

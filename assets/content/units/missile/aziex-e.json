@@ -1,0 +1,139 @@
+{
+"type": "missile"
+"controller": "MissileAI"
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+"lifetime": 120
+"health": 7000,
+"speed": 4,
+"maxRange": 80
+"rotateSpeed": 0,
+"engineColor": "ee9966",
+"trailColor": "ee9966",
+"engineLayer": 100,
+        "drawCell": false,
+"engineSize": 0,
+//"engineOffset": 6,
+//"trailLength": 0,
+//"missileAccelTime": 60,
+"lowAltitude": true,
+"fogRadius": 10,
+"taegetAir": true
+"targetGround": true
+"deathSound": "explosionbig"
+    "abilities": [
+	    {
+    "type": "EnergyFieldAbility",
+    "healEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 7,
+    "lifetime": 20,
+    "offset": 50,
+    "length": 55,
+    "cone": -360,
+    "lenFrom": 6,
+    "lenTo": 0,
+    "colorFrom": "ee9966",
+    "colorTo": "ee9966"  
+    },
+    "color": "ee9966",
+    "maxTargets": 5,
+    "damage": 40,
+    "healPercent": 0,
+    "range": 320,
+    "y": 0,
+    "sectors": 8,
+    "rotateSpeed": 1,
+    "hitBuildings": false,
+    "sectorRad": 0.05,
+    "effectRadius": 8,
+    "reload": 15,
+   }
+   ]
+"weapons": [
+{
+"shootCone": 360,
+"mirror": false,
+"reload": 1,
+"shake": 10,
+"shootOnDeath": true,
+"shootSound": "blastbig",
+"targetAir": false,
+"targetGround": false,
+"bullet": {
+"shootEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "line": true
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee9966"
+    "colorTo": "ee9966"
+    "length": 56
+    "lifetime": 120
+    "particles": 30
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee9966"
+    "colorTo": "ee9966"
+    "length": 40
+    "lifetime": 90
+    "particles": 20
+}
+{
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 64
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "ee9966"
+    "colorTo": "ee9966"
+    "lifetime": 90
+    "particles": 10
+}
+]
+}
+"type": "ExplosionBulletType",
+"splashDamage": 350,
+"splashDamageRadius": 120
+"maxRange": 40
+        "fragBulletRandomSpread": 0
+        "fragSpread": 5
+        "fragBullets": 25
+        "fragVelocityMin": 1
+        "fragBullet": {
+        "type": "MissileBulletType"
+        "homingRange": 0
+        "speed": 6
+        "lifetime": 90
+        "weaveScale": 3
+        "weaveMag": 1
+        "width": 6
+        "height": 6
+        "trailWidth": 2
+        "trailLength": 6
+        "damage": 120
+        }
+}
+}
+]
+}

@@ -1,0 +1,169 @@
+{
+    "type": "ItemTurret",
+    "name": "机枪炮",
+    "size": 3,
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "requirements": [
+        "copper/550" "lead/175" "镍/120" "titanium/90" "plastanium/60" "钛合金/85"
+    ],
+    "ammoTypes": {
+     "copper": {
+     "type": "BasicBulletType"
+     "width": 6
+     "height": 6
+     "damage": 30
+     "lifetime": 70
+     "speed": 5.5
+    },
+
+     "lead": {
+     "type": "BasicBulletType"
+     "width": 8
+     "height": 8
+     "damage": 46
+     "lifetime": 60
+     "ammoMultiplier": 2
+     "speed": 6.4
+    },
+
+     "graphite": {
+     "type": "FlakBulletType"
+     "collidesGround": true
+     "width": 8
+     "height": 8
+     "damage": 50
+     "splashDamage": 23
+     "splashDamageRadius": 24
+     "ammoMultiplier": 5
+     "reloadMultiplier": 0.7
+     "lifetime": 75
+     "speed": 5.5
+     }
+
+     "metaglass": {
+     "type": "FlakBulletType"
+     "width": 8.8
+     "height": 8.8
+     "damage": 65
+     "splashDamage": 60
+     "collidesGround": true
+     "splashDamageRadius": 24
+     "lifetime": 80
+     "speed": 6
+     "fragBullets": 6
+     "fragBullet": {
+     "type": "BasucBulletType"
+     "damage": 25
+     "speed": 4
+     "lifetime": 15
+     "despawnEffect": "none"
+     "width": 2
+     "height": 2
+       }
+     }
+
+     "thorium": {
+     "type": "BasicBulletType"
+     "reloadMultiplier": 2
+     "width": 8
+     "height": 8
+     "damage": 110
+     "lifetime": 75
+     "speed": 5
+     "pierce": true
+     "pierceCap": 5
+     "pierceBuilding": true
+     }
+
+     "pyratite": {
+     "type": "FlakBulletType"
+     "width": 8
+     "height": 8
+     "damage": 68
+     "splashDamage": 34
+     "frontColor": "ff9b29"
+     "backColor": "ff9b29"
+     "splashDamageRadius": 64
+     "reloadMultiplier": 0.9
+     "ammoMultiplier": 4
+     "status": "burning"
+     "collidesGround": true
+     "statusDuration": 120
+     "lifetime": 65
+     "speed": 6
+     }
+
+     "u-钦瓦捏": {
+     "type": "FlakBulletType"
+     "width": 8
+     "height": 8
+     "damage": 300
+     "reloadMultiplier": 2
+     "splashDamage": 350
+      "frontColor": "c6d17d"
+      "backColor": "d1e3b7"
+     "splashDamageRadius": 128
+     "status": "钦瓦捏扰动"
+     "collidesGround": true
+     "statusDuration": 3600
+     "lifetime": 75
+     "speed": 5
+     }
+     
+     "镍": {
+        "type": "BasicBulletType"
+        "knockBack": 2
+        "pierceArmor": true
+        "damage": 95
+        "width": 6
+        "height": 8
+        "speed": 8
+        "lifetime": 40
+        "ammoMultiploer": 4
+        }
+        
+     "锆": {
+     "type": "BasicBulletType"
+     "damage": 230
+     "speed": 12
+     "lifetime": 30
+     "width": 6
+     "height": 12
+     "pierce": true
+     "pierceCap": 6
+     "reloadMultiplier": 0.6
+     "frontColor": "ccccff"
+     "backColor": "ccccff"
+     "buildingDamageMuiltiplier": 0.75
+     }
+     
+     "锆锰合金": {
+     "type": "BasicBylletType"
+     "rangeChange": 240
+     "pierce": true
+     "pierceBuilding": true
+     "buildingDamageMultiplier": 1.35
+     "ammoMultiplier": 3
+     "speed": 14
+     "lifetime": 45
+     "reloadMultiplier": 0.4
+     "damage": 300
+     "width": 6
+     "height": 12
+     "frontColor": "ccffff"
+     "backColor": "ccffff"
+     "pierceArmor": true
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "machineGunShoot1"
+    "reload": 5
+    "range": 320,
+    "shootCone":2.00,
+    "health": 3300,
+    "inaccuracy": 3.00,
+    "rotateSpeed": 6.00,
+    "research":"1-迸裂"
+}

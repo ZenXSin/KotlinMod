@@ -1,0 +1,12 @@
+{
+"name":"锆"
+"description":"弹性良好的金属，可被用作穿甲弹芯。"
+"hardness": 6
+"cost": 3
+"color":"f0f2ff"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge":0
+"research":"锰"
+}

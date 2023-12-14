@@ -1,0 +1,146 @@
+{
+"name": "G-S-K"
+  "type": "legs",
+	"speed": 0.85,
+	"hitSize": 20,
+	"health": 10000,
+	"faceTarget": true,
+	"armor": 10,
+	"range": 180,
+	"rotateSpeed": 3,
+    "legBaseOffset": 13,
+	  "legCount": 6,
+	"legMaxLength": 1.1,
+        "legMinLength": 0.6,
+        "legLengthScl": 0.96,
+        "legForwardScl": 1,
+         "legExtension": 8,
+//        "legStraightness": 0.5,
+        "legContinuousMove": true,
+        "rippleScale": 0.2,
+	"legBaseOffset": 3,
+	"legMoveSpace": 0.5,
+	"legLength": 64, 
+	"allowLegStep": true,
+	"hovering": true,
+	"weapons": [
+		{
+		"name": "g-s-u-1"
+		"rotate": true
+		"rotationLimit": 20
+		"mirror": true
+		"layerOffset": -0.001
+		"x": -12
+		"y": 0
+		"shootY": 16
+		"reload": 45
+		"shoot": {
+		"shots": 5
+		}
+		"inaccuracy": 5
+		"velocityRnd": 0.15
+		"shootSound": "laser"
+		"bullet": {
+		"type": "MissileBulletType"
+		"weaveScale": 5
+		"weaveMag": 3
+		"homingPower": 0.015
+		"homingDelay": 20
+		"lifetime": 90
+		"speed": 4
+		"width": 4
+		"height": 4
+		"trailLength": 4
+		"trailWidth": 2
+		"damage": 45
+		"splashDamage": 105
+		"splashDagageRadius": 24
+		"sprite": "circle-bullet"
+		"frontColor": "ee9966"
+		"backColor": "ee9966"
+		"trailColor": "ee9966"
+		"shootEffect": {
+		"type": "ParticleEffect"
+		"particles": 5
+		"sizeFrom": 2
+		"sizeTo": 0
+		"interp": "circleOut"
+		"sizeInterp": "pow3In"
+		"lifetime": 45
+		"length": 8
+		"cone": 10
+		"colorFrom": "ee9966"
+		"colorTo": "ee9966"
+		}
+		"hitEffect": {
+		"type": "MultiEffect"
+		"effects": [
+		{
+		"type": "ParticleEffect"
+		"particles": 10
+		"sizeFrom": 4
+		"sizeTo": 0
+		"line": true
+		"interp": "circleOut"
+		"sizeInterp": "pow10In"
+		"lifetime": 45
+		"length": 16
+		"lenFrom": 4
+		"lenTo": 0
+		"colorFrom": "ee9966"
+		"colorTo": "ee9966"
+		}
+		{
+		"type": "ParticleEffect"
+		"particles": 1
+		"sizeFrom": 4
+		"sizeTo": 0
+		"interp": "circleOut"
+		"sizeInterp": "pow3In"
+		"lifetime": 10
+		"colorFrom": "ee9966"
+		"colorTo": "ee9966"
+		}
+		]
+		}
+		}
+		}
+		      {
+      "name": "g-s-u-2"
+      "shootSound": "machineGunShoot1"
+      "reload": 5
+      "alternale": false
+      "rotate": true
+      "mirror": true
+      "x": 6
+      "y": -2
+      "shootY": 8
+      "bullet": {
+      "shootEffect": {
+      "type": "ParticleEffect"
+      "line": true
+      "length": 12
+      "cone": 30
+      "particles": 5
+      "interp": "circleOut"
+      "sizeInterp": "pow5In"
+      "lenFrom": 6
+      "lenTo": 0
+      "colorFrom": "ee9966"
+      "colorTo": "ee9966
+      "sizeFrom": 2
+      "sizeTo": 0
+      "lifetime": 20
+      }
+      "type": "BasicBulletType"
+      "damage": 250
+      "width": 4
+      "height": 12
+      "frontColor": "ee9966"
+      "backColor": "ee9966"
+      "speed": 8
+      "lifetime": 30
+      }
+      }
+	]
+}

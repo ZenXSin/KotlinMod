@@ -1,0 +1,20 @@
+{
+"name": "囊肿寄生"
+"description": "埃克图弥尔肿瘤的寄生，配合病毒有奇效。"
+"damage": 0.01
+"effect": {
+"type": "particleEffect"
+"sizeFrom": 4.0
+"sizeTo": 0.0
+"particles": 2
+"length": 0
+"lifetime": 5
+"colorFrom": "99aaee"
+"colorTo": "99aaee00"
+}
+"affinities": [
+"病毒"
+]
+"transitionDamage": 500
+
+}

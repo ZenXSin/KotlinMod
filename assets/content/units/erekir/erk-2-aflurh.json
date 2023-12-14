@@ -1,0 +1,34 @@
+{
+"type":"mech"
+"name":"Aflurh Pax"
+"speed": 0.7
+"fogRadius": 7
+"template": "ErekirUnitType",
+"canBoost": false
+"rotateSpeed":2
+"health": 700
+"range": 40
+"hitSize": 12
+"mechStride": 4
+"mechStepShake": 0
+"armor": 3
+"weapons": [
+     {
+     "name": "erk-2-aflurh-1"
+     "layerOffset": -0.001
+     "x": -4
+     "y": 0
+     "reload": 90
+     "shootCone": 30
+     "shootSound": "shootBig"
+     "bullet": {   
+    "type": "ShrapnelBulletType"
+    "length": 90.00
+    "damage": 30
+    "width": 1.00
+    "toColor": "6dffff"
+    "color": "6dffff"
+     }
+      } 
+     ]
+}

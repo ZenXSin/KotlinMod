@@ -1,0 +1,48 @@
+{
+"type": "flying"
+"name": "b4-1"
+"flying": true
+"hitSize": 8
+"health": 2750
+    "research": "0721构造器"
+"armor": 4
+"hovering": true
+//"speed": 3
+"speed": 4
+"range": 320
+"rotateSpeed": 6
+//"aimDst": 180,
+"rotateSpeed": 5
+"faceTarget": true
+"rotateShooting": true
+//"circleTarget": true,
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 4
+"engineSize": 2.4
+"lightColor": "e65555"
+"weapons": [
+            {
+            "name": "b4-1-1"
+            "x": 0
+            "y": 3
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 90
+            "recoil": 2
+            "shoot": {
+            "shots": 3
+            "shotDelay": 5
+            }
+            "shootSound": "missile"
+            "inaccuracy": 5
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "speed": 100
+            "spawnUnit": "b4-1-missile"
+            }
+            }
+]
+}

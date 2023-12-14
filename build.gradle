@@ -42,6 +42,7 @@ dependencies{
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'javax.persistence:javax.persistence-api:2.2'
 }
 
 //force arc version

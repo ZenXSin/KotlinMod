@@ -1,0 +1,22 @@
+{
+"name": "热射线辐射"
+"description": "“灼热的射线正在慢慢的熔化你的身体”"
+"damage": 0.15
+"speedMultiplier": 0.8
+"healthMultiplier": 0.8
+"transitionDamage": 512
+"permanent": true
+"effectChance": 0.3
+"effect": {
+"type": "particleEffect"
+"line": true
+"sizeFrom": 5.0
+"sizeTo": 0.0
+"particles": 1
+"length": 25
+"baseLength": -25
+"lifetime": 60
+"colorFrom": "ddaaaa"
+"colorTo": "997777"
+}
+}

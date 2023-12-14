@@ -1,0 +1,121 @@
+{
+    "type": "naval",
+    "name": "c2-3",
+    "health": 9000,
+    "armor": 16
+    "hitSize": 36,
+    "speed": 1.35,
+    "accel": 0.3,
+    "rotateSpeed": 4.5,
+    "rotateShooting": false,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "maxRange": 640
+    "weapons": [
+    {
+    "name": "c2-3-1"
+    "layerOffset": 0.001
+    "targetAir": false
+    "targetGround": true
+    "x": 0
+    "y": -4
+    "reload": 240
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 1.5
+    "recoil": 4
+    "shootSound": "missileLaunch"
+    "maxRange": 320
+    "parts": [
+    {
+    "under": true
+    "suffix": "-missile"
+    "progress": "reload"
+    "Interp": "pow2In"
+    "colorTo": "ffffff00"
+    "color": "ffffff"
+    "mixColorTo": "ffffff00"
+    "mixColor": "ffffff00"
+    "layerOffset": -0.001
+    "outline": false
+    }
+    ]
+    "bullet": {
+    "maxRange": 320,
+    "spawnUnit": "c2-missile",
+    "speed": 8,
+    "lifetime": 30,
+    }
+    }
+    {
+    "name": "c2-3-2"
+    "reload": 40
+    "alternate": false
+    "rotate": true
+    "rotateSpeed": 6
+    "x": 8
+    "y": 4
+    "shoot": {
+    "shots": 4
+    "shotDelay": 5
+    }
+    "targetGround": false
+    "shootSound": "missile"
+    "bullet": {
+      "type": "MissileBulletType"
+  "frontColor": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+      "damage": 100
+      "width": 6
+      "height": 6
+      "splashDamage": 150
+      "splashRadius": 80
+      "homingPower": 0.22
+      "trailLength": 6
+      "trailWidth": 2
+      "homingRange": 120
+      "collidesGround": false
+      "lifetime":90
+      "speed": 8
+    }
+    }
+    {
+    "name": "c2-3-3"
+    "reload": 40
+    "alternate": false
+    "rotate": true
+    "rotateSpeed": 6
+    "x": 8
+    "y": -12
+    "shoot": {
+    "shots": 4
+    "shotDelay": 5
+    }
+    "targetGround": false
+    "shootSound": "missile"
+    "bullet": {
+      "type": "MissileBulletType"
+  "frontColor": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+      "damage": 100
+      "width": 6
+      "height": 6
+      "splashDamage": 150
+      "splashRadius": 80
+      "homingPower": 0.22
+      "trailLength": 6
+      "trailWidth": 2
+      "homingRange": 120
+      "collidesGround": false
+      "lifetime":90
+      "speed": 8
+    }
+    }
+       ],
+    "research": "c2-2"
+}

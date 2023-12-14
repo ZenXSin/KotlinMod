@@ -1,0 +1,101 @@
+{
+	"type": "PowerTurret",
+	"name": "热能墙",
+	"description": "为自身队伍提供一定保护并对周围敌人造成热能辐射效果\n[red]这个墙壁在造价和能力上都不适合大规模建造。它爆炸时会对友军造成中等伤害。",
+	"targetAir": true,
+	"targetGround": true,
+	"health": 12000,
+	"size": 1,
+	"shootY": 0
+	"shootSound":"none",
+	"shake":0.0,
+	"restitution":0.1,
+	"shootType": {	
+	"shootEffect": "none"
+	"type": "FlakBulletType"
+	"collidesGround": true
+	"damage": 15
+	"splashDamage": 15
+	"splashDamageRadius": 64
+	"lifetime": 0
+	"frontColor": "00000000"
+	"backColor": "00000000"
+	"status": "热射线辐射"
+	"statusDuration": 300
+	"hitEffect": {
+	"type": "waveEffect"
+	"strokeFrom": 4
+	"strokeTo": 4
+	"sizeFrom": 0
+	"sizeTo": 8
+	"colorFrom": "ffffff"
+	"colorTo": "ffffff00"
+	"lifetime": 90
+	}
+	}
+"consumes": {
+"power": 0.5
+}
+"outputsPower": true,
+	"consumesPower": true,
+	"hasPower": true,
+	"reload": 30,
+	"range": 40,
+"category": "defense"
+"research": "701大型简易恢复墙"
+	"requirements": [
+	"硬铝/35","U/10","8-聚变能量/50"
+	]
+	"destroyBullet": {
+"type": "FlakBulletType"
+"collidesGround": true
+"damage": 0
+"lifetime": 0
+"healPerset": -50
+"splashDamage": 1000
+"splashDamageRadius": 120
+"status": "热射线辐射"
+"hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "line": true
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 120
+    "lifetime": 90
+    "particles": 30
+}
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "eeaaaa"
+    "colorTo": "eeaaaa"
+    "length": 60
+    "lifetime": 180
+    "particles": 20
+}
+{
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 120
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "lifetime": 90
+}
+]
+}
+}
+}

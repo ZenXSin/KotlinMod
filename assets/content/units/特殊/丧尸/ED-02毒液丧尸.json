@@ -1,0 +1,53 @@
+{
+"type":"mech"
+"name":"毒液丧尸"
+"description": "虽然能发射远距离的毒液球，但是失去了近距离撕咬的能力。"
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"speed": 0.85
+"range": 160
+"rotateSpeed": 6
+"health": 500
+"deathEffect": "none"
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 4
+"mechStride": 2
+"mechStepShake":0.0
+
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "毒液丧尸-w"
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 0
+    "mirror": false
+    "rotate": false
+    "shots": 1
+    "recoil": 0
+    "reload": 50
+    "targetAir":false
+    "shootEffect": "none"
+    "shootSound": "splash"
+    "restitution":1.42
+    "bullet": {
+      "type": "LiquidBulletType"
+      "sprite": "circle-bullet"
+      "damage": 30
+      "status": "病毒"
+      "liquid": "毒液"
+      "statusDuration": 600
+      "width": 5
+      "height": 5
+      "lifetime": 60
+      "speed": 4
+             }
+      } 
+     ]
+    "research": "ED-01普通丧尸"
+}

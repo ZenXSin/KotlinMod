@@ -1,0 +1,245 @@
+{
+"type": "flying"
+"name": "b3-4"
+"flying": true
+"hitSize": 40
+"health": 32000
+"armor": 16
+"hovering": true
+"speed": 2.3
+//"aimDst": 180,
+"range": 240
+"buildSpeed": 4.5
+"rotateSpeed": 5.25
+    "research": "b3-3"
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 240,
+              "amount": 500,
+              "reload": 300
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 240
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+  {
+    "type": "ForceFieldAbility"
+    "radius": 80
+    "regen": 15
+    "max": 12000
+    "cooldown": 600
+  }
+]
+"rotateSpeed": 5
+"faceTarget": true
+"rotateShooting": true
+"faceTarget": true,
+//"circleTarget": true,
+"lowAltitude": true
+"accel": 0.1
+"drag": 0.1
+"engineOffset": 20
+"engineSize": 12
+"lightColor": "e65555"
+"weapons": [/*
+            {
+            "name": "b3-4-3"
+            "x": 0
+            "y": 12
+            "mirror": false
+            "rotate": false
+            "rotateSpeed": 5
+            "reload": 120
+            "recoil": 2
+            "shootSound": "plasmaboom"
+            "shoot": {
+            "shots": 3
+            "type": "shootBarrel"
+            "barrels": [
+            2,0,-10
+            0,0,0
+            -2,0,10
+            ]
+            }
+            "inaccuracy": 0
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "type": "MissileBulletType"
+            "lifetime": 120
+            "weaveScale": 4
+            "weaveMag": 1.5
+            "speed": 4
+            "damage": 350
+            "splashDamage": 350
+            "splashDamageRadius": 48
+            "healPercent": 35
+            "hitEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 0
+            "sizeTo": 32
+            "strokeFrom": 2
+            "strokeTo": 0
+            "colorFrom": "dd88ff"
+            "colorTo": "ffffff"
+            "lifetime": 60
+            }
+            "width": 24
+            "height": 24
+            "frontColor": "bb66dd"
+            "backColor": "8833aa"
+            "trailColor": "bb66dd"
+            "sprite": "pnk-mod-bullet-2"
+            "bulletInterval": 15
+            "intervalBullets": 2
+            "homingPower": 0.15
+            "homingRange": 240
+            "homingDelay": 20
+            "collidesTeam": true
+            "healColor": "bb66dd"
+            "intervalBullet": {
+        "type": "LightningBulletType"
+        "lightColor": "aa55cc"
+        "lightning": 1
+        "lightningLength": 8
+        "lightningLengthRand": 2
+        "lightningCone": 5
+        "lightningColor": "aa55cc"
+        "lightningDamage": 85
+        "healPercent": 2
+        "healColor": "bb66dd"
+            }
+            }
+            }
+            */
+            {
+            "name": "b3-4-1"
+            "x": 10
+            "y": -8
+            "mirror": true
+            "rotate": true
+            "rotateSpeed": 10
+            "reload": 90
+            "recoil": 2
+            "shootSound": "malignShoot"
+            "shoot": {
+            "shots": 2
+            "type": "shootBarrel"
+            "barrels": [
+            2,0,-2
+            -2,0,2
+            ]
+            }
+            "inaccuracy": 0
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "type": "MissileBulletType"
+            "weaveScale": 5
+            "weaveMag": 2
+            "lifetime": 80
+            "speed": 4
+            "damage": 300
+            "splashDamage": 300
+            "splashDamageRadius": 48
+            "healPercent": 15
+            "hitEffect": {
+            "type": "WaveEffect"
+            "sizeInterp": "pow5Out"
+            "sizeFrom": 4
+            "sizeTo": 24
+            "strokeFrom": 4
+            "strokeTo": 0
+            "colorFrom": "dd88ff"
+            "colorTo": "ffffff"
+            "lifetime": 30
+            }
+            "width": 16
+            "height": 16
+            "frontColor": "bb66dd"
+            "backColor": "8833aa"
+            "trailColor": "bb66dd"
+            "sprite": "pnk-mod-bullet-2"
+            "homingDelay": 20
+            "bulletInterval": 15
+            "intervalBullets": 1
+            "homingPower": 0.15
+            "homingRange": 180
+            "collidesTeam": true
+            "healColor": "bb66dd"
+            "intervalBullet": {
+        "type": "LightningBulletType"
+        "lightColor": "aa55cc"
+        "lightning": 1
+        "lightningLength": 8
+        "lightningLengthRand": 2
+        "lightningCone": 5
+        "lightningColor": "aa55cc"
+        "lightningDamage": 85
+        "healPercent": 2
+        "healColor": "bb66dd"
+            }
+            }
+            }
+            {
+            "name": "b3-4-2"
+            "x": 6
+            "y": 10
+            "mirror": true
+            "rotate": true
+            "rotateSpeed": 5
+            "reload": 30
+            "recoil": 2
+            "shootSound": "bolt"
+            "shoot": {
+            "shots": 5
+            "shotDelay": 5
+            }
+            "inaccuracy": 15
+            "shotCone": 30
+            "rotateShooting": false
+            "bullet": {
+            "type": "MissileBulletType"
+            "homingPower": 0.3
+            "lifetime": 65
+            "speed": 8
+            "damage": 50
+            "splashDamage": 150
+            "homingDelay": 20
+            "splashDamageRadius": 32
+            "healPercent": 10
+            "hitEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 4
+            "sizeTo": 8
+            "strokeFrom": 4
+            "strokeTo": 0
+            "colorFrom": "dd88ff"
+            "colorTo": "ffffff"
+            "lifetime": 20
+            }
+            "width": 4
+            "height": 6
+            "frontColor": "dd88ff"
+            "backColor": "dd88ff"
+            "trailColor": "dd88ff"
+            "trailLength": 8
+            "trailWidth": 2
+            "weaveScale": 5
+            "weaveMag": 3
+            "sprite": "circle-bullet"
+            "collidesTeam": true
+            "healColor": "bb66dd"
+            }
+            }
+]
+}

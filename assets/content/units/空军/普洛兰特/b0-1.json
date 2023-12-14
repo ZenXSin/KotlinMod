@@ -1,0 +1,74 @@
+{
+type: flying
+name:b0-1
+flying: true
+hitSize: 16
+range: 130
+health: 1650
+armor: 8
+speed: 4
+rotateSpeed: 5
+rotateShooting: true
+accel: 0.02
+drag: 0.02
+lowAltitude: true
+engineOffset: 10
+engineSize: 2.4
+lightColor: e65555
+weapons: [
+  {
+    name:b0-1-1
+    x: 0
+    y: 3
+    shootY: 8
+    mirror: false
+    rotate: true
+    rotateSpeed: 4.2
+    recoil: 0
+    reload: 60
+    shoot: {
+    shots: 3
+    spread: 3
+    }
+    shootSound: shotgun
+    shake: 1.5
+    bullet: {
+    type: ShrapnelBulletType
+    length: 100.00
+    damage: 15
+    width: 17.00
+    reloadMultiplier: 1.30
+      }
+  }
+    {
+            name: b0-1-2,
+            reload: 15,
+            shots: 2
+            speread: 2,
+            recoil: 0.60,
+            rotate: true,
+            shotDelay: 3
+            collidesGround: true
+            collidesAir: true
+            targetAir: true
+            targetGround: true
+            shootSound:sap
+            x: 6,
+            y: 0,
+            rotateShooting: false,
+            mirror:true
+            bullet: {
+                type: SapBulletType,
+                damage: 10
+                length: 96
+                sapStrength: 0.1
+                shootEffect: shootLiquid
+                healPercent: 5
+                hitEffect: hitLiquid
+                color: a0a0ef
+                lightColor: c2c2ef
+            }
+        }
+]
+    research: 0721构造器
+}

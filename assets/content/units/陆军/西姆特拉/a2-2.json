@@ -1,0 +1,75 @@
+{
+"type":"legs"
+"name":"a2-2"
+"legBaseOffset": 4
+"speed": 1.45
+"rotateSpeed":2.4
+"hitSize": 12
+"health":2500
+"reload": 7200
+"range": 4
+"armor": 5
+"mineSpeed":1.32
+"legMoveSpace": 1
+"maxStretch": 1.5
+"legExtension": 2
+"legLength": 12
+"legCount": 4
+    "research": "a2-1"
+"weapons":[
+  {
+  "name": "a2-2-1"
+  "layerOffset": -0.001
+  "x": -8
+  "y": 4
+  "shots": 1
+  "reload": 4
+  "shootCone": 5
+  "rotate": false
+  "mirror": true
+  "recoil": 0.3
+  "innacuracy": 3
+  "targetGround": false
+  "shotSound":"shoot"
+  "bullet":{
+    "type": "BasicBulletType"
+    "damage":100
+    "collidesGround": false
+    "lifetime": 45
+    "width": 5
+    "height": 15
+    "speed": 12
+    }
+   }
+               {
+    "name": "a2-2-2"
+    "x": 0
+    "y": -3
+    "shootY": 4
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shootCone": 44
+    "recoil": 1
+    "reload": 45
+     "range":200
+    "shootSound": "missile"
+    "shake": -1
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 12
+      "width":7
+      "height": 6
+      "splashDamage": 2
+      "splashRadius": 30
+      "homingPower": 0.22
+      "trailLength": 3.5
+      "trailWidth": 3
+      "homingRange": 120
+      "lifetime":40
+      "speed": 6
+      }
+      }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "ItemTurret",
+    "name": "雷暴",
+    "description": "雷鸣的升级版本，相比之前拥有更强的电击范围。"
+    "size": 5,
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "heatColor": "ffffff"
+    "requirements": [
+        "lead/500","silicon/335","titanium/500","thorium/500","plastanium/850","surge-alloy/650"
+    ],
+    "ammoTypes": {
+     "surge-alloy": {
+     "type": "FlakBulletType"
+     "width": 8
+     "height": 8
+     "damage": 45
+     "splashDamage": 120
+      "frontColor": "ffff99"
+      "backColor": "aaaa55"
+     "splashDamageRadius": 40
+     "collidesGround": true
+     "lifetime": 60
+     "speed": 6
+     "pierce": true
+     "pierceCap": 3
+     "explodeDelay": 15
+     "fragBullets": 3
+     "fragBullet": {
+     "type": "LightningBulletType"
+     "lightningLength": 40
+     "xRand": 0.1
+     "damage": 80
+     "lightningColor": "ffffaa"
+     }
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "shotgun"
+    "shoot": {
+    "shots": 5
+    "spread": 6
+    }
+    "reload": 45,
+    "restitution": 0.1,
+    "range": 320,
+    "shootCone": 60.00,
+    "health": 6500,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 5.00,
+    "research":"0-11电闪"
+}

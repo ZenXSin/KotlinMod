@@ -1,0 +1,126 @@
+{
+"type":"mech"
+"name":"繁殖丧尸"
+"description": "可以在短时间内生产大量丧尸并且向敌人投掷寄生虫卵，但是本体较为脆弱。"
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"speed": 0.4
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 4
+"health": 950
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 12
+"mechStride": 4
+"mechStepShake":0.0
+"research": "ED-02毒液丧尸"
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"abilities": [
+{
+"type": "UnitSpawnAbility"
+"unit": "ED-02毒液丧尸"
+"spawnX": 0
+"spawnY": 0
+"spawnTime": 1800
+}
+{
+"type": "UnitSpawnAbility"
+"unit": "ED-02疾跑丧尸"
+"spawnX": 0
+"spawnY": 0
+"spawnTime": 2160
+}
+]
+"weapons": [
+     {
+    "name": "繁殖丧尸-l"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootX": -6
+    "shootY": 8
+    "mirror": false
+    "rotate": false
+    "recoil": 2
+    "reload": 45
+    "targetAir": true
+    "shootSound": "splash"
+    "restitution":1.42
+    "bullet": {
+      "type": "LiquidBulletType"
+      "sprite": "circle-bullet"
+      "damage": 65
+      "status": "病毒"
+      "liquid": "毒液"
+      "statusDuration": 600
+      "width": 5
+      "height": 5
+      "lifetime": 60
+      "speed": 4
+             }
+      } 
+           {
+    "name": "繁殖丧尸-r"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootX": 6
+    "shootY": 8
+    "mirror": false
+    "rotate": false
+    "recoil": 2
+    "reload": 45
+    "targetAir": true
+    "shootSound": "splash"
+    "restitution":1.42
+    "bullet": {
+      "type": "LiquidBulletType"
+      "sprite": "circle-bullet"
+      "damage": 65
+      "status": "病毒"
+      "liquid": "毒液"
+      "statusDuration": 600
+      "width": 5
+      "height": 5
+      "lifetime": 60
+      "speed": 4
+             }
+      } 
+             {
+    "x": 0
+    "y": 0
+    "mirror": false
+    "rotate": false
+    "recoil": 2
+    "reload": 120
+    "targetAir": false
+    "shootSound": "splash"
+    "restitution":1.42
+    "bullet": {
+      "type": "ArtilleryBulletType"
+      "sprite": "circle-bullet"
+      "frontColor": "99aaee"
+      "backColor": "99aaee"
+      "trailColor": "99aaee"
+      "damage": 120
+      "status": "囊肿寄生"
+      "statusDuration": 7200
+      "width": 6
+      "height": 6
+      "lifetime": 45
+      "speed": 6
+      "fragBullets": 6
+      "fragBullet": {
+      "lifetime": 0
+      "spawnUnit": "ED-00喀莱什寄生虫"
+      }
+             }
+      } 
+     ]
+}

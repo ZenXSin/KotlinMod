@@ -1,0 +1,335 @@
+{
+    "name": "a0-3",
+    "type":"mech",
+    "canBoost": true,
+    "range":6
+"armor": 18
+    "speed": 0.64,
+    "research": "a0-2"
+    "hitSize": 28,
+    "health": 7900,
+    "armor": 5,
+    "drag": 0.5,
+    "mineSpeed": 2,
+    "mineTier": 8,
+    "rotateSpeed": 3.5,
+    "kinematicScl": 14
+    "legCount":2,
+    "legPairOffset":54,
+    "itemCapacity": 100,
+    "legBaseOffset": 3,
+    "mechSideSway": 0.42,
+    "mechFrontSway":0.71,
+    "mechStride": 8,
+    "legMoveSpace":12,
+    "boostMultiplier": 3,
+    "engineSize": 5
+    "engineOffset":8
+    "commandLimit": 6,
+    "research": "a0-2",
+    "rotateShooting": true,
+    "weapons": [
+    	     {
+    "name": "a0-3-1"
+    "top": false
+    "x": 15
+    "y": 0
+    "shootY": 5
+    "rotate": false
+    "autoTarget": true
+    "shoot": {
+    "shots": 5
+    "shotDelay": 5
+    }
+    "recoil": 5
+    "reload": 60
+    "shootSound": "missile"
+    "shake": 1.5
+    "bullet": {
+      "type": "MissileBulletType"
+      "sprite": "circle-bullet"
+      "homingPower": 0.35
+      "homingRange": 120
+      "homingDelay": 15
+      "hitEffect": {
+      "type": "ParticleEffect"
+      "lifetime": 30
+      "particles": 6
+      "length": 24
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+      "sizeFrom": 8
+      "sizeTo": 0
+      "colorFrom": "8899ff"
+      "colorTo": "8899ff"
+      }
+      "damage": 35
+      "splashDamageRadius": 40
+      "splashDamage": 65
+      "frontColor": "8899ff"
+      "backColor": "6677dd"
+      "trailColor": "8899ff"
+      "trailWidth": 8
+      "trailLength": 12
+      "width": 16
+      "height": 16
+      "srinkY": 0
+      "weaveScale": 5
+      "weaveMag": 2
+      "lifetime":45
+      "speed": 8
+      "status": "freezing"
+      "statusDuration": 320
+             }
+      }
+               {
+    "name": "a0-3-2"
+    "x": 4
+    "y": 0
+    "shootY": 10
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "recoil": 2
+    "reload": 20
+    "shootSound": "missile"
+    "ammoType": "silicon"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+      "type": "MissileBulletType"
+      "damage": 15
+      "width":10
+      "height": 17
+      "splashDamage": 20
+      "splashRadius": 30
+      "homingPower": 0.4
+      "trailLength": 8
+      "trailWidth": 3
+      "homingRange": 120
+      "weaveScale": 5
+      "hitSound": "explosion"
+      "weaveMag": 2
+      "lifetime":60
+      "speed": 6
+      }
+      }
+    ]
+}
+
+/*
+        arkyid = new UnitType("arkyid"){{
+            drag = 0.1f;
+            speed = 0.5f;
+            hitSize = 21f;
+            health = 8000;
+            armor = 6f;
+
+            rotateSpeed = 2.7f;
+
+            legCount = 6;
+            legMoveSpace = 1f;
+            legPairOffset = 3;
+            legLength = 30f;
+            legExtension = -15;
+            legBaseOffset = 10f;
+            landShake = 1f;
+            legSpeed = 0.1f;
+            legLengthScl = 0.96f;
+            rippleScale = 2f;
+            legSpeed = 0.2f;
+            ammoType = AmmoTypes.power;
+            
+            
+
+            legSplashDamage = 32;
+            legSplashRange = 30;
+
+            hovering = true;
+            allowLegStep = true;
+            visualElevation = 0.65f;
+            groundLayer = Layer.legUnit;
+
+
+
+
+        /*
+        pulsar = new UnitType("pulsar"){{
+            canBoost = true;
+            boostMultiplier = 1.6f;
+            speed = 0.7f;
+            hitSize = 10f;
+            health = 300f;
+            buildSpeed = 0.9f;
+            armor = 4f;
+
+            mineTier = 2;
+            mineSpeed = 5f;
+            commandLimit = 8;
+
+            abilities.add(new ShieldFieldAbility(20f, 40f, 60f * 5, 60f));
+            ammoType = AmmoTypes.power;
+
+            weapons.add(new Weapon("heal-shotgun-weapon"){{
+                top = false;
+                x = 5f;
+                shake = 2.2f;
+                y = 0.5f;
+                shootY = 5f;
+
+                shootY = 2.5f;
+                reload = 38f;
+                shots = 3;
+                inaccuracy = 35;
+                shotDelay = 0.5f;
+                spacing = 0f;
+                ejectEffect = Fx.none;
+                recoil = 2.5f;
+                shootSound = Sounds.pew;
+                "weapons":[{
+                    "name": "曙光炮",
+                    "shake": 1.56,
+                    "shootY": 2.68,
+                    "reload": 20,
+                    "shots": 5,
+                    "inaccuracy": 15,
+                    "shotDelay": 1.5,
+                    "spacing": 2.68,
+                    "ejectEffect": "none",
+                    "recoil": 2.5,
+                    "shootSound": "激光枪音效",
+                    "bullet": {
+                        "type": "LightningBulletType",
+                        "lightningColor": "FFFFFF"
+                        "lightningLength": 25,
+                        "lightningLengthRand": 15,
+                        "shootEffect": "shootHeal",
+                    }
+                    
+                }]
+
+                bullet = new LightningBulletType(){{
+                    lightningColor = hitColor = Pal.heal;
+                    damage = 15f;
+                    lightningLength = 7;
+                    lightningLengthRand = 7;
+                    shootEffect = Fx.shootHeal;
+                }};
+            }});
+        }};
+        */
+        /*
+                    weapons.add(new Weapon("corvus-weapon"){{
+                shootSound = Sounds.laserblast;
+                chargeSound = Sounds.lasercharge;
+                soundPitchMin = 1f;
+                top = false;
+                mirror = false;
+                shake = 14f;
+                shootY = 5f;
+                x = y = 0;
+                reload = 350f;
+                recoil = 0f;
+
+                cooldownTime = 350f;
+
+                shootStatusDuration = 60f * 2f;
+                shootStatus = StatusEffects.unmoving;
+                firstShotDelay = Fx.greenLaserCharge.lifetime;
+    "weapons": [
+    	{
+    	"shootSound": "laserblast",
+    	"chargeSound": "lasercharge",
+    	"soundPitchMin": 1,
+    	"top": false,
+    	"mirron": false,
+    	"shake": 2,
+    	"shootY": 2,
+    	"x": 0,
+    	"y": 0,
+    	"cooldownTime": 120,
+    	"shootStatusDuration": 10,
+    	"shootStatus": "unmoving",
+    	"lifetime": 10,
+    	"firstShotDelay": "greenLaserCharge",
+    	"name": "曙光炮",
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 60,
+        	"width": 20,
+        	"lightningSpacing": 65,
+        	"lightningLength": 10,
+        	"lightningDelay": 1.2,
+        	"lightningLengthRand": 16,
+        	"lightningDamage": 20,
+        	"largeHit": true,
+        	"lightColor": "heal",
+        	"shootEffect": "greenLaserCharge",
+        	"healPercent": 5,
+        	"collidesTeam": true,
+        	"sideAngle": 15,
+        	"sideWidth": 0,
+        	"sideLength": 0
+            }
+    	}
+    ]
+
+
+
+
+
+
+
+
+
+
+                bullet = new LaserBulletType(){{
+                    length = 460f;
+                    damage = 560f;
+                    width = 75f;
+
+                    lifetime = 65f;
+        "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 200,
+        	"damage": 60,
+        	"width": 20,
+        	"lightningSpacing": 65,
+        	"lightningLength": 10,
+        	"lightningDelay": 1.2,
+        	"lightningLengthRand": 16,
+        	"lightningDamage": 20,
+        	"largeHit": true,
+        	"lightColor": "heal",
+        	"shootEffect": "greenLaserCharge",
+        	"healPercent": 5,
+        	"collidesTeam": true,
+        	"sideAngle": 15,
+        	"sideWidth": 0,
+        	"sideLength": 0
+        }
+
+                    lightningSpacing = 35f;
+                    lightningLength = 5;
+                    lightningDelay = 1.1f;
+                    lightningLengthRand = 15;
+                    lightningDamage = 50;
+                    lightningAngleRand = 40f;
+                    largeHit = true;
+                    lightColor = lightningColor = Pal.heal;
+
+                    shootEffect = Fx.greenLaserCharge;
+
+                    healPercent = 25f;
+                    collidesTeam = true;
+
+                    sideAngle = 15f;
+                    sideWidth = 0f;
+                    sideLength = 0f;
+                    colors = new Color[]{Pal.heal.cpy().a(0.4f), Pal.heal, Color.white};
+                }};
+            }});
+        }};
+        */

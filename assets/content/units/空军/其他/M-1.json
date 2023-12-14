@@ -1,0 +1,24 @@
+{
+    "type": "tether"
+	"name": "M-1"
+	"speed": 1, 
+	"drag": 0.25,
+	"accel": 0.25
+	"rotateSpeed": 3
+	"hitSize": 12
+	"buildBeamOffset":8,
+	"buildSpeed": 1,
+	"flying": true,
+	"faceTarget": false,
+    "useUnitCap": false,
+	"health": 250,
+	"engineOffset": 4
+	"engineSize": 2
+    "isEnemy":false,
+    "hidden":true,
+    "createWreck":false,
+    "allowedInpayloads":false,
+    "logiccontrollable":false,
+    "defaultController": "AssemblerAI",
+    "playerControllable":false,
+}

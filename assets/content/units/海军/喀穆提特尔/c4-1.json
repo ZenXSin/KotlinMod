@@ -1,0 +1,115 @@
+{
+    "type": "naval",
+    "name": "c4-1",
+    "health": 4200,
+    "armor": 18,
+    "hitSize": 12,
+    "speed": 1.95,
+    "accel": 0.4,
+    "rotateSpeed": 2.5,
+    "rotateShooting": false,
+    "commandLimit": 8,
+    "itemCapacity": 40,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 60,
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 160,
+              "amount": 60,
+              "reload": 240
+        },
+  ]
+    "weapons": [
+    {
+            "name": "c4-1-1",
+            "reload": 90,
+            "shoot": {
+            "shots": 5
+            "shotDelay": 6
+            }
+            "recoil": 1.00,
+            "rotate": true,
+            "collidesGround": true
+            "collidesAir": true
+            "targetAir": true
+            "targetGround": true
+            "shootSound":"missile"
+            "x": 0,
+            "y": -4,
+            "rotateShooting": false,
+            "mirror":false
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 30
+                "sprite": "circle-bullet"
+            "collidesGround": true
+                "width": 8
+                "height": 8
+                "weaveScale": 5
+                "weaveMag": 2
+                "trailColor": "b7b735"
+                "trailLength": 16
+                "trailWidth": 4
+                "sapStrength": 0.1
+                "healPercent": 10
+                "frontColor": "d9d957"
+                "backColor": "c8c846"
+                "speed": 8
+                "lifetime": 30
+                "hitEffect": {
+                "type": "ParticleEffect"
+                "particles": 1
+                "lifetime": 10
+                "sizeFrom": 24
+                "sizeTo": 16
+                "colorFrom": "d9d957"
+                "colorTo": "d9d95700"
+                "length": 0
+                }
+                "despawnEffect": {
+                "type": "ParticleEffect"
+                "particles": 1
+                "lifetime": 10
+                "sizeFrom": 32
+                "sizeTo": 32
+                "colorFrom": "d9d957"
+                "colorTo": "d9d95700"
+                "length": 0
+                }
+            }
+        }
+        {
+        "name": "c4-1-2"
+        "x": 0
+        "y": 0
+        "shootY": 4
+        "reload": 60
+        "mirror": false
+        "rotate": false
+        "shootSound": "laser"
+                "bullet": {
+        	"type": "LaserBulletType",
+        	"length": 120,
+        	"damage": 60,
+        	"width": 16,
+        	"status": "shocked"
+        	"colors": [
+        	"c8c846dd",
+        	"d9d957ee",
+        	"eaea68ff",
+        	]
+        	"shootEffect": "none",
+        	"healPercent": 15,
+        	"collidesTeam": true,
+        	"lightColor": "eaffea"
+        	"sideAngle": 25,
+        	"sideWidth": 12,
+        	"sideLength": 16
+            }
+            }
+        ]
+    "research": "0721构造器"
+    }

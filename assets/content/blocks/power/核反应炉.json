@@ -1,0 +1,22 @@
+{
+    "type": "NuclearReactor",
+    "name": "核反应炉",
+    "category": "power",
+    "requirements": [
+        "lead/1500","silicon/1000","镍钢/750","thorium/750","锆/250"
+    ],
+    "powerProduction": 150.00,
+    "size": 4,
+    "fuelItem": "U-235",
+    "health": 7000,
+    "itemDuration": 300.00,
+    "consumes": {
+    "item": "U-235",
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 1.00,
+            "update": false
+         }
+    }
+    "research":"铀构造器"
+}

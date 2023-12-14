@@ -1,0 +1,12 @@
+{
+"name":"拉戈奇"
+"description":"这是一种不稳定的工业混合物，最好还是让它离你的核心远点！"
+"hardness":6
+"cost":"7"
+"color":"a6815b"
+"radioactivity":4,
+"explosiveness": 5
+"flammability": 5.4
+"charge": 3.1
+"research":"黑索金类爆炸物"
+}

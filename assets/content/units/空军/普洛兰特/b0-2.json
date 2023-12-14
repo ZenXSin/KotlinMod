@@ -1,0 +1,69 @@
+{
+type: flying
+name: b0-2
+flying: true
+hitSize: 24
+health: 3800
+armor: 10
+speed: 3.6
+rotateSpeed: 4.65
+rotateShooting: true
+accel: 0.02
+drag: 0.02
+lowAltitude: true
+engineOffset: 12
+engineSize: 4
+lightColor: e65555
+weapons: [
+  {
+    name:b0-2-2
+    x: 0
+    y: 0
+    shootY: 8
+    mirror: false
+    rotate: true
+    rotateSpeed: 4.2
+    recoil: 0
+    reload: 50
+    shootCone: 30
+    shoot: {
+    shots: 3
+    spread: 3
+    }
+    shootSound: shotgun
+    shake: 1.2
+    bullet: {
+    type: ShrapnelBulletType
+    length: 150.00
+    damage: 30
+    width: 20.00
+    reloadMultiplier: 1.30
+      }
+  }
+    {
+    name:b0-2-1
+    x: 0
+    y: 0
+    shootY: 2
+    shootX: 14
+    mirror: true
+    rotate: false
+    rotateSpeed: 0
+    recoil: 0
+    reload: 5
+    shootCone: 30
+    shootSound: shootsnap
+    top: false
+    shake: 1.2
+    bullet: {
+    type: BasicBulletType
+    width: 5
+    height: 8
+    speed: 5
+    lifetime: 64
+    damage: 16
+      }
+  }
+]
+    research: b0-1
+}

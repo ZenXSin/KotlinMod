@@ -1,0 +1,130 @@
+{
+"type":"legs"
+"name":"a2-3"
+"legBaseOffset": 0
+"speed": 1.15
+"rotateSpeed":2.4
+"hitSize": 20
+"health": 5600
+"reload": 7200
+"range": 4
+"armor": 12
+"mineSpeed":1.32
+"maxStretch": 2
+    "research": "a2-2"
+    	    "legLengthScl": 1.00,
+            "legPairOffset": 3
+            "legMoveSpace": 1.0
+            "legExtension": -13
+            "abilities": [
+  {
+    "type": "ForceFieldAbility"
+    "radius": 60
+    "regen": 6
+    "max": 600
+    "cooldown": 300
+  }
+  ]
+  "legTrns": 0.75
+"legLength": 35
+"mechStepShake":0.5
+"legCount": 6
+"weapons":[
+  {
+  "name": "a2-3-1"
+  "x": 10
+  "y": 1
+  "shoot": {
+  "shots": 5
+  "shotDelay": 3
+  }
+  "reload": 30
+  "shootCone": 5
+  "rotate": false
+  "mirror": true
+  "recoil": 0.3
+  "shootY": 6
+  "innacuracy": 3
+  "targetGround": false
+  "shootSound": "missile"
+    "bullet": {
+      "type": "MissileBulletType"
+  "frontColor": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+      "damage": 50
+      "width":7
+      "height": 6
+      "splashDamage": 100
+      "splashRadius": 80
+      "homingPower": 0.22
+      "trailLength": 6
+      "trailWidth": 2
+      "homingRange": 120
+      "collidesGround": false
+      "lifetime":90
+      "speed": 8
+      }
+   }
+               {
+    "name": "a2-3-2"
+    "x": 0
+    "y": -4
+    "shootY": 4
+    "mirror": false
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "shots": 3
+    "type": "ShootBarrel"
+    "barrels": [
+    0,0,5
+    0,0,0
+    0,0,-5
+    ]
+    }
+    "shootCone": 60
+    "recoil": 1
+    "reload": 120
+     "range":200
+    "shootSound": "red"
+    "shake": -1
+    "restitution":1.42
+    "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 3
+            "sizeTo": 24
+            "colorFrom": "ee7777ff"
+            "colorTo": "ee777700"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 0
+            "lifetime": 60
+            }
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "color": "ffffff77"
+                "width": 10,
+                "height": 10,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 120
+                "homingPower": 0.02
+                "homingDelay": 15
+                "drag": -0.015
+                "splashDamage": 450
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 80
+                "maxSpeed": 5
+                "knockback":0.4
+                "lifetime": 60
+                "speed": 4
+            }
+      }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "type": "GenericCrafter",
+    "name": "锆板冲压机",
+   "description":"将锆，硫，钛等按比例放置再进行冲压定型，产出锆板。",
+    "category": "crafting",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+    			"type": "DrawFrames",
+    			"frames": 8,
+    			"sine": false,
+			},
+        ],
+    },
+    "updateShake": 2,
+    "health": 1300,
+    "itemCapacity": 80,
+    "requirements": [
+        "copper/270",
+        "metaglass/140",
+        "plastanium/270",
+        "硒/380",
+        "钴/90",
+    ],
+    "outputItem": "锆板/2",
+    "craftTime": 100,
+    "size": 5,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items":[
+                "titanium/5",
+                "pyratite/3",
+               "锆/8",
+               "铝/1",
+            ],
+        },
+        "power": 2.50
+    }
+    "research":"锆锰合金冶炼炉",
+}

@@ -1,0 +1,16 @@
+{
+    "type":"LiquidRouter",
+    "name":"67型液体罐",
+    "description": "坚硬的罐子也有可观的储量",
+    "size":2
+    "health": 2500,
+    "liquidCapacity": 12000,
+    "insulated":true,
+    "requirements": [
+	{"item": "graphite", "amount": 30},
+	{"item": "metaglass", "amount": 100},
+	{"item": "plastanium", "amount": 10}
+	],
+	"category": "liquid",
+    "research":"67型导管"
+    }

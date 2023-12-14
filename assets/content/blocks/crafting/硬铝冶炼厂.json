@@ -1,0 +1,40 @@
+{
+    "type": "GenericCrafter",
+    "name": "硬铝冶炼厂",
+   "description":"将铝，铜，钛压缩成硬铝。",
+    "category": "crafting",
+    "health":600
+    "itemCapacity":50
+    "requirements": [
+        "copper/100" "lead/60" "silicon/50"
+    ],
+    "outputItem": "硬铝/3",
+    "craftTime": 50.00,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "铝/3" "copper/3" "titanium/2"
+            ]
+        },
+        "power": 0.80
+    }
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			"type": "DrawFlame"
+			"flameColor": "ffffff"
+			}
+            ]
+            }
+ "research":{
+ "parent": "铝提炼机-冰晶石"
+ "objectives": [
+ "铝"
+ ]
+ }
+}

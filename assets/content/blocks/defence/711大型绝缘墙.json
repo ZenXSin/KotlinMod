@@ -1,0 +1,14 @@
+{
+"type":"wall",
+"name":"大型绝缘墙",
+"category":"defense",
+"size":2,
+"description":"不能算太坚硬，但是对付一般的敌人已经足够了。",
+"health":2600,
+"requirements":[
+"silicon/35" "铝/22"
+]
+"insulated":true,//是否吸收电弧
+"absorbLasers":true,//是否吸收激光 
+"research":"710绝缘墙"
+}

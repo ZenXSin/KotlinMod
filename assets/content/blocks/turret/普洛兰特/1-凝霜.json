@@ -1,0 +1,246 @@
+{
+    "type": "ItemTurret",
+    "name": "凝霜",
+    "description": "发射冷凝炮弹。"
+    "size": 4,
+    "category": "turret",
+    "shootSound":"cannon"
+    "shootEffect": "none"
+    "ammoPerShot": 10,
+    "shootY": 6,
+    "shootWarmupSpeed": 0.01
+    "minWarmup": 0.96
+    "drawer": {
+    "type": "DrawTurret"
+    "parts": [
+        {
+            "type": "RegionPart",
+            "under": true,
+            "moveX": 4,
+            "moveY": -4,
+            "suffix": "-R2",
+            }
+        {
+            "type": "RegionPart",
+            "under": true,
+            "moveX": -4,
+            "moveY": -4,
+            "suffix": "-L2",
+            }
+        {
+            "type": "RegionPart",
+            "under": true,
+            "moveX": -2,
+            "moveY": -1,
+            "moveRot": -20,
+            "suffix": "-R1",
+            }
+        {
+            "type": "RegionPart",
+            "under": true,
+            "moveX": 2,
+            "moveY": -1,
+            "moveRot": 20,
+            "suffix": "-L1",
+            }
+        {
+            "type": "RegionPart",
+            "under": true,
+            "moveY": -8,
+            "suffix": "-M1",
+            }
+        {
+            "type": "ShapePart",
+            "y": 6,
+            "circle": true,
+            "radius": 3,
+            "radiusTo": 0,
+            "progress": "recoil",
+            "Interp": "pow2In",
+            "colorTo": "6f9dff",
+            "color": "6f9dff",
+            "mixColorTo": "6f9dff00",
+            "mixColor": "6f9dff00",
+            "recoilTime": 90,
+            "outline": false,
+            "layer": 110,
+            },
+        {
+            "type": "ShapePart",
+            "y": 6,
+            "circle": true,
+            "hollow": true,
+            "radius": 6,
+            "stroke": 0,
+            "strokeTo": 1
+            "color": "6f9dff",
+            "colorTo": "6f9dff",
+            "mixColor": "6f9dff00",
+            "mixColorTo": "6f9dff00",
+            "outline": false,
+            "layer": 110,
+            "progress": "warmup"
+            }
+        ]
+    }
+    "requirements": [
+        "titanium/400"
+        "phase-fabric/110"
+        "镍钢/350"
+        "硒/50"
+        "钛合金/220"
+    ],
+    "ammoTypes": {
+    "titanium": {
+        "type": "FlakBulletType",
+        "collidesGround": true,
+        "ammoMultiplier": 1,
+        "sprite": "large-orb",
+        "shrinkY": 0,
+        "width": 12,
+        "height": 12,
+        "trailWidth": 4,
+        "trailLength": 12,
+        "speed": 6,
+        "lifetime": 80,
+        "status": "极寒",
+        "statusDuration": 180,
+        "fragBullets": 1,
+        "damage": 80,
+        "splashDamage": 80,
+        "splashDamageRaidus": 56,
+        "trailInterval": 5,
+        "trailParam": 2,
+        "obsorbable": false,
+        "hittable": false,
+        "frontColor": "6f9dff",
+        "backColor": "6f9dff",
+        "trailColor": "ddddff",
+        "hitEffect": {
+            "type": "ParticleEffect",
+            "particles": 12,
+            "length": 32,
+            "interp": "circleOut",
+            "sizeInterp": "pow10In",
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "colorFrom": "ddddff",
+            "colorTo": "ddddff88",
+            },
+        "trailEffect": {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "length": 12,
+            "interp": "circleOut",
+            "sizeInterp": "pow3In",
+            "sizeFrom": 2,
+            "sizeTo": 0,
+            "colorFrom": "ddddff",
+            "colorTo": "ddddff88",
+            },
+        "fragBullet": {
+            "type": "FlakBulletType",
+            "collidesGround": true,
+            "obsorbable": false,
+            "hittable": false,
+            "lifetime": 0,
+            "width": 0,
+            "height": 0,
+            "splashDamage": 130,
+            "splashDamageRaidus": 56,
+            "status": "解冻",
+            "statusDuration": 210,
+            "sprite": "pnk-mod-air1",
+            "hitEffect": "none",
+            },
+        },
+    "8-寒冰合金": {
+        "type": "FlakBulletType",
+        "rangeChange": 160,
+        "collidesGround": true,
+        "ammoMultiplier": 30,
+        "reloadMultiplier": 0.75,
+        "sprite": "large-orb",
+        "shrinkY": 0,
+        "width": 12,
+        "height": 12,
+        "trailWidth": 4,
+        "trailLength": 12,
+        "speed": 8,
+        "lifetime": 85,
+        "status": "极寒",
+        "statusDuration": 300,
+        "fragBullets": 1,
+        "damage": 220,
+        "splashDamage": 380,
+        "splashDamageRaidus": 56,
+        "trailInterval": 5,
+        "trailParam": 2,
+        "obsorbable": false,
+        "hittable": false,
+        "frontColor": "6f9dff",
+        "backColor": "6f9dff",
+        "trailColor": "ddddff",
+        "hitEffect": {
+            "type": "ParticleEffect",
+            "particles": 12,
+            "length": 32,
+            "interp": "circleOut",
+            "sizeInterp": "pow10In",
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "colorFrom": "ddddff",
+            "colorTo": "ddddff88",
+            },
+        "trailEffect": {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "length": 12,
+            "interp": "circleOut",
+            "sizeInterp": "pow3In",
+            "sizeFrom": 2,
+            "sizeTo": 0,
+            "colorFrom": "ddddff",
+            "colorTo": "ddddff88",
+            },
+        "fragBullet": {
+            "type": "FlakBulletType",
+            "collidesGround": true,
+            "obsorbable": false,
+            "hittable": false,
+            "lifetime": 0,
+            "width": 0,
+            "height": 0,
+            "splashDamage": 400,
+            "splashDamageRaidus": 56,
+            "status": "解冻",
+            "statusDuration": 600,
+            "sprite": "pnk-mod-air1"
+            "hitEffect": "none"
+            },
+        },
+    },
+    "shoot": {
+        "type": "ShootHelix",
+        "mag": 1,
+        "scl": 5,
+        },
+    "consumes": {
+    "power": 3,
+        "liquid": {
+            "liquid": "液氮",
+            "amount": 0.4,
+            "booster": false,
+            },
+        }
+    "hasLiquid": true,
+    "liquidCapacity": 120,
+    "maxAmmo": 60,
+    "recoil": 3,
+    "reload": 180,
+    "range": 480,
+    "shootCone": 10.00,
+    "health": 7700,
+    "rotateSpeed": 3,
+    "research":"1-阵发"
+}

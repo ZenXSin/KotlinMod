@@ -1,0 +1,111 @@
+{
+	"type": "ItemTurret",
+	"name": "“翠鸾”型制导系统",
+	"description": "远距离打击目标。",
+	"health": 30000,
+     "accurateDelay": false,//预判
+	"size": 4
+	"reload": 180,
+	"range": 1440,
+    "maxAmmo":300,
+	"recoil": 0,
+    "shootY":0,
+    "hasShadow": false,
+"minWarmup": 0.8,
+"ammoPerShot": 200
+"shootWarmupSpeed": 0.03,
+"drawer":{
+"type":"DrawMulti",
+"drawers":[
+{
+"type":"DrawTurret",
+"parts":[
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-1",
+    "layer":50,
+    "moveX":-10
+    "moveY":-0
+    },
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-2",
+    "layer":50,
+    "moveX": 10
+    "moveY": 0
+    },
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-3",
+    "layer":50,
+    "moveX":0,
+    "moveY": -10
+    },
+    {
+    "type":"RegionPart",
+    "mirror": false
+    "x":0,"y":0,
+    "suffix":"-4",
+    "layer":50,
+    "moveX": 0,
+    "moveY":10
+    }, 
+    {
+    "suffix": "-missile"
+    "progress": "reload"
+    "Interp": "pow2In"
+    "colorTo": "ffffff00"
+    "color": "ffffff"
+    "mixColorTo": "ffffff00"
+    "mixColor": "ffffff00"
+    "layer": 49.999
+    "outline": false
+    }
+    ]
+    }
+    ]
+    },
+	"ammoUseEffect": "none",
+	"canOverdrive": false,
+	"consumes": {
+	"power": 5
+	},
+	"shootSound":"missile1",
+	"targetGround":true,
+	"targetAir":true,
+    "hasliquids": false,
+    "coolantUsage":0,
+    "inaccuracy": 0,
+	"shootCone":360,
+	"shake":1,
+	"rotateSpeed":0,
+    "ammoPerShot": 30,
+	"ammoTypes": {
+   "silicon": {
+   "shootEffect": {
+   "type": "WaveEffect"
+   "sizeFrom": 0
+   "sizeTo": 48
+   "colorFrom": "dbdbdbdb"
+   "colorTo": "dbdbdb00"
+   "strokeFrom": 2
+   "strokeTo": 3
+   "lifetime": 120
+   }
+   "ammoMultiplier": 1
+   "speed": 100
+   "spawnUnit": "翠鸾"
+   }
+    },
+	"requirements": [
+ "copper/1000","lead/1000","titanium/950","thorium/700","silicon/600","plastanium/600","surge-alloy/500"
+	],
+	"category": "turret",
+	"research": "2-轰击"
+	}

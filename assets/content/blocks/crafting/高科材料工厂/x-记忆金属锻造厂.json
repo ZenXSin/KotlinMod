@@ -1,0 +1,45 @@
+{
+    "type": "GenericCrafter",
+    "name": "记忆金属锻造厂",
+    "description":"将自恢复材料和坚硬的材料锻打为一体。",
+    "category": "crafting",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+		    	"type": "DrawFrames",
+	    		"frames": 4,
+			}
+        ]
+    }
+    "updateShake": 2,
+    "health":5000,
+    "itemCapacity":50,
+    "requirements": [
+        "copper/500",
+        "lead/500",
+        "titanium/350",
+        "thorium/400",
+        "surge-alloy/350",
+        "U/150",
+        "镍/1400",
+        "钛合金/120",
+    ],
+    "outputItem": "8-记忆金属/3",
+    "craftTime": 150.00,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items":[
+               "phase-fabric/5",
+               "锆/2",
+               "硒/1",
+            ],
+        },
+        "power": 1,
+    },
+    "research":"能量液混合器",
+}

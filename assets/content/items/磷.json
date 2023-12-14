@@ -1,0 +1,11 @@
+{
+"name":"磷",
+"hardness":"4",
+"cost":"10",
+"color":"dadada",
+"radioactivity":0,
+"explosiveness":1,
+"flammability":1,
+"charge":0.4,
+"research":"铝",
+}

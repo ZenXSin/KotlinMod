@@ -1,0 +1,363 @@
+{
+    "type": "naval",
+    "name": "c3-5",
+    "health": 77000,
+    "kinematicScl": 14
+    "canBoost": true
+    "boostMultiplier": 3
+    "armor": 35
+    "hitSize": 48,
+    "speed": 0.7,
+    "accel": 0.3,
+    "rotateSpeed": 0.8,
+    "rotateShooting": false,
+    "itemCapacity": 40,
+    "trailX": 12,
+    "trailY": -8,
+    "trailScl": 8,
+    "trailLength": 40,
+    "maxRange": 640
+    "abilities": [
+        {
+              "type": "RepairFieldAbility",
+              "range": 320,
+              "amount": 3000,
+              "reload": 600
+              "healColor": "bb66dd"
+              "effect": {
+              "type": "WaveEffect"
+              "sizeFrom": 0
+              "sizeTo": 320
+              "interp": "circleOut"
+              "colorFrom": "bb66dd"
+              "colorTo": "bb66dd"
+              "strokeFrom": 2
+              "strokeTo": 0
+              "lifetime": 20
+              }
+        },
+            {
+    "type": "ShieldArcAbility",
+    "region": "pnk-mod-c3-5-shield"
+    "radius": 80,
+    "regen": 5,
+    "drawArc": false,
+    "width": 4,
+    "y": 0,
+    "max": 20000,
+    "cooldown": 1200
+    "whenShooting": false
+    "angle": 160
+    },
+    ]
+    "engineSize": 12
+    "engineOffset": 28
+    "engines": [
+		{
+			"x": -28,
+			"y": -30,
+			"radius": 8,
+			"rotation": -135
+		},
+		{
+			"x": 28,
+			"y": -30,
+			"radius": 8,
+			"rotation": -45
+		},
+    ]
+    "weapons": [
+    {
+    "name": "c3-5-1"
+    "reload": 120
+    "shootSound": "laser"
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 4
+    "spread": 20
+    }
+    "x": 20
+    "y": -12
+    "rotate": true
+    "rotateSpeed": 2
+    "shootY": 16
+    "bullet": {
+    "shootEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+    "type": "WaveEffect"
+    "sizeFrom": 0
+    "sizeTo": 16
+    "strokeFrom": 4
+    "strokeTo": 0
+    "sides": 4
+    "ColorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "lifetime": 10
+    }
+    {
+    "type": "ParticleEffect"
+    "cone": 60
+    "length": 20
+    "sizeInterp": "pow5Out"
+    "line": true
+    "particles": 12
+    "colorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "sizeFrom": 6
+    "sizeTo": 6
+    "lenFrom": 6
+    "lenTo": 0
+    "lifetime": 30
+    }
+    {
+    "type": "ParticleEffect"
+    "cone": 30
+    "sizeInterp": "pow5Out"
+    "interp": "circleOut"
+    "length": 16
+    "line": false
+    "particles": 12
+    "colorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "sizeFrom": 6
+    "sizeTo": 0
+    "lenFrom": 0
+    "lenTo": 0
+    "lifetime": 60
+    }
+    ]
+    }
+    "type": "MissileBullet"
+    "collidesTeam": true
+    "shrinkY": 0
+    "speed": 6
+    "lifetime": 40
+    "damage": 300
+    "splashDamage": 200
+    "splashDamageRadius": 16
+    "healPercent": 30
+    "sprite": "circle-bullet"
+    "healColor": "bb66dd"
+    "frontColor": "bb66dd"
+    "backColor": "bb66dd"
+    "trailColor": "bb66dd"
+    "trailInterval": 10
+    "width": 12
+    "height": 12
+    "despawnEffect": {
+    "type": "ParticleEffect"
+    "sizeInterp": "pow5Out"
+    "interp": "circleOut"
+    "length": 56
+    "line": true
+    "particles": 12
+    "colorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "sizeFrom": 12
+    "sizeTo": 0
+    "lenFrom": 8
+    "lenTo": 0
+    "lifetime": 60
+    }
+    }
+    }
+/*    {
+    "name": "c3-5-2"
+    "x": 0
+    "y": 4
+    "shootY": 6
+    "mirror": false
+    "rotate": true
+    "rotationLimit": 45
+    "rotateSpeed": 0.5
+    "shootWarmupSpeed": 0.01
+    "shootSound": "plasmaboom"
+    "minWarmup": 0.9
+    "reload": 200
+    "shoot": {
+    "type": "ShootBarrel"
+    "barrels": [
+    0,0,-5
+    0,0,0
+    0,0,5
+    ]
+    "shots": 3
+    }
+    "bullet": {
+    "type": "FlakBulletType"
+    "collidesGround": true
+    "damage": 400
+    "splashDamage": 400
+    "splashDamageRadius": 160
+    "healPercrnt": 85
+    "healColor": "bb66dd"
+    "frontColor": "bb66dd"
+    "backColor": "bb66dd"
+    "trailColor": "bb66dd"
+    "width": 16
+    "height": 16
+    "shrinkY": 0
+    "speed": 8
+    "lifetime": 105
+    "maxRange": 640
+    "sprite": "circle-bullet"
+    "hitEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+    "type": "WaveEffect"
+    "sizeFrom": 0
+    "sizeTo": 8
+    "strokeFrom": 4
+    "strokeTo": 0
+    "sides": 4
+    "ColorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "lifetime": 10
+    }
+    {
+    "type": "ParticleEffect"
+    "length": 72
+    "sizeInterp": "pow5Out"
+    "line": true
+    "particles": 12
+    "colorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "sizeFrom": 8
+    "sizeTo": 8
+    "lenFrom": 6
+    "lenTo": 0
+    "lifetime": 30
+    }
+    {
+    "type": "ParticleEffect"
+    "sizeInterp": "pow5Out"
+    "interp": "circleOut"
+    "length": 72
+    "line": false
+    "particles": 12
+    "colorFrom": "bb66dd"
+    "colorTo": "bb66dd"
+    "sizeFrom": 8
+    "sizeTo": 0
+    "lenFrom": 0
+    "lenTo": 0
+    "lifetime": 60
+    }
+    ]
+    }
+    }
+    }*/
+    {
+    "name": "c3-5-3"
+    "x": 24
+    "y": -8
+    "layerOffset": -1
+      "reload": 360
+      "shootSound": "missileSmall"
+      "shoot": {
+      "shots": 15
+      "shotDelay": 3
+      }
+      "shootY": 0
+      "targetAir": false
+      "alternate": false
+      "alternate": true
+      "bullet": {
+      "shootEffect": "none"
+      "type": "MissileBulletType"
+      "layer": 50
+      "collidesAir": false
+      "collideFloor": true
+      "damage": 60
+      "splashDamage": 140
+      "splashDamageRadius": 128
+      "buildingDamageMultiplier": 0.5
+      "width": 8
+      "height": 16
+      "frontColor": "aaaaaa55"
+      "backColor": "aaaaaa55"
+      "trailColor": "aaaaaa55"
+      "trailEffect": {
+      "type": "ParticleEffect"
+      "particles": 1
+      "colorFrom": "aaaaaa55"
+      "colorTo": "aaaaaa00"
+      "sizeFrom": 4
+      "sizeTo": 2
+      "lifetime": 60
+      "length": -2
+      "cone": 0
+      "layer": 58
+      }
+      "speed": 4
+      "lifetime": 180
+      "homingPower": 0.1
+      "homingRange": 320
+      "homingDelay": 30
+      "hitEffect": {
+      "type": "ParticleEffect"
+      "particles": 5
+      "colorFrom": "aaaaaa55"
+      "colorTo": "aaaaaa55"
+      "sizeFrom": 8
+      "sizeTo": 0
+      "lifetime": 240
+      "length": 64
+      "layer": 58
+      "interp": "circleOut"
+      "sizeInterp": "pow10In"
+      }
+      }
+    }
+            		{
+	"name":"b3-5-4",
+	"type":"PointDefenseWeapon",
+	"x": 32,
+	"y": -20,
+	"alternate": false
+	"rotate": true,
+	"mirror": true
+	"shootSound": "sap",
+	"recoil": 0,
+	"rotateSpeed": 30,
+    "reload": 30,
+    "targetInterval":5,
+    "targetSwitchInterval":5,
+    "bullet":{
+	"speed": 40,	
+	"lifetime": 15,
+        "shootEffect":"sparkShoot",
+        "hitEffect":"pointHit",
+        "maxRange": 240,
+        "damage": 1800
+        }
+        },
+            		{
+	"name":"c3-5-5",
+	"type":"PointDefenseWeapon",
+	"x": 16,
+	"y": -24,
+	"alternate": false
+	"rotate": true,
+	"mirror": true
+	"shootSound": "sap",
+	"recoil": 0,
+	"rotateSpeed": 30,
+    "reload": 30,
+    "targetInterval":5,
+    "targetSwitchInterval":5,
+    "bullet":{
+	"speed": 40,	
+	"lifetime": 15,
+        "shootEffect":"sparkShoot",
+        "hitEffect":"pointHit",
+        "maxRange": 240,
+        "damage": 1800
+        }
+        },
+       ],
+    "research": "c3-4"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "Battery",
+    "name": "核电池",
+	"health": 8000,
+    "requirements": [
+    "copper/500" "lead/500" "锰钢/500" "U/1500"
+    ],
+    "consumes": {
+    "powerBuffered":225000
+    },
+//	"emptyLightColor":"ffffff",
+//	"fullLightColor":"A1B4F1FF",
+    "size": 4,
+    	"category": "power",
+	"research": "核反应堆"
+}

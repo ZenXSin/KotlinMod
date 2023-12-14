@@ -1,0 +1,203 @@
+{
+"type":"mech"
+"name":"机械丧尸"
+"description": "装备了Ou-3S型火焰喷射器，07-A型防空机枪，AXT-0型榴霰弹炮以及T-o1榴弹炮的丧尸，并且带有推进器，可以在中近距离对敌人产生有效的打击。"
+"details": "QVC很喜欢这b玩意。"
+"speed": 0.6
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"range": 160
+"deathEffect": "none"
+"rotateSpeed": 4
+"armor": 5
+"health": 2630
+"reload": 7200
+"deathSound": "explosion"
+"research": "ED-03重装丧尸"
+"hitSize": 12
+"mechStride": 6
+"mechStepShake":0.0
+    "kinematicScl": 14
+    "boostMultiplier": 5
+    "canBoost": true
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "Ou-3S"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 8
+    "shootX": -5
+    "mirror": false
+    "rotate": false
+    "recoil": 0.5
+    "reload": 3
+    "targetAir":false
+    "shootSound": "flame"
+    "bullet": {
+      "type": "BasicBulletType"
+      "damage": 60
+      "collidesGround": true
+      "collidesAir": false
+      "width": 6
+      "height": 6
+      "sprite": "pnk-mod-air1"
+      "lifetime": 15
+      "speed": 8
+      "status": "病毒"
+      "statusDuration": 180
+      "pierce": true
+      "hittable": false
+      "absorbable": false
+      "pierceBuilding": true
+      "hitEffect": "none"
+      "despawnEffect": "none"
+      "shootEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 100,
+    "lifetime": 20,
+    "colorFrom": "FF9E40EB",
+    "colorTo": "66cc6699",
+    "cone": 5
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    },
+    {
+    "type": "ParticleEffect",
+    "particles": 18,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 120,
+    "lifetime": 40,
+    "colorFrom": "F46D54FF",
+    "colorTo": "66aa6699",
+    "cone": 10
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    }
+    ]
+      }
+             }
+      } 
+           {
+    "name": "T-o1"
+    "layerOffset": -0.001
+    "top": false
+    "reload": 90
+    "shootWarmupSpeed": 0.03
+    "minWarmup": 0.9
+    "parts": [
+    {
+    "suffix": "-b"
+    "layerOffset": -0.001
+    "x": 0
+    "y": 0
+    "moveX": 0
+    "moveY": 2
+    "moveRot": 0
+    "progress": "warmup"
+    "moves": [
+    {
+    "progress": "recoil"
+    "recoilTime": 60
+    "x": 0
+    "y": -2
+    }
+    ]
+    }
+    ]
+    "rotate": false
+    "targetAir": false
+    "mirror": false
+    "shootSound": "artillery"
+    "recoil": 1
+    "x": 0
+    "y": 0
+    "shootX": 5
+    "shootY": 8
+    "bullet": {
+    "type": "FlakBulletType"
+    "lifetime": 45
+    "speed": 8
+    "width": 6
+    "height": 10
+    "shrinkY": 0
+    "splashDamage": 200
+    "damage": 50
+    "splashDamageRadius": 80
+    "collidesAir": false
+    "collidesGround": true
+    }
+    }
+    {
+    "x": -4
+    "y": -2
+    "name": "AXT-0"
+    "mirror": false
+    "rotate": true
+    "rotationLimit": 20
+    "rotateSpeed": 1
+    "reload": 180
+    "recoil": 2
+    "targetAir": false
+    "shootSound": "bang"
+    "bullet": {
+    "type": "FlakBulletType"
+    "collidesAir": false
+    "collidesGround": true
+    "speed": 6
+    "lifetime": 40
+    "width": 6
+    "height": 8
+    "damage": 60
+    "splashDamage": 140
+    "splashDamageRadius": 40
+    "shrinkY": 0
+    "fragBullets": 5
+    "fragBullet": {
+    "type": "BasicBulletType"
+    "pierce": true
+    "pierceBuilding": true
+    "lifetime": 5
+    "width": 1
+    "height": 2
+    "speed": 12
+    "damage": 20
+    "despawnEffect": "none"
+    }
+    }
+    }
+    {
+    "x": 2
+    "y": -2
+    "name": "07-A"
+    "mirror": false
+    "rotate": true
+    "rotationLimit": 20
+    "rotateSpeed": 2
+    "reload": 5
+    "targetGround": false
+    "shootSound": "machineGunShoot1"
+    "bullet": {
+    "type": "BasicBulletType"
+    "collidesGround": false
+    "lifetime": 45
+    "width": 4
+    "height": 6
+    "speed": 8
+    "damage": 30
+    }
+    }
+     ]
+}

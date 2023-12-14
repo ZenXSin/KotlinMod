@@ -1,0 +1,151 @@
+{
+"type": "flying"
+"lowAltitude": true
+"hitSize": 24
+"flying": true
+"name": "b2-2"
+"health": 3500
+"armor": 6
+"speed": 5
+"engineOffset": 8
+"engineSize": 6
+"faceTarget": true
+"aimDst": 240
+"rotateSpeed": 4.35
+"omniMovement": true
+    "research": "b2-1"
+"weapons": [
+{
+"name": "b2-2-1"
+        "parts": [
+                 {
+                 "type":"RegionPart",
+    "mirror":false,
+    	"under": true
+    "x": 0,
+    "y": 0,
+    "suffix":"-b",
+    "layer": 49,
+    "moveX": 0
+    "moveY": 0
+        "moveRot": 0
+				"moves": [
+					{
+						"progress": "recoil",
+						"x": 0
+						"y": -1
+					}
+				],
+        },
+        ]
+"x": 12
+"y": 8
+"layer": 49
+"rotate": true
+"mirror": true
+"alternate": false
+"reload": 5
+"shootSound": "pew"
+"targetGround": false
+"targetAir": true
+"shotCone":15
+"rotationLimit": 45
+"recoil": 0
+"bullet": {
+"type": "BasicBulletType"
+"collidesGround": false
+"width": 6
+"height": 6
+"damage": 45
+"lifetime": 60
+"speed": 8
+}
+}
+{
+"name": "b2-2-2"
+"x": 8
+"y": 0
+    "shoot": {
+    "shots": 2
+    "type": "ShootBarrel"
+    "barrels": [
+    0,0,5
+    0,0,-5
+    ]
+    }
+"top": false
+"under": true
+"layerOffset": 0.001
+"rotate": true
+"rotationLimit": 30
+"rotateSpeed": 2
+"mirror": true
+"alternate": false
+"reload": 120
+"shootSound": "red"
+"shotCone": 15
+"bullet": {
+                "type": "FlakBulletType",   
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "color": "ffffff77"
+                "width": 10,
+                "height": 10,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 120
+                "homingPower": 0.025
+                "homingDelay": 15
+                "drag": -0.02
+                "splashDamage": 450
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 80
+                "maxSpeed": 5
+                "knockback":0.4
+                "lifetime": 45
+                "speed": 4
+"shootEffect": {
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 32
+    "lifetime": 60
+    "cone": 10
+    "particles": 10
+}
+"hitEffect": {
+"type": "MultiEffect"
+"effects": [
+{
+    "type": "ParticleEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 4
+    "sizeTo": 0
+    "colorFrom": "ee7777"
+    "colorTo": "ee7777"
+    "length": 32
+    "lifetime": 30
+    "particles": 20
+}
+{
+"type": "WaveEffect"
+"sizeFrom": 0
+"sizeTo": 32
+"colorFrom": "ee7777"
+"colorTo": "ee7777"
+"strokeFrom": 4
+"strokeTo": 0
+"lifetime": 30
+}
+]
+}
+}
+}
+]
+}

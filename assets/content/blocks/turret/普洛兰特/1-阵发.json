@@ -1,0 +1,153 @@
+{
+    "type": "ItemTurret",
+    "name": "阵发",
+    "description": "发射高爆炸性的弹药。\n[red]城墙的噩梦。"
+    "details": "普洛兰特从阿修克的火炮系统发现就算是简单粗暴的炸弹发射器也能造成有效伤害。"
+    "size":3,
+    "category": "turret",
+    "shootSound":"shootBig"
+    "shootEffect": "shootBig"
+    
+    "requirements": [
+        "copper/200" "lead/150" "铝/120" "硒/20" "graphite/55" "锰/30"
+    ],
+    "ammoTypes": {
+    
+    "lead":{
+     "type": "FlakBulletType",
+     "speed": 8.00,
+     "damage": 45,
+     "frontColor": "d8bbd8",
+     "backColor": "d8bbd8",
+     "splashDamageRadius": 80.00,
+     "splashDamage":50,
+     "collidesGround": true,
+     "explodeRange": 20.00,
+     "lifetime": 35.00,
+     "buildingDamageMultiplier": 5,
+     "speed": 8,
+     "fragBullets": 16,
+     "fragBullet": {
+        "type": "BasicBulletType",
+        "buildingDamageMultiplier": 5,
+        "speed": 5.0,
+        "damage": 10,
+        "width": 10.00,
+        "height": 20.00,
+        "shrinkY": 1.00,
+        "lifetime": 3.00,
+     },
+    },
+    
+   "thorium":{
+     "type": "FlakBulletType",
+     "speed": 8.00,
+     "frontColor": "f0a0f0",
+     "backColor": "f0a0f0",
+     "damage": 60,
+     "splashDamageRadius": 80.00,
+     "splashDamage":50,
+     "buildingDamageMultiplier": 5,
+     "collidesGround": true,
+     "explodeRange": 20.00,
+     "lifetime": 35.00,
+     "speed": 8,
+     "fragBullets": 16,
+     "fragBullet": {
+        "type": "BasicBulletType",
+        "buildingDamageMultiplier": 5,
+        "speed": 5.0,
+        "damage": 10,
+        "width": 10.00,
+        "height": 20.00,
+        "shrinkY": 1.00,
+        "lifetime": 3.00,
+     },
+    },
+    
+   "放射孢子":{
+     "type": "FlakBulletType",
+     "speed": 8.00,
+     "damage": 40,
+     "frontColor": "78ff78",
+     "backColor": "78ff78",
+     "splashDamageRadius": 80.00,
+     "buildingDamageMultiplier": 5,
+     "splashDamage":50,
+     "status": "严重放射侵蚀",
+     "collidesGround": true,
+     "explodeRange": 20.00,
+     "lifetime": 35.00,
+     "speed": 8,
+     "fragBullets": 8,
+     "fragBullet": {
+        "type": "BasicBulletType",
+        "buildingDamageMultiplier": 5,
+        "speed": 5.0,
+        "damage": 2,
+        "width": 10.00,
+        "height": 20.00,
+        "shrinkY": 1.00,
+        "lifetime": 3.00,
+     },
+    },
+    
+        "u-钦瓦捏": {
+      "type": "FlakBulletType"
+      "damage":120
+      "spashDamage": 23
+      "splashDamageRadius": 50
+      "ammoMultiplier": 15
+      "collidesGround": true
+      "reloadMultiplier": 0.75
+      "width":8
+      "status": "钦瓦捏扰动"
+      "frontColor": "c6d17d"
+      "backColor": "d1e3b7"
+      "healPercent": 7,
+      "height":10
+      "lifetime": 35
+      "speed": 8
+      "buildingDamageMultiplier": 5,
+      "fragBullet": 2
+      "fragBullet": {
+        "type": "LightningBulletType"
+        "buildingDamageMultiplier": 5,
+        "lightColor": "e6e3b7"
+        "lightning": 3
+        "lightningLength": 8
+        "lightningLengthRand": 5
+        "lightningCone": 20
+        "lightningColor": "d1e3b7"
+        "lightningDamage": 20
+        }
+       }
+       "硒": {
+       "type": "FlakBulletType"
+       "collidesGround": true
+       "ammoMuiltiplier": 1
+       "damage": 40
+       "splashDamage": 120
+       "splashDamageRadius": 120
+       "width": 8
+       "height": 10
+       "speed": 8
+       "lifetime": 35
+       "buildingDamageMultiplier": 4
+       }
+    },
+
+ "shoot": {
+ "type": "ShootAlternate"
+    "spread": 4.00,
+    "barrels": 3,
+    }
+    "recoil": 1.8
+    "reload": 10.0,
+    "range": 240,
+    "shootCone": 20.00,
+    "health": 4000,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 2.00,
+    "research":"1-机枪炮"
+}

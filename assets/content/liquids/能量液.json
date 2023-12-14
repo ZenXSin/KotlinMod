@@ -1,0 +1,10 @@
+{
+"name":"能量液"
+"description":"一种具有自恢复性且会爆炸的顺滑液体。"
+"color":"ffd59e"
+"flammability": 0,
+"temperature": 0.7,
+"viscosity": 0.1,
+"explosiveness": 0.7
+"research":"硬铝"
+}

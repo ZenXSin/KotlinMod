@@ -1,0 +1,38 @@
+{
+	"type": "UnitFactory",
+	"name": "0721构造器",
+    "health":1000,
+	"size":3
+	"consumes":{
+	"power": 2
+		},
+	"plans":[
+		{ "unit": "a0-1", "time": 3360, "requirements": ["镍/100","silicon/130","graphite/120"] },
+		{ "unit": "a1-1", "time": 3360, "requirements": ["coal/300","silicon/250","graphite/250"] },
+		{ "unit": "a2-1", "time": 3360, "requirements": ["copper/150","silicon/180","lead/60"] },
+		{ "unit": "a3-1", "time": 3360, "requirements": ["锰/70","silicon/180","graphite/180"] },
+		{ "unit": "a4-1", "time": 3360, "requirements": ["pyratite/60","silicon/180","graphite/180"] },
+		{ "unit": "b0-1", "time": 3360, "requirements": ["thorium/130","silicon/120","lead/250"] },
+		{ "unit": "b1-1", "time": 3360, "requirements": ["graphite/200","silicon/175","铝/300"] },
+		{ "unit": "b2-1", "time": 3360, "requirements": ["镍/200","silicon/125","铝/200"] },
+		{ "unit": "b3-1", "time": 3360, "requirements": ["硒/220","silicon/100","铝/120"] },
+		{ "unit": "b4-1", "time": 3360, "requirements": ["硒/210","silicon/170","spore-pod/80"] },
+		{ "unit": "c0-1", "time": 3360, "requirements": ["titanium/220","silicon/150","metaglass/180"] },
+		{ "unit": "c1-1", "time": 3360, "requirements": ["coal/135","silicon/120","metaglass/70"] },
+		{ "unit": "c2-1", "time": 3360, "requirements": ["铝/130","silicon/180","metaglass/70"] },
+		{ "unit": "c3-1", "time": 3360, "requirements": ["metaglass/150","silicon/200","锰/100"] },
+		{ "unit": "c4-1", "time": 3360, "requirements": ["metaglass/150","silicon/200","thorium/50"] },
+    ],
+	"requirements": ["copper/340","silicon/350","thorium/570"],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research": {
+        "parent": "khcore",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "格兰特南部群岛"
+            }
+        ]
+    }
+}

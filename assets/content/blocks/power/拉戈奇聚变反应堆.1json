@@ -1,0 +1,31 @@
+{
+	"type": "ImpactReactor",
+	"name": "拉戈奇反应堆",
+	"description": "输入拉戈奇与液氮启动它，但是它需要很长时间来启动，一旦爆炸，将会清除绝大部分可摧毁对象。",
+	"size": 3
+	"health":83000,
+	"warmupSpeed": 0.002,
+	"hasItems": true,
+	"itemCapacity": 1400,
+	"hasLiquids": true,
+	"outputsPower":true,
+	"powerProduction": 200,
+	"itemDuration": 1800,
+	"explosionRadius":4000,	
+    "explosionDamage":235000,
+	"lightColor":"CCE0DF",
+	"consumes": {
+	"power": 60,
+	 "items": {
+	 "items": [
+	 "拉戈奇/2"
+	 "copper/6"
+	]
+	}
+	},
+	"requirements": [
+"copper/1200" "lead/1200" "铝/800" "titanium/700" "plastanium/560" "phase-fabric/400" "surge-alloy/800"
+	],
+	"category": "power",
+	"research": "核反应炉"
+}

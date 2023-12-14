@@ -1,0 +1,35 @@
+{
+    "type": "GenericCrafter",
+    "name": "铀构造器",
+   "description":"可以生产铀。",
+    "category": "crafting",
+    "health":300
+    "itemCapacity":30
+    "requirements": [
+        "硒/100","镍/70","锰/50","surge-alloy/15"
+    ],
+    "outputItem": "U/1",
+    "craftTime": 40.00,
+    "size": 1,
+    "hasPower": true,
+    "hasLiquids": false,
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			"type": "DrawFlame"
+			"flameColor": "ffffff"
+			}
+            ]
+            }
+    "consumes": {
+        "items": {
+            "items": [
+                "thorium/3","lead/5"
+            ]
+        },
+        "power": 0.50
+    }
+   "research":"锰钢锻压机"
+}

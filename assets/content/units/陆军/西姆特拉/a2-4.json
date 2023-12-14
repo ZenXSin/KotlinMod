@@ -1,0 +1,190 @@
+{
+"type":"legs"
+"name":"a2-4"
+"legBaseOffset": 0
+"speed": 0.9
+"rotateSpeed":2.4
+"hitSize": 32
+"health": 34000
+"reload": 7200
+"range": 4
+"armor": 18
+"mineSpeed":1.32
+"maxStretch": 2
+    "research": "a2-3"
+    	    "legLengthScl": 1.00,
+            "legPairOffset": 3
+            "legMoveSpace": 1.2
+            "legExtension": -15
+  "legTrns": 0.75
+"legLength": 45
+"mechStepShake":0.5
+"legCount": 8
+"weapons":[
+               {
+    "name": "a2-4-1"
+    "x": 0
+    "y": 0
+    "shootY": 16
+    "mirror": false
+    "rotate": false
+    "autoTarget": true
+    "alternate": false
+    "rotateSpeed": 5
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 5
+    "spread": 3
+    }
+    "shootCone": 60
+    "recoil": 0
+    "reload": 80
+    "shootSound": "red"
+    "shake": -1
+    "bullet": {
+                "type": "FlakBulletType",
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 2
+            "sizeTo": 30
+            "colorFrom": "ee7777cc"
+            "colorTo": "aa333300"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 60
+            }
+                "shrinkY": 0
+                "status": "热射线辐射"
+                "statusDuration": 300
+                "backColor": "aa3333"
+                "color": "ffffff77"
+                "width": 16,
+                "height": 16,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 120
+                "homingPower": 0.05
+                "splashDamage": 800
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 200
+                "maxSpeed": 6
+                "knockback":0.4
+                "lifetime": 80
+                "speed": 3
+                "weaveScale": 1.2
+                "weaveMag": 0.4                
+                "homingDelay": 15
+                "drag": -0.025
+            }
+      }
+  {
+  "name": "a2-4-2"
+  "x": 16
+  "y": 0
+  "shoot": {
+  "shots": 12
+  "shotDelay": 3
+  "alternate": false
+  }
+  "reload": 90
+  "shootCone": 40
+  "rotate": false
+  "mirror": true
+  "recoil": 3
+  "shootY": 6
+  "inaccuracy": 5
+  "targetGround": false
+  "shootSound": "missile"
+  "color": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+    "bullet": {
+      "type": "MissileBulletType"
+  "color": "ee7777"
+  "backColor": "ee7777"
+  "trailColor": "ee7777"
+      "damage": 250
+      "width":14
+      "height": 10
+      "splashDamage": 500
+      "splashRadius": 80
+      "homingPower": 0.25
+      "sprite": "missile-large"
+      "trailLength": 12
+      "trailWidth": 6
+      "homingRange": 240
+      "collidesGround": false
+      "lifetime": 50
+      "speed": 16
+                "weaveScale": 1.2
+                "weaveMag": 0.4
+                "hitEffect": {
+                "type": "waveEffect"
+                "colorFrom": "ffffff00"
+                "colorTo": "aa3333"
+                "sizeFrom": 40
+                "sizeTo": 0
+                "strokeFrom": 0
+                "strokeTo": 8
+                "lifetime": 30
+                }
+      }
+   }
+        {
+    "name": "a2-4-3"
+    "x": 0
+    "y": -4
+    "shootY": 4
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 6
+    "autoTarget": true
+    "shoot": {
+    "type": "ShootSpread"
+    "shots": 3
+    "spread": 15
+    }
+    "shootSound": "red"
+    "recoil": 3
+    "reload": 60
+    "shake": 2
+    "bullet": {
+                "type": "FlakBulletType",   
+                "shootEffect": {
+            "type": "WaveEffect"
+            "sizeFrom": 2
+            "sizeTo": 30
+            "colorFrom": "ee7777cc"
+            "colorTo": "aa333300"
+            "lenfrom": 0
+            "lenTo": 0
+            "strokeFrom": 4
+            "StrokeTo": 4
+            "lifetime": 30
+            }
+                "shrinkY": 0
+                "backColor": "aa3333"
+                "frontColor": "ffffff77"
+                "homingDelay": 15
+                "drag": -0.025
+                "width": 15,
+                "height": 15,
+                "sprite": "pnk-mod-bullet-1"
+                "homingRange": 160
+                "homingPower": 0.05
+                "splashDamage": 250
+                "splashDamageRadius": 24
+                "collidesTile":false
+                "collidesGround": true
+                "damage": 250
+                "maxSpeed": 4
+                "knockback":0.4
+                "lifetime": 80
+                "speed": 2.5
+            }
+      }
+  ]
+}

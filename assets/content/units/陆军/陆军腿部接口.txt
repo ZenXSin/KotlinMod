@@ -1,0 +1,18 @@
+通用:
+legcount 腿数，大部分是给爬爬用的。(雾)
+爬爬:
+legGroupSize 指一整条腿的大小。
+legLength 腿长
+legSpeed 腿速
+legBaseOffset 腿基偏移
+legExtension 伸腿
+legMoveSpace 腿移动空间
+maxStretch 最大拉伸
+legSplashDamage 腿部爆炸伤害
+legSplashRange 腿部爆炸范围
+
+
+双脚:
+mechSideSway 机械侧摆
+mechFrontSway 机械前摆
+mechStride 机械步

@@ -1,0 +1,19 @@
+{
+    "type":"Conduit",
+    "name":"67型导管",
+    "health":500,
+	"size":1,
+	"drawLiquidLight":true,
+	"targetable":true,
+	"hasLiquids":true,
+    "liquidCapacity":30,
+	"floating":true,
+    "requirements": [
+		{"item": "铝","amount":1},
+		{"item": "metaglass","amount":2}
+	],
+	"category": "liquid",
+    "research":"khcore"
+    "junctionReplacement": "pnk-mod-67型交流器"
+    "bridgeReplacement": "pnk-mod-67型导管桥"
+}

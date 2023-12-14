@@ -1,0 +1,31 @@
+{
+	"name": "热熔钻头-效率",
+	"description": "效率很高的热熔钻头，但是比较脆弱",
+	"type": "Drill",
+	"health": 1200
+	"size": 3,
+	"tier": 8,
+	"drillTime":20,
+	"drillEffect":"formsmoke",
+	"drawMineItem":true,
+	"liquidBoostIntensity": 3,
+	"drawRim":false,
+	"itemCapacity":100,
+	"liquidCapacity":50,
+	"rotateSpeed":5.5,
+	"warmupSpeed":0.002,
+	"research":"pneumatic-drill"
+	"consumes": {
+		"liquid": {
+		"liquid":"water",
+		"amount":0.6,
+		"optional":true
+		},
+		"power": 2,
+	},
+	"requirements": [
+	"copper/500" "lead/20" "铝/60" "thorium/100" "plastanium/200" "surge-alloy/200"
+	],
+	"research": "小型钻头"
+	"category": "production"
+}

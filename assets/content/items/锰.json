@@ -1,0 +1,12 @@
+{
+"name":"锰"
+"description":"坚硬的金属，适合用于生产合金。"
+"hardness": 4
+"cost":"2"
+"color":"d8edff"
+"radioactivity":0,
+"explosiveness":0
+"flammability":0
+"charge": 0
+"research":"镍"
+}

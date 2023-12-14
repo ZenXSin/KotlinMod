@@ -1,0 +1,10 @@
+{
+"name":"毒液"
+"description": "带有喀莱什病毒的液体"
+"color":"235733"
+"flammability":0,
+"temperature":2,
+"heatCapacity":0,
+"viscosity":0.5,
+"explosiveness":0
+}

@@ -1,0 +1,44 @@
+{
+	"type": "UnitFactory",
+	"name": "丧尸培养仓",
+    "health":350,
+	"size": 2
+	"drawer": {
+	"type": "MultiDrawer"
+	"drawers": [
+	{
+	"type": "DrawRegion"
+	"suffix": "-bottom"
+	}
+	{
+	"type": "DrawRegion"
+	"suffix": "-liquid"
+	}
+	"drawMixer"
+	"drawDefault"
+	]
+	}
+	"consumes":{
+	"power": 1
+	"liquid": {
+	"liquid": "water"
+	"amount": 0.5
+	}
+		},
+	"plans":[
+		{ "unit": "ED-01普通丧尸", "time": 600, "requirements": ["放射孢子/45","thorium/10"] },
+		{ "unit": "ED-02疾跑丧尸", "time": 750, "requirements": ["放射孢子/50","硒/15"] },
+		{ "unit": "ED-02毒液丧尸", "time": 750, "requirements": ["放射孢子/35","U/5"] },
+		{ "unit": "ED-02轻装丧尸", "time": 760, "requirements": ["放射孢子/45","thorium/10"] },
+		{ "unit": "ED-03重装丧尸", "time": 1200, "requirements": ["放射孢子/120","titanium/50"] },
+		{ "unit": "ED-03导弹丧尸", "time": 1200, "requirements": ["放射孢子/120","silicon/60"] },
+		{ "unit": "ED-03繁殖丧尸", "time": 1200, "requirements": ["放射孢子/320","U-234/30"] },
+		{ "unit": "ED-04机械丧尸", "time": 2100, "requirements": ["放射孢子/130","硬铝/300"] },
+		{ "unit": "ED-04冲锋丧尸", "time": 2100, "requirements": ["放射孢子/440","锰钢/270"] },
+		{ "unit": "ED-04狙击丧尸", "time": 2100, "requirements": ["放射孢子/240","钛合金/60"] },
+    ],
+	"requirements": ["copper/20","silicon/50","铝/80"],
+	"category":"units",
+	"buildVisibility":"shown",
+	"research":"0721构造器"
+}

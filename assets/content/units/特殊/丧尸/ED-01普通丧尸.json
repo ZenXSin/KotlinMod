@@ -1,0 +1,55 @@
+{
+"type":"mech"
+"name":"普通丧尸"
+"description": "非常普通的丧尸，只能近距离撕咬敌人。"
+        "useUnitCap": false,
+        "allowedInPayloads": false,
+"speed": 1
+"deathEffect": "none"
+"range": 32
+"rotateSpeed": 6
+"health": 500
+"reload": 7200
+"deathSound": "explosion"
+"hitSize": 4
+"mechStride": 2
+"mechStepShake":0.0
+
+"immunities": [
+"囊肿寄生"
+"病毒"
+]
+"weapons": [
+     {
+    "name": "普通丧尸-w"
+    "layerOffset": -0.001
+    "top": false
+    "x": 0
+    "y": 0
+    "shootY": 0
+    "mirror": true
+    "rotate": false
+    "shots": 2
+    "recoil": -2
+    "reload": 50
+    "targetAir":false
+    "shootEffect": "none"
+    "shootSound": "none"
+    "maxRange": 40
+    "restitution":1.42
+    "bullet": {
+      "type": "BasicBulletType"
+      "shootEffect": "none"
+      "despawnEffect": "none"
+      "maxRange": 80
+      "damage":50
+      "recoil": -3.5
+      "width":0
+      "height":0
+      "lifetime": 5
+      "speed": 8
+             }
+      } 
+     ]
+    "research": "丧尸培养仓"
+}

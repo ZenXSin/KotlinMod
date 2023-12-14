@@ -1,0 +1,18 @@
+{
+"type": "MendProjector"
+"name": "自愈墙"
+"description": "不需要电力，可以吸收电弧和激光。"
+"size": 1
+"requirements": [
+"硬铝/2","U/5","8-记忆金属/10"
+]
+"health": 2500
+"insulated":true,//是否吸收电弧
+"absorbLasers":true,//是否吸收激光 
+"hasPower": false
+"reload": 45
+"healPercent": 12
+"range": 24
+"category": "defense"
+"research": "701大型简易恢复墙"
+}

@@ -1,0 +1,54 @@
+{
+"type": "missile"
+"controller": "MissileAI"
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": true,
+"armor": 0,
+"health": 1000,
+"speed": 8,
+"lifetime": 600,
+"rotateSpeed": 2.5,
+"faceTarget": true
+"engineColor": "ee7777",
+"trailColor": "ee7777",
+//"engineLayer": 100,
+"engineSize": 4,
+"maxRange": 320
+"engineOffset": 8,
+"trailLength": 12,
+"missileAccelTime": 60,
+"lowAltitude": true,
+"fogRadius": 6,
+"targetGround": false
+"weapons": [
+{
+"shootCone": 20,
+"rotationLimit": 5
+"rotate": true
+"x": 6
+"y": 4
+"mirror": true
+"alternate": true
+"reload": 3
+"shootSound": "shoot",
+"rotate": false
+"killShooter": false
+"bullet": {
+"type": "BasicBulletType"
+"damage": 20
+"speed": 8
+"lifetime": 30
+"maxRange": 160
+"width": 4
+"height": 4
+}
+}
+]
+}

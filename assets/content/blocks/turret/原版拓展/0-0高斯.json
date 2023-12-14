@@ -1,0 +1,46 @@
+{
+                        "type": "PowerTurret"
+            "name": "高斯"
+            "description": "更快的射速，更远且更高伤害的闪电，相比于电弧来说。",
+            "category": "turret",
+            "requirements": [
+            "copper/30" "lead/70" "silicon/30"
+            ]
+            "shootType": {
+                "type": "LightningBulletType"
+                "damage": 30,
+                "lightningLength": 32,
+                "ammoMultiplier": 1,
+                    "hitEffect": "hitLancer",
+                    "despawnEffect": "none",
+                    "status":"shocked",
+                    "statusDuration": 10,
+                    "hittable": false,
+                    }
+            "reload": 10,
+            "shootCone": 20,
+            "rotateSpeed": 6,
+            "range": 160,
+            "shootY": 2
+            "shootEffect": "lightningShoot",
+            "recoil": 2,
+            "size": 2,
+            "health": 300,
+            "shootSound": "spark",
+	"research": {
+        "parent": "0-0多管",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "峡谷07"
+            }
+        ]
+    }
+            "consumes": {
+            "power": 1,
+            "coolant": {
+            "amount": 0.1,
+            "optional": true,
+            }
+            }
+            }

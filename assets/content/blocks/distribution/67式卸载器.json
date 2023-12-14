@@ -1,0 +1,16 @@
+{
+      "health": 350,
+      "size":1,
+      "speed": 0.25,
+      "solid": "true",
+      "update": "true",
+      "hasItems": "true",
+      "type":"Unloader",
+      "confugurable": "true",
+      "name":"67型卸载器",
+      "requirements": [
+"plastanium/5","silicon/10"
+	],
+		"category": "distribution",
+"research": "67式传送带"
+    }

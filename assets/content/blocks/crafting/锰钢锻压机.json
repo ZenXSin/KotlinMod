@@ -1,0 +1,44 @@
+{
+    "type": "GenericCrafter",
+    "name": "锰钢锻压机",
+    "description":"生产锰钢。",
+    "category": "crafting",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+            {
+			    "type": "DrawFrames",
+			    "frames": 3,
+			},
+        ],
+    },
+    "updateShake": 2,
+    "health": 200,
+    "itemCapacity": 30,
+    "requirements": [
+        "镍/300",
+        "titanium/200",
+        "plastanium/80",
+    ],
+    "outputItem": "锰钢/2",
+    "craftTime": 30.00,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.75,
+        },
+        "items": {
+            "items":[
+               "锰/3",
+               "镍/1",
+               "硒/2",
+            ],
+        },
+        "power": 1.5,
+    },
+    "research":"镍钢熔炉",
+}

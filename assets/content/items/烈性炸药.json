@@ -1,0 +1,10 @@
+{
+"name":"烈性炸药"
+"description":"强爆炸性且不稳定，危险！"
+"color":"4a4b53"
+"radioactivity":0,
+"explosiveness": 5
+"flammability": 0
+"charge":0
+"research": "硒"
+}

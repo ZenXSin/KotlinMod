@@ -1,0 +1,53 @@
+{
+    "type": "ItemTurret",
+    "name": "电闪",
+    "description": "气旋的霰弹炮升级版本，炮弹爆炸后拥有大范围的电击伤害。"
+    "size": 4,
+    "category": "turret"
+    "shootEffect": "shootBig"
+    "heatColor": "ffffff"
+    "requirements": [
+        "lead/500","silicon/35","titanium/200","thorium/200","plastanium/200","surge-alloy/250"
+    ],
+    "ammoTypes": {
+     "surge-alloy": {
+     "type": "FlakBulletType"
+     "width": 8
+     "height": 8
+     "damage": 25
+     "splashDamage": 80
+      "frontColor": "ffff99"
+      "backColor": "aaaa55"
+     "splashDamageRadius": 40
+     "collidesGround": true
+     "lifetime": 40
+     "speed": 5
+     "pierce": true
+     "pierceCap": 1
+     "explodeDelay": 20
+     "fragBullets": 3
+     "fragBullet": {
+     "type": "LightningBulletType"
+     "lightningLength": 40
+     "xRand": 0.1
+     "damage": 35
+     "lightningColor": "ffffaa"
+     }
+     }
+    },
+
+    "recoil": 1
+    "shootSound": "shotgun"
+    "shoot": {
+    "shots": 5
+    "spread": 6
+    }
+    "reload": 60,
+    "restitution": 0.1,
+    "range": 200,
+    "shootCone":2.00,
+    "health": 3300,
+    "inaccuracy": 8.00,
+    "rotateSpeed": 7.00,
+    "research":"cyclone"
+}

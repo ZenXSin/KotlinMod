@@ -1,0 +1,133 @@
+{
+    "type": "naval",
+    "name": "c0-4",
+    "health": 50000,
+    "armor": 17,
+    "hitSize": 36,
+    "speed": 1.2,
+    "accel": 0.3,
+    "rotateSpeed": 1.85,
+    "rotateShooting": true,
+    "commandLimit": 8,
+    "abilities": [
+  {
+  "type": "UnitSpawnAbility"
+  "unit": "c0-1"
+  "spawnX": 0
+  "spawnY": -18
+  "spawnTime": 3600
+  }
+]
+    "itemCapacity": 80,
+    "trailX": 7,
+    "trailY": -9,
+    "trailScl": 2,
+    "trailLength": 40,
+    "commandLimit": 6,
+    "weapons": [
+     {
+    "name": "c0-4-1"
+    "x": 0
+    "y": 2
+    "shootY": 10
+    "mirror": false
+    "rotate": true
+    "rotateSpeed": 1.2
+    "autoTarget": true
+    "shoot": {
+    "shots": 1
+    "chargeTime": 38
+    }
+    "shootSound": "railblast"
+    "recoil": 4
+    "reload": 180
+    "chargeTime": 38
+    "status": "shocked"
+    "ammoType": "surge-alloy"
+    "shake": -1
+    "restitution":1.42
+			"bullet": {
+				"type": "RailBulletType",
+				"damage": 1200,
+				"length": 840,
+				"status": "burning",
+				"statusDuration": 600,
+				"pierceDamageFactor": 0.5,
+				"pointEffectSpace": 26,
+				"pointEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"lifetime": 34,
+					"length": 0,
+					"cone": -360,
+					"region": "pnk-mod-thin1",
+					"sizeFrom": 16,
+					"sizeTo": 16,
+					"colorFrom": "f4f433",
+					"colorTo": "D86E5600"
+					"layer": 110
+				},
+				"pierceEffect": {
+					"type": "ParticleEffect",
+					"line": true,
+					"particles": 120,
+					"offset": 0,
+					"lifetime": 15,
+					"length": 40,
+					"cone": -7.5,
+					"lenFrom": 6,
+					"lenTo": 0,
+					"colorFrom": "f4f433",
+					"colorTo": "FFFFFF"
+				},
+				"hitEffect": "railHit",
+				"hitColor": "D86E56"
+                "shootEffect": {
+                "type": "WaveEffect"
+                "sizeFrom": 0
+                "sizeTo": 48
+                "strokeFrom": 5
+                "strokeTo": 0
+                "colorFrom": "f4f433"
+                "colorTo": "f4f433"
+                "lifetime": 90
+			}
+		}
+        }
+               {
+    "name": "c0-4-2"
+    "x": 15
+    "y": -10
+    "shootY": 10
+    "mirror": true
+    "rotate": true
+    "autoTarget": true
+    "rotateSpeed": 5
+    "shoot": {
+    "shots": 4
+    "shotDelay": 5
+    }
+    "recoil": 2
+    "reload": 30
+    "shootCone": 30
+    "shootSound": "sap"
+    "ammoType": "pyratite"
+    "shake": -1
+    "shotDelay": 3
+        "innacuracy": 40
+    "restitution":1.42
+    "bullet": {
+                "type": "SapBulletType",
+                "damage": 150
+                "length": 120
+                "sapStrength": 0.55
+                "shootEffect": "shootLiquid"
+                "healPercent": 15
+                "hitEffect": "hitLiquid"
+                "color": "8899ef"
+                "lightColor": "daccff"
+            },
+          }
+      ],
+    "research": "c0-3"
+}

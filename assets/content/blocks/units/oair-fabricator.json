@@ -1,0 +1,18 @@
+{
+	"type": "UnitFactory",
+	"name": "oair-fabricator",
+    "health": 300,
+	"size": 3
+            "regionSuffix": "-dark"
+
+	"consumes":{
+	"power": 2
+		},
+		"configurable": false
+	"plans": [ 
+		{"unit": "erk-0-acfya", "time": 1200, "requirements": ["tungsten/60","silicon/130",]},
+    ],
+	"requirements": ["tungsten/50" "silicon/155" "thorium/70"],
+	"category":"units",
+	"buildVisibility":"shown",
+}

@@ -1,0 +1,135 @@
+{
+    "type": "ItemTurret",
+    "name": "追踪炮",
+    "description":"发射可以恢复己方建筑物的追踪弹，威力较高。",
+    "size":4,
+    "category": "turret",
+    "requirements": [
+    "titanium/50" "silicon/120" "plastanium/50" "phase-fabric/45" "surge-alloy/30"
+    ],
+    "ammoTypes": {
+    
+    "silicon": {
+    "type": "MissileBulletType"
+    "width": 4
+    "height": 8
+    "speed": 6
+    "lifetime": 90
+    "collidesTeam": true
+    "ammoMultiplier": 14
+    "reloadMoltiplier": 1.5
+    "frontColor": "999999"
+    "backColor": "777777"
+    "trailColor": "999999"
+    "damage": 70
+    "splashDamage": 130
+    "splashDamageRadius": 40
+    "healPercent": 2.5
+    "homingPower": 0.15
+    "homingRange": 80
+    "homingDelay": 10
+    "weaveSclae": 2
+    "weaveMag": 3
+    "hitEffect": {
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 24
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "777777"
+    "colorTo": "777777"
+    "lifetime": 90
+    }
+    }
+    "phase-fabric": {
+    "type": "MissileBulletType"
+    "width": 4
+    "height": 8
+    "speed": 6
+    "lifetime": 90
+    "collidesTeam": true
+    "ammoMultiplier": 1
+    "reloadMultiplier": 0.8
+    "frontColor": "ffd59e"
+    "backColor": "ddb37c"
+    "trailColor": "ffd59e"
+    "damage": 120
+    "splashDamage": 380
+    "splashDamageRadius": 40
+    "healPercent": 5
+    "homingPower": 0.15
+    "homingRange": 120
+    "homingDelay": 15
+    "weaveSclae": 2
+    "weaveMag": 3
+    "hitEffect": {
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 24
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "ddb37c"
+    "colorTo": "ddb37c"
+    "lifetime": 90
+    }
+    }
+    "8-再生孢子": {
+    "type": "MissileBulletType"
+    "width": 4
+    "height": 8
+    "speed": 6
+    "lifetime": 90
+    "collidesTeam": true
+    "ammoMultiplier": 7
+    "reloadMultiplier": 2
+    "frontColor": "ae71cd"
+    "backColor": "8c5eab"
+    "trailColor": "ae71cd"
+    "damage": 100
+    "status": "孢子寄生"
+    "splashDamage": 300
+    "splashDamageRadius": 40
+    "healPercent": 8
+    "homingPower": 0.15
+    "homingRange": 120
+    "homingDelay": 15
+    "weaveSclae": 2
+    "weaveMag": 3
+    "hitEffect": {
+    "type": "WaveEffect"
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "sizeFrom": 0
+    "sizeTo": 24
+    "strokeFrom": 4
+    "strokeTo": 0
+    "colorFrom": "8c5eab"
+    "colorTo": "8c5eab"
+    "lifetime": 90
+    }
+    }
+    
+    }
+"shoot": {
+"type": "ShootAlternate"
+"barrels": 7
+"spread": 4
+"shots": 14
+"shotDelay": 3
+    }
+    "ammoPerShot": 14
+    "shootY": 12
+    "reload": 120.0,
+    "shootSound": "missile"
+    "targetHealing": true
+    "range": 540,
+    "shotCone": 20.00,
+    "health": 8500,
+    "inaccuracy": 2.00,
+    "rotateSpeed": 8.00,
+    "research":"5-星流"
+}

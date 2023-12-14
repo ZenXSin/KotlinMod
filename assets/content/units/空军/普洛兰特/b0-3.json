@@ -1,0 +1,92 @@
+{
+type: flying
+name: b0-3
+flying: true
+hitSize: 32
+health: 7600
+armor: 14
+speed: 3.2
+rotateSpeed: 3
+rotateShooting: true
+accel: 0.02
+drag: 0.02
+lowAltitude: true
+engineOffset: 16
+engineSize: 6
+lightColor: e65555
+engines: [
+{
+x: 20
+y: -12
+radius: 6
+rotation: -60
+}
+{
+x: -20
+y: -12
+radius: 6
+rotation: -150
+}
+]
+weapons: [
+  {
+    name:b0-3-1
+    x: 10
+    y: 0
+    shootY: 8
+    mirror: true
+    rotate: true
+    rotateSpeed: 4.2
+    recoil: 0
+    reload: 25
+    shootCone: 30
+    inaccuracy: 10
+    shoot: {
+    shots: 3
+    spread: 3
+    }
+    shootSound: shotgun
+    shake: 1.2
+    bullet: {
+    type: ShrapnelBulletType
+    length: 192.00
+    damage: 100
+    width: 20.00
+    reloadMultiplier: 1.30
+      }
+  }
+  {
+  name: b0-3-2
+  x: 0
+  y: 0
+  shoot: {
+  shots: 10
+  shotDelay: 3
+  type: ShootBarrel
+  barrels: [
+  8,4,-30
+  -8,4,30
+  ]
+  }
+  reload: 160
+  recoil: 0
+  mirror: false
+  rotate: false
+  shootSound: missile
+  bullet: {
+  type: MissileBulletType
+  speed: 5
+  lifetime: 128
+  damage: 45
+  width: 4
+  height: 8
+  weaveScale: 3
+  weaveMag: 1
+  trailColor: 7766ff
+  frontColor: 7766ff
+  backColor: 7766ff
+  }
+  }
+]
+    research: b0-2
+}

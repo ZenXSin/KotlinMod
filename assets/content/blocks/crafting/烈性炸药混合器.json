@@ -1,0 +1,35 @@
+{
+    "type": "GenericCrafter",
+    "name": "烈性炸药混合器",
+    "description": "混合烈性炸药。",
+    "category": "crafting",
+    "health": 300,
+    "itemCapacity": 30,
+    "research": "锆锰合金冶炼炉",
+    "requirements": [
+        "镍钢/25",
+        "锆锰合金/70",
+        "硬铝/40",
+        "silicon/30",
+    ],
+    "outputItem": "烈性炸药/5",
+    "craftTime": 120.00,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": true,
+    "consumes": {
+        "liquid": {
+            "liquid": "石油气"
+            "amount": 0.5
+        },
+        "items": {
+            "items": [
+                "pyratite/3",
+                "硒/4",
+                "磷/8",
+                "silicon/7",
+            ],
+        },
+        "power": 1.5,
+    },
+}
