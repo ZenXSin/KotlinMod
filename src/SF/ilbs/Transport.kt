@@ -11,7 +11,7 @@ import javax.persistence.Entity
 abstract class TransportUnit(name:String) : UnitType(name), WaterMovec {
     override fun update(unit: Unit?) {
         super.update(unit)
-        if(immunities.contains(StatusEffects.disarmed)) {immunities - StatusEffects.disarmed}
     }
     // 添加需要持久化的属性和方法
 }
+

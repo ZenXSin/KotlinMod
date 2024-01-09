@@ -62,7 +62,7 @@ import java.util.*
  * heatLiquid: 散热液体
  * 爆炸特效需自己写
  */
-open class BonusCrafter(name: String?) : Block(name) {
+open class Bonusrafter(name: String?) : Block(name) {
     /** Written to outputItems as a single-element array if outputItems is null.  */
     @Nullable
     var outputItem: ItemStack? = null

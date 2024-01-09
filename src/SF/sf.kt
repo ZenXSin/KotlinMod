@@ -19,27 +19,6 @@ class sf : Mod() {
     override fun loadContent() {
         super.loadContent()
         //test.load()
-        Log.info("")
-    }
-
-    init {/*
-        Events.on(ClientLoadEvent::class.java) {
-            Time.runTask(10f) {
-                home()
-            }
-        }
-    }*/
-
-    fun home() {
-        BaseDialog("[yellow]欢迎使用本依赖脚本").apply {
-            cont.apply {
-                image(Core.atlas.find("lib-logo")).pad(20f).top()
-                button("[orange]退出") { hide() }.size(100f, 50f)
-                button("[orange]更新日志（开发中）") { hide() }.size(100f, 50f)
-                button("[orange]更新（开发中）") { hide() }.size(100f, 50f)
-            }
-            show()
-        }
     }
 }
 
